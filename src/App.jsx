@@ -23,51 +23,16 @@ const SentenceScramble = lazy(() => import('./components/SentenceScramble.tsx'))
 const SentenceScrambleDifficultySelector = lazy(
   () => import('./components/SentenceScrambleDifficultySelector.jsx'),
 );
-const Sudoku = lazy(() => import('./components/Sudoku.jsx'));
-const SudokuDifficultySelector = lazy(() => import('./components/SudokuDifficultySelector.jsx'));
-const TicTacToe = lazy(() => import('./components/TicTacToe.jsx'));
-const CountingExercise = lazy(() => import('./components/CountingExercise.tsx'));
-const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'));
-const ColorPad = lazy(() => import('./components/ColorPad.tsx'));
-const Calculator = lazy(() => import('./components/Calculator.jsx'));
-const Shop = lazy(() => import('./components/Shop.tsx'));
 const Quiz = lazy(() => import('./components/Quiz.tsx'));
 const QuizDifficultySelector = lazy(() => import('./components/QuizDifficultySelector.tsx'));
+const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'));
 const Settings = lazy(() => import('./components/Settings.jsx'));
-const Maths = lazy(() => import('./components/Maths.jsx'));
-const Games = lazy(() => import('./components/Games.jsx'));
-const Puzzle = lazy(() => import('./components/Puzzle.jsx'));
-const Coloring = lazy(() => import('./components/Coloring.jsx'));
-const ColoringDifficultySelector = lazy(
-  () => import('./components/ColoringDifficultySelector.jsx'),
-);
-const Creativity = lazy(() => import('./components/Creativity.jsx'));
-const Kids = lazy(() => import('./components/Kids.jsx'));
-const Utils = lazy(() => import('./components/Utils.jsx'));
-const Addition = lazy(() => import('./components/Addition.jsx'));
-const English = lazy(() => import('./components/English.jsx'));
-const Subtraction = lazy(() => import('./components/Subtraction.jsx'));
-const Multiplication = lazy(() => import('./components/Multiplication.jsx'));
-const Division = lazy(() => import('./components/Division.jsx'));
-const Comparison = lazy(() => import('./components/Comparison.jsx'));
-const Ascending = lazy(() => import('./components/Ascending.jsx'));
-const Descending = lazy(() => import('./components/Descending.jsx'));
-const MemoryMatch = lazy(() => import('./components/MemoryMatch.jsx'));
-const GridMatch = lazy(() => import('./components/GridMatch.jsx'));
-const Notes = lazy(() => import('./components/Notes.jsx'));
 const PassageReading = lazy(() => import('./components/PassageReading.jsx'));
 const DifficultySelection = lazy(() => import('./components/DifficultySelection.jsx'));
 const PassageSelection = lazy(() => import('./components/PassageSelection.jsx'));
-const MathDifficultySelector = lazy(() => import('./components/MathDifficultySelector.jsx'));
 const SpinWheel = lazy(() => import('./components/SpinWheel.tsx'));
-const EndlessRunner = lazy(() => import('./components/EndlessRunner.tsx'));
-const VirtualPet = lazy(() => import('./components/VirtualPet.tsx'));
-const TreasureHunt = lazy(() => import('./components/TreasureHunt.tsx'));
-const QuizGame = lazy(() => import('./components/QuizGame.tsx'));
-const DragDropLearning = lazy(() => import('./components/DragDropLearning.tsx'));
 const SmartMatch = lazy(() => import('./components/SmartMatch.tsx'));
 const ScratchGame = lazy(() => import('./components/ScratchGame.tsx'));
-const MentalMath = lazy(() => import('./components/MentalMath.tsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const VideoStories = lazy(() => import('./components/VideoStories.tsx'));
 const Rhymes = lazy(() => import('./components/Rhymes.tsx'));
@@ -122,18 +87,8 @@ const NON_GAME_ROUTES = new Set([
   '/',
   '/tiny-steps',
   '/english',
-  '/maths',
-  '/games',
-  '/creativity',
-  '/kids',
-  '/utils',
-  '/shop',
-  '/videos',
+  '/stories',
   '/rhymes',
-  '/wordsearch',
-  '/sudoku',
-  '/coloring',
-  '/coloring-selection',
   '/passages',
 ]);
 
@@ -144,10 +99,6 @@ function isGameplayRoute(pathname) {
 
   if (pathname.startsWith('/passages/')) {
     return false;
-  }
-
-  if (pathname.startsWith('/coloring/')) {
-    return true;
   }
 
   return true;
@@ -177,20 +128,144 @@ function Home() {
   }, []);
 
   const categories = [
-    'tiny-steps',
-    'kids',
-    'stories',
-    'rhymes',
-    'quiz',
-    'creativity',
-    'english',
-    'maths',
-    'games',
-    'utils',
+    {
+      id: 'tiny-steps',
+      path: '/tiny-steps',
+      icon: '/tiny-steps.webp',
+      label: t('home.categories.tiny-steps'),
+    },
+    {
+      id: 'alphabets',
+      path: '/alphabets',
+      icon: '/alphabet.webp',
+      label: t('home.subjects.alphabets.label'),
+    },
+    {
+      id: 'english-words',
+      path: '/english-words',
+      icon: '/spell_the_word.webp',
+      label: t('home.subjects.spellTheWord.label'),
+    },
+    {
+      id: 'wordsearch',
+      path: '/wordsearch',
+      icon: '/match_the_word.webp',
+      label: t('home.subjects.wordSearch.label'),
+    },
+    {
+      id: 'sentence-scramble',
+      path: '/sentence-scramble',
+      icon: '/sentence-scramble.webp',
+      label: t('home.subjects.sentenceScramble.label'),
+    },
+    {
+      id: 'passages',
+      path: '/passages',
+      icon: '/passages.webp',
+      label: t('home.subjects.passages.label'),
+    },
+    {
+      id: 'tracing',
+      path: '/tracing-selection',
+      icon: '/tracing.png',
+      label: t('home.subjects.tracing.label'),
+    },
+    {
+      id: 'stories',
+      path: '/stories',
+      icon: '/stories.webp',
+      label: t('home.categories.stories'),
+      isOnline: true,
+    },
+    {
+      id: 'rhymes',
+      path: '/rhymes',
+      icon: '/rhymes.webp',
+      label: t('home.categories.rhymes'),
+      isOnline: true,
+    },
+    {
+      id: 'quiz',
+      path: '/quiz',
+      icon: '/quiz.webp',
+      label: t('home.categories.quiz'),
+    },
+    {
+      id: 'tap-learn-letters',
+      path: '/tap-learn-letters',
+      icon: '/alphabet.webp',
+      label: t('home.subjects.tapLearnLetters.label'),
+    },
+    {
+      id: 'tap-learn-farm-animals',
+      path: '/tap-learn-farm-animals',
+      icon: '/farm-animals.webp',
+      label: t('home.subjects.tapLearnFarmAnimals.label'),
+    },
+    {
+      id: 'tap-learn-wild-animals',
+      path: '/tap-learn-wild-animals',
+      icon: '/wild-animals.webp',
+      label: t('home.subjects.tapLearnWildAnimals.label'),
+    },
+    {
+      id: 'tap-learn-sea-animals',
+      path: '/tap-learn-sea-animals',
+      icon: '/sea-animals.webp',
+      label: t('home.subjects.tapLearnSeaAnimals.label'),
+    },
+    {
+      id: 'tap-learn-insects',
+      path: '/tap-learn-insects',
+      icon: '/insects.webp',
+      label: t('home.subjects.tapLearnInsects.label'),
+    },
+    {
+      id: 'tap-learn-colors',
+      path: '/tap-learn-colors',
+      icon: '/tap-fill.webp',
+      label: t('home.subjects.tapLearnColors.label'),
+    },
+    {
+      id: 'tap-learn-vegetables',
+      path: '/tap-learn-vegetables',
+      icon: '/vegetables.webp',
+      label: t('home.subjects.tapLearnVegetables.label'),
+    },
+    {
+      id: 'tap-learn-fruits',
+      path: '/tap-learn-fruits',
+      icon: '/fruits.webp',
+      label: t('home.subjects.tapLearnFruits.label'),
+    },
+    {
+      id: 'tap-learn-vehicles',
+      path: '/tap-learn-vehicles',
+      icon: '/vehicles.webp',
+      label: t('home.subjects.tapLearnVehicles.label'),
+    },
+    {
+      id: 'tap-learn-food',
+      path: '/tap-learn-food',
+      icon: '/food.webp',
+      label: t('home.subjects.tapLearnFood.label'),
+    },
+    {
+      id: 'tap-learn-instruments',
+      path: '/tap-learn-instruments',
+      icon: '/instruments.webp',
+      label: t('home.subjects.tapLearnInstruments.label'),
+    },
+    {
+      id: 'tap-learn-shapes',
+      path: '/tap-learn-shapes',
+      icon: '/shapes.webp',
+      label: t('home.subjects.tapLearnShapes.label'),
+    },
   ];
 
   const filteredCategories = categories.filter((category) => {
-    if (category === 'stories' || category === 'rhymes') {
+    if (category.isOnline) {
       return isOnline;
     }
     return true;
@@ -207,11 +282,11 @@ function Home() {
       <nav className="subject-selection" role="navigation">
         {filteredCategories.map((category, index) => (
           <Link
-            key={category}
-            to={`/${category}`}
+            key={category.id}
+            to={category.path}
             className="subject-icon-button"
-            onPointerEnter={category === 'tiny-steps' ? loadLearningPath : undefined}
-            onFocus={category === 'tiny-steps' ? loadLearningPath : undefined}
+            onPointerEnter={category.id === 'tiny-steps' ? loadLearningPath : undefined}
+            onFocus={category.id === 'tiny-steps' ? loadLearningPath : undefined}
             style={{
               '--card-color': getCategoryColor(index),
               animationDelay: `${index * 0.1}s`,
@@ -219,12 +294,12 @@ function Home() {
           >
             <img
               className="subject-icon subject-icon--img-homepage"
-              src={`/${category}.webp`}
-              alt={t(`home.categories.${category}`)}
+              src={category.icon}
+              alt={category.label}
               loading={index < 4 ? 'eager' : 'lazy'}
               decoding="async"
             />
-            <div className="gameName">{t(`home.categories.${category}`)}</div>
+            <div className="gameName">{category.label}</div>
           </Link>
         ))}
       </nav>
@@ -587,59 +662,19 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tiny-steps" element={<LearningPath />} />
-          <Route path="/english" element={<English />} />
-          <Route path="/addition" element={<MathDifficultySelector operator="Addition" />} />
-          <Route path="/addition/:difficulty" element={<Addition />} />
-          <Route path="/subtraction" element={<MathDifficultySelector operator="Subtraction" />} />
-          <Route path="/subtraction/:difficulty" element={<Subtraction />} />
-          <Route
-            path="/multiplication"
-            element={<MathDifficultySelector operator="Multiplication" />}
-          />
-          <Route path="/multiplication/:difficulty" element={<Multiplication />} />
-          <Route path="/division" element={<MathDifficultySelector operator="Division" />} />
-          <Route path="/division/:difficulty" element={<Division />} />
-          <Route path="/comparison" element={<MathDifficultySelector operator="Comparison" />} />
-          <Route path="/comparison/:difficulty" element={<Comparison />} />
-          <Route path="/ascending" element={<MathDifficultySelector operator="Ascending" />} />
-          <Route path="/ascending/:difficulty" element={<Ascending />} />
-          <Route path="/descending" element={<MathDifficultySelector operator="Descending" />} />
-          <Route path="/descending/:difficulty" element={<Descending />} />
           <Route path="/alphabets" element={<Alphabets />} />
           <Route path="/tracing-selection" element={<TracingSelection />} />
           <Route path="/alphabet-tracing" element={<TracingGame mode="alphabets" />} />
-          <Route path="/number-tracing" element={<TracingGame mode="numbers" />} />
           <Route path="/wordsearch" element={<WordSearchDifficultySelector />} />
           <Route path="/wordsearch/:difficulty" element={<WordSearch />} />
-          <Route path="/sudoku" element={<SudokuDifficultySelector />} />
-          <Route path="/sudoku/:difficulty" element={<Sudoku />} />
-          <Route path="/tictactoe" element={<TicTacToe userName={userName} />} />
-          <Route path="/counting" element={<CountingExercise />} />
           <Route path="/english-words" element={<EnglishWordsSpell />} />
           <Route path="/sentence-scramble" element={<SentenceScrambleDifficultySelector />} />
           <Route path="/sentence-scramble/:difficulty" element={<SentenceScramble />} />
-          <Route path="/coloring/:difficulty" element={<Coloring />} />
-          <Route path="/colorPad" element={<ColorPad />} />
-          <Route path="/calculator" element={<Calculator />} />
           <Route path="/quiz" element={<QuizDifficultySelector />} />
           <Route path="/quiz/:difficulty" element={<Quiz />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/maths" element={<Maths />} />
-          <Route path="/mental-math" element={<MentalMath />} />
-          <Route path="/mental-math/:difficulty" element={<MentalMath />} />
-          <Route path="/games" element={<Games />} />
-          <Route path="/memory-match" element={<MemoryMatch />} />
-          <Route path="/puzzle" element={<Puzzle />} />
-          <Route path="/creativity" element={<Creativity />} />
-          <Route path="/kids" element={<Kids />} />
-          <Route path="/coloring-selection" element={<ColoringDifficultySelector />} />
-          <Route path="/coloring" element={<Coloring />} />
-          <Route path="/utils" element={<Utils />} />
-          <Route path="/gridMatch" element={<GridMatch />} />
           <Route path="/stories" element={<VideoStories />} />
           <Route path="/rhymes" element={<Rhymes />} />
           <Route path="/tap-learn-letters" element={<TapLearnRoute gameType="letters" />} />
-          <Route path="/tap-learn-numbers" element={<TapLearnRoute gameType="numbers" />} />
           <Route path="/tap-learn-colors" element={<TapLearnRoute gameType="colors" />} />
           <Route path="/tap-learn-vegetables" element={<TapLearnRoute gameType="vegetables" />} />
           <Route path="/tap-learn-fruits" element={<TapLearnRoute gameType="fruits" />} />
@@ -658,7 +693,6 @@ export default function App() {
           <Route path="/tap-learn-food" element={<TapLearnRoute gameType="food" />} />
           <Route path="/tap-learn-instruments" element={<TapLearnRoute gameType="instruments" />} />
           <Route path="/tap-learn" element={<TapLearnRoute gameType="letters" />} />
-          <Route path="/notes" element={<Notes />} />
           <Route
             path="/passages"
             element={
@@ -684,14 +718,6 @@ export default function App() {
           />
           <Route path="/passages/:difficulty" element={<PassageSelection />} />
           <Route path="/passage/:difficulty/:id" element={<PassageReading />} />
-          <Route path="/star-pop/spin-wheel" element={<SpinWheel />} />
-          <Route path="/star-pop/endless-runner" element={<EndlessRunner />} />
-          <Route path="/star-pop/virtual-pet" element={<VirtualPet />} />
-          <Route path="/star-pop/treasure-hunt" element={<TreasureHunt />} />
-          <Route path="/star-pop/quiz-game" element={<QuizGame />} />
-          <Route path="/star-pop/drag-drop-learning" element={<DragDropLearning />} />
-          <Route path="/star-pop/smart-match" element={<SmartMatch />} />
-          <Route path="/star-pop/scratch-cards" element={<ScratchGame />} />
         </Routes>
       </Suspense>
 

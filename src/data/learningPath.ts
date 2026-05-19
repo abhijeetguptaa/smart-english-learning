@@ -6,26 +6,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 1: The Beginning',
     tasks: [
       {
-        id: 'l1_t1',
-        path: '/counting',
-        targetScore: 5,
-        label: 'Number Counting',
-        type: 'math',
-      },
-      {
         id: 'l1_t2',
         path: '/alphabets',
         targetScore: 1,
         label: 'Learn Alphabets',
         type: 'english',
-      },
-      {
-        id: 'l1_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -33,26 +19,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 2: First Steps',
     tasks: [
       {
-        id: 'l2_t1',
-        path: '/addition/easy',
-        targetScore: 5,
-        label: 'Easy Addition',
-        type: 'math',
-      },
-      {
         id: 'l2_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l2_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -60,26 +32,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 3: Matching Fun',
     tasks: [
       {
-        id: 'l3_t1',
-        path: '/comparison/easy',
-        targetScore: 5,
-        label: 'Compare Numbers',
-        type: 'math',
-      },
-      {
         id: 'l3_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l3_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 2,
-        label: 'Smart Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -92,48 +50,20 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 1,
         label: 'Simple Word Search',
         type: 'english',
-      },
-      {
-        id: 'l4_t2',
-        path: '/star-pop/smart-match',
-        targetScore: 4,
-        label: 'Smart Match',
-        type: 'game',
-      },
-      {
-        id: 'l4_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 5,
-    title: 'Level 5: Subtraction Intro',
+    title: 'Level 5: Spelling Bee',
     tasks: [
-      {
-        id: 'l5_t1',
-        path: '/subtraction/easy',
-        targetScore: 5,
-        label: 'Easy Subtraction',
-        type: 'math',
-      },
       {
         id: 'l5_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l5_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -141,53 +71,25 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 6: Pattern Master',
     tasks: [
       {
-        id: 'l6_t1',
-        path: '/ascending/easy',
-        targetScore: 5,
-        label: 'Ascending Order',
-        type: 'math',
-      },
-      {
         id: 'l6_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l6_t3',
-        path: '/memory-match',
-        targetScore: 1,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 7,
-    title: 'Level 7: Math Mastery',
+    title: 'Level 7: Vocabulary',
     tasks: [
-      {
-        id: 'l7_t1',
-        path: '/multiplication/easy',
-        targetScore: 10,
-        label: 'Multiplication Mastery',
-        type: 'math',
-      },
       {
         id: 'l7_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l7_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -195,93 +97,31 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 8: Logic Basics',
     tasks: [
       {
-        id: 'l8_t1',
-        path: '/descending/easy',
-        targetScore: 5,
-        label: 'Descending Order',
-        type: 'math',
-      },
-      {
         id: 'l8_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l8_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 9,
-    title: 'Level 9: More Addition',
+    title: 'Level 9: More Words',
     tasks: [
-      {
-        id: 'l9_t1',
-        path: '/addition/medium',
-        targetScore: 7,
-        label: 'Medium Addition',
-        type: 'math',
-      },
       {
         id: 'l9_t2',
         path: '/english-words',
         targetScore: 1,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l9_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 6,
-        label: 'Smart Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: 'Level 10: Foundation Quiz',
-    tasks: [
-      {
-        id: 'l10_t1',
-        path: '/coloring/numbers',
-        targetScore: 1,
-        label: 'Number Coloring',
-        type: 'creativity',
-      },
-      {
-        id: 'l10_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l10_t3',
-        path: '/memory-match',
-        targetScore: 2,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 11,
-    title: 'Level 11: Subtraction Expert',
+    title: 'Level 11: Word Expert',
     tasks: [
-      {
-        id: 'l11_t1',
-        path: '/subtraction/medium',
-        targetScore: 7,
-        label: 'Medium Subtraction',
-        type: 'math',
-      },
       {
         id: 'l11_t2',
         path: '/wordsearch/medium',
@@ -295,7 +135,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
+      }
     ],
   },
   {
@@ -303,53 +143,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 12: Comparison Plus',
     tasks: [
       {
-        id: 'l12_t1',
-        path: '/comparison/medium',
-        targetScore: 7,
-        label: 'Medium Comparison',
-        type: 'math',
-      },
-      {
         id: 'l12_t2',
         path: '/english-words',
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l12_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 13,
-    title: 'Level 13: Order Up!',
-    tasks: [
-      {
-        id: 'l13_t1',
-        path: '/ascending/medium',
-        targetScore: 7,
-        label: 'Medium Ascending',
-        type: 'math',
-      },
-      {
-        id: 'l13_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l13_t3',
-        path: '/memory-match',
-        targetScore: 2,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -357,120 +156,44 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 14: Multiplication Intro',
     tasks: [
       {
-        id: 'l14_t1',
-        path: '/multiplication/easy',
-        targetScore: 5,
-        label: 'Easy Multiplication',
-        type: 'math',
-      },
-      {
         id: 'l14_t2',
         path: '/english-words',
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l14_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 15,
-    title: 'Level 15: Sudoku Start',
+    title: 'Level 15: Word Start',
     tasks: [
-      {
-        id: 'l15_t1',
-        path: '/sudoku/easy',
-        targetScore: 1,
-        label: 'Easy Sudoku',
-        type: 'math',
-      },
       {
         id: 'l15_t2',
         path: '/english-words',
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l15_t3',
-        path: '/multiplication/easy',
-        targetScore: 10,
-        label: 'Multiply Fun',
-        type: 'math',
-      },
-    ],
-  },
-  {
-    id: 16,
-    title: 'Level 16: Addition Hero',
-    tasks: [
-      {
-        id: 'l16_t1',
-        path: '/addition/hard',
-        targetScore: 8,
-        label: 'Hard Addition',
-        type: 'math',
-      },
-      {
-        id: 'l16_t2',
-        path: '/coloring/cartoon',
-        targetScore: 1,
-        label: 'Hard Coloring',
-        type: 'creativity',
-      },
-      {
-        id: 'l16_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 17,
-    title: 'Level 17: Mental Math 1',
+    title: 'Level 17: Mental Words',
     tasks: [
-      {
-        id: 'l17_t1',
-        path: '/mental-math/easy',
-        targetScore: 5,
-        label: 'Quick Math',
-        type: 'math',
-      },
       {
         id: 'l17_t2',
         path: '/english-words',
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l17_t3',
-        path: '/memory-match',
-        targetScore: 2,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 18,
-    title: 'Level 18: Multiplication Pro',
+    title: 'Level 18: Word Pro',
     tasks: [
-      {
-        id: 'l18_t1',
-        path: '/multiplication/medium',
-        targetScore: 7,
-        label: 'Medium Multiplication',
-        type: 'math',
-      },
       {
         id: 'l18_t2',
         path: '/wordsearch/hard',
@@ -484,223 +207,72 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-    ],
-  },
-  {
-    id: 19,
-    title: 'Level 19: Halfway Quiz',
-    tasks: [
-      {
-        id: 'l19_t1',
-        path: '/memory-match',
-        targetScore: 3,
-        label: 'Memory Challenge',
-        type: 'game',
-      },
-      {
-        id: 'l19_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l19_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 20,
-    title: 'Level 20: Subtraction Hero',
+    title: 'Level 20: Word Hero',
     tasks: [
-      {
-        id: 'l20_t1',
-        path: '/subtraction/hard',
-        targetScore: 8,
-        label: 'Hard Subtraction',
-        type: 'math',
-      },
       {
         id: 'l20_t2',
         path: '/english-words',
         targetScore: 2,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l20_t3',
-        path: '/memory-match',
-        targetScore: 3,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 21,
-    title: 'Level 21: Division Intro',
+    title: 'Level 21: Word Intro',
     tasks: [
-      {
-        id: 'l21_t1',
-        path: '/division/easy',
-        targetScore: 5,
-        label: 'Easy Division',
-        type: 'math',
-      },
       {
         id: 'l21_t2',
         path: '/english-words',
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l21_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 22,
-    title: 'Level 22: Comparison Master',
-    tasks: [
-      {
-        id: 'l22_t1',
-        path: '/comparison/hard',
-        targetScore: 8,
-        label: 'Hard Comparison',
-        type: 'math',
-      },
-      {
-        id: 'l22_t2',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-      {
-        id: 'l22_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 23,
-    title: 'Level 23: Mental Math 2',
+    title: 'Level 23: Word Play 2',
     tasks: [
-      {
-        id: 'l23_t1',
-        path: '/mental-math/medium',
-        targetScore: 7,
-        label: 'Mental Math',
-        type: 'math',
-      },
       {
         id: 'l23_t2',
         path: '/english-words',
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l23_t3',
-        path: '/memory-match',
-        targetScore: 3,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 24,
-    title: 'Level 24: Multiplication Hero',
+    title: 'Level 24: Word Hero',
     tasks: [
-      {
-        id: 'l24_t1',
-        path: '/multiplication/hard',
-        targetScore: 8,
-        label: 'Hard Multiplication',
-        type: 'math',
-      },
       {
         id: 'l24_t2',
         path: '/english-words',
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l24_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 25,
-    title: 'Level 25: Order Master',
-    tasks: [
-      {
-        id: 'l25_t1',
-        path: '/ascending/hard',
-        targetScore: 8,
-        label: 'Hard Ascending',
-        type: 'math',
-      },
-      {
-        id: 'l25_t2',
-        path: '/memory-match',
-        targetScore: 4,
-        label: 'Memory Pro',
-        type: 'game',
-      },
-      {
-        id: 'l25_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 26,
-    title: 'Level 26: Division Pro',
+    title: 'Level 26: Word Pro',
     tasks: [
-      {
-        id: 'l26_t1',
-        path: '/division/medium',
-        targetScore: 7,
-        label: 'Medium Division',
-        type: 'math',
-      },
       {
         id: 'l26_t2',
         path: '/english-words',
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l26_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -708,53 +280,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 27: Logic Master',
     tasks: [
       {
-        id: 'l27_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Hard Sudoku',
-        type: 'math',
-      },
-      {
         id: 'l27_t2',
         path: '/english-words',
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l27_t3',
-        path: '/memory-match',
-        targetScore: 4,
-        label: 'Memory Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 28,
-    title: 'Level 28: Game & Fun',
-    tasks: [
-      {
-        id: 'l28_t1',
-        path: '/gridMatch',
-        targetScore: 2,
-        label: 'Grid Master',
-        type: 'game',
-      },
-      {
-        id: 'l28_t2',
-        path: '/memory-match',
-        targetScore: 4,
-        label: 'Memory Match',
-        type: 'game',
-      },
-      {
-        id: 'l28_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -767,34 +298,13 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l29_t2',
-        path: '/multiplication/hard',
-        targetScore: 10,
-        label: 'Multiply Legend',
-        type: 'math',
-      },
-      {
-        id: 'l29_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 30,
-    title: 'Level 30: Mental Math Pro',
+    title: 'Level 30: Word Pro',
     tasks: [
-      {
-        id: 'l30_t1',
-        path: '/mental-math/hard',
-        targetScore: 8,
-        label: 'Mental Math Hero',
-        type: 'math',
-      },
       {
         id: 'l30_t2',
         path: '/wordsearch/hard',
@@ -808,34 +318,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 3,
         label: 'Spell Words',
         type: 'english',
-      },
-    ],
-  },
-  {
-    id: 31,
-    title: 'Level 31: Division Hero',
-    tasks: [
-      {
-        id: 'l31_t1',
-        path: '/division/hard',
-        targetScore: 8,
-        label: 'Hard Division',
-        type: 'math',
-      },
-      {
-        id: 'l31_t2',
-        path: '/multiplication/hard',
-        targetScore: 12,
-        label: 'Grand Multiply',
-        type: 'math',
-      },
-      {
-        id: 'l31_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -843,26 +326,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 32: Treasure Hero',
     tasks: [
       {
-        id: 'l32_t1',
-        path: '/tictactoe',
-        targetScore: 2,
-        label: 'Tic-Tac-Toe Challenge',
-        type: 'game',
-      },
-      {
         id: 'l32_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l32_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -870,228 +339,70 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 33: Reading Master',
     tasks: [
       {
-        id: 'l33_t1',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match Pro',
-        type: 'game',
-      },
-      {
         id: 'l33_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l33_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 34,
-    title: 'Level 34: Math Marathon',
-    tasks: [
-      {
-        id: 'l34_t1',
-        path: '/addition/hard',
-        targetScore: 10,
-        label: 'Addition Marathon',
-        type: 'math',
-      },
-      {
-        id: 'l34_t2',
-        path: '/subtraction/hard',
-        targetScore: 10,
-        label: 'Subtraction Marathon',
-        type: 'math',
-      },
-      {
-        id: 'l34_t3',
-        path: '/memory-match',
-        targetScore: 5,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 35,
-    title: 'Level 35: Logic Legend',
+    title: 'Level 35: Word Legend',
     tasks: [
-      {
-        id: 'l35_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Sudoku Legend',
-        type: 'math',
-      },
       {
         id: 'l35_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l35_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 36,
-    title: 'Level 36: Multiplication Master',
+    title: 'Level 36: Word Master',
     tasks: [
-      {
-        id: 'l36_t1',
-        path: '/multiplication/hard',
-        targetScore: 10,
-        label: 'Multiplication Marathon',
-        type: 'math',
-      },
       {
         id: 'l36_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l36_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
-    ],
-  },
-  {
-    id: 37,
-    title: 'Level 37: Division Legend',
-    tasks: [
-      {
-        id: 'l37_t1',
-        path: '/division/hard',
-        targetScore: 10,
-        label: 'Division Marathon',
-        type: 'math',
-      },
-      {
-        id: 'l37_t2',
-        path: '/gridMatch',
-        targetScore: 3,
-        label: 'Grid Legend',
-        type: 'game',
-      },
-      {
-        id: 'l37_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 38,
-    title: 'Level 38: Ultimate Mental Math',
+    title: 'Level 38: Ultimate Word',
     tasks: [
-      {
-        id: 'l38_t1',
-        path: '/mental-math/hard',
-        targetScore: 10,
-        label: 'Mental Math Legend',
-        type: 'math',
-      },
       {
         id: 'l38_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l38_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 39,
-    title: 'Level 39: Grand Finale Quiz',
+    title: 'Level 39: Grand Finale',
     tasks: [
-      {
-        id: 'l39_t1',
-        path: '/gridMatch',
-        targetScore: 3,
-        label: 'Grid Master Challenge',
-        type: 'game',
-      },
       {
         id: 'l39_t2',
         path: '/english-words',
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l39_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 9,
-        label: 'Smart Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 40,
-    title: 'Level 40: Speed Addition',
-    tasks: [
-      {
-        id: 'l40_t1',
-        path: '/addition/hard',
-        targetScore: 10,
-        label: 'Speed Addition',
-        type: 'math',
-      },
-      {
-        id: 'l40_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l40_t3',
-        path: '/memory-match',
-        targetScore: 5,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 41,
-    title: 'Level 41: Speed Subtraction',
+    title: 'Level 41: Speed Word',
     tasks: [
-      {
-        id: 'l41_t1',
-        path: '/subtraction/hard',
-        targetScore: 10,
-        label: 'Speed Subtraction',
-        type: 'math',
-      },
       {
         id: 'l41_t2',
         path: '/wordsearch/hard',
@@ -1105,61 +416,20 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 4,
         label: 'Spell Words',
         type: 'english',
-      },
+      }
     ],
   },
   {
     id: 42,
-    title: 'Level 42: Multiplication Legend',
+    title: 'Level 42: Word Legend',
     tasks: [
-      {
-        id: 'l42_t1',
-        path: '/multiplication/hard',
-        targetScore: 10,
-        label: 'Speed Multiplication',
-        type: 'math',
-      },
       {
         id: 'l42_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l42_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 43,
-    title: 'Level 43: Division Grand Master',
-    tasks: [
-      {
-        id: 'l43_t1',
-        path: '/division/hard',
-        targetScore: 10,
-        label: 'Speed Division',
-        type: 'math',
-      },
-      {
-        id: 'l43_t2',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Sudoku Grand Master',
-        type: 'math',
-      },
-      {
-        id: 'l43_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -1167,80 +437,25 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 44: Reading Legend',
     tasks: [
       {
-        id: 'l44_t1',
-        path: '/gridMatch',
-        targetScore: 3,
-        label: 'Grid Grand Master',
-        type: 'game',
-      },
-      {
         id: 'l44_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l44_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 45,
-    title: 'Level 45: Mental Math Grand Master',
+    title: 'Level 45: Word Grand Master',
     tasks: [
-      {
-        id: 'l45_t1',
-        path: '/mental-math/hard',
-        targetScore: 10,
-        label: 'Mental Math Grand Master',
-        type: 'math',
-      },
       {
         id: 'l45_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l45_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 12,
-        label: 'Smart Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 46,
-    title: 'Level 46: Logic Grand Master',
-    tasks: [
-      {
-        id: 'l46_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Ultimate Sudoku',
-        type: 'math',
-      },
-      {
-        id: 'l46_t2',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-      {
-        id: 'l46_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1248,26 +463,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 47: All-Rounder Legend',
     tasks: [
       {
-        id: 'l47_t1',
-        path: '/mental-math/hard',
-        targetScore: 10,
-        label: 'Ultimate Quick Math',
-        type: 'math',
-      },
-      {
         id: 'l47_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l47_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1275,107 +476,38 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 48: Grand Master Final',
     tasks: [
       {
-        id: 'l48_t1',
-        path: '/mental-math/hard',
-        targetScore: 20,
-        label: 'The Ultimate Math Challenge',
-        type: 'math',
-      },
-      {
         id: 'l48_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l48_t3',
-        path: '/memory-match',
-        targetScore: 5,
-        label: 'Memory Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 49,
-    title: 'Level 49: Space Counting',
-    tasks: [
-      {
-        id: 'l49_t1',
-        path: '/counting',
-        targetScore: 15,
-        label: 'Star Counting',
-        type: 'math',
-      },
-      {
-        id: 'l49_t2',
-        path: '/memory-match',
-        targetScore: 5,
-        label: 'Memory Match',
-        type: 'game',
-      },
-      {
-        id: 'l49_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 50,
-    title: 'Level 50: Alien Addition',
+    title: 'Level 50: Alien Words',
     tasks: [
-      {
-        id: 'l50_t1',
-        path: '/addition/hard',
-        targetScore: 12,
-        label: 'Cosmic Add',
-        type: 'math',
-      },
       {
         id: 'l50_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l50_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 51,
-    title: 'Level 51: Nebula Numbers',
+    title: 'Level 51: Nebula Words',
     tasks: [
-      {
-        id: 'l51_t1',
-        path: '/comparison/hard',
-        targetScore: 12,
-        label: 'Size of Stars',
-        type: 'math',
-      },
       {
         id: 'l51_t2',
         path: '/english-words',
         targetScore: 5,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l51_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 14,
-        label: 'Smart Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1388,48 +520,20 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 6,
         label: 'Planet Words',
         type: 'english',
-      },
-      {
-        id: 'l52_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l52_t3',
-        path: '/memory-match',
-        targetScore: 6,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 53,
-    title: 'Level 53: Comet Subtraction',
+    title: 'Level 53: Comet Words',
     tasks: [
-      {
-        id: 'l53_t1',
-        path: '/subtraction/hard',
-        targetScore: 12,
-        label: 'Comet Minus',
-        type: 'math',
-      },
       {
         id: 'l53_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l53_t3',
-        path: '/memory-match',
-        targetScore: 6,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1437,80 +541,25 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 54: Orbit Order',
     tasks: [
       {
-        id: 'l54_t1',
-        path: '/ascending/hard',
-        targetScore: 12,
-        label: 'Planet Order',
-        type: 'math',
-      },
-      {
         id: 'l54_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l54_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 55,
-    title: 'Level 55: Moon Multiples',
-    tasks: [
-      {
-        id: 'l55_t1',
-        path: '/multiplication/medium',
-        targetScore: 10,
-        label: 'Moon Multiply',
-        type: 'math',
-      },
-      {
-        id: 'l55_t2',
-        path: '/mental-math/medium',
-        targetScore: 10,
-        label: 'Moon Math',
-        type: 'math',
-      },
-      {
-        id: 'l55_t3',
-        path: '/memory-match',
-        targetScore: 6,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 56,
-    title: 'Level 56: Satellite Sudoku',
+    title: 'Level 56: Satellite Word',
     tasks: [
-      {
-        id: 'l56_t1',
-        path: '/sudoku/medium',
-        targetScore: 1,
-        label: 'Satellite Logic',
-        type: 'math',
-      },
       {
         id: 'l56_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l56_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1518,53 +567,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 57: Rocket Reading',
     tasks: [
       {
-        id: 'l57_t1',
-        path: '/gridMatch',
-        targetScore: 3,
-        label: 'Rocket Grid',
-        type: 'game',
-      },
-      {
         id: 'l57_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l57_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
-    ],
-  },
-  {
-    id: 58,
-    title: 'Level 58: Galaxy Quiz',
-    tasks: [
-      {
-        id: 'l58_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Sudoku Challenge',
-        type: 'math',
-      },
-      {
-        id: 'l58_t2',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
-      {
-        id: 'l58_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1572,53 +580,25 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 59: Coral Counting',
     tasks: [
       {
-        id: 'l59_t1',
-        path: '/counting',
-        targetScore: 20,
-        label: 'Fish Count',
-        type: 'math',
-      },
-      {
         id: 'l59_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l59_t3',
-        path: '/memory-match',
-        targetScore: 6,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 60,
-    title: 'Level 60: Abyss Addition',
+    title: 'Level 60: Abyss Words',
     tasks: [
-      {
-        id: 'l60_t1',
-        path: '/addition/hard',
-        targetScore: 15,
-        label: 'Deep Add',
-        type: 'math',
-      },
       {
         id: 'l60_t2',
         path: '/english-words',
         targetScore: 6,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l60_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1631,21 +611,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 7,
         label: 'Ocean Words',
         type: 'english',
-      },
-      {
-        id: 'l61_t2',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l61_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -1653,93 +619,31 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 62: Whale Weight',
     tasks: [
       {
-        id: 'l62_t1',
-        path: '/comparison/hard',
-        targetScore: 15,
-        label: 'Compare Whales',
-        type: 'math',
-      },
-      {
         id: 'l62_t2',
         path: '/english-words',
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l62_t3',
-        path: '/memory-match',
-        targetScore: 7,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 63,
-    title: 'Level 63: Shark Subtraction',
+    title: 'Level 63: Shark Words',
     tasks: [
-      {
-        id: 'l63_t1',
-        path: '/subtraction/hard',
-        targetScore: 15,
-        label: 'Shark Minus',
-        type: 'math',
-      },
       {
         id: 'l63_t2',
         path: '/english-words',
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l63_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 64,
-    title: 'Level 64: Tide Tasks',
-    tasks: [
-      {
-        id: 'l64_t1',
-        path: '/multiplication/hard',
-        targetScore: 15,
-        label: 'Tide Multi',
-        type: 'math',
-      },
-      {
-        id: 'l64_t2',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-      {
-        id: 'l64_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 65,
-    title: 'Level 65: Dolphin Division',
+    title: 'Level 65: Dolphin Word',
     tasks: [
-      {
-        id: 'l65_t1',
-        path: '/division/hard',
-        targetScore: 12,
-        label: 'Dolphin Divide',
-        type: 'math',
-      },
       {
         id: 'l65_t2',
         path: '/wordsearch/hard',
@@ -1753,7 +657,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
+      }
     ],
   },
   {
@@ -1761,53 +665,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 66: Mental Marine',
     tasks: [
       {
-        id: 'l66_t1',
-        path: '/mental-math/hard',
-        targetScore: 12,
-        label: 'Quick Waves',
-        type: 'math',
-      },
-      {
         id: 'l66_t2',
         path: '/english-words',
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l66_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 67,
-    title: 'Level 67: Submarine Stories',
-    tasks: [
-      {
-        id: 'l67_t1',
-        path: '/tictactoe',
-        targetScore: 3,
-        label: 'Captain TicTac',
-        type: 'game',
-      },
-      {
-        id: 'l67_t2',
-        path: '/star-pop/smart-match',
-        targetScore: 20,
-        label: 'Smart Match',
-        type: 'game',
-      },
-      {
-        id: 'l67_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
@@ -1815,26 +678,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 68: Ocean Master Quiz',
     tasks: [
       {
-        id: 'l68_t1',
-        path: '/mental-math/hard',
-        targetScore: 10,
-        label: 'Mental Math Challenge',
-        type: 'math',
-      },
-      {
         id: 'l68_t2',
         path: '/english-words',
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l68_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1842,53 +691,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 69: Leafy Logic',
     tasks: [
       {
-        id: 'l69_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Jungle Sudoku',
-        type: 'math',
-      },
-      {
         id: 'l69_t2',
         path: '/english-words',
         targetScore: 7,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l69_t3',
-        path: '/memory-match',
-        targetScore: 7,
-        label: 'Memory Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 70,
-    title: 'Level 70: Tiger Times',
-    tasks: [
-      {
-        id: 'l70_t1',
-        path: '/multiplication/hard',
-        targetScore: 12,
-        label: 'Tiger Multi',
-        type: 'math',
-      },
-      {
-        id: 'l70_t2',
-        path: '/coloring/cartoon',
-        targetScore: 1,
-        label: 'Cartoon Color',
-        type: 'creativity',
-      },
-      {
-        id: 'l70_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
     ],
   },
   {
@@ -1901,115 +709,40 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 8,
         label: 'Jungle Words',
         type: 'english',
-      },
-      {
-        id: 'l71_t2',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-      {
-        id: 'l71_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
     ],
   },
   {
     id: 72,
-    title: 'Level 72: Monkey Math',
+    title: 'Level 72: Monkey Words',
     tasks: [
-      {
-        id: 'l72_t1',
-        path: '/mental-math/hard',
-        targetScore: 15,
-        label: 'Quick Bananas',
-        type: 'math',
-      },
       {
         id: 'l72_t2',
         path: '/english-words',
         targetScore: 8,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l72_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-    ],
-  },
-  {
-    id: 73,
-    title: 'Level 73: Elephant Express',
-    tasks: [
-      {
-        id: 'l73_t1',
-        path: '/addition/hard',
-        targetScore: 20,
-        label: 'Heavy Add',
-        type: 'math',
-      },
-      {
-        id: 'l73_t2',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
-      {
-        id: 'l73_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 74,
-    title: 'Level 74: Snake Subtraction',
+    title: 'Level 74: Snake Words',
     tasks: [
-      {
-        id: 'l74_t1',
-        path: '/subtraction/hard',
-        targetScore: 20,
-        label: 'Long Minus',
-        type: 'math',
-      },
       {
         id: 'l74_t2',
         path: '/english-words',
         targetScore: 8,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l74_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
     ],
   },
   {
     id: 75,
     title: 'Level 75: Panther Problems',
     tasks: [
-      {
-        id: 'l75_t1',
-        path: '/division/hard',
-        targetScore: 15,
-        label: 'Night Divide',
-        type: 'math',
-      },
+      
       {
         id: 'l75_t2',
         path: '/wordsearch/hard',
@@ -2023,7 +756,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 8,
         label: 'Spell Words',
         type: 'english',
-      },
+      }
     ],
   },
   {
@@ -2031,26 +764,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 76: Canopy Counting',
     tasks: [
       {
-        id: 'l76_t1',
-        path: '/counting',
-        targetScore: 30,
-        label: 'Bird Count',
-        type: 'math',
-      },
-      {
-        id: 'l76_t2',
-        path: '/tictactoe',
-        targetScore: 4,
-        label: 'Monkey TicTac',
-        type: 'game',
-      },
-      {
-        id: 'l76_t3',
-        path: '/memory-match',
-        targetScore: 7,
-        label: 'Memory Match',
-        type: 'game',
-      },
+        id: 'default_alpha',
+        path: '/alphabets',
+        targetScore: 1,
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
@@ -2070,41 +789,23 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 8,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l77_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 78,
     title: 'Level 78: Pyramid Patterns',
     tasks: [
-      {
-        id: 'l78_t1',
-        path: '/ascending/hard',
-        targetScore: 15,
-        label: 'Steps of Stone',
-        type: 'math',
-      },
+      
       {
         id: 'l78_t2',
         path: '/english-words',
         targetScore: 8,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l78_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
+      
     ],
   },
   {
@@ -2117,75 +818,39 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 8,
         label: 'Ancient Words',
         type: 'english',
-      },
-      {
-        id: 'l79_t2',
-        path: '/coloring/cartoon',
-        targetScore: 1,
-        label: 'Cartoon Color',
-        type: 'creativity',
-      },
-      {
-        id: 'l79_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
+      
+      
     ],
   },
   {
     id: 80,
     title: 'Level 80: Desert Division',
     tasks: [
-      {
-        id: 'l80_t1',
-        path: '/division/hard',
-        targetScore: 20,
-        label: 'Sands of Math',
-        type: 'math',
-      },
+      
       {
         id: 'l80_t2',
         path: '/english-words',
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l80_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 81,
     title: 'Level 81: Mummy Math',
     tasks: [
-      {
-        id: 'l81_t1',
-        path: '/mental-math/hard',
-        targetScore: 20,
-        label: 'Fast Pharaoh',
-        type: 'math',
-      },
+      
       {
         id: 'l81_t2',
         path: '/english-words',
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l81_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 25,
-        label: 'Smart Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
@@ -2193,66 +858,34 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 82: Sphinx Speech',
     tasks: [
       {
-        id: 'l82_t1',
-        path: '/memory-match',
-        targetScore: 7,
-        label: 'Riddle Pairs',
-        type: 'game',
-      },
-      {
-        id: 'l82_t2',
-        path: '/tictactoe',
+        id: 'default_alpha',
+        path: '/alphabets',
         targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l82_t3',
-        path: '/memory-match',
-        targetScore: 8,
-        label: 'Memory Match',
-        type: 'game',
-      },
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
     id: 83,
     title: 'Level 83: Artifact Add',
     tasks: [
-      {
-        id: 'l83_t1',
-        path: '/addition/hard',
-        targetScore: 25,
-        label: 'Tomb Addition',
-        type: 'math',
-      },
+      
       {
         id: 'l83_t2',
         path: '/english-words',
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l83_t3',
-        path: '/memory-match',
-        targetScore: 8,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 84,
     title: 'Level 84: Nilotic Numbers',
     tasks: [
-      {
-        id: 'l84_t1',
-        path: '/comparison/hard',
-        targetScore: 25,
-        label: 'Scale of Nile',
-        type: 'math',
-      },
+      
       {
         id: 'l84_t2',
         path: '/wordsearch/hard',
@@ -2266,7 +899,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
+      }
     ],
   },
   {
@@ -2274,80 +907,42 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 85: Pharaoh Challenge',
     tasks: [
       {
-        id: 'l85_t1',
-        path: '/mental-math/hard',
-        targetScore: 25,
-        label: 'Pharaoh Math',
-        type: 'math',
-      },
-      {
-        id: 'l85_t2',
-        path: '/gridMatch',
+        id: 'default_alpha',
+        path: '/alphabets',
         targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
-      {
-        id: 'l85_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
     id: 86,
     title: 'Level 86: Master of Temple Quiz',
     tasks: [
-      {
-        id: 'l86_t1',
-        path: '/tictactoe',
-        targetScore: 5,
-        label: 'High Priest TicTac',
-        type: 'game',
-      },
+      
       {
         id: 'l86_t2',
         path: '/english-words',
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l86_t3',
-        path: '/star-pop/spin-wheel',
-        targetScore: 1,
-        label: 'Spingo',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 87,
     title: 'Level 87: The Legend Begins',
     tasks: [
-      {
-        id: 'l87_t1',
-        path: '/addition/hard',
-        targetScore: 30,
-        label: 'Infinite Add',
-        type: 'math',
-      },
+      
       {
         id: 'l87_t2',
         path: '/english-words',
         targetScore: 9,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l87_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 30,
-        label: 'Smart Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
@@ -2360,75 +955,39 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 9,
         label: 'Grand Vocab',
         type: 'english',
-      },
-      {
-        id: 'l88_t2',
-        path: '/star-pop/smart-match',
-        targetScore: 35,
-        label: 'Smart Match',
-        type: 'game',
-      },
-      {
-        id: 'l88_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
+      
+      
     ],
   },
   {
     id: 89,
     title: 'Level 89: Logic Overlord',
     tasks: [
-      {
-        id: 'l89_t1',
-        path: '/sudoku/hard',
-        targetScore: 1,
-        label: 'Overlord Sudoku',
-        type: 'math',
-      },
+      
       {
         id: 'l89_t2',
         path: '/english-words',
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l89_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 90,
     title: 'Level 90: Speed Demon',
     tasks: [
-      {
-        id: 'l90_t1',
-        path: '/mental-math/hard',
-        targetScore: 30,
-        label: 'Sonic Math',
-        type: 'math',
-      },
+      
       {
         id: 'l90_t2',
         path: '/english-words',
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l90_t3',
-        path: '/memory-match',
-        targetScore: 8,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
@@ -2436,53 +995,27 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 91: Artistic Genius',
     tasks: [
       {
-        id: 'l91_t1',
-        path: '/coloring/cartoon',
+        id: 'default_alpha',
+        path: '/alphabets',
         targetScore: 1,
-        label: 'Masterpiece',
-        type: 'creativity',
-      },
-      {
-        id: 'l91_t2',
-        path: '/memory-match',
-        targetScore: 9,
-        label: 'Memory Pro',
-        type: 'game',
-      },
-      {
-        id: 'l91_t3',
-        path: '/gridMatch',
-        targetScore: 1,
-        label: 'Grid Match',
-        type: 'game',
-      },
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
     id: 92,
     title: 'Level 92: Data Master',
     tasks: [
-      {
-        id: 'l92_t1',
-        path: '/comparison/hard',
-        targetScore: 30,
-        label: 'Absolute Scale',
-        type: 'math',
-      },
+      
       {
         id: 'l92_t2',
         path: '/english-words',
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l92_t3',
-        path: '/coloring/easy',
-        targetScore: 1,
-        label: 'Coloring Fun',
-        type: 'creativity',
-      },
+      }
+      
     ],
   },
   {
@@ -2495,21 +1028,9 @@ export const LEARNING_PATH_LEVELS: Level[] = [
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l93_t2',
-        path: '/memory-match',
-        targetScore: 9,
-        label: 'Flawless Memory',
-        type: 'game',
-      },
-      {
-        id: 'l93_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 40,
-        label: 'Smart Match',
-        type: 'game',
-      },
+      }
+      
+      
     ],
   },
   {
@@ -2517,107 +1038,57 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 94: Star Collector',
     tasks: [
       {
-        id: 'l94_t1',
-        path: '/gridMatch',
-        targetScore: 3,
-        label: 'Stellar Grid',
-        type: 'game',
-      },
-      {
-        id: 'l94_t2',
-        path: '/tictactoe',
+        id: 'default_alpha',
+        path: '/alphabets',
         targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
-      {
-        id: 'l94_t3',
-        path: '/memory-match',
-        targetScore: 9,
-        label: 'Memory Match',
-        type: 'game',
-      },
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
     id: 95,
     title: 'Level 95: Almost Legend',
     tasks: [
-      {
-        id: 'l95_t1',
-        path: '/mental-math/hard',
-        targetScore: 40,
-        label: 'Ultra Quick',
-        type: 'math',
-      },
+      
       {
         id: 'l95_t2',
         path: '/english-words',
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l95_t3',
-        path: '/memory-match',
-        targetScore: 9,
-        label: 'Memory Match',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 96,
     title: 'Level 96: The Ultimate Legend',
     tasks: [
-      {
-        id: 'l96_t1',
-        path: '/mental-math/hard',
-        targetScore: 50,
-        label: 'ULTIMATE MATH',
-        type: 'math',
-      },
+      
       {
         id: 'l96_t2',
         path: '/english-words',
         targetScore: 10,
         label: 'Spell Words',
         type: 'english',
-      },
-      {
-        id: 'l96_t3',
-        path: '/tictactoe',
-        targetScore: 1,
-        label: 'Tic-Tac-Toe',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 97,
     title: 'Level 97: Master of the Multiverse',
     tasks: [
-      {
-        id: 'l97_t1',
-        path: '/multiplication/hard',
-        targetScore: 20,
-        label: 'Multiverse Multiply',
-        type: 'math',
-      },
+      
       {
         id: 'l97_t2',
         path: '/english-words',
         targetScore: 11,
         label: 'Cosmic Vocabulary',
         type: 'english',
-      },
-      {
-        id: 'l97_t3',
-        path: '/memory-match',
-        targetScore: 10,
-        label: 'Dimensional Memory',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
@@ -2625,80 +1096,42 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 98: Quantum Quiz',
     tasks: [
       {
-        id: 'l98_t1',
-        path: '/sudoku/hard',
-        targetScore: 2,
-        label: 'Quantum Sudoku',
-        type: 'math',
-      },
-      {
-        id: 'l98_t2',
-        path: '/division/hard',
-        targetScore: 25,
-        label: 'Atomic Division',
-        type: 'math',
-      },
-      {
-        id: 'l98_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 45,
-        label: 'Particle Match',
-        type: 'game',
-      },
+        id: 'default_alpha',
+        path: '/alphabets',
+        targetScore: 1,
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
   },
   {
     id: 99,
     title: 'Level 99: Galactic Governor',
     tasks: [
-      {
-        id: 'l99_t1',
-        path: '/mental-math/hard',
-        targetScore: 60,
-        label: 'Governor\'s Math',
-        type: 'math',
-      },
+      
       {
         id: 'l99_t2',
         path: '/wordsearch/hard',
         targetScore: 5,
         label: 'Galactic Search',
         type: 'english',
-      },
-      {
-        id: 'l99_t3',
-        path: '/gridMatch',
-        targetScore: 4,
-        label: 'Command Grid',
-        type: 'game',
-      },
+      }
+      
     ],
   },
   {
     id: 100,
     title: 'Level 100: The Century Challenge',
     tasks: [
-      {
-        id: 'l100_t1',
-        path: '/addition/hard',
-        targetScore: 50,
-        label: 'Century Addition',
-        type: 'math',
-      },
-      {
-        id: 'l100_t2',
-        path: '/subtraction/hard',
-        targetScore: 50,
-        label: 'Century Subtraction',
-        type: 'math',
-      },
+      
+      
       {
         id: 'l100_t3',
         path: '/english-words',
         targetScore: 15,
         label: 'Century Spelling',
         type: 'english',
-      },
+      }
     ],
   },
   {
@@ -2706,26 +1139,12 @@ export const LEARNING_PATH_LEVELS: Level[] = [
     title: 'Level 101: Beyond the Horizon',
     tasks: [
       {
-        id: 'l101_t1',
-        path: '/mental-math/hard',
-        targetScore: 75,
-        label: 'Horizon Math',
-        type: 'math',
-      },
-      {
-        id: 'l101_t2',
-        path: '/sudoku/hard',
-        targetScore: 3,
-        label: 'Infinite Sudoku',
-        type: 'math',
-      },
-      {
-        id: 'l101_t3',
-        path: '/star-pop/smart-match',
-        targetScore: 50,
-        label: 'Horizon Match',
-        type: 'game',
-      },
+        id: 'default_alpha',
+        path: '/alphabets',
+        targetScore: 1,
+        label: 'Learn Alphabets',
+        type: 'english',
+      }
     ],
-  },
+  }
 ];

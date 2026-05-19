@@ -12,12 +12,6 @@ function TracingSelection() {
       src: '/alphabet-tracing.png',
       title: t('home.subjects.alphabetTracing.title'),
     },
-    {
-      to: '/number-tracing',
-      label: t('home.subjects.numberTracing.label'),
-      src: '/number-tracing.png',
-      title: t('home.subjects.numberTracing.title'),
-    },
   ];
 
   return (
