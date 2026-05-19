@@ -1,0 +1,91 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// =============================================================================
+// SHOP PAGE
+// =============================================================================
+
+.shop-page {
+  display: flex;
+  justify-content: flex-start;
+
+  min-height: 100vh;
+  padding-top: 80px; // space for home button
+  overflow-y: auto;
+
+  background: linear-gradient(135deg, $color-links-bg-start 0%, $color-links-bg-end 100%);
+}
+
+// =============================================================================
+// LIST CONTAINER
+// =============================================================================
+
+.shop-list-container {
+  inline-size: 92%;
+  max-inline-size: 800px;
+  margin-inline: auto;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// =============================================================================
+// LINKS LIST
+// =============================================================================
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  inline-size: 100%;
+}
+
+// =============================================================================
+// LINK ITEM
+// =============================================================================
+
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+
+  background: $color-link-item-bg;
+  text-decoration: none;
+  box-shadow: 0 4px 6px $color-link-item-shadow;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+// =============================================================================
+// LINK CONTENT
+// =============================================================================
+
+.link-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.link-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link-label {
+  font-family: $font-family-primary;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: $color-link-label;
+}
