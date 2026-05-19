@@ -5,7 +5,7 @@
   "app": {
     "description": "Lihat aplikasi keren ini untuk belajar matematika, bermain puzzle, mewarnai, dan banyak lagi keseruan lainnya!",
     "pressBackToExit": "Tekan kembali lagi untuk keluar",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Kunci rotasi layar tidak tersedia di perangkat ini."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Buka alat kalkulator sederhana di Smart Kids Learning"
+        "title": "Buka alat kalkulator sederhana di Smart English Learning"
       },
       "shop": {
         "label": "Toko",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Cari Kata",
-        "title": "Mainkan permainan teka-teki cari kata di Smart Kids Learning"
+        "title": "Mainkan permainan teka-teki cari kata di Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Susun Kalimat",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Mainkan permainan Sudoku di Smart Kids Learning"
+        "title": "Mainkan permainan Sudoku di Smart English Learning"
       },
       "ticTacToe": {
         "label": "Tic Tac Toe",
-        "title": "Mainkan permainan Tic Tac Toe di Smart Kids Learning"
+        "title": "Mainkan permainan Tic Tac Toe di Smart English Learning"
       },
       "alphabets": {
         "label": "Abjad",
-        "title": "Pelajari abjad Inggris dengan sintesis suara di Smart Kids Learning"
+        "title": "Pelajari abjad Inggris dengan sintesis suara di Smart English Learning"
       },
       "addition": {
         "label": "Tambah",
-        "title": "Latih soal penjumlahan dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal penjumlahan dengan latihan interaktif di Smart English Learning"
       },
       "subtraction": {
         "label": "Kurang",
-        "title": "Latih soal pengurangan dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal pengurangan dengan latihan interaktif di Smart English Learning"
       },
       "multiplication": {
         "label": "Kali",
-        "title": "Latih soal perkalian dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal perkalian dengan latihan interaktif di Smart English Learning"
       },
       "division": {
         "label": "Bagi",
-        "title": "Latih soal pembagian dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal pembagian dengan latihan interaktif di Smart English Learning"
       },
       "comparison": {
         "label": "Perbandingan",
-        "title": "Latih soal perbandingan dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal perbandingan dengan latihan interaktif di Smart English Learning"
       },
       "ascending": {
         "label": "Urutan Naik",
-        "title": "Latih soal urutan naik dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal urutan naik dengan latihan interaktif di Smart English Learning"
       },
       "descending": {
         "label": "Urutan Turun",
-        "title": "Latih soal urutan turun dengan latihan interaktif di Smart Kids Learning"
+        "title": "Latih soal urutan turun dengan latihan interaktif di Smart English Learning"
       },
       "counting": {
         "label": "Berhitung",
-        "title": "Belajar berhitung dengan latihan seru di Smart Kids Learning"
+        "title": "Belajar berhitung dengan latihan seru di Smart English Learning"
       },
       "numberTracing": {
         "label": "Angka",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Eja Kata",
-        "title": "Pelajari kata-kata bahasa Inggris dengan gambar di Smart Kids Learning"
+        "title": "Pelajari kata-kata bahasa Inggris dengan gambar di Smart English Learning"
       },
       "paintBrush": {
         "label": "Kuas Cat",
-        "title": "Gambar dan lukis dengan permainan kuas cat di Smart Kids Learning"
+        "title": "Gambar dan lukis dengan permainan kuas cat di Smart English Learning"
       },
       "gridMatch": {
         "label": "Cocokkan Kisi",
@@ -626,10 +626,10 @@
       "failedToLoad": "Gagal memuat gambar watermark"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Gagal menyimpan PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "PDF Smart Kids Learning terlampir.",
+      "shareText": "PDF Smart English Learning terlampir.",
       "sharingFailed": "Berbagi gagal: ",
       "downloadedMessage": "PDF telah diunduh.",
       "downloadNotSupported": "Unduhan tidak didukung",
@@ -746,7 +746,7 @@
     "item2": "Little Readers 20 Teks Menarik untuk Kelas 1 Set A",
     "item3": "Little Readers 20 Teks Menarik untuk Kelas 1 Set B",
     "item4": "Little Readers 20 Teks Menarik untuk Kelas 1 Set C",
-    "item5": "Lembar Kerja Pembagian Smart Kids | 400 Halaman Latihan Matematika yang Dapat Dicetak"
+    "item5": "Lembar Kerja Pembagian Smart English | 400 Halaman Latihan Matematika yang Dapat Dicetak"
   },
   "successModal": {
     "rateUsPrompt": "Jika Anda menyukai aplikasi ini, pertimbangkan untuk memberi kami bintang 5 di Play Store!",
@@ -856,7 +856,7 @@
     "success": "Hebat! Kamu menelusurinya dengan sempurna!"
   },
   "welcomeScreen": {
-    "message": "Selamat datang di Smart Kids Learning!",
+    "message": "Selamat datang di Smart English Learning!",
     "playButton": "Mari Bermain!"
   },
   "words": {

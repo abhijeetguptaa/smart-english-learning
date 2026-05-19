@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Öffne ein einfaches Taschenrechner-Tool in Smart Kids Learning"
+        "title": "Öffne ein einfaches Taschenrechner-Tool in Smart English Learning"
       },
       "shop": {
         "label": "Shop",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Spiele ein Wortsuchrätsel in Smart Kids Learning"
+        "title": "Spiele ein Wortsuchrätsel in Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Satzspass",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Spiele ein Sudoku-Rätsel in Smart Kids Learning"
+        "title": "Spiele ein Sudoku-Rätsel in Smart English Learning"
       },
       "ticTacToe": {
         "label": "TicTac",
-        "title": "Spiele Tic Tac Toe in Smart Kids Learning"
+        "title": "Spiele Tic Tac Toe in Smart English Learning"
       },
       "alphabets": {
         "label": "Alphabete",
-        "title": "Lerne das englische Alphabet mit Sprachausgabe in Smart Kids Learning"
+        "title": "Lerne das englische Alphabet mit Sprachausgabe in Smart English Learning"
       },
       "addition": {
         "label": "Plus",
-        "title": "Übe Additionsaufgaben mit interaktiven Übungen in Smart Kids Learning"
+        "title": "Übe Additionsaufgaben mit interaktiven Übungen in Smart English Learning"
       },
       "subtraction": {
         "label": "Minus",
-        "title": "Übe Subtraktionsaufgaben mit interaktiven Übungen in Smart Kids Learning"
+        "title": "Übe Subtraktionsaufgaben mit interaktiven Übungen in Smart English Learning"
       },
       "multiplication": {
         "label": "Mal",
-        "title": "Übe Multiplikationsaufgaben mit interaktiven Übungen in Smart Kids Learning"
+        "title": "Übe Multiplikationsaufgaben mit interaktiven Übungen in Smart English Learning"
       },
       "division": {
         "label": "Geteilt",
-        "title": "Übe Divisionsaufgaben mit interaktiven Übungen in Smart Kids Learning"
+        "title": "Übe Divisionsaufgaben mit interaktiven Übungen in Smart English Learning"
       },
       "comparison": {
         "label": "Vergleich",
-        "title": "Übe Vergleichsaufgaben mit interaktiven Übungen in Smart Kids Learning"
+        "title": "Übe Vergleichsaufgaben mit interaktiven Übungen in Smart English Learning"
       },
       "ascending": {
         "label": "UpFun",
-        "title": "Übe das Ordnen in aufsteigender Reihenfolge in Smart Kids Learning"
+        "title": "Übe das Ordnen in aufsteigender Reihenfolge in Smart English Learning"
       },
       "descending": {
         "label": "DownFun",
-        "title": "Übe das Ordnen in absteigender Reihenfolge in Smart Kids Learning"
+        "title": "Übe das Ordnen in absteigender Reihenfolge in Smart English Learning"
       },
       "counting": {
         "label": "Zahlen",
-        "title": "Lerne das Zählen mit lustigen Übungen in Smart Kids Learning"
+        "title": "Lerne das Zählen mit lustigen Übungen in Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Lerne englische Wörter mit Bildern in Smart Kids Learning"
+        "title": "Lerne englische Wörter mit Bildern in Smart English Learning"
       },
       "paintBrush": {
         "label": "Pinsel",
-        "title": "Zeichne und male mit einem Pinselspiel in Smart Kids Learning"
+        "title": "Zeichne und male mit einem Pinselspiel in Smart English Learning"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -629,7 +629,7 @@
       "title": "Smartes Lernen für Kinder - ",
       "failedToSave": "PDF konnte nicht gespeichert werden: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF im Anhang.",
+      "shareText": "Smart English Learning PDF im Anhang.",
       "sharingFailed": "Teilen fehlgeschlagen: ",
       "downloadedMessage": "PDF heruntergeladen.",
       "downloadNotSupported": "Herunterladen nicht unterstützt",
@@ -746,7 +746,7 @@
     "item2": "Little Readers 20 lustige Texte für Klasse 1 Set A",
     "item3": "Little Readers 20 lustige Texte für Klasse 1 Set B",
     "item4": "Little Readers 20 lustige Texte für Klasse 1 Set C",
-    "item5": "Smart Kids Divisions-Arbeitsblätter | 400 druckbare Mathe-Übungsseiten"
+    "item5": "Smart English Divisions-Arbeitsblätter | 400 druckbare Mathe-Übungsseiten"
   },
   "successModal": {
     "rateUsPrompt": "Wenn dir die App gefällt, bewerte uns bitte mit 5 Sternen im Play Store!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Willkommen bei Smart Kids Learning!",
+    "message": "Willkommen bei Smart English Learning!",
     "playButton": "Lass uns spielen!"
   },
   "words": {

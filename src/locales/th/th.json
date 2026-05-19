@@ -5,7 +5,7 @@
   "app": {
     "description": "พบกับแอปเจ๋งๆ สำหรับการเรียนคณิตศาสตร์ เล่นปริศนา ระบายสี และความสนุกอีกมากมาย!",
     "pressBackToExit": "กดกลับอีกครั้งเพื่อออก",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "การล็อกการหมุนหน้าจอไม่สามารถใช้งานได้บนอุปกรณ์นี้"
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "เปิดเครื่องคิดเลขอย่างง่ายใน Smart Kids Learning"
+        "title": "เปิดเครื่องคิดเลขอย่างง่ายใน Smart English Learning"
       },
       "shop": {
         "label": "ร้านค้า",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "ค้นหาคำ",
-        "title": "เล่นเกมปริศนาค้นหาคำใน Smart Kids Learning"
+        "title": "เล่นเกมปริศนาค้นหาคำใน Smart English Learning"
       },
       "sentenceScramble": {
         "label": "สนุกกับประโยค",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "ซูโดกุ",
-        "title": "เล่นเกมซูโดกุใน Smart Kids Learning"
+        "title": "เล่นเกมซูโดกุใน Smart English Learning"
       },
       "ticTacToe": {
         "label": "โอเอ็กซ์",
-        "title": "เล่นเกมโอเอ็กซ์ใน Smart Kids Learning"
+        "title": "เล่นเกมโอเอ็กซ์ใน Smart English Learning"
       },
       "alphabets": {
         "label": "ตัวอักษร",
-        "title": "เรียนรู้ตัวอักษรภาษาอังกฤษพร้อมเสียงอ่านใน Smart Kids Learning"
+        "title": "เรียนรู้ตัวอักษรภาษาอังกฤษพร้อมเสียงอ่านใน Smart English Learning"
       },
       "addition": {
         "label": "การบวก",
-        "title": "ฝึกโจทย์การบวกด้วยแบบฝึกหัดโต้ตอบใน Smart Kids Learning"
+        "title": "ฝึกโจทย์การบวกด้วยแบบฝึกหัดโต้ตอบใน Smart English Learning"
       },
       "subtraction": {
         "label": "การลบ",
-        "title": "ฝึกโจทย์การลบด้วยแบบฝึกหัดโต้ตอบใน Smart Kids Learning"
+        "title": "ฝึกโจทย์การลบด้วยแบบฝึกหัดโต้ตอบใน Smart English Learning"
       },
       "multiplication": {
         "label": "การคูณ",
-        "title": "ฝึกโจทย์การคูณด้วยแบบฝึกหัดโต้ตอบใน Smart Kids Learning"
+        "title": "ฝึกโจทย์การคูณด้วยแบบฝึกหัดโต้ตอบใน Smart English Learning"
       },
       "division": {
         "label": "การหาร",
-        "title": "ฝึกโจทย์การหารด้วยแบบฝึกหัดโต้ตอบใน Smart Kids Learning"
+        "title": "ฝึกโจทย์การหารด้วยแบบฝึกหัดโต้ตอบใน Smart English Learning"
       },
       "comparison": {
         "label": "การเปรียบเทียบ",
-        "title": "ฝึกโจทย์การเปรียบเทียบด้วยแบบฝึกหัดโต้ตอบใน Smart Kids Learning"
+        "title": "ฝึกโจทย์การเปรียบเทียบด้วยแบบฝึกหัดโต้ตอบใน Smart English Learning"
       },
       "ascending": {
         "label": "เรียงจากน้อยไปมาก",
-        "title": "ฝึกการเรียงลำดับจากน้อยไปมากใน Smart Kids Learning"
+        "title": "ฝึกการเรียงลำดับจากน้อยไปมากใน Smart English Learning"
       },
       "descending": {
         "label": "เรียงจากมากไปน้อย",
-        "title": "ฝึกการเรียงลำดับจากมากไปน้อยใน Smart Kids Learning"
+        "title": "ฝึกการเรียงลำดับจากมากไปน้อยใน Smart English Learning"
       },
       "counting": {
         "label": "การนับ",
-        "title": "เรียนรู้การนับเลขด้วยแบบฝึกหัดสนุกๆ ใน Smart Kids Learning"
+        "title": "เรียนรู้การนับเลขด้วยแบบฝึกหัดสนุกๆ ใน Smart English Learning"
       },
       "numberTracing": {
         "label": "ตัวเลข",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "สะกดคำ",
-        "title": "เรียนรู้คำศัพท์ภาษาอังกฤษพร้อมรูปภาพใน Smart Kids Learning"
+        "title": "เรียนรู้คำศัพท์ภาษาอังกฤษพร้อมรูปภาพใน Smart English Learning"
       },
       "paintBrush": {
         "label": "พู่กัน",
-        "title": "วาดภาพและระบายสีด้วยเกมพู่กันใน Smart Kids Learning"
+        "title": "วาดภาพและระบายสีด้วยเกมพู่กันใน Smart English Learning"
       },
       "gridMatch": {
         "label": "จับคู่ตาราง",
@@ -626,10 +626,10 @@
       "failedToLoad": "โหลดรูปภาพลายน้ำไม่สำเร็จ"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "บันทึก PDF ไม่สำเร็จ: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "แนบไฟล์ PDF จาก Smart Kids Learning",
+      "shareText": "แนบไฟล์ PDF จาก Smart English Learning",
       "sharingFailed": "การแชร์ล้มเหลว: ",
       "downloadedMessage": "ดาวน์โหลด PDF เรียบร้อยแล้ว",
       "downloadNotSupported": "ไม่รองรับการดาวน์โหลด",
@@ -746,7 +746,7 @@
     "item2": "Little Readers: บทอ่านภาษาอังกฤษ 20 เรื่องสำหรับ ป.1 ชุด A",
     "item3": "Little Readers: บทอ่านภาษาอังกฤษ 20 เรื่องสำหรับ ป.1 ชุด B",
     "item4": "Little Readers: บทอ่านภาษาอังกฤษ 20 เรื่องสำหรับ ป.1 ชุด C",
-    "item5": "ใบงานการหาร Smart Kids | แบบฝึกหัดคณิตศาสตร์ 400 หน้าสำหรับพิมพ์"
+    "item5": "ใบงานการหาร Smart English | แบบฝึกหัดคณิตศาสตร์ 400 หน้าสำหรับพิมพ์"
   },
   "successModal": {
     "rateUsPrompt": "หากคุณชอบแอปนี้ โปรดให้คะแนนเรา 5 ดาวใน Play Store!",
@@ -856,7 +856,7 @@
     "success": "มหัศจรรย์! คุณลากเส้นได้อย่างสมบูรณ์แบบ!"
   },
   "welcomeScreen": {
-    "message": "ยินดีต้อนรับสู่ Smart Kids Learning!",
+    "message": "ยินดีต้อนรับสู่ Smart English Learning!",
     "playButton": "มาเล่นกันเลย!"
   },
   "words": {

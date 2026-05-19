@@ -626,7 +626,7 @@
       "failedToLoad": "Watermerkafbeelding kon niet worden geladen"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Opslaan van PDF mislukt: ",
       "shareTitle": "$t(app.title)",
       "shareText": "PDF van Slim Leren voor Kinderen toegevoegd.",
@@ -746,7 +746,7 @@
     "item2": "Little Readers 20 Fun Unseen Passages for Class 1 Set A",
     "item3": "Little Readers 20 Fun Unseen Passages for Class 1 Set B",
     "item4": "Little Readers 20 Fun Unseen Passages for Class 1 Set C",
-    "item5": "Smart Kids Deelsommen Werkbladen | 400 Printbare Wiskunde Oefenpagina's"
+    "item5": "Smart English Deelsommen Werkbladen | 400 Printbare Wiskunde Oefenpagina's"
   },
   "successModal": {
     "rateUsPrompt": "Als je de app leuk vindt, geef ons dan 5 sterren in de Play Store!",

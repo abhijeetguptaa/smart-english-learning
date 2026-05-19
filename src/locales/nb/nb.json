@@ -5,7 +5,7 @@
   "app": {
     "description": "Sjekk ut denne kule appen for å lære matematikk, legge puslespill, fargelegge og mye mer moro!",
     "pressBackToExit": "Trykk på tilbake igjen for å avslutte",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Skjermrotasjonslås er ikke tilgjengelig på denne enheten."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Åpne en enkel kalkulator i Smart Kids Learning"
+        "title": "Åpne en enkel kalkulator i Smart English Learning"
       },
       "shop": {
         "label": "Shop",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Ordsøk",
-        "title": "Spill ordsøk-puslespill i Smart Kids Learning"
+        "title": "Spill ordsøk-puslespill i Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Setningslek",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Play a Sudoku puzzle game in Smart Kids Learning"
+        "title": "Play a Sudoku puzzle game in Smart English Learning"
       },
       "ticTacToe": {
         "label": "Tre på rad",
-        "title": "Spill tre på rad i Smart Kids Learning"
+        "title": "Spill tre på rad i Smart English Learning"
       },
       "alphabets": {
         "label": "Alphabets",
-        "title": "Lær det engelske alfabetet med talesyntese i Smart Kids Learning"
+        "title": "Lær det engelske alfabetet med talesyntese i Smart English Learning"
       },
       "addition": {
         "label": "Add",
-        "title": "Øv på addisjon med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv på addisjon med interaktive øvelser i Smart English Learning"
       },
       "subtraction": {
         "label": "Minus",
-        "title": "Øv på subtraksjon med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv på subtraksjon med interaktive øvelser i Smart English Learning"
       },
       "multiplication": {
         "label": "Multiply",
-        "title": "Øv på multiplikasjon med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv på multiplikasjon med interaktive øvelser i Smart English Learning"
       },
       "division": {
         "label": "Divide",
-        "title": "Øv på divisjon med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv på divisjon med interaktive øvelser i Smart English Learning"
       },
       "comparison": {
         "label": "Compare",
-        "title": "Øv på sammenligning med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv på sammenligning med interaktive øvelser i Smart English Learning"
       },
       "ascending": {
         "label": "Stigende rekkefølge",
-        "title": "Øv på stigende rekkefølge i Smart Kids Learning"
+        "title": "Øv på stigende rekkefølge i Smart English Learning"
       },
       "descending": {
         "label": "Synkende rekkefølge",
-        "title": "Øv på synkende rekkefølge i Smart Kids Learning"
+        "title": "Øv på synkende rekkefølge i Smart English Learning"
       },
       "counting": {
         "label": "Counting",
-        "title": "Lær å telle med morsomme øvelser i Smart Kids Learning"
+        "title": "Lær å telle med morsomme øvelser i Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Lær engelske ord med bilder i Smart Kids Learning"
+        "title": "Lær engelske ord med bilder i Smart English Learning"
       },
       "paintBrush": {
         "label": "Paint Brush",
-        "title": "Draw and paint with a paint brush game in Smart Kids Learning"
+        "title": "Draw and paint with a paint brush game in Smart English Learning"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -626,10 +626,10 @@
       "failedToLoad": "Failed to load watermark image"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Failed to save PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF attached.",
+      "shareText": "Smart English Learning PDF attached.",
       "sharingFailed": "Sharing failed: ",
       "downloadedMessage": "PDF downloaded.",
       "downloadNotSupported": "Nedlasting støttes ikke",
@@ -746,7 +746,7 @@
     "item2": "Små lesere: 20 morsomme ukjente tekster for 1. klasse, sett A",
     "item3": "Små lesere: 20 morsomme ukjente tekster for 1. klasse, sett B",
     "item4": "Små lesere: 20 morsomme ukjente tekster for 1. klasse, sett C",
-    "item5": "Smart Kids divisjonsark | 400 sider med matematikkøvelser for utskrift"
+    "item5": "Smart English divisjonsark | 400 sider med matematikkøvelser for utskrift"
   },
   "successModal": {
     "rateUsPrompt": "Hvis du liker appen, vurder å gi oss 5 stjerner i Play Store!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Welcome to Smart Kids Learning!",
+    "message": "Welcome to Smart English Learning!",
     "playButton": "Let's Play!"
   },
   "words": {

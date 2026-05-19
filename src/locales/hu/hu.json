@@ -5,7 +5,7 @@
   "app": {
     "description": "Nézd meg ezt a szuper alkalmazást a matematika tanulásához, rejtvényekhez, színezéshez és még sok más mókához!",
     "pressBackToExit": "Nyomja meg újra a vissza gombot a kilépéshez",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "A képernyőforgatás zárolása nem érhető el ezen az eszközön."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Nyisd meg az egyszerű számológépet a Smart Kids Learningben"
+        "title": "Nyisd meg az egyszerű számológépet a Smart English Learningben"
       },
       "shop": {
         "label": "Bolt",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Szókereső",
-        "title": "Játssz szókereső játékot a Smart Kids Learningben"
+        "title": "Játssz szókereső játékot a Smart English Learningben"
       },
       "sentenceScramble": {
         "label": "Mondatjáték",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Játssz Sudokut a Smart Kids Learningben"
+        "title": "Játssz Sudokut a Smart English Learningben"
       },
       "ticTacToe": {
         "label": "Amőba",
-        "title": "Játssz Amőbát a Smart Kids Learningben"
+        "title": "Játssz Amőbát a Smart English Learningben"
       },
       "alphabets": {
         "label": "Ábécé",
-        "title": "Tanuld meg az angol ábécét beszédszintézissel a Smart Kids Learningben"
+        "title": "Tanuld meg az angol ábécét beszédszintézissel a Smart English Learningben"
       },
       "addition": {
         "label": "Összeadás",
-        "title": "Gyakorold az összeadást interaktív feladatokkal a Smart Kids Learningben"
+        "title": "Gyakorold az összeadást interaktív feladatokkal a Smart English Learningben"
       },
       "subtraction": {
         "label": "Kivonás",
-        "title": "Gyakorold a kivonást interaktív feladatokkal a Smart Kids Learningben"
+        "title": "Gyakorold a kivonást interaktív feladatokkal a Smart English Learningben"
       },
       "multiplication": {
         "label": "Szorzás",
-        "title": "Gyakorold a szorzást interaktív feladatokkal a Smart Kids Learningben"
+        "title": "Gyakorold a szorzást interaktív feladatokkal a Smart English Learningben"
       },
       "division": {
         "label": "Osztás",
-        "title": "Gyakorold az osztást interaktív feladatokkal a Smart Kids Learningben"
+        "title": "Gyakorold az osztást interaktív feladatokkal a Smart English Learningben"
       },
       "comparison": {
         "label": "Összehasonlítás",
-        "title": "Gyakorold az összehasonlítást interaktív feladatokkal a Smart Kids Learningben"
+        "title": "Gyakorold az összehasonlítást interaktív feladatokkal a Smart English Learningben"
       },
       "ascending": {
         "label": "Növekvő",
-        "title": "Gyakorold a növekvő sorrendet a Smart Kids Learningben"
+        "title": "Gyakorold a növekvő sorrendet a Smart English Learningben"
       },
       "descending": {
         "label": "Csökkenő",
-        "title": "Gyakorold a csökkenő sorrendet a Smart Kids Learningben"
+        "title": "Gyakorold a csökkenő sorrendet a Smart English Learningben"
       },
       "counting": {
         "label": "Számolás",
-        "title": "Tanulj meg számolni szórakoztató feladatokkal a Smart Kids Learningben"
+        "title": "Tanulj meg számolni szórakoztató feladatokkal a Smart English Learningben"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Betűzés",
-        "title": "Tanulj angol szavakat képekkel a Smart Kids Learningben"
+        "title": "Tanulj angol szavakat képekkel a Smart English Learningben"
       },
       "paintBrush": {
         "label": "Ecset",
-        "title": "Rajzolj és fess az ecset játékkal a Smart Kids Learningben"
+        "title": "Rajzolj és fess az ecset játékkal a Smart English Learningben"
       },
       "gridMatch": {
         "label": "Rács párosító",
@@ -626,10 +626,10 @@
       "failedToLoad": "A vízjel kép betöltése sikertelen"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "PDF mentése sikertelen: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF csatolva.",
+      "shareText": "Smart English Learning PDF csatolva.",
       "sharingFailed": "Megosztás sikertelen: ",
       "downloadedMessage": "PDF letöltve.",
       "downloadNotSupported": "A letöltés nem támogatott",
@@ -746,7 +746,7 @@
     "item2": "Kis olvasók: 20 szórakoztató ismeretlen szöveg 1. osztálynak, A készlet",
     "item3": "Kis olvasók: 20 szórakoztató ismeretlen szöveg 1. osztálynak, B készlet",
     "item4": "Kis olvasók: 20 szórakoztató ismeretlen szöveg 1. osztálynak, C készlet",
-    "item5": "Smart Kids osztás feladatlapok | 400 nyomtatható matematika gyakorló oldal"
+    "item5": "Smart English osztás feladatlapok | 400 nyomtatható matematika gyakorló oldal"
   },
   "successModal": {
     "rateUsPrompt": "Ha tetszik az alkalmazás, kérjük, értékelj minket 5 csillaggal a Play Áruházban!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Üdvözlünk a Smart Kids Learningben!",
+    "message": "Üdvözlünk a Smart English Learningben!",
     "playButton": "Gyerünk játszani!"
   },
   "words": {

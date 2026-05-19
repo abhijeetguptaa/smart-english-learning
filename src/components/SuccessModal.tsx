@@ -124,7 +124,7 @@ const SuccessModal = ({
   }, [showMistakes, parentalGateOpen, isClosing, animationData]);
 
   const handleRateUs = () => {
-    window.open('https://play.google.com/store/apps/details?id=com.abhijeet.kidsapp', '_blank');
+    window.open('https://play.google.com/store/apps/details?id=smart.english.learning', '_blank');
   };
 
   const runPendingAction = () => {

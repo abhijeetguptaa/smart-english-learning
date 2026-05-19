@@ -1,4 +1,4 @@
-package com.abhijeet.kidsapp;
+package smart.english.learning;
 
 import android.app.Activity;
 import android.app.Application;

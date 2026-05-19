@@ -5,7 +5,7 @@
   "app": {
     "description": "Scopri questa fantastica app per imparare la matematica, giocare ai puzzle, colorare e molto altro divertimento!",
     "pressBackToExit": "Premi di nuovo indietro per uscire",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Il blocco della rotazione dello schermo non è disponibile su questo dispositivo."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Apri un semplice strumento calcolatrice in Smart Kids Learning"
+        "title": "Apri un semplice strumento calcolatrice in Smart English Learning"
       },
       "shop": {
         "label": "Negozio",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Cerca Parole",
-        "title": "Gioca a un gioco di parole crociate in Smart Kids Learning"
+        "title": "Gioca a un gioco di parole crociate in Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Frasi divertenti",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Gioca a Sudoku in Smart Kids Learning"
+        "title": "Gioca a Sudoku in Smart English Learning"
       },
       "ticTacToe": {
         "label": "Tris",
-        "title": "Gioca a tris in Smart Kids Learning"
+        "title": "Gioca a tris in Smart English Learning"
       },
       "alphabets": {
         "label": "Alfabeti",
-        "title": "Impara l'alfabeto inglese con la sintesi vocale in Smart Kids Learning"
+        "title": "Impara l'alfabeto inglese con la sintesi vocale in Smart English Learning"
       },
       "addition": {
         "label": "Addizione",
-        "title": "Esercitati con le addizioni con esercizi interattivi in Smart Kids Learning"
+        "title": "Esercitati con le addizioni con esercizi interattivi in Smart English Learning"
       },
       "subtraction": {
         "label": "Sottrazione",
-        "title": "Esercitati con le sottrazioni con esercizi interattivi in Smart Kids Learning"
+        "title": "Esercitati con le sottrazioni con esercizi interattivi in Smart English Learning"
       },
       "multiplication": {
         "label": "Moltiplicazione",
-        "title": "Esercitati con le moltiplicazioni con esercizi interattivi in Smart Kids Learning"
+        "title": "Esercitati con le moltiplicazioni con esercizi interattivi in Smart English Learning"
       },
       "division": {
         "label": "Divisione",
-        "title": "Esercitati con le divisioni con esercizi interattivi in Smart Kids Learning"
+        "title": "Esercitati con le divisioni con esercizi interattivi in Smart English Learning"
       },
       "comparison": {
         "label": "Confronto",
-        "title": "Esercitati con i confronti con esercizi interattivi in Smart Kids Learning"
+        "title": "Esercitati con i confronti con esercizi interattivi in Smart English Learning"
       },
       "ascending": {
         "label": "Crescente",
-        "title": "Esercitati con l'ordine crescente in Smart Kids Learning"
+        "title": "Esercitati con l'ordine crescente in Smart English Learning"
       },
       "descending": {
         "label": "Decrescente",
-        "title": "Esercitati con l'ordine decrescente in Smart Kids Learning"
+        "title": "Esercitati con l'ordine decrescente in Smart English Learning"
       },
       "counting": {
         "label": "Conteggio",
-        "title": "Impara a contare con esercizi divertenti in Smart Kids Learning"
+        "title": "Impara a contare con esercizi divertenti in Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Spelling",
-        "title": "Impara le parole inglesi con le immagini in Smart Kids Learning"
+        "title": "Impara le parole inglesi con le immagini in Smart English Learning"
       },
       "paintBrush": {
         "label": "Pennello",
-        "title": "Disegna e dipingi con il gioco del pennello in Smart Kids Learning"
+        "title": "Disegna e dipingi con il gioco del pennello in Smart English Learning"
       },
       "gridMatch": {
         "label": "Abbina Griglia",
@@ -626,10 +626,10 @@
       "failedToLoad": "Impossibile caricare l'immagine della filigrana"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Impossibile salvare il PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "In allegato il PDF di Smart Kids Learning.",
+      "shareText": "In allegato il PDF di Smart English Learning.",
       "sharingFailed": "Condivisione fallita: ",
       "downloadedMessage": "PDF scaricato.",
       "downloadNotSupported": "Download non supportato",
@@ -746,7 +746,7 @@
     "item2": "Piccoli Lettori: 20 Brani divertenti per la 1ª Elementare, Set A",
     "item3": "Piccoli Lettori: 20 Brani divertenti per la 1ª Elementare, Set B",
     "item4": "Piccoli Lettori: 20 Brani divertenti per la 1ª Elementare, Set C",
-    "item5": "Schede di Divisione Smart Kids | 400 Pagine di Pratica Matematica Stampabili"
+    "item5": "Schede di Divisione Smart English | 400 Pagine di Pratica Matematica Stampabili"
   },
   "successModal": {
     "rateUsPrompt": "Se ti piace l'app, per favore valuta con 5 stelle sul Play Store!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Benvenuti in Smart Kids Learning!",
+    "message": "Benvenuti in Smart English Learning!",
     "playButton": "Giochiamo!"
   },
   "words": {

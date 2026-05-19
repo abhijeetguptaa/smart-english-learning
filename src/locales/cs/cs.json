@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Otevřete jednoduchý nástroj kalkulačky v Smart Kids Learning"
+        "title": "Otevřete jednoduchý nástroj kalkulačky v Smart English Learning"
       },
       "shop": {
         "label": "Obchod",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Zahrajte si hru na hledání slov v Smart Kids Learning"
+        "title": "Zahrajte si hru na hledání slov v Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Větná zábava",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Zahrajte si Sudoku v Smart Kids Learning"
+        "title": "Zahrajte si Sudoku v Smart English Learning"
       },
       "ticTacToe": {
         "label": "TicTac",
-        "title": "Zahrajte si piškvorky v Smart Kids Learning"
+        "title": "Zahrajte si piškvorky v Smart English Learning"
       },
       "alphabets": {
         "label": "Abecedy",
-        "title": "Naučte se anglickou abecedu pomocí syntézy řeči ve Smart Kids Learning"
+        "title": "Naučte se anglickou abecedu pomocí syntézy řeči ve Smart English Learning"
       },
       "addition": {
         "label": "Sčítání",
-        "title": "Procvičte si sčítání pomocí interaktivních cvičení ve Smart Kids Learning"
+        "title": "Procvičte si sčítání pomocí interaktivních cvičení ve Smart English Learning"
       },
       "subtraction": {
         "label": "Odčítání",
-        "title": "Procvičte si odčítání pomocí interaktivních cvičení ve Smart Kids Learning"
+        "title": "Procvičte si odčítání pomocí interaktivních cvičení ve Smart English Learning"
       },
       "multiplication": {
         "label": "Násobení",
-        "title": "Procvičte si násobení pomocí interaktivních cvičení ve Smart Kids Learning"
+        "title": "Procvičte si násobení pomocí interaktivních cvičení ve Smart English Learning"
       },
       "division": {
         "label": "Dělení",
-        "title": "Procvičte si dělení pomocí interaktivních cvičení ve Smart Kids Learning"
+        "title": "Procvičte si dělení pomocí interaktivních cvičení ve Smart English Learning"
       },
       "comparison": {
         "label": "Porovnávání",
-        "title": "Procvičte si porovnávání pomocí interaktivních cvičení ve Smart Kids Learning"
+        "title": "Procvičte si porovnávání pomocí interaktivních cvičení ve Smart English Learning"
       },
       "ascending": {
         "label": "UpFun",
-        "title": "Procvičte si vzestupné řazení ve Smart Kids Learning"
+        "title": "Procvičte si vzestupné řazení ve Smart English Learning"
       },
       "descending": {
         "label": "DownFun",
-        "title": "Procvičte si sestupné řazení ve Smart Kids Learning"
+        "title": "Procvičte si sestupné řazení ve Smart English Learning"
       },
       "counting": {
         "label": "Číslice",
-        "title": "Naučte se počítat pomocí zábavných cvičení ve Smart Kids Learning"
+        "title": "Naučte se počítat pomocí zábavných cvičení ve Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Naučte se anglická slova pomocí obrázků ve Smart Kids Learning"
+        "title": "Naučte se anglická slova pomocí obrázků ve Smart English Learning"
       },
       "paintBrush": {
         "label": "Štětec",
-        "title": "Kreslete a malujte pomocí hry se štětcem ve Smart Kids Learning"
+        "title": "Kreslete a malujte pomocí hry se štětcem ve Smart English Learning"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -629,7 +629,7 @@
       "title": "Chytré učení pro děti - ",
       "failedToSave": "Nepodařilo se uložit PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Přiloženo PDF Smart Kids Learning.",
+      "shareText": "Přiloženo PDF Smart English Learning.",
       "sharingFailed": "Sdílení selhalo: ",
       "downloadedMessage": "PDF staženo.",
       "downloadNotSupported": "Stahování není podporováno",
@@ -746,7 +746,7 @@
     "item2": "Malí čtenáři: 20 zábavných neviděných pasáží pro 1. třídu, sada A",
     "item3": "Malí čtenáři: 20 zábavných neviděných pasáží pro 1. třídu, sada B",
     "item4": "Malí čtenáři: 20 zábavných neviděných pasáží pro 1. třídu, sada C",
-    "item5": "Pracovní listy na dělení Smart Kids | 400 stran matematických cvičení k tisku"
+    "item5": "Pracovní listy na dělení Smart English | 400 stran matematických cvičení k tisku"
   },
   "successModal": {
     "rateUsPrompt": "Pokud se vám aplikace líbí, zvažte prosím její ohodnocení 5 hvězdičkami v Obchodě Play!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Vítejte ve Smart Kids Learning!",
+    "message": "Vítejte ve Smart English Learning!",
     "playButton": "Pojďme hrát!"
   },
   "words": {

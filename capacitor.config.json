@@ -1,6 +1,6 @@
 {
-  "appId": "com.abhijeet.kidsapp",
-  "appName": "Smart Kids Learning",
+  "appId": "smart.english.learning",
+  "appName": "Smart English Learning",
   "webDir": "dist",
   "plugins": {
     "StatusBar": {

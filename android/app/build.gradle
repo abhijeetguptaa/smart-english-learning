@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.abhijeet.kidsapp"
+    namespace "smart.english.learning"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.abhijeet.kidsapp"
+        applicationId "smart.english.learning"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 54

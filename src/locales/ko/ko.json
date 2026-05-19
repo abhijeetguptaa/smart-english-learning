@@ -5,7 +5,7 @@
   "app": {
     "description": "수학 학습, 퍼즐, 색칠 공부 등 다양한 재미가 가득한 이 멋진 앱을 확인해 보세요!",
     "pressBackToExit": "종료하려면 뒤로 가기를 한 번 더 누르세요",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "이 기기에서는 화면 회전 잠금을 사용할 수 없습니다."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Smart Kids Learning에서 간단한 계산기 도구를 열어보세요"
+        "title": "Smart English Learning에서 간단한 계산기 도구를 열어보세요"
       },
       "shop": {
         "label": "상점",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "단어 찾기",
-        "title": "Smart Kids Learning에서 단어 찾기 퍼즐 게임을 해보세요"
+        "title": "Smart English Learning에서 단어 찾기 퍼즐 게임을 해보세요"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "스도쿠",
-        "title": "Smart Kids Learning에서 스도쿠 게임을 해보세요"
+        "title": "Smart English Learning에서 스도쿠 게임을 해보세요"
       },
       "ticTacToe": {
         "label": "틱택토",
-        "title": "Smart Kids Learning에서 틱택토 게임을 해보세요"
+        "title": "Smart English Learning에서 틱택토 게임을 해보세요"
       },
       "alphabets": {
         "label": "알파벳",
-        "title": "Smart Kids Learning에서 음성 합성과 함께 영어 알파벳을 배워보세요"
+        "title": "Smart English Learning에서 음성 합성과 함께 영어 알파벳을 배워보세요"
       },
       "addition": {
         "label": "덧셈",
-        "title": "Smart Kids Learning에서 대화형 연습으로 덧셈 문제를 연습해 보세요"
+        "title": "Smart English Learning에서 대화형 연습으로 덧셈 문제를 연습해 보세요"
       },
       "subtraction": {
         "label": "뺄셈",
-        "title": "Smart Kids Learning에서 대화형 연습으로 뺄셈 문제를 연습해 보세요"
+        "title": "Smart English Learning에서 대화형 연습으로 뺄셈 문제를 연습해 보세요"
       },
       "multiplication": {
         "label": "곱셈",
-        "title": "Smart Kids Learning에서 대화형 연습으로 곱셈 문제를 연습해 보세요"
+        "title": "Smart English Learning에서 대화형 연습으로 곱셈 문제를 연습해 보세요"
       },
       "division": {
         "label": "나눗셈",
-        "title": "Smart Kids Learning에서 대화형 연습으로 나눗셈 문제를 연습해 보세요"
+        "title": "Smart English Learning에서 대화형 연습으로 나눗셈 문제를 연습해 보세요"
       },
       "comparison": {
         "label": "비교",
-        "title": "Smart Kids Learning에서 대화형 연습으로 비교 문제를 연습해 보세요"
+        "title": "Smart English Learning에서 대화형 연습으로 비교 문제를 연습해 보세요"
       },
       "ascending": {
         "label": "오름차순",
-        "title": "Smart Kids Learning에서 오름차순 정렬을 연습해 보세요"
+        "title": "Smart English Learning에서 오름차순 정렬을 연습해 보세요"
       },
       "descending": {
         "label": "내림차순",
-        "title": "Smart Kids Learning에서 내림차순 정렬을 연습해 보세요"
+        "title": "Smart English Learning에서 내림차순 정렬을 연습해 보세요"
       },
       "counting": {
         "label": "세기",
-        "title": "Smart Kids Learning에서 재미있는 연습으로 숫자를 세는 법을 배워보세요"
+        "title": "Smart English Learning에서 재미있는 연습으로 숫자를 세는 법을 배워보세요"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "단어 철자",
-        "title": "Smart Kids Learning에서 그림과 함께 영어 단어를 배워보세요"
+        "title": "Smart English Learning에서 그림과 함께 영어 단어를 배워보세요"
       },
       "paintBrush": {
         "label": "그림 붓",
-        "title": "Smart Kids Learning에서 그림 붓 게임으로 그림을 그리고 색칠해 보세요"
+        "title": "Smart English Learning에서 그림 붓 게임으로 그림을 그리고 색칠해 보세요"
       },
       "gridMatch": {
         "label": "그리드 맞추기",
@@ -626,10 +626,10 @@
       "failedToLoad": "워터마크 이미지를 불러오지 못했습니다"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "PDF 저장 실패: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF가 첨부되었습니다.",
+      "shareText": "Smart English Learning PDF가 첨부되었습니다.",
       "sharingFailed": "공유 실패: ",
       "downloadedMessage": "PDF가 다운로드되었습니다.",
       "downloadNotSupported": "다운로드가 지원되지 않음",
@@ -746,7 +746,7 @@
     "item2": "어린 독자들: 1학년용 재미있는 독해 20선, 세트 A",
     "item3": "어린 독자들: 1학년용 재미있는 독해 20선, 세트 B",
     "item4": "어린 독자들: 1학년용 재미있는 독해 20선, 세트 C",
-    "item5": "Smart Kids 나눗셈 학습지 | 400페이지 출력 가능한 수학 연습 페이지"
+    "item5": "Smart English 나눗셈 학습지 | 400페이지 출력 가능한 수학 연습 페이지"
   },
   "successModal": {
     "rateUsPrompt": "앱이 마음에 드신다면 플레이 스토어에서 별 5개 평점을 남겨주세요!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Smart Kids Learning에 오신 것을 환영합니다!",
+    "message": "Smart English Learning에 오신 것을 환영합니다!",
     "playButton": "놀자!"
   },
   "words": {

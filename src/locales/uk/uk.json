@@ -5,7 +5,7 @@
   "app": {
     "description": "Перегляньте цей крутий додаток для вивчення математики, ігор у пазли, розмальовок та багатьох інших розваг!",
     "pressBackToExit": "Натисніть ще раз «назад», щоб вийти",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Блокування повороту екрана недоступне на цьому пристрої."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Відкрий простий калькулятор у Smart Kids Learning"
+        "title": "Відкрий простий калькулятор у Smart English Learning"
       },
       "shop": {
         "label": "Магазин",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Пошук слів",
-        "title": "Грай у пошук слів у Smart Kids Learning"
+        "title": "Грай у пошук слів у Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Склади речення",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Судоку",
-        "title": "Грай у судоку у Smart Kids Learning"
+        "title": "Грай у судоку у Smart English Learning"
       },
       "ticTacToe": {
         "label": "Хрестики-нулики",
-        "title": "Грай у хрестики-нулики у Smart Kids Learning"
+        "title": "Грай у хрестики-нулики у Smart English Learning"
       },
       "alphabets": {
         "label": "Алфавіт",
-        "title": "Вивчай англійський алфавіт із синтезом мовлення у Smart Kids Learning"
+        "title": "Вивчай англійський алфавіт із синтезом мовлення у Smart English Learning"
       },
       "addition": {
         "label": "Додавання",
-        "title": "Практикуй приклади на додавання з інтерактивними вправами у Smart Kids Learning"
+        "title": "Практикуй приклади на додавання з інтерактивними вправами у Smart English Learning"
       },
       "subtraction": {
         "label": "Віднімання",
-        "title": "Практикуй приклади на віднімання з інтерактивними вправами у Smart Kids Learning"
+        "title": "Практикуй приклади на віднімання з інтерактивними вправами у Smart English Learning"
       },
       "multiplication": {
         "label": "Множення",
-        "title": "Практикуй приклади на множення з інтерактивними вправами у Smart Kids Learning"
+        "title": "Практикуй приклади на множення з інтерактивними вправами у Smart English Learning"
       },
       "division": {
         "label": "Ділення",
-        "title": "Практикуй приклади на ділення з інтерактивними вправами у Smart Kids Learning"
+        "title": "Практикуй приклади на ділення з інтерактивними вправами у Smart English Learning"
       },
       "comparison": {
         "label": "Порівняння",
-        "title": "Практикуй порівняння чисел у Smart Kids Learning"
+        "title": "Практикуй порівняння чисел у Smart English Learning"
       },
       "ascending": {
         "label": "За зростанням",
-        "title": "Практикуй порядок за зростанням у Smart Kids Learning"
+        "title": "Практикуй порядок за зростанням у Smart English Learning"
       },
       "descending": {
         "label": "За спаданням",
-        "title": "Практикуй порядок за спаданням у Smart Kids Learning"
+        "title": "Практикуй порядок за спаданням у Smart English Learning"
       },
       "counting": {
         "label": "Рахунок",
-        "title": "Вчися рахувати з веселими вправами у Smart Kids Learning"
+        "title": "Вчися рахувати з веселими вправами у Smart English Learning"
       },
       "numberTracing": {
         "label": "Цифри",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "По буквах",
-        "title": "Вчи англійські слова з картинками у Smart Kids Learning"
+        "title": "Вчи англійські слова з картинками у Smart English Learning"
       },
       "paintBrush": {
         "label": "Пензель",
-        "title": "Малюй та розфарбовуй у грі з пензлем у Smart Kids Learning"
+        "title": "Малюй та розфарбовуй у грі з пензлем у Smart English Learning"
       },
       "gridMatch": {
         "label": "Збіг за сіткою",
@@ -626,10 +626,10 @@
       "failedToLoad": "Не вдалося завантажити зображення водяного знака"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Не вдалося зберегти PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Прикріплено PDF-файл Smart Kids Learning.",
+      "shareText": "Прикріплено PDF-файл Smart English Learning.",
       "sharingFailed": "Помилка обміну: ",
       "downloadedMessage": "PDF завантажено.",
       "downloadNotSupported": "Завантаження не підтримується",
@@ -746,7 +746,7 @@
     "item2": "Маленькі читачі: 20 забавних текстів для 1 класу, набір А",
     "item3": "Маленькі читачі: 20 забавних текстів для 1 класу, набір Б",
     "item4": "Маленькі читачі: 20 забавних текстів для 1 класу, набір В",
-    "item5": "Робочі аркуші на ділення Smart Kids | 400 сторінок математичних вправ для друку"
+    "item5": "Робочі аркуші на ділення Smart English | 400 сторінок математичних вправ для друку"
   },
   "successModal": {
     "rateUsPrompt": "Якщо вам подобається додаток, будь ласка, оцініть його на 5 зірок у Play Store!",
@@ -856,7 +856,7 @@
     "success": "Чудово! Ти все обвів ідеально!"
   },
   "welcomeScreen": {
-    "message": "Ласкаво просимо до Smart Kids Learning!",
+    "message": "Ласкаво просимо до Smart English Learning!",
     "playButton": "Пограємо!"
   },
   "words": {

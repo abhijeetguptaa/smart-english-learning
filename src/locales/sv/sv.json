@@ -5,7 +5,7 @@
   "app": {
     "description": "Kolla in denna coola app för att lära dig matte, lägga pussel, färglägga och mycket mer kul!",
     "pressBackToExit": "Tryck på tillbaka igen för att avsluta",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Skärmrotationslås är inte tillgängligt på den här enheten."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Öppna en enkel miniräknare i Smart Kids Learning"
+        "title": "Öppna en enkel miniräknare i Smart English Learning"
       },
       "shop": {
         "label": "Butik",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Ordsök",
-        "title": "Spela ordsökspussel i Smart Kids Learning"
+        "title": "Spela ordsökspussel i Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Meningslek",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Spela Sudoku i Smart Kids Learning"
+        "title": "Spela Sudoku i Smart English Learning"
       },
       "ticTacToe": {
         "label": "Luffarschack",
-        "title": "Spela luffarschack i Smart Kids Learning"
+        "title": "Spela luffarschack i Smart English Learning"
       },
       "alphabets": {
         "label": "Alfabet",
-        "title": "Lär dig det engelska alfabetet med talsyntes i Smart Kids Learning"
+        "title": "Lär dig det engelska alfabetet med talsyntes i Smart English Learning"
       },
       "addition": {
         "label": "Addition",
-        "title": "Träna addition med interaktiva övningar i Smart Kids Learning"
+        "title": "Träna addition med interaktiva övningar i Smart English Learning"
       },
       "subtraction": {
         "label": "Subtraktion",
-        "title": "Träna subtraktion med interaktiva övningar i Smart Kids Learning"
+        "title": "Träna subtraktion med interaktiva övningar i Smart English Learning"
       },
       "multiplication": {
         "label": "Multiplikation",
-        "title": "Träna multiplikation med interaktiva övningar i Smart Kids Learning"
+        "title": "Träna multiplikation med interaktiva övningar i Smart English Learning"
       },
       "division": {
         "label": "Division",
-        "title": "Träna division med interaktiva övningar i Smart Kids Learning"
+        "title": "Träna division med interaktiva övningar i Smart English Learning"
       },
       "comparison": {
         "label": "Jämförelse",
-        "title": "Träna jämförelse med interaktiva övningar i Smart Kids Learning"
+        "title": "Träna jämförelse med interaktiva övningar i Smart English Learning"
       },
       "ascending": {
         "label": "Stigande",
-        "title": "Träna stigande ordning i Smart Kids Learning"
+        "title": "Träna stigande ordning i Smart English Learning"
       },
       "descending": {
         "label": "Fallande",
-        "title": "Träna fallande ordning i Smart Kids Learning"
+        "title": "Träna fallande ordning i Smart English Learning"
       },
       "counting": {
         "label": "Räkna",
-        "title": "Lär dig räkna med roliga övningar i Smart Kids Learning"
+        "title": "Lär dig räkna med roliga övningar i Smart English Learning"
       },
       "numberTracing": {
         "label": "Nummer",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Stava ordet",
-        "title": "Lär dig engelska ord med bilder i Smart Kids Learning"
+        "title": "Lär dig engelska ord med bilder i Smart English Learning"
       },
       "paintBrush": {
         "label": "Pensel",
-        "title": "Rita och måla med penselspelet i Smart Kids Learning"
+        "title": "Rita och måla med penselspelet i Smart English Learning"
       },
       "gridMatch": {
         "label": "Rutnätsmatch",
@@ -626,10 +626,10 @@
       "failedToLoad": "Det gick inte att ladda vattenstämpelbilden"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Det gick inte att spara PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF bifogas.",
+      "shareText": "Smart English Learning PDF bifogas.",
       "sharingFailed": "Delning misslyckades: ",
       "downloadedMessage": "PDF har laddats ner.",
       "downloadNotSupported": "Nedladdning stöds inte",
@@ -746,7 +746,7 @@
     "item2": "Små läsare: 20 roliga oförberedda texter för årskurs 1, set A",
     "item3": "Små läsare: 20 roliga oförberedda texter för årskurs 1, set B",
     "item4": "Små läsare: 20 roliga oförberedda texter för årskurs 1, set C",
-    "item5": "Smart Kids divisionsblad | 400 sidor utskrivbar matteträning"
+    "item5": "Smart English divisionsblad | 400 sidor utskrivbar matteträning"
   },
   "successModal": {
     "rateUsPrompt": "Om du gillar appen, ge oss gärna 5 stjärnor i Play Store!",
@@ -856,7 +856,7 @@
     "success": "Fantastiskt! Du spårade det perfekt!"
   },
   "welcomeScreen": {
-    "message": "Välkommen till Smart Kids Learning!",
+    "message": "Välkommen till Smart English Learning!",
     "playButton": "Låt oss spela!"
   },
   "words": {

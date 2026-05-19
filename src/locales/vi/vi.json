@@ -5,7 +5,7 @@
   "app": {
     "description": "Hãy xem ứng dụng thú vị này để học toán, chơi Giải đố, Tô màu và nhiều niềm vui khác",
     "pressBackToExit": "Nhấn quay lại lần nữa để thoát",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Khóa xoay màn hình không khả dụng trên thiết bị này."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Mở công cụ máy tính đơn giản trong Smart Kids Learning"
+        "title": "Mở công cụ máy tính đơn giản trong Smart English Learning"
       },
       "shop": {
         "label": "Cửa hàng",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Tìm từ",
-        "title": "Chơi trò chơi đố chữ tìm từ trong Smart Kids Learning"
+        "title": "Chơi trò chơi đố chữ tìm từ trong Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Ghép câu",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Chơi trò chơi Sudoku trong Smart Kids Learning"
+        "title": "Chơi trò chơi Sudoku trong Smart English Learning"
       },
       "ticTacToe": {
         "label": "Cờ ca-rô",
-        "title": "Chơi trò chơi cờ ca-rô trong Smart Kids Learning"
+        "title": "Chơi trò chơi cờ ca-rô trong Smart English Learning"
       },
       "alphabets": {
         "label": "Bảng chữ cái",
-        "title": "Học bảng chữ cái tiếng Anh với tính năng tổng hợp giọng nói trong Smart Kids Learning"
+        "title": "Học bảng chữ cái tiếng Anh với tính năng tổng hợp giọng nói trong Smart English Learning"
       },
       "addition": {
         "label": "Cộng",
-        "title": "Thực hành các bài toán cộng với các bài tập tương tác trong Smart Kids Learning"
+        "title": "Thực hành các bài toán cộng với các bài tập tương tác trong Smart English Learning"
       },
       "subtraction": {
         "label": "Trừ",
-        "title": "Thực hành các bài toán trừ với các bài tập tương tác trong Smart Kids Learning"
+        "title": "Thực hành các bài toán trừ với các bài tập tương tác trong Smart English Learning"
       },
       "multiplication": {
         "label": "Nhân",
-        "title": "Thực hành các bài toán nhân với các bài tập tương tác trong Smart Kids Learning"
+        "title": "Thực hành các bài toán nhân với các bài tập tương tác trong Smart English Learning"
       },
       "division": {
         "label": "Chia",
-        "title": "Thực hành các bài toán chia với các bài tập tương tác trong Smart Kids Learning"
+        "title": "Thực hành các bài toán chia với các bài tập tương tác trong Smart English Learning"
       },
       "comparison": {
         "label": "So sánh",
-        "title": "Thực hành các bài toán so sánh với các bài tập tương tác trong Smart Kids Learning"
+        "title": "Thực hành các bài toán so sánh với các bài tập tương tác trong Smart English Learning"
       },
       "ascending": {
         "label": "Tăng dần",
-        "title": "Thực hành sắp xếp theo thứ tự tăng dần trong Smart Kids Learning"
+        "title": "Thực hành sắp xếp theo thứ tự tăng dần trong Smart English Learning"
       },
       "descending": {
         "label": "Giảm dần",
-        "title": "Thực hành sắp xếp theo thứ tự giảm dần trong Smart Kids Learning"
+        "title": "Thực hành sắp xếp theo thứ tự giảm dần trong Smart English Learning"
       },
       "counting": {
         "label": "Đếm",
-        "title": "Học đếm với các bài tập thú vị trong Smart Kids Learning"
+        "title": "Học đếm với các bài tập thú vị trong Smart English Learning"
       },
       "numberTracing": {
         "label": "Số",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Đánh vần",
-        "title": "Học từ vựng tiếng Anh qua hình ảnh trong Smart Kids Learning"
+        "title": "Học từ vựng tiếng Anh qua hình ảnh trong Smart English Learning"
       },
       "paintBrush": {
         "label": "Cọ vẽ",
-        "title": "Vẽ và tô màu với trò chơi cọ vẽ trong Smart Kids Learning"
+        "title": "Vẽ và tô màu với trò chơi cọ vẽ trong Smart English Learning"
       },
       "gridMatch": {
         "label": "Ghép ô",
@@ -626,10 +626,10 @@
       "failedToLoad": "Không tải được hình ảnh hình mờ"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Không lưu được PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Tệp PDF Smart Kids Learning được đính kèm.",
+      "shareText": "Tệp PDF Smart English Learning được đính kèm.",
       "sharingFailed": "Chia sẻ thất bại: ",
       "downloadedMessage": "Đã tải xuống PDF.",
       "downloadNotSupported": "Không hỗ trợ tải xuống",
@@ -746,7 +746,7 @@
     "item2": "Little Readers 20 đoạn văn thú vị cho lớp 1 Bộ A",
     "item3": "Little Readers 20 đoạn văn thú vị cho lớp 1 Bộ B",
     "item4": "Little Readers 20 đoạn văn thú vị cho lớp 1 Bộ C",
-    "item5": "Bài tập chia Smart Kids | 400 trang thực hành toán có thể in"
+    "item5": "Bài tập chia Smart English | 400 trang thực hành toán có thể in"
   },
   "successModal": {
     "rateUsPrompt": "Nếu bạn thích ứng dụng này, hãy cân nhắc đánh giá chúng tôi 5 sao trên Play Store!",
@@ -856,7 +856,7 @@
     "success": "Tuyệt vời! Bạn đã tô nó một cách hoàn hảo!"
   },
   "welcomeScreen": {
-    "message": "Chào mừng bạn đến với Smart Kids Learning!",
+    "message": "Chào mừng bạn đến với Smart English Learning!",
     "playButton": "Cùng chơi nào!"
   },
   "words": {

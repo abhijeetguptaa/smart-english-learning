@@ -75,7 +75,7 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
         .share({
           title: t('common.appName'),
           text: t('app.description'),
-          url: 'https://play.google.com/store/apps/details?id=com.abhijeet.kidsapp',
+          url: 'https://play.google.com/store/apps/details?id=smart.english.learning',
         })
         .then(() => console.log('Successful share'))
         .catch((error) => console.log('Error sharing', error));
@@ -85,7 +85,7 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
   };
 
   const handleRateUs = () => {
-    window.open('https://play.google.com/store/apps/details?id=com.abhijeet.kidsapp', '_blank');
+    window.open('https://play.google.com/store/apps/details?id=smart.english.learning', '_blank');
   };
 
   const handleFacebook = () => {

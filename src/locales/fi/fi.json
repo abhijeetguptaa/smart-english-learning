@@ -5,7 +5,7 @@
   "app": {
     "description": "Tutustu tähän mahtavaan sovellukseen matematiikan oppimiseen, palapelien pelaamiseen, värittämiseen ja moneen muuhun hauskaan!",
     "pressBackToExit": "Paina takaisin uudelleen poistuaksesi",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Näytön kierron lukitus ei ole käytettävissä tässä laitteessa."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Avaa yksinkertainen laskin Smart Kids Learningissa"
+        "title": "Avaa yksinkertainen laskin Smart English Learningissa"
       },
       "shop": {
         "label": "Kauppa",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Pelaa sanajahtia Smart Kids Learningissa"
+        "title": "Pelaa sanajahtia Smart English Learningissa"
       },
       "sentenceScramble": {
         "label": "Lauseleikki",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Pelaa Sudokua Smart Kids Learningissa"
+        "title": "Pelaa Sudokua Smart English Learningissa"
       },
       "ticTacToe": {
         "label": "TicTac",
-        "title": "Pelaa risti nollaa Smart Kids Learningissa"
+        "title": "Pelaa risti nollaa Smart English Learningissa"
       },
       "alphabets": {
         "label": "Aakkoset",
-        "title": "Opi englannin aakkoset puhesynteesin avulla Smart Kids Learningissa"
+        "title": "Opi englannin aakkoset puhesynteesin avulla Smart English Learningissa"
       },
       "addition": {
         "label": "Lisää",
-        "title": "Harjoittele yhteenlaskua interaktiivisilla tehtävillä Smart Kids Learningissa"
+        "title": "Harjoittele yhteenlaskua interaktiivisilla tehtävillä Smart English Learningissa"
       },
       "subtraction": {
         "label": "Vähennä",
-        "title": "Harjoittele vähennyslaskua interaktiivisilla tehtävillä Smart Kids Learningissa"
+        "title": "Harjoittele vähennyslaskua interaktiivisilla tehtävillä Smart English Learningissa"
       },
       "multiplication": {
         "label": "Kerro",
-        "title": "Harjoittele kertolaskua interaktiivisilla tehtävillä Smart Kids Learningissa"
+        "title": "Harjoittele kertolaskua interaktiivisilla tehtävillä Smart English Learningissa"
       },
       "division": {
         "label": "Jaa",
-        "title": "Harjoittele jakolaskua interaktiivisilla tehtävillä Smart Kids Learningissa"
+        "title": "Harjoittele jakolaskua interaktiivisilla tehtävillä Smart English Learningissa"
       },
       "comparison": {
         "label": "Vertaa",
-        "title": "Harjoittele vertailua interaktiivisilla tehtävillä Smart Kids Learningissa"
+        "title": "Harjoittele vertailua interaktiivisilla tehtävillä Smart English Learningissa"
       },
       "ascending": {
         "label": "UpFun",
-        "title": "Harjoittele nousevaa järjestystä Smart Kids Learningissa"
+        "title": "Harjoittele nousevaa järjestystä Smart English Learningissa"
       },
       "descending": {
         "label": "DownFun",
-        "title": "Harjoittele laskevaa järjestystä Smart Kids Learningissa"
+        "title": "Harjoittele laskevaa järjestystä Smart English Learningissa"
       },
       "counting": {
         "label": "Numerot",
-        "title": "Opi laskemaan hauskoilla harjoituksilla Smart Kids Learningissa"
+        "title": "Opi laskemaan hauskoilla harjoituksilla Smart English Learningissa"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Opi englannin sanoja kuvien avulla Smart Kids Learningissa"
+        "title": "Opi englannin sanoja kuvien avulla Smart English Learningissa"
       },
       "paintBrush": {
         "label": "Sivellin",
-        "title": "Piirrä ja maalaa sivellinpelillä Smart Kids Learningissa"
+        "title": "Piirrä ja maalaa sivellinpelillä Smart English Learningissa"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -626,10 +626,10 @@
       "failedToLoad": "Vesileimakuvan lataaminen epäonnistui"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "PDF:n tallennus epäonnistui: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF liitteenä.",
+      "shareText": "Smart English Learning PDF liitteenä.",
       "sharingFailed": "Jakaminen epäonnistui: ",
       "downloadedMessage": "PDF ladattu.",
       "downloadNotSupported": "Lataaminen ei ole tuettu",
@@ -746,7 +746,7 @@
     "item2": "Pienet lukijat: 20 hauskaa uutta tekstiä 1. luokalle, sarja A",
     "item3": "Pienet lukijat: 20 hauskaa uutta tekstiä 1. luokalle, sarja B",
     "item4": "Pienet lukijat: 20 hauskaa uutta tekstiä 1. luokalle, sarja C",
-    "item5": "Smart Kids -jakolaskutehtävät | 400 tulostettavaa matematiikan harjoitussivua"
+    "item5": "Smart English -jakolaskutehtävät | 400 tulostettavaa matematiikan harjoitussivua"
   },
   "successModal": {
     "rateUsPrompt": "Jos pidät sovelluksesta, harkitse sen arvostelemista 5 tähdellä Play Kaupassa!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Tervetuloa Smart Kids Learningiin!",
+    "message": "Tervetuloa Smart English Learningiin!",
     "playButton": "Pelataan!"
   },
   "words": {

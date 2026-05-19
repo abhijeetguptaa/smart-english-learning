@@ -5,7 +5,7 @@
   "app": {
     "description": "Matematik öğrenmek, bulmaca oynamak, boyama yapmak ve çok daha fazla eğlence için bu harika uygulamaya göz atın!",
     "pressBackToExit": "Çıkmak için tekrar geri tuşuna basın",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Ekran döndürme kilidi bu cihazda mevcut değil."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Smart Kids Learning'de basit bir hesap makinesi aracı aç"
+        "title": "Smart English Learning'de basit bir hesap makinesi aracı aç"
       },
       "shop": {
         "label": "Mağaza",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Kelime Bulmaca",
-        "title": "Smart Kids Learning'de bir kelime bulma oyunu oyna"
+        "title": "Smart English Learning'de bir kelime bulma oyunu oyna"
       },
       "sentenceScramble": {
         "label": "Cümle Eğlencesi",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Smart Kids Learning'de bir Sudoku oyunu oyna"
+        "title": "Smart English Learning'de bir Sudoku oyunu oyna"
       },
       "ticTacToe": {
         "label": "XOX Oyunu",
-        "title": "Smart Kids Learning'de bir XOX (Tic Tac Toe) oyunu oyna"
+        "title": "Smart English Learning'de bir XOX (Tic Tac Toe) oyunu oyna"
       },
       "alphabets": {
         "label": "Alfabe",
-        "title": "Smart Kids Learning'de ses sentezi ile İngilizce alfabeyi öğren"
+        "title": "Smart English Learning'de ses sentezi ile İngilizce alfabeyi öğren"
       },
       "addition": {
         "label": "Toplama",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla toplama işlemleri yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla toplama işlemleri yap"
       },
       "subtraction": {
         "label": "Çıkarma",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla çıkarma işlemleri yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla çıkarma işlemleri yap"
       },
       "multiplication": {
         "label": "Çarpma",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla çarpma işlemleri yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla çarpma işlemleri yap"
       },
       "division": {
         "label": "Bölme",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla bölme işlemleri yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla bölme işlemleri yap"
       },
       "comparison": {
         "label": "Karşılaştırma",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla karşılaştırma yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla karşılaştırma yap"
       },
       "ascending": {
         "label": "Artan Sıra",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla artan sıralama yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla artan sıralama yap"
       },
       "descending": {
         "label": "Azalan Sıra",
-        "title": "Smart Kids Learning'de etkileşimli alıştırmalarla azalan sıralama yap"
+        "title": "Smart English Learning'de etkileşimli alıştırmalarla azalan sıralama yap"
       },
       "counting": {
         "label": "Sayma",
-        "title": "Smart Kids Learning'de eğlenceli alıştırmalarla saymayı öğren"
+        "title": "Smart English Learning'de eğlenceli alıştırmalarla saymayı öğren"
       },
       "numberTracing": {
         "label": "Sayı",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Kelimeyi Yaz",
-        "title": "Smart Kids Learning'de resimlerle İngilizce kelimeleri öğren"
+        "title": "Smart English Learning'de resimlerle İngilizce kelimeleri öğren"
       },
       "paintBrush": {
         "label": "Boya Fırçası",
-        "title": "Smart Kids Learning'de boya fırçası oyunuyla çizim yap ve boya"
+        "title": "Smart English Learning'de boya fırçası oyunuyla çizim yap ve boya"
       },
       "gridMatch": {
         "label": "Izgara Eşleştirme",
@@ -626,10 +626,10 @@
       "failedToLoad": "Filigran resmi yüklenemedi"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "PDF kaydedilemedi: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF dosyası ektedir.",
+      "shareText": "Smart English Learning PDF dosyası ektedir.",
       "sharingFailed": "Paylaşım başarısız oldu: ",
       "downloadedMessage": "PDF indirildi.",
       "downloadNotSupported": "İndirme desteklenmiyor",
@@ -746,7 +746,7 @@
     "item2": "Küçük Okurlar için 1. Sınıf 20 Eğlenceli Görülmemiş Metin Set A",
     "item3": "Küçük Okurlar için 1. Sınıf 20 Eğlenceli Görülmemiş Metin Set B",
     "item4": "Küçük Okurlar için 1. Sınıf 20 Eğlenceli Görülmemiş Metin Set C",
-    "item5": "Smart Kids Bölme Çalışma Sayfaları | 400 Yazdırılabilir Matematik Alıştırma Sayfası"
+    "item5": "Smart English Bölme Çalışma Sayfaları | 400 Yazdırılabilir Matematik Alıştırma Sayfası"
   },
   "successModal": {
     "rateUsPrompt": "Uygulamayı beğendiyseniz, lütfen Play Store'da bize 5 yıldız vermeyi düşünün!",
@@ -856,7 +856,7 @@
     "success": "Harika! Mükemmel bir şekilde çizdin!"
   },
   "welcomeScreen": {
-    "message": "Smart Kids Learning'e Hoş Geldiniz!",
+    "message": "Smart English Learning'e Hoş Geldiniz!",
     "playButton": "Hadi Oynayalım!"
   },
   "words": {

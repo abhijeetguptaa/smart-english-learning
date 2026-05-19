@@ -5,7 +5,7 @@
   "app": {
     "description": "Pozrite si túto skvelú aplikáciu na učenie matematiky, hranie puzzle, vyfarbovanie a oveľa viac zábavy!",
     "pressBackToExit": "Pre ukončenie stlačte znova späť",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Zámok otáčania obrazovky nie je na tomto zariadení k dispozícii."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Otvorte jednoduchú kalkulačku v Smart Kids Learning"
+        "title": "Otvorte jednoduchú kalkulačku v Smart English Learning"
       },
       "shop": {
         "label": "Obchod",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Hľadanie slov",
-        "title": "Zahrajte si hru na hľadanie slov v Smart Kids Learning"
+        "title": "Zahrajte si hru na hľadanie slov v Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Zahrajte si hru Sudoku v Smart Kids Learning"
+        "title": "Zahrajte si hru Sudoku v Smart English Learning"
       },
       "ticTacToe": {
         "label": "Piškvorky",
-        "title": "Zahrajte si Piškvorky v Smart Kids Learning"
+        "title": "Zahrajte si Piškvorky v Smart English Learning"
       },
       "alphabets": {
         "label": "Abecedy",
-        "title": "Učte sa anglickú abecedu so syntézou reči v Smart Kids Learning"
+        "title": "Učte sa anglickú abecedu so syntézou reči v Smart English Learning"
       },
       "addition": {
         "label": "Sčítanie",
-        "title": "Precvičujte sčítanie s interaktívnymi cvičeniami v Smart Kids Learning"
+        "title": "Precvičujte sčítanie s interaktívnymi cvičeniami v Smart English Learning"
       },
       "subtraction": {
         "label": "Odčítanie",
-        "title": "Precvičujte odčítanie s interaktívnymi cvičeniami v Smart Kids Learning"
+        "title": "Precvičujte odčítanie s interaktívnymi cvičeniami v Smart English Learning"
       },
       "multiplication": {
         "label": "Násobenie",
-        "title": "Precvičujte násobenie s interaktívnymi cvičeniami v Smart Kids Learning"
+        "title": "Precvičujte násobenie s interaktívnymi cvičeniami v Smart English Learning"
       },
       "division": {
         "label": "Delenie",
-        "title": "Precvičujte delenie s interaktívnymi cvičeniami v Smart Kids Learning"
+        "title": "Precvičujte delenie s interaktívnymi cvičeniami v Smart English Learning"
       },
       "comparison": {
         "label": "Porovnávanie",
-        "title": "Precvičujte porovnávanie s interaktívnymi cvičeniami v Smart Kids Learning"
+        "title": "Precvičujte porovnávanie s interaktívnymi cvičeniami v Smart English Learning"
       },
       "ascending": {
         "label": "Vzostupne",
-        "title": "Precvičujte vzostupné radenie v Smart Kids Learning"
+        "title": "Precvičujte vzostupné radenie v Smart English Learning"
       },
       "descending": {
         "label": "Zostupne",
-        "title": "Precvičujte zostupné radenie v Smart Kids Learning"
+        "title": "Precvičujte zostupné radenie v Smart English Learning"
       },
       "counting": {
         "label": "Počítanie",
-        "title": "Učte sa počítať so zábavnými cvičeniami v Smart Kids Learning"
+        "title": "Učte sa počítať so zábavnými cvičeniami v Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Vyslov slovo",
-        "title": "Učte sa anglické slová s obrázkami v Smart Kids Learning"
+        "title": "Učte sa anglické slová s obrázkami v Smart English Learning"
       },
       "paintBrush": {
         "label": "Štetec",
-        "title": "Kreslite a maľujte v hre so štetcom v Smart Kids Learning"
+        "title": "Kreslite a maľujte v hre so štetcom v Smart English Learning"
       },
       "gridMatch": {
         "label": "Mriežka",
@@ -626,10 +626,10 @@
       "failedToLoad": "Nepodarilo sa načítať obrázok vodoznaku"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Nepodarilo sa uložiť PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Priložené PDF zo Smart Kids Learning.",
+      "shareText": "Priložené PDF zo Smart English Learning.",
       "sharingFailed": "Zdieľanie zlyhalo: ",
       "downloadedMessage": "PDF stiahnuté.",
       "downloadNotSupported": "Sťahovanie nie je podporované",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Vitajte v Smart Kids Learning!",
+    "message": "Vitajte v Smart English Learning!",
     "playButton": "Poďme sa hrať!"
   },
   "words": {

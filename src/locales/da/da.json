@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Åbn en enkel lommeregner i Smart Kids Learning"
+        "title": "Åbn en enkel lommeregner i Smart English Learning"
       },
       "shop": {
         "label": "Butik",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Spil ordsøgning i Smart Kids Learning"
+        "title": "Spil ordsøgning i Smart English Learning"
       },
       "sentenceScramble": {
         "label": "S?tningssjov",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Spil Sudoku i Smart Kids Learning"
+        "title": "Spil Sudoku i Smart English Learning"
       },
       "ticTacToe": {
         "label": "TicTac",
-        "title": "Spil tre på stribe i Smart Kids Learning"
+        "title": "Spil tre på stribe i Smart English Learning"
       },
       "alphabets": {
         "label": "Alfabet",
-        "title": "Lær det engelske alfabet med talesyntese i Smart Kids Learning"
+        "title": "Lær det engelske alfabet med talesyntese i Smart English Learning"
       },
       "addition": {
         "label": "Plus",
-        "title": "Øv addition med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv addition med interaktive øvelser i Smart English Learning"
       },
       "subtraction": {
         "label": "Minus",
-        "title": "Øv subtraktion med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv subtraktion med interaktive øvelser i Smart English Learning"
       },
       "multiplication": {
         "label": "Gange",
-        "title": "Øv multiplikation med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv multiplikation med interaktive øvelser i Smart English Learning"
       },
       "division": {
         "label": "Division",
-        "title": "Øv division med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv division med interaktive øvelser i Smart English Learning"
       },
       "comparison": {
         "label": "Sammenlign",
-        "title": "Øv sammenligning med interaktive øvelser i Smart Kids Learning"
+        "title": "Øv sammenligning med interaktive øvelser i Smart English Learning"
       },
       "ascending": {
         "label": "UpFun",
-        "title": "Øv stigende rækkefølge i Smart Kids Learning"
+        "title": "Øv stigende rækkefølge i Smart English Learning"
       },
       "descending": {
         "label": "DownFun",
-        "title": "Øv faldende rækkefølge i Smart Kids Learning"
+        "title": "Øv faldende rækkefølge i Smart English Learning"
       },
       "counting": {
         "label": "Tal",
-        "title": "Lær at tælle med sjove øvelser i Smart Kids Learning"
+        "title": "Lær at tælle med sjove øvelser i Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Lær engelske ord med billeder i Smart Kids Learning"
+        "title": "Lær engelske ord med billeder i Smart English Learning"
       },
       "paintBrush": {
         "label": "Pensel",
-        "title": "Tegn og mal med pensel i Smart Kids Learning"
+        "title": "Tegn og mal med pensel i Smart English Learning"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -629,7 +629,7 @@
       "title": "Smart læring for børn - ",
       "failedToSave": "Kunne ikke gemme PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF vedhæftet.",
+      "shareText": "Smart English Learning PDF vedhæftet.",
       "sharingFailed": "Deling mislykkedes: ",
       "downloadedMessage": "PDF downloadet.",
       "downloadNotSupported": "Download understøttes ikke",
@@ -746,7 +746,7 @@
     "item2": "Små læsere: 20 sjove ukendte tekster til 1. klasse Sæt A",
     "item3": "Små læsere: 20 sjove ukendte tekster til 1. klasse Sæt B",
     "item4": "Små læsere: 20 sjove ukendte tekster til 1. klasse Sæt C",
-    "item5": "Smart Kids divisionsark | 400 siders matematikøvelser til print"
+    "item5": "Smart English divisionsark | 400 siders matematikøvelser til print"
   },
   "successModal": {
     "rateUsPrompt": "Hvis du kan lide appen, så overvej at give os 5 stjerner i Play Store!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Velkommen til Smart Kids Learning!",
+    "message": "Velkommen til Smart English Learning!",
     "playButton": "Lad os spille!"
   },
   "words": {

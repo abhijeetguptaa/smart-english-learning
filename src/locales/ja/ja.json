@@ -5,7 +5,7 @@
   "app": {
     "description": "算数を学んだり、パズルで遊んだり、色塗りをしたり、もっとたくさんの楽しみがあるこのクールなアプリをチェックしてください！",
     "pressBackToExit": "もう一度「戻る」を押すと終了します",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "画面の回転ロックはこのデバイスでは利用できません。"
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Smart Kids Learningでシンプルな電卓ツールを開く"
+        "title": "Smart English Learningでシンプルな電卓ツールを開く"
       },
       "shop": {
         "label": "ショップ",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "単語探し",
-        "title": "Smart Kids Learningで単語探しパズルゲームをプレイしよう"
+        "title": "Smart English Learningで単語探しパズルゲームをプレイしよう"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "数独",
-        "title": "Smart Kids Learningで数独パズルゲームをプレイしよう"
+        "title": "Smart English Learningで数独パズルゲームをプレイしよう"
       },
       "ticTacToe": {
         "label": "〇✕ゲーム",
-        "title": "Smart Kids Learningで〇✕ゲームをプレイしよう"
+        "title": "Smart English Learningで〇✕ゲームをプレイしよう"
       },
       "alphabets": {
         "label": "アルファベット",
-        "title": "Smart Kids Learningで音声合成と一緒にアルファベットを学ぼう"
+        "title": "Smart English Learningで音声合成と一緒にアルファベットを学ぼう"
       },
       "addition": {
         "label": "足し算",
-        "title": "Smart Kids Learningのインタラクティブな練習で足し算の問題を練習しよう"
+        "title": "Smart English Learningのインタラクティブな練習で足し算の問題を練習しよう"
       },
       "subtraction": {
         "label": "引き算",
-        "title": "Smart Kids Learningのインタラクティブな練習で引き算の問題を練習しよう"
+        "title": "Smart English Learningのインタラクティブな練習で引き算の問題を練習しよう"
       },
       "multiplication": {
         "label": "掛け算",
-        "title": "Smart Kids Learningのインタラクティブな練習で掛け算の問題を練習しよう"
+        "title": "Smart English Learningのインタラクティブな練習で掛け算の問題を練習しよう"
       },
       "division": {
         "label": "割り算",
-        "title": "Smart Kids Learningのインタラクティブな練習で割り算の問題を練習しよう"
+        "title": "Smart English Learningのインタラクティブな練習で割り算の問題を練習しよう"
       },
       "comparison": {
         "label": "比較",
-        "title": "Smart Kids Learningのインタラクティブな練習で比較の問題を練習しよう"
+        "title": "Smart English Learningのインタラクティブな練習で比較の問題を練習しよう"
       },
       "ascending": {
         "label": "昇順",
-        "title": "Smart Kids Learningのインタラクティブな練習で数字を小さい順に並べる練習をしよう"
+        "title": "Smart English Learningのインタラクティブな練習で数字を小さい順に並べる練習をしよう"
       },
       "descending": {
         "label": "降順",
-        "title": "Smart Kids Learningのインタラクティブな練習で数字を大きい順に並べる練習をしよう"
+        "title": "Smart English Learningのインタラクティブな練習で数字を大きい順に並べる練習をしよう"
       },
       "counting": {
         "label": "数える",
-        "title": "Smart Kids Learningの楽しい練習で数を数えることを学ぼう"
+        "title": "Smart English Learningの楽しい練習で数を数えることを学ぼう"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "スペリング",
-        "title": "Smart Kids Learningで絵と一緒に英単語を学ぼう"
+        "title": "Smart English Learningで絵と一緒に英単語を学ぼう"
       },
       "paintBrush": {
         "label": "ペイントブラシ",
-        "title": "Smart Kids Learningのペイントブラシゲームで絵を描いて色を塗ろう"
+        "title": "Smart English Learningのペイントブラシゲームで絵を描いて色を塗ろう"
       },
       "gridMatch": {
         "label": "グリッド合わせ",
@@ -626,10 +626,10 @@
       "failedToLoad": "透かし画像の読み込みに失敗しました"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "PDFの保存に失敗しました：",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids LearningのPDFを添付しました。",
+      "shareText": "Smart English LearningのPDFを添付しました。",
       "sharingFailed": "共有に失敗しました：",
       "downloadedMessage": "PDFをダウンロードしました。",
       "downloadNotSupported": "ダウンロードはサポートされていません",
@@ -746,7 +746,7 @@
     "item2": "Little Readers 1年生向け楽しい読解20選 セットA",
     "item3": "Little Readers 1年生向け楽しい読解20選 セットB",
     "item4": "Little Readers 1年生向け楽しい読解20選 セットC",
-    "item5": "Smart Kids 割り算ワークシート | 400ページの印刷可能な算数練習ページ"
+    "item5": "Smart English 割り算ワークシート | 400ページの印刷可能な算数練習ページ"
   },
   "successModal": {
     "rateUsPrompt": "アプリを気に入っていただけたら、Playストアで星5つの評価をお願いします！",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Smart Kids Learningへようこそ！",
+    "message": "Smart English Learningへようこそ！",
     "playButton": "あそぼう！"
   },
   "words": {

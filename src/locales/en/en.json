@@ -5,7 +5,7 @@
   "app": {
     "description": "Check out this cool app for learning math!, playing Puzzles, Coloring and lot more fun",
     "pressBackToExit": "Press back again to exit",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Screen rotation lock is not available on this device."
   },
   "calculator": {
@@ -375,7 +375,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Open a simple calculator tool in Smart Kids Learning"
+        "title": "Open a simple calculator tool in Smart English Learning"
       },
       "shop": {
         "label": "Shop",
@@ -387,7 +387,7 @@
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Play a word search puzzle game in Smart Kids Learning"
+        "title": "Play a word search puzzle game in Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -395,47 +395,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Play a Sudoku puzzle game in Smart Kids Learning"
+        "title": "Play a Sudoku puzzle game in Smart English Learning"
       },
       "ticTacToe": {
         "label": "TicTac",
-        "title": "Play a Tic Tac Toe game in Smart Kids Learning"
+        "title": "Play a Tic Tac Toe game in Smart English Learning"
       },
       "alphabets": {
         "label": "Alphabets",
-        "title": "Learn English alphabet with speech synthesis in Smart Kids Learning"
+        "title": "Learn English alphabet with speech synthesis in Smart English Learning"
       },
       "addition": {
         "label": "Add",
-        "title": "Practice addition problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice addition problems with interactive exercises in Smart English Learning"
       },
       "subtraction": {
         "label": "Minus",
-        "title": "Practice subtraction problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice subtraction problems with interactive exercises in Smart English Learning"
       },
       "multiplication": {
         "label": "Multiply",
-        "title": "Practice multiplication problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice multiplication problems with interactive exercises in Smart English Learning"
       },
       "division": {
         "label": "Divide",
-        "title": "Practice division problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice division problems with interactive exercises in Smart English Learning"
       },
       "comparison": {
         "label": "Compare",
-        "title": "Practice comparison problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice comparison problems with interactive exercises in Smart English Learning"
       },
       "ascending": {
         "label": "UpFun",
-        "title": "Practice ascending order problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice ascending order problems with interactive exercises in Smart English Learning"
       },
       "descending": {
         "label": "DownFun",
-        "title": "Practice descending order problems with interactive exercises in Smart Kids Learning"
+        "title": "Practice descending order problems with interactive exercises in Smart English Learning"
       },
       "counting": {
         "label": "Counting",
-        "title": "Learn to count with fun exercises in Smart Kids Learning"
+        "title": "Learn to count with fun exercises in Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -447,11 +447,11 @@
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Learn English words with pictures in Smart Kids Learning"
+        "title": "Learn English words with pictures in Smart English Learning"
       },
       "paintBrush": {
         "label": "Paint Brush",
-        "title": "Draw and paint with a paint brush game in Smart Kids Learning"
+        "title": "Draw and paint with a paint brush game in Smart English Learning"
       },
       "gridMatch": {
         "label": "GridPlay",
@@ -617,10 +617,10 @@
       "failedToLoad": "Failed to load watermark image"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Failed to save PDF: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "Smart Kids Learning PDF attached.",
+      "shareText": "Smart English Learning PDF attached.",
       "sharingFailed": "Sharing failed: ",
       "downloadedMessage": "PDF downloaded.",
       "downloadNotSupported": "Download not supported",
@@ -737,7 +737,7 @@
     "item2": "Little Readers 20 Fun Unseen Passages for Class 1 Set A",
     "item3": "Little Readers 20 Fun Unseen Passages for Class 1 Set B",
     "item4": "Little Readers 20 Fun Unseen Passages for Class 1 Set C",
-    "item5": "Smart Kids Division Worksheets | 400 Printable Math Practice Pages"
+    "item5": "Smart English Division Worksheets | 400 Printable Math Practice Pages"
   },
   "successModal": {
     "rateUsPrompt": "If you like the app, please consider rating us 5 stars on the Play Store!",
@@ -847,7 +847,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Welcome to Smart Kids Learning!",
+    "message": "Welcome to Smart English Learning!",
     "playButton": "Let's Play!"
   },
   "videos": {

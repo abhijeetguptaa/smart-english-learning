@@ -5,7 +5,7 @@
   "app": {
     "description": "Descoperă această aplicație grozavă pentru a învăța matematica, a rezolva puzzle-uri, a colora și multe alte activități distractive!",
     "pressBackToExit": "Apasă din nou înapoi pentru a ieși",
-    "title": "Smart Kids Learning",
+    "title": "Smart English Learning",
     "orientationLockError": "Blocarea rotației ecranului nu este disponibilă pe acest dispozitiv."
   },
   "calculator": {
@@ -380,7 +380,7 @@
       },
       "calculator": {
         "label": "$t(calculator.title)",
-        "title": "Deschide un instrument simplu de calcul în Smart Kids Learning"
+        "title": "Deschide un instrument simplu de calcul în Smart English Learning"
       },
       "shop": {
         "label": "Magazin",
@@ -392,7 +392,7 @@
       },
       "wordSearch": {
         "label": "Căutare cuvinte",
-        "title": "Joacă un joc de căutare a cuvintelor în Smart Kids Learning"
+        "title": "Joacă un joc de căutare a cuvintelor în Smart English Learning"
       },
       "sentenceScramble": {
         "label": "Distracție cu propoziții",
@@ -400,47 +400,47 @@
       },
       "sudoku": {
         "label": "Sudoku",
-        "title": "Joacă un joc Sudoku în Smart Kids Learning"
+        "title": "Joacă un joc Sudoku în Smart English Learning"
       },
       "ticTacToe": {
         "label": "X și O",
-        "title": "Joacă X și O în Smart Kids Learning"
+        "title": "Joacă X și O în Smart English Learning"
       },
       "alphabets": {
         "label": "Alfabete",
-        "title": "Învață alfabetul englez cu sinteză vocală în Smart Kids Learning"
+        "title": "Învață alfabetul englez cu sinteză vocală în Smart English Learning"
       },
       "addition": {
         "label": "Adunare",
-        "title": "Exersează adunările cu exerciții interactive în Smart Kids Learning"
+        "title": "Exersează adunările cu exerciții interactive în Smart English Learning"
       },
       "subtraction": {
         "label": "Scădere",
-        "title": "Exersează scăderile cu exerciții interactive în Smart Kids Learning"
+        "title": "Exersează scăderile cu exerciții interactive în Smart English Learning"
       },
       "multiplication": {
         "label": "Înmulțire",
-        "title": "Exersează înmulțirile cu exerciții interactive în Smart Kids Learning"
+        "title": "Exersează înmulțirile cu exerciții interactive în Smart English Learning"
       },
       "division": {
         "label": "Împărțire",
-        "title": "Exersează împărțirile cu exerciții interactive în Smart Kids Learning"
+        "title": "Exersează împărțirile cu exerciții interactive în Smart English Learning"
       },
       "comparison": {
         "label": "Comparație",
-        "title": "Exersează compararea numerelor în Smart Kids Learning"
+        "title": "Exersează compararea numerelor în Smart English Learning"
       },
       "ascending": {
         "label": "Crescător",
-        "title": "Exersează ordinea crescătoare în Smart Kids Learning"
+        "title": "Exersează ordinea crescătoare în Smart English Learning"
       },
       "descending": {
         "label": "Descrescător",
-        "title": "Exersează ordinea descrescătoare în Smart Kids Learning"
+        "title": "Exersează ordinea descrescătoare în Smart English Learning"
       },
       "counting": {
         "label": "Numărare",
-        "title": "Învață să numeri cu exerciții distractive în Smart Kids Learning"
+        "title": "Învață să numeri cu exerciții distractive în Smart English Learning"
       },
       "numberTracing": {
         "label": "Number",
@@ -452,11 +452,11 @@
       },
       "spellTheWord": {
         "label": "Scrie cuvântul",
-        "title": "Învață cuvinte în engleză cu imagini în Smart Kids Learning"
+        "title": "Învață cuvinte în engleză cu imagini în Smart English Learning"
       },
       "paintBrush": {
         "label": "Pensulă",
-        "title": "Desenază și pictează cu un joc de pictură în Smart Kids Learning"
+        "title": "Desenază și pictează cu un joc de pictură în Smart English Learning"
       },
       "gridMatch": {
         "label": "Potrivire grilă",
@@ -626,10 +626,10 @@
       "failedToLoad": "Nu s-a putut încărca imaginea de fundal"
     },
     "pdf": {
-      "title": "Smart Kids Learning - ",
+      "title": "Smart English Learning - ",
       "failedToSave": "Nu s-a putut salva PDF-ul: ",
       "shareTitle": "$t(app.title)",
-      "shareText": "PDF Smart Kids Learning atașat.",
+      "shareText": "PDF Smart English Learning atașat.",
       "sharingFailed": "Partajarea a eșuat: ",
       "downloadedMessage": "PDF descărcat.",
       "downloadNotSupported": "Descărcarea nu este acceptată",
@@ -746,7 +746,7 @@
     "item2": "Micii cititori - 20 de texte distractive la prima vedere pentru clasa 1 Set A",
     "item3": "Micii cititori - 20 de texte distractive la prima vedere pentru clasa 1 Set B",
     "item4": "Micii cititori - 20 de texte distractive la prima vedere pentru clasa 1 Set C",
-    "item5": "Fișe de împărțire Smart Kids | 400 de pagini imprimabile de practică la matematică"
+    "item5": "Fișe de împărțire Smart English | 400 de pagini imprimabile de practică la matematică"
   },
   "successModal": {
     "rateUsPrompt": "Dacă îți place aplicația, te rugăm să ne evaluezi cu 5 stele pe Play Store!",
@@ -856,7 +856,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Bun venit la Smart Kids Learning!",
+    "message": "Bun venit la Smart English Learning!",
     "playButton": "Să ne jucăm!"
   },
   "words": {
