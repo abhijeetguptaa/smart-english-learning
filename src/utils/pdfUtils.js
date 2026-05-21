@@ -158,11 +158,7 @@ export async function downloadPdfFile(selectedOperator, selectedComplexity, numP
     MATH_OPERATORS.Multiplication,
     MATH_OPERATORS.Division,
   ];
-  const set2Ops = [
-    MATH_OPERATORS.Comparison,
-    MATH_OPERATORS.Ascending,
-    MATH_OPERATORS.Descending,
-  ];
+  const set2Ops = [MATH_OPERATORS.Comparison, MATH_OPERATORS.Ascending, MATH_OPERATORS.Descending];
   doc.setFontSize(16);
   doc.text(`${t('mathApp.pdf.title')}${selectedOperator.toUpperCase()}`, 15, 15);
   doc.setFontSize(14);

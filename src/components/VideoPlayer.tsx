@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import '../styles/VideoPlayer.scss';
 import { pauseMusic, playMusic } from '../utils/bgMusicManager';
 import { stopAllTones, stopSpeech } from '../utils/soundUtils';
