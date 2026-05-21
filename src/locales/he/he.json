@@ -5,7 +5,7 @@
   "app": {
     "description": "בדוק את האפליקציה המגניבה הזו ללימוד מתמטיקה, משחק בפאזלים, צביעה ועוד הרבה כיף!",
     "pressBackToExit": "לחץ שוב על חזור כדי לצאת",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "נעילת סיבוב מסך אינה זמינה במכשיר זה."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "אלף-בית",
-        "title": "למד אלף-בית באנגלית עם הקראת קול ב-Smart English Learning"
+        "title": "למד אלף-בית באנגלית עם הקראת קול ב-Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "איית את המילה",
-        "title": "למד מילים באנגלית עם תמונות ב-Smart English Learning"
+        "title": "למד מילים באנגלית עם תמונות ב-Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "תפזורת",
-        "title": "שחק משחק תפזורת מילים ב-Smart English Learning"
+        "title": "שחק משחק תפזורת מילים ב-Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "ברוכים הבאים ל-Smart English Learning!",
+    "message": "ברוכים הבאים ל-Play & Learn English – ABC Games!",
     "playButton": "בואו נשחק!"
   },
   "videos": {

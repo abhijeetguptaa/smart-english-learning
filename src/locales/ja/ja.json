@@ -5,7 +5,7 @@
   "app": {
     "description": "算数を学んだり、パズルで遊んだり、色塗りをしたり、もっとたくさんの楽しみがあるこのクールなアプリをチェックしてください！",
     "pressBackToExit": "もう一度「戻る」を押すと終了します",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "画面の回転ロックはこのデバイスでは利用できません。"
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "アルファベット",
-        "title": "Smart English Learningで音声合成と一緒にアルファベットを学ぼう"
+        "title": "Play & Learn English – ABC Gamesで音声合成と一緒にアルファベットを学ぼう"
       },
       "spellTheWord": {
         "label": "スペリング",
-        "title": "Smart English Learningで絵と一緒に英単語を学ぼう"
+        "title": "Play & Learn English – ABC Gamesで絵と一緒に英単語を学ぼう"
       },
       "wordSearch": {
         "label": "単語探し",
-        "title": "Smart English Learningで単語探しパズルゲームをプレイしよう"
+        "title": "Play & Learn English – ABC Gamesで単語探しパズルゲームをプレイしよう"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Smart English Learningへようこそ！",
+    "message": "Play & Learn English – ABC Gamesへようこそ！",
     "playButton": "あそぼう！"
   },
   "videos": {

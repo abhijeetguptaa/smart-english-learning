@@ -5,7 +5,7 @@
   "app": {
     "description": "Kolla in denna coola app för att lära dig matte, lägga pussel, färglägga och mycket mer kul!",
     "pressBackToExit": "Tryck på tillbaka igen för att avsluta",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Skärmrotationslås är inte tillgängligt på den här enheten."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabet",
-        "title": "Lär dig det engelska alfabetet med talsyntes i Smart English Learning"
+        "title": "Lär dig det engelska alfabetet med talsyntes i Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Stava ordet",
-        "title": "Lär dig engelska ord med bilder i Smart English Learning"
+        "title": "Lär dig engelska ord med bilder i Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Ordsök",
-        "title": "Spela ordsökspussel i Smart English Learning"
+        "title": "Spela ordsökspussel i Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Meningslek",
@@ -828,7 +828,7 @@
     "success": "Fantastiskt! Du spårade det perfekt!"
   },
   "welcomeScreen": {
-    "message": "Välkommen till Smart English Learning!",
+    "message": "Välkommen till Play & Learn English – ABC Games!",
     "playButton": "Låt oss spela!"
   },
   "videos": {

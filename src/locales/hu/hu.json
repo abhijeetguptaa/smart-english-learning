@@ -5,7 +5,7 @@
   "app": {
     "description": "Nézd meg ezt a szuper alkalmazást a matematika tanulásához, rejtvényekhez, színezéshez és még sok más mókához!",
     "pressBackToExit": "Nyomja meg újra a vissza gombot a kilépéshez",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "A képernyőforgatás zárolása nem érhető el ezen az eszközön."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Ábécé",
-        "title": "Tanuld meg az angol ábécét beszédszintézissel a Smart English Learningben"
+        "title": "Tanuld meg az angol ábécét beszédszintézissel a Play & Learn English – ABC Gamesben"
       },
       "spellTheWord": {
         "label": "Betűzés",
-        "title": "Tanulj angol szavakat képekkel a Smart English Learningben"
+        "title": "Tanulj angol szavakat képekkel a Play & Learn English – ABC Gamesben"
       },
       "wordSearch": {
         "label": "Szókereső",
-        "title": "Játssz szókereső játékot a Smart English Learningben"
+        "title": "Játssz szókereső játékot a Play & Learn English – ABC Gamesben"
       },
       "sentenceScramble": {
         "label": "Mondatjáték",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Üdvözlünk a Smart English Learningben!",
+    "message": "Üdvözlünk a Play & Learn English – ABC Gamesben!",
     "playButton": "Gyerünk játszani!"
   },
   "videos": {

@@ -5,7 +5,7 @@
   "app": {
     "description": "Pozrite si túto skvelú aplikáciu na učenie matematiky, hranie puzzle, vyfarbovanie a oveľa viac zábavy!",
     "pressBackToExit": "Pre ukončenie stlačte znova späť",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Zámok otáčania obrazovky nie je na tomto zariadení k dispozícii."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Abecedy",
-        "title": "Učte sa anglickú abecedu so syntézou reči v Smart English Learning"
+        "title": "Učte sa anglickú abecedu so syntézou reči v Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Vyslov slovo",
-        "title": "Učte sa anglické slová s obrázkami v Smart English Learning"
+        "title": "Učte sa anglické slová s obrázkami v Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Hľadanie slov",
-        "title": "Zahrajte si hru na hľadanie slov v Smart English Learning"
+        "title": "Zahrajte si hru na hľadanie slov v Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Vitajte v Smart English Learning!",
+    "message": "Vitajte v Play & Learn English – ABC Games!",
     "playButton": "Poďme sa hrať!"
   },
   "videos": {

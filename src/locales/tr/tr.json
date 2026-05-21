@@ -5,7 +5,7 @@
   "app": {
     "description": "Matematik öğrenmek, bulmaca oynamak, boyama yapmak ve çok daha fazla eğlence için bu harika uygulamaya göz atın!",
     "pressBackToExit": "Çıkmak için tekrar geri tuşuna basın",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Ekran döndürme kilidi bu cihazda mevcut değil."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabe",
-        "title": "Smart English Learning'de ses sentezi ile İngilizce alfabeyi öğren"
+        "title": "Play & Learn English – ABC Games'de ses sentezi ile İngilizce alfabeyi öğren"
       },
       "spellTheWord": {
         "label": "Kelimeyi Yaz",
-        "title": "Smart English Learning'de resimlerle İngilizce kelimeleri öğren"
+        "title": "Play & Learn English – ABC Games'de resimlerle İngilizce kelimeleri öğren"
       },
       "wordSearch": {
         "label": "Kelime Bulmaca",
-        "title": "Smart English Learning'de bir kelime bulma oyunu oyna"
+        "title": "Play & Learn English – ABC Games'de bir kelime bulma oyunu oyna"
       },
       "sentenceScramble": {
         "label": "Cümle Eğlencesi",
@@ -828,7 +828,7 @@
     "success": "Harika! Mükemmel bir şekilde çizdin!"
   },
   "welcomeScreen": {
-    "message": "Smart English Learning'e Hoş Geldiniz!",
+    "message": "Play & Learn English – ABC Games'e Hoş Geldiniz!",
     "playButton": "Hadi Oynayalım!"
   },
   "videos": {

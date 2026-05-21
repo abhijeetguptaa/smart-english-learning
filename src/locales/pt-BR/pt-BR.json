@@ -5,7 +5,7 @@
   "app": {
     "description": "Confira este aplicativo super legal para aprender matemática, jogar quebra-cabeças, colorir e muito mais diversão!",
     "pressBackToExit": "Pressione voltar novamente para sair",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "O bloqueio de rotação de tela não está disponível neste dispositivo."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabetos",
-        "title": "Aprenda o alfabeto inglês com síntese de voz no Smart English Learning"
+        "title": "Aprenda o alfabeto inglês com síntese de voz no Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Soletrar",
-        "title": "Aprenda palavras em inglês com imagens no Smart English Learning"
+        "title": "Aprenda palavras em inglês com imagens no Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Caça-palavras",
-        "title": "Jogue um jogo de caça-palavras no Smart English Learning"
+        "title": "Jogue um jogo de caça-palavras no Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Frases divertidas",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Bem-vindo ao Smart English Learning!",
+    "message": "Bem-vindo ao Play & Learn English – ABC Games!",
     "playButton": "Vamos Jogar!"
   },
   "videos": {

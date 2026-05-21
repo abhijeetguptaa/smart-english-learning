@@ -5,7 +5,7 @@
   "app": {
     "description": "Descoperă această aplicație grozavă pentru a învăța matematica, a rezolva puzzle-uri, a colora și multe alte activități distractive!",
     "pressBackToExit": "Apasă din nou înapoi pentru a ieși",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Blocarea rotației ecranului nu este disponibilă pe acest dispozitiv."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabete",
-        "title": "Învață alfabetul englez cu sinteză vocală în Smart English Learning"
+        "title": "Învață alfabetul englez cu sinteză vocală în Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Scrie cuvântul",
-        "title": "Învață cuvinte în engleză cu imagini în Smart English Learning"
+        "title": "Învață cuvinte în engleză cu imagini în Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Căutare cuvinte",
-        "title": "Joacă un joc de căutare a cuvintelor în Smart English Learning"
+        "title": "Joacă un joc de căutare a cuvintelor în Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Distracție cu propoziții",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Bun venit la Smart English Learning!",
+    "message": "Bun venit la Play & Learn English – ABC Games!",
     "playButton": "Să ne jucăm!"
   },
   "videos": {

@@ -5,7 +5,7 @@
   "app": {
     "description": "Lihat aplikasi keren ini untuk belajar matematika, bermain puzzle, mewarnai, dan banyak lagi keseruan lainnya!",
     "pressBackToExit": "Tekan kembali lagi untuk keluar",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Kunci rotasi layar tidak tersedia di perangkat ini."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Abjad",
-        "title": "Pelajari abjad Inggris dengan sintesis suara di Smart English Learning"
+        "title": "Pelajari abjad Inggris dengan sintesis suara di Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Eja Kata",
-        "title": "Pelajari kata-kata bahasa Inggris dengan gambar di Smart English Learning"
+        "title": "Pelajari kata-kata bahasa Inggris dengan gambar di Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Cari Kata",
-        "title": "Mainkan permainan teka-teki cari kata di Smart English Learning"
+        "title": "Mainkan permainan teka-teki cari kata di Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Susun Kalimat",
@@ -828,7 +828,7 @@
     "success": "Hebat! Kamu menelusurinya dengan sempurna!"
   },
   "welcomeScreen": {
-    "message": "Selamat datang di Smart English Learning!",
+    "message": "Selamat datang di Play & Learn English – ABC Games!",
     "playButton": "Mari Bermain!"
   },
   "videos": {

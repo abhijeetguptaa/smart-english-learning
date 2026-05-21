@@ -5,7 +5,7 @@
   "app": {
     "description": "พบกับแอปเจ๋งๆ สำหรับการเรียนคณิตศาสตร์ เล่นปริศนา ระบายสี และความสนุกอีกมากมาย!",
     "pressBackToExit": "กดกลับอีกครั้งเพื่อออก",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "การล็อกการหมุนหน้าจอไม่สามารถใช้งานได้บนอุปกรณ์นี้"
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "ตัวอักษร",
-        "title": "เรียนรู้ตัวอักษรภาษาอังกฤษพร้อมเสียงอ่านใน Smart English Learning"
+        "title": "เรียนรู้ตัวอักษรภาษาอังกฤษพร้อมเสียงอ่านใน Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "สะกดคำ",
-        "title": "เรียนรู้คำศัพท์ภาษาอังกฤษพร้อมรูปภาพใน Smart English Learning"
+        "title": "เรียนรู้คำศัพท์ภาษาอังกฤษพร้อมรูปภาพใน Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "ค้นหาคำ",
-        "title": "เล่นเกมปริศนาค้นหาคำใน Smart English Learning"
+        "title": "เล่นเกมปริศนาค้นหาคำใน Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "สนุกกับประโยค",
@@ -828,7 +828,7 @@
     "success": "มหัศจรรย์! คุณลากเส้นได้อย่างสมบูรณ์แบบ!"
   },
   "welcomeScreen": {
-    "message": "ยินดีต้อนรับสู่ Smart English Learning!",
+    "message": "ยินดีต้อนรับสู่ Play & Learn English – ABC Games!",
     "playButton": "มาเล่นกันเลย!"
   },
   "videos": {

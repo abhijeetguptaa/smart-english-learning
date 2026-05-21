@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabet",
-        "title": "Lær det engelske alfabet med talesyntese i Smart English Learning"
+        "title": "Lær det engelske alfabet med talesyntese i Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Lær engelske ord med billeder i Smart English Learning"
+        "title": "Lær engelske ord med billeder i Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Spil ordsøgning i Smart English Learning"
+        "title": "Spil ordsøgning i Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "S?tningssjov",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Velkommen til Smart English Learning!",
+    "message": "Velkommen til Play & Learn English – ABC Games!",
     "playButton": "Lad os spille!"
   },
   "videos": {

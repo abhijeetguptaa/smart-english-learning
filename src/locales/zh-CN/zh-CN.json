@@ -5,7 +5,7 @@
   "app": {
     "description": "快来看看这个超酷的数学学习应用！玩拼图、涂色，享受更多乐趣挑战",
     "pressBackToExit": "再次按返回键退出",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "此设备不支持屏幕旋转锁定。"
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "字母表",
-        "title": "在 Smart English Learning 中通过语音合成学习英文字母表"
+        "title": "在 Play & Learn English – ABC Games 中通过语音合成学习英文字母表"
       },
       "spellTheWord": {
         "label": "单词拼写",
-        "title": "在 Smart English Learning 中通过图片学习英语单词"
+        "title": "在 Play & Learn English – ABC Games 中通过图片学习英语单词"
       },
       "wordSearch": {
         "label": "单词搜索",
-        "title": "在 Smart English Learning 中玩单词搜索益智挑战"
+        "title": "在 Play & Learn English – ABC Games 中玩单词搜索益智挑战"
       },
       "sentenceScramble": {
         "label": "句子排序",
@@ -828,7 +828,7 @@
     "success": "太棒了！你描摹得非常完美！"
   },
   "welcomeScreen": {
-    "message": "欢迎来到 Smart English Learning！",
+    "message": "欢迎来到 Play & Learn English – ABC Games！",
     "playButton": "开始玩吧！"
   },
   "videos": {

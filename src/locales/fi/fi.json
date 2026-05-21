@@ -5,7 +5,7 @@
   "app": {
     "description": "Tutustu tähän mahtavaan sovellukseen matematiikan oppimiseen, palapelien pelaamiseen, värittämiseen ja moneen muuhun hauskaan!",
     "pressBackToExit": "Paina takaisin uudelleen poistuaksesi",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Näytön kierron lukitus ei ole käytettävissä tässä laitteessa."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Aakkoset",
-        "title": "Opi englannin aakkoset puhesynteesin avulla Smart English Learningissa"
+        "title": "Opi englannin aakkoset puhesynteesin avulla Play & Learn English – ABC Gamesissa"
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Opi englannin sanoja kuvien avulla Smart English Learningissa"
+        "title": "Opi englannin sanoja kuvien avulla Play & Learn English – ABC Gamesissa"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Pelaa sanajahtia Smart English Learningissa"
+        "title": "Pelaa sanajahtia Play & Learn English – ABC Gamesissa"
       },
       "sentenceScramble": {
         "label": "Lauseleikki",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Tervetuloa Smart English Learningiin!",
+    "message": "Tervetuloa Play & Learn English – ABC Gamesiin!",
     "playButton": "Pelataan!"
   },
   "videos": {

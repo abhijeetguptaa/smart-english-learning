@@ -5,7 +5,7 @@
   "app": {
     "description": "Hãy xem ứng dụng thú vị này để học toán, chơi Giải đố, Tô màu và nhiều niềm vui khác",
     "pressBackToExit": "Nhấn quay lại lần nữa để thoát",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Khóa xoay màn hình không khả dụng trên thiết bị này."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Bảng chữ cái",
-        "title": "Học bảng chữ cái tiếng Anh với tính năng tổng hợp giọng nói trong Smart English Learning"
+        "title": "Học bảng chữ cái tiếng Anh với tính năng tổng hợp giọng nói trong Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Đánh vần",
-        "title": "Học từ vựng tiếng Anh qua hình ảnh trong Smart English Learning"
+        "title": "Học từ vựng tiếng Anh qua hình ảnh trong Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Tìm từ",
-        "title": "Chơi trò chơi đố chữ tìm từ trong Smart English Learning"
+        "title": "Chơi trò chơi đố chữ tìm từ trong Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Ghép câu",
@@ -828,7 +828,7 @@
     "success": "Tuyệt vời! Bạn đã tô nó một cách hoàn hảo!"
   },
   "welcomeScreen": {
-    "message": "Chào mừng bạn đến với Smart English Learning!",
+    "message": "Chào mừng bạn đến với Play & Learn English – ABC Games!",
     "playButton": "Cùng chơi nào!"
   },
   "videos": {

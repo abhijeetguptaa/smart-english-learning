@@ -5,7 +5,7 @@
   "app": {
     "description": "Перегляньте цей крутий додаток для вивчення математики, ігор у пазли, розмальовок та багатьох інших розваг!",
     "pressBackToExit": "Натисніть ще раз «назад», щоб вийти",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Блокування повороту екрана недоступне на цьому пристрої."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Алфавіт",
-        "title": "Вивчай англійський алфавіт із синтезом мовлення у Smart English Learning"
+        "title": "Вивчай англійський алфавіт із синтезом мовлення у Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "По буквах",
-        "title": "Вчи англійські слова з картинками у Smart English Learning"
+        "title": "Вчи англійські слова з картинками у Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "Пошук слів",
-        "title": "Грай у пошук слів у Smart English Learning"
+        "title": "Грай у пошук слів у Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Склади речення",
@@ -828,7 +828,7 @@
     "success": "Чудово! Ти все обвів ідеально!"
   },
   "welcomeScreen": {
-    "message": "Ласкаво просимо до Smart English Learning!",
+    "message": "Ласкаво просимо до Play & Learn English – ABC Games!",
     "playButton": "Пограємо!"
   },
   "videos": {

@@ -63,7 +63,7 @@ export const NUMBER_GENERATION = {
 // UI Text and Labels
 export const APP_TEXT = {
   TITLES: {
-    SMART_KIDS_LEARNING: 'Smart English Learning',
+    SMART_KIDS_LEARNING: 'Play & Learn English – ABC Games',
   },
   BUTTONS: {
     GO_HOME: 'Go Home',
@@ -88,8 +88,8 @@ export const FILE_SETTINGS = {
   DEFAULT_PDF_NAME: 'smart-english-learning.pdf',
   DEFAULT_PASSAGE_PDF_NAME: 'smart-english-learning-passage.pdf',
   PDF_TYPE: 'application/pdf',
-  SHARE_TITLE: 'Smart English Learning',
-  SHARE_TEXT: 'Smart English Learning PDF attached.',
+  SHARE_TITLE: 'Play & Learn English – ABC Games',
+  SHARE_TEXT: 'Play & Learn English – ABC Games PDF attached.',
 };
 
 // Modal and UI states

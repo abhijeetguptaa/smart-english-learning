@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alphabete",
-        "title": "Lerne das englische Alphabet mit Sprachausgabe in Smart English Learning"
+        "title": "Lerne das englische Alphabet mit Sprachausgabe in Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Lerne englische Wörter mit Bildern in Smart English Learning"
+        "title": "Lerne englische Wörter mit Bildern in Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Spiele ein Wortsuchrätsel in Smart English Learning"
+        "title": "Spiele ein Wortsuchrätsel in Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Satzspass",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Willkommen bei Smart English Learning!",
+    "message": "Willkommen bei Play & Learn English – ABC Games!",
     "playButton": "Lass uns spielen!"
   },
   "videos": {

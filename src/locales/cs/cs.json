@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Abecedy",
-        "title": "Naučte se anglickou abecedu pomocí syntézy řeči ve Smart English Learning"
+        "title": "Naučte se anglickou abecedu pomocí syntézy řeči ve Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Naučte se anglická slova pomocí obrázků ve Smart English Learning"
+        "title": "Naučte se anglická slova pomocí obrázků ve Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Zahrajte si hru na hledání slov v Smart English Learning"
+        "title": "Zahrajte si hru na hledání slov v Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Větná zábava",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Vítejte ve Smart English Learning!",
+    "message": "Vítejte ve Play & Learn English – ABC Games!",
     "playButton": "Pojďme hrát!"
   },
   "videos": {

@@ -5,7 +5,7 @@
   "app": {
     "description": "Check out this cool app for learning math!, playing Puzzles, Coloring and lot more fun",
     "pressBackToExit": "Press back again to exit",
-    "title": "Smart English Learning",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Screen rotation lock is not available on this device."
   },
   "common": {
@@ -322,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alphabets",
-        "title": "Learn English alphabet with speech synthesis in Smart English Learning"
+        "title": "Learn English alphabet with speech synthesis in Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "SpellPlay",
-        "title": "Learn English words with pictures in Smart English Learning"
+        "title": "Learn English words with pictures in Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Play a word search puzzle game in Smart English Learning"
+        "title": "Play a word search puzzle game in Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Sentence Fun",
@@ -828,7 +828,7 @@
     "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
-    "message": "Welcome to Smart English Learning!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "Let's Play!"
   },
   "videos": {

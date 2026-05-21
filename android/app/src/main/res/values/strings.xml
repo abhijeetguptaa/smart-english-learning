@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Smart English Learning</string>
-    <string name="title_activity_main">Smart English Learning</string>
+    <string name="app_name">Play & Learn English – ABC Games</string>
+    <string name="title_activity_main">Play & Learn English – ABC Games</string>
     <string name="package_name">smart.english.learning</string>
     <string name="custom_url_scheme">smart.english.learning</string>
 </resources>
