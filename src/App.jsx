@@ -31,6 +31,7 @@ const PassageReading = lazy(() => import('./components/PassageReading.jsx'));
 const DifficultySelection = lazy(() => import('./components/DifficultySelection.jsx'));
 const PassageSelection = lazy(() => import('./components/PassageSelection.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
+const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
 const VideoStories = lazy(() => import('./components/VideoStories.tsx'));
 const Rhymes = lazy(() => import('./components/Rhymes.tsx'));
 const loadLearningPath = () => import('./components/LearningPath.tsx');
@@ -85,6 +86,7 @@ const NON_GAME_ROUTES = new Set([
   '/stories',
   '/rhymes',
   '/passages',
+  '/tap-learn',
 ]);
 
 function isGameplayRoute(pathname) {
@@ -186,76 +188,10 @@ function Home() {
       label: t('home.categories.quiz'),
     },
     {
-      id: 'tap-learn-letters',
-      path: '/tap-learn-letters',
+      id: 'tap-learn',
+      path: '/tap-learn',
       icon: '/alphabet.webp',
-      label: t('home.subjects.tapLearnLetters.label'),
-    },
-    {
-      id: 'tap-learn-farm-animals',
-      path: '/tap-learn-farm-animals',
-      icon: '/farm-animals.webp',
-      label: t('home.subjects.tapLearnFarmAnimals.label'),
-    },
-    {
-      id: 'tap-learn-wild-animals',
-      path: '/tap-learn-wild-animals',
-      icon: '/wild-animals.webp',
-      label: t('home.subjects.tapLearnWildAnimals.label'),
-    },
-    {
-      id: 'tap-learn-sea-animals',
-      path: '/tap-learn-sea-animals',
-      icon: '/sea-animals.webp',
-      label: t('home.subjects.tapLearnSeaAnimals.label'),
-    },
-    {
-      id: 'tap-learn-insects',
-      path: '/tap-learn-insects',
-      icon: '/insects.webp',
-      label: t('home.subjects.tapLearnInsects.label'),
-    },
-    {
-      id: 'tap-learn-colors',
-      path: '/tap-learn-colors',
-      icon: '/colors.webp',
-      label: t('home.subjects.tapLearnColors.label'),
-    },
-    {
-      id: 'tap-learn-vegetables',
-      path: '/tap-learn-vegetables',
-      icon: '/vegetables.webp',
-      label: t('home.subjects.tapLearnVegetables.label'),
-    },
-    {
-      id: 'tap-learn-fruits',
-      path: '/tap-learn-fruits',
-      icon: '/fruits.webp',
-      label: t('home.subjects.tapLearnFruits.label'),
-    },
-    {
-      id: 'tap-learn-vehicles',
-      path: '/tap-learn-vehicles',
-      icon: '/vehicles.webp',
-      label: t('home.subjects.tapLearnVehicles.label'),
-    },
-    {
-      id: 'tap-learn-food',
-      path: '/tap-learn-food',
-      icon: '/food.webp',
-      label: t('home.subjects.tapLearnFood.label'),
-    },
-    {
-      id: 'tap-learn-instruments',
-      path: '/tap-learn-instruments',
-      icon: '/instruments.webp',
-      label: t('home.subjects.tapLearnInstruments.label'),
-    },
-    {
-      id: 'tap-learn-shapes',
-      path: '/tap-learn-shapes',
-      icon: '/shapes.webp',
-      label: t('home.subjects.tapLearnShapes.label'),
+      label: t('home.categories.tap-learn', 'Tap Learn'),
     },
   ];
 
@@ -663,25 +599,8 @@ export default function App() {
           <Route path="/quiz/:difficulty" element={<Quiz />} />
           <Route path="/stories" element={<VideoStories />} />
           <Route path="/rhymes" element={<Rhymes />} />
-          <Route path="/tap-learn-letters" element={<TapLearnRoute gameType="letters" />} />
-          <Route path="/tap-learn-colors" element={<TapLearnRoute gameType="colors" />} />
-          <Route path="/tap-learn-vegetables" element={<TapLearnRoute gameType="vegetables" />} />
-          <Route path="/tap-learn-fruits" element={<TapLearnRoute gameType="fruits" />} />
-          <Route path="/tap-learn-shapes" element={<TapLearnRoute gameType="shapes" />} />
-          <Route
-            path="/tap-learn-farm-animals"
-            element={<TapLearnRoute gameType="farmAnimals" />}
-          />
-          <Route
-            path="/tap-learn-wild-animals"
-            element={<TapLearnRoute gameType="wildAnimals" />}
-          />
-          <Route path="/tap-learn-sea-animals" element={<TapLearnRoute gameType="seaAnimals" />} />
-          <Route path="/tap-learn-insects" element={<TapLearnRoute gameType="insects" />} />
-          <Route path="/tap-learn-vehicles" element={<TapLearnRoute gameType="vehicles" />} />
-          <Route path="/tap-learn-food" element={<TapLearnRoute gameType="food" />} />
-          <Route path="/tap-learn-instruments" element={<TapLearnRoute gameType="instruments" />} />
-          <Route path="/tap-learn" element={<TapLearnRoute gameType="letters" />} />
+          <Route path="/tap-learn" element={<TapLearnSelection />} />
+          <Route path="/tap-learn/:gameType" element={<TapLearnRoute />} />
           <Route
             path="/passages"
             element={
