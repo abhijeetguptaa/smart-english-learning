@@ -480,7 +480,8 @@
     "shareApp": "Share App",
     "rateUs": "Rate Us",
     "music": "Music",
-    "facebook": "Facebook Page"
+    "facebook": "Facebook Page",
+    "feedback": "Feedback"
   },
   "successModal": {
     "rateUsPrompt": "If you like the app, please consider rating us 5 stars on the Play Store!",

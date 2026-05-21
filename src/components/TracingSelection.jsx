@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getCategoryColor } from '../constants/colors';
+import { getCategoryColor, getCategoryBGColor } from '../constants/colors';
 
 function TracingSelection() {
   const { t } = useTranslation();
@@ -30,6 +30,7 @@ function TracingSelection() {
             key={subject.to}
             style={{
               '--card-color': getCategoryColor(index),
+              '--bg-color': getCategoryBGColor(index),
               animationDelay: `${index * 0.1}s`,
             }}
           >

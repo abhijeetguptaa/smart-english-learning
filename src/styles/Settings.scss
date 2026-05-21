@@ -192,12 +192,14 @@
   .btn-facebook {
     background: #1877f2;
   }
+  .btn-feedback {
+    background: #f21877;
+  }
   .btn-share {
     background: #ff4757;
   }
   .btn-rate {
     background: #ffa502;
-    grid-column: span 2;
   }
 }
 
@@ -223,8 +225,5 @@
 
   .settings-actions {
     grid-template-columns: 1fr;
-    .btn-rate {
-      grid-column: auto;
-    }
   }
 }

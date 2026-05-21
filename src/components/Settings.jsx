@@ -92,6 +92,10 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
     window.open('https://www.facebook.com/profile.php?id=61587430264037', '_blank');
   };
 
+  const handleFeedback = () => {
+    window.open('https://wa.me/919717094901', '_blank');
+  };
+
   const handleVolumeChange = (e) => {
     const newVolume = parseFloat(e.target.value);
     setVolume(newVolume);
@@ -154,6 +158,12 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
 
           {/* ACTIONS */}
           <div className="settings-actions">
+            <button
+              className="level-btn btn-feedback"
+              onClick={() => openParentalGate(handleFeedback)}
+            >
+              {t('settings.feedback')} 💬
+            </button>
             <button
               className="level-btn btn-facebook"
               onClick={() => openParentalGate(handleFacebook)}

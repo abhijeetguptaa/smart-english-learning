@@ -43,13 +43,11 @@ const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
 let soundUtilsPromise;
 let bgMusicManagerPromise;
 let admobPromise;
-let analyticsPromise;
 let notificationsPromise;
 
 const loadSoundUtils = () => (soundUtilsPromise ??= import('./utils/soundUtils'));
 const loadBgMusicManager = () => (bgMusicManagerPromise ??= import('./utils/bgMusicManager'));
 const loadAdMob = () => (admobPromise ??= import('@/utils/admob'));
-const loadAnalytics = () => (analyticsPromise ??= import('./utils/analytics'));
 const loadNotifications = () => (notificationsPromise ??= import('./utils/notifications'));
 
 const NOTIFICATION_PROMPT_KEY = 'notifications_prompted_v2';
@@ -105,7 +103,7 @@ function getOrientationLockType(type) {
   return type.startsWith('landscape') ? 'landscape-primary' : 'portrait-primary';
 }
 
-import { getCategoryColor } from './constants/colors';
+import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
 function Home() {
   const { t } = useTranslation();
@@ -163,8 +161,8 @@ function Home() {
     },
     {
       id: 'tracing',
-      path: '/tracing-selection',
-      icon: '/tracing.png',
+      path: '/alphabet-tracing',
+      icon: '/alphabet-tracing.png',
       label: t('home.subjects.tracing.label'),
     },
     {
@@ -220,7 +218,7 @@ function Home() {
     {
       id: 'tap-learn-colors',
       path: '/tap-learn-colors',
-      icon: '/tap-fill.webp',
+      icon: '/colors.webp',
       label: t('home.subjects.tapLearnColors.label'),
     },
     {
@@ -286,6 +284,7 @@ function Home() {
             onFocus={category.id === 'tiny-steps' ? loadLearningPath : undefined}
             style={{
               '--card-color': getCategoryColor(index),
+              '--bg-color': getCategoryBGColor(index),
               animationDelay: `${index * 0.1}s`,
             }}
           >
@@ -377,12 +376,6 @@ export default function App() {
     }
 
     hasStartedDeferredServices.current = true;
-
-    scheduleAfterFirstPaint(() => {
-      loadAnalytics()
-        .then(({ initAnalytics }) => initAnalytics())
-        .catch((err) => console.error('Analytics init failed:', err));
-    }, 1500);
 
     scheduleAfterFirstPaint(() => {
       loadAdMob()
@@ -660,7 +653,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tiny-steps" element={<LearningPath />} />
           <Route path="/alphabets" element={<Alphabets />} />
-          <Route path="/tracing-selection" element={<TracingSelection />} />
           <Route path="/alphabet-tracing" element={<TracingGame mode="alphabets" />} />
           <Route path="/wordsearch" element={<WordSearchDifficultySelector />} />
           <Route path="/wordsearch/:difficulty" element={<WordSearch />} />

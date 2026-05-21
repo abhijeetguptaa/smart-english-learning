@@ -1,12 +1,8 @@
 /**
- * Facebook Ads Event Tracking Utility
- * This utility handles both Meta Pixel (Web) and Native App Events.
+ * Lightweight analytics helpers.
+ * Native Facebook analytics was removed to keep the Android app lean.
  */
 
-import { Capacitor } from '@capacitor/core';
-import { FacebookLogin } from 'capacitor-facebook-login';
-
-const FACEBOOK_APP_ID = '1925390955005187';
 let isAnalyticsInitialized = false;
 
 // Standard Facebook Event Names
@@ -41,25 +37,7 @@ export const initAnalytics = () => {
     return;
   }
 
-  const platform = Capacitor.getPlatform();
   isAnalyticsInitialized = true;
-
-  if (platform === 'web') {
-    console.log('Analytics: Initializing Meta Pixel for Web');
-    // Meta Pixel is usually initialized in index.html
-  } else {
-    console.log('Analytics: Initializing App Events for Native');
-
-    FacebookLogin.initialize({ appId: FACEBOOK_APP_ID })
-      .then(() => FacebookLogin.setAutoLogAppEventsEnabled({ enabled: true }))
-      .then(() => {
-        // This app is configured as a kids app, so keep advertiser ID collection disabled.
-        return FacebookLogin.setAdvertiserIDCollectionEnabled({ enabled: false });
-      })
-      .catch((error) => {
-        console.error('Facebook native analytics initialization failed:', error);
-      });
-  }
 };
 
 /**
@@ -69,21 +47,12 @@ export const initAnalytics = () => {
  */
 export const logEvent = (eventName, params = {}) => {
   try {
-    const platform = Capacitor.getPlatform();
-
-    // Log to console for debugging
     if (import.meta.env.DEV || import.meta.env.VITE_ADMOB_TEST_MODE === 'true') {
       console.log(`[Analytics Event]: ${eventName}`, params);
     }
 
-    if (platform === 'web') {
-      if (window.fbq) {
-        window.fbq('track', eventName, params);
-      }
-    } else {
-      FacebookLogin.logEvent({ eventName }).catch((error) => {
-        console.error(`Failed to log native Facebook event "${eventName}":`, error);
-      });
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', eventName, params);
     }
   } catch (error) {
     console.error('Failed to log analytics event:', error);

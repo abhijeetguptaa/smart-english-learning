@@ -15,7 +15,6 @@ dependencies {
     implementation project(':capacitor-local-notifications')
     implementation project(':capacitor-screen-orientation')
     implementation project(':capacitor-toast')
-    implementation project(':capacitor-facebook-login')
     implementation "androidx.webkit:webkit:1.4.0"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 }

@@ -20,9 +20,6 @@
 -keep class com.google.android.gms.ads.** { *; }
 -dontwarn com.google.android.gms.**
 
-# Facebook
--keep class com.facebook.** { *; }
-
 # Handle Kotlin
 -dontwarn kotlin.**
 -dontwarn org.jetbrains.annotations.**

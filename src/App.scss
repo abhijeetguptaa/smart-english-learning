@@ -200,8 +200,7 @@ body {
   @include flex-center(column);
   justify-content: space-evenly;
   position: relative;
-
-  background: white;
+  background: var(--bg-color);
   border: 8px solid var(--card-color, #4fc3f7);
   border-radius: 40px;
   box-shadow:
