@@ -3,77 +3,7 @@
 @use './animations' as *;
 
 // =============================================================================
-// ANIMATION OVERLAY
-// =============================================================================
-
-.animation-overlay {
-  @include modal-overlay($color-animation-overlay-bg);
-  animation: overlayFadeIn 0.3s ease-in-out;
-}
-
-.animation-container {
-  @include flex-center(column, $spacing-lg);
-  animation: zoom-pulse 2s ease-in-out forwards;
-}
-
-.animation-icon {
-  inline-size: 120px;
-  block-size: 120px;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 8px $shadow-2xl);
-}
-
-.animation-word {
-  font-size: $font-size-2xl;
-  color: $color-white;
-  text-align: center;
-}
-
-// =============================================================================
-// SHARED KEYFRAMES
-// =============================================================================
-
-@keyframes zoom-pulse {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  20% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-}
-
-// =============================================================================
-// ALPHABET CARD
+// ALPHABET PAGE
 // =============================================================================
 
 @keyframes float-slow {
@@ -96,6 +26,18 @@
   }
   50% {
     transform: translateY(-30px) scale(1.1);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -148,7 +90,6 @@
   }
 
   .shape-1 {
-    content: '★';
     top: 5%;
     left: 10%;
     font-size: 100px;
@@ -160,7 +101,6 @@
   }
 
   .shape-2 {
-    content: '●';
     top: 15%;
     right: 15%;
     font-size: 150px;
@@ -172,7 +112,6 @@
   }
 
   .shape-3 {
-    content: '☁';
     bottom: 0%;
     left: 15%;
     font-size: 180px;
@@ -184,7 +123,6 @@
   }
 
   .shape-4 {
-    content: '♥';
     bottom: 20%;
     right: 10%;
     font-size: 120px;
@@ -193,18 +131,6 @@
     &::before {
       content: '♥';
     }
-  }
-}
-
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 
@@ -263,7 +189,7 @@
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-// Dynamic colors for letters (applied via JS or CSS classes)
+// Dynamic colors for letters
 .letter-variant-0 .letter-capital,
 .letter-variant-0 .letter-small {
   background: #ff6b6b;
@@ -286,11 +212,21 @@
   background: #a29bfe;
 }
 
+@keyframes letter-float {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
 .letter-capital {
   @extend %letter-base;
   font-size: clamp(5rem, 15vw, 7rem);
   transform: rotate(-3deg);
-  animation: float 3s infinite ease-in-out;
+  animation: letter-float 3s infinite ease-in-out;
 }
 
 .letter-small {
@@ -298,7 +234,7 @@
   font-size: clamp(3rem, 10vw, 4.5rem);
   margin-left: -0.5rem;
   transform: rotate(5deg);
-  animation: float 3s infinite ease-in-out 0.5s;
+  animation: letter-float 3s infinite ease-in-out 0.5s;
 }
 
 // =============================================================================
@@ -425,7 +361,7 @@
 }
 
 // =============================================================================
-// NAVIGATION CONTROLS - OVERRIDE FOR ALPHABETS
+// NAVIGATION CONTROLS
 // =============================================================================
 
 .navigation-controls {
@@ -537,10 +473,6 @@
     height: 125px;
 
     .word-icon {
-      svg {
-        width: 50px;
-        height: 50px;
-      }
       span {
         font-size: 48px !important;
       }
@@ -564,9 +496,6 @@
   .modal-icon {
     width: 45%;
     margin-bottom: 0;
-    svg {
-      max-height: 60vh;
-    }
   }
 
   .modal-spelling {
@@ -594,33 +523,6 @@
       height: 55px;
       pointer-events: auto;
       border-radius: 50%;
-    }
-  }
-}
-
-/* Very short landscape screens */
-@media screen and (orientation: landscape) and (max-height: 400px) {
-  .alphabet-card {
-    height: 95vh;
-    flex-direction: column;
-  }
-
-  .letter-capital {
-    font-size: 3.5rem;
-  }
-  .letter-small {
-    font-size: 2.2rem;
-  }
-
-  .word-item {
-    padding: 4px;
-    .word-icon svg {
-      width: 40px;
-      height: 40px;
-    }
-    .word-spelling {
-      font-size: 0.9rem;
-      margin-top: 2px;
     }
   }
 }
