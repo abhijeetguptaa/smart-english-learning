@@ -245,7 +245,7 @@
         "nest": "বাসা",
         "nurse": "নার্স",
         "noodle": "নুডলস",
-        "octobpus": "অক্টোপাস",
+        "octopus": "অক্টোপাস",
         "quill": "পালক",
         "quiet": "শান্ত",
         "question": "প্রশ্ন",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "ছোট পদক্ষেপ",
-      "stories": "গল্প",
-      "rhymes": "ছড়া",
       "quiz": "কুইজ",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

@@ -1,23 +1,45 @@
-# React + Vite
+# Play & Learn English – ABC Games
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive English learning application for children, built with React, Vite, and Capacitor.
 
-Currently, two official plugins are available:
+## Features
+- **Alphabets**: Learn letters with speech synthesis.
+- **SpellPlay**: Learn words with pictures.
+- **WordFun**: Word search puzzles.
+- **Sentence Fun**: Rearrange words to form correct sentences.
+- **Reading**: Practice reading with passages and quizzes.
+- **Tracing**: Learn to write with interactive tracing.
+- **Tap Learn**: Identify objects across various categories (Animals, Colors, Food, etc.).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
 
-## Live YouTube Content
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Evening stories and rhymes now load from the official YouTube Data API v3 and fall back to curated local videos if the API key is missing or the request fails.
+2. Run development server:
+   ```bash
+   npm run dev
+   ```
 
-Set this environment variable before running the app:
+3. Build for production:
+   ```bash
+   npm run build
+   ```
 
-```bash
-VITE_YOUTUBE_API_KEY=your_google_api_key
-VITE_YOUTUBE_REGION_CODE=US
-```
+## Mobile (Capacitor)
 
-## Expanding the ESLint configuration
+1. Sync with mobile platforms:
+   ```bash
+   npx cap sync
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Open in Android Studio:
+   ```bash
+   npx cap open android
+   ```
+
+## Environment Variables
+
+- `VITE_ADMOB_TEST_MODE`: Set to `true` to use test ads.

@@ -245,7 +245,7 @@
         "nest": "Гніздо",
         "nurse": "Медсестра",
         "noodle": "Локшина",
-        "octobpus": "Восьминіг",
+        "octopus": "Восьминіг",
         "quill": "Перо",
         "quiet": "Тихо",
         "question": "Питання",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Маленькі кроки",
-      "stories": "Stories",
-      "rhymes": "Вірші",
       "quiz": "Вікторина",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

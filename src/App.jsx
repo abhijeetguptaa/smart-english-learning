@@ -32,8 +32,6 @@ const DifficultySelection = lazy(() => import('./components/DifficultySelection.
 const PassageSelection = lazy(() => import('./components/PassageSelection.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
-const VideoStories = lazy(() => import('./components/VideoStories.tsx'));
-const Rhymes = lazy(() => import('./components/Rhymes.tsx'));
 const loadLearningPath = () => import('./components/LearningPath.tsx');
 const LearningPath = lazy(loadLearningPath);
 const UnlockModal = lazy(() => import('./components/UnlockModal.tsx'));
@@ -83,8 +81,6 @@ const NON_GAME_ROUTES = new Set([
   '/',
   '/tiny-steps',
   '/english',
-  '/stories',
-  '/rhymes',
   '/passages',
   '/tap-learn',
 ]);
@@ -166,20 +162,6 @@ function Home() {
       path: '/alphabet-tracing',
       icon: '/alphabet-tracing.png',
       label: t('home.subjects.tracing.label'),
-    },
-    {
-      id: 'stories',
-      path: '/stories',
-      icon: '/stories.webp',
-      label: t('home.categories.stories'),
-      isOnline: true,
-    },
-    {
-      id: 'rhymes',
-      path: '/rhymes',
-      icon: '/rhymes.webp',
-      label: t('home.categories.rhymes'),
-      isOnline: true,
     },
     {
       id: 'quiz',
@@ -597,8 +579,6 @@ export default function App() {
           <Route path="/sentence-scramble/:difficulty" element={<SentenceScramble />} />
           <Route path="/quiz" element={<QuizDifficultySelector />} />
           <Route path="/quiz/:difficulty" element={<Quiz />} />
-          <Route path="/stories" element={<VideoStories />} />
-          <Route path="/rhymes" element={<Rhymes />} />
           <Route path="/tap-learn" element={<TapLearnSelection />} />
           <Route path="/tap-learn/:gameType" element={<TapLearnRoute />} />
           <Route

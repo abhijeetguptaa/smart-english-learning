@@ -245,7 +245,7 @@
         "nest": "Yuva",
         "nurse": "Hemşire",
         "noodle": "Erişte",
-        "octobpus": "Ahtapot",
+        "octopus": "Ahtapot",
         "quill": "Tüy Kalem",
         "quiet": "Sessiz",
         "question": "Soru",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Küçük Adımlar",
-      "stories": "Stories",
-      "rhymes": "Tekerlemeler",
       "quiz": "Bilgi Yarışması",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

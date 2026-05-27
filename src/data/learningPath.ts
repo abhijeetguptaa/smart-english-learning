@@ -140,7 +140,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 12,
-    title: 'Level 12: Comparison Plus',
+    title: 'Level 12: Word Plus',
     tasks: [
       {
         id: 'l12_t2',
@@ -153,7 +153,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 14,
-    title: 'Level 14: Multiplication Intro',
+    title: 'Level 14: Word Intro',
     tasks: [
       {
         id: 'l14_t2',
@@ -577,7 +577,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 59,
-    title: 'Level 59: Coral Counting',
+    title: 'Level 59: Coral Words',
     tasks: [
       {
         id: 'l59_t2',
@@ -662,7 +662,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 66,
-    title: 'Level 66: Mental Marine',
+    title: 'Level 66: Marine Words',
     tasks: [
       {
         id: 'l66_t2',
@@ -761,7 +761,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 76,
-    title: 'Level 76: Canopy Counting',
+    title: 'Level 76: Canopy Words',
     tasks: [
       {
         id: 'default_alpha',
@@ -825,7 +825,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 80,
-    title: 'Level 80: Desert Division',
+    title: 'Level 80: Desert Words',
     tasks: [
       
       {
@@ -840,7 +840,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 81,
-    title: 'Level 81: Mummy Math',
+    title: 'Level 81: Word Magic',
     tasks: [
       
       {
@@ -868,7 +868,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 83,
-    title: 'Level 83: Artifact Add',
+    title: 'Level 83: Artifact Words',
     tasks: [
       
       {
@@ -883,7 +883,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 84,
-    title: 'Level 84: Nilotic Numbers',
+    title: 'Level 84: Nilotic Words',
     tasks: [
       
       {

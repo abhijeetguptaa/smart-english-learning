@@ -4,39 +4,11 @@
 export const IS_TEST_MODE =
   import.meta.env.VITE_ADMOB_TEST_MODE === 'true' || import.meta.env.MODE === 'test';
 
-// Math Operations
-export const MATH_OPERATORS = {
-  Addition: 'Addition',
-  Subtraction: 'Subtraction',
-  Multiplication: 'Multiplication',
-  Division: 'Division',
-  Comparison: 'Comparison',
-  Ascending: 'Ascending',
-  Descending: 'Descending',
-  MentalMath: 'MentalMath',
-};
-
 export const DIFFICULTY_LEVELS = {
   EASY: 'easy',
   MEDIUM: 'medium',
   HARD: 'hard',
   COMPLEX: 'complex',
-};
-
-export const OPERATOR_SYMBOLS = {
-  [MATH_OPERATORS.Addition]: '+',
-  [MATH_OPERATORS.Subtraction]: '-',
-  [MATH_OPERATORS.Multiplication]: '*',
-  [MATH_OPERATORS.Division]: '/',
-  [MATH_OPERATORS.Comparison]: '?',
-  [MATH_OPERATORS.Ascending]: '↑',
-  [MATH_OPERATORS.Descending]: '↓',
-};
-
-// Range configurations
-export const RANGE_SETS = {
-  SET1: [10, 20, 50, 100, 200, 500],
-  SET2: [10, 20, 30, 40, 50, 100],
 };
 
 // Quiz and Animation Settings
@@ -71,8 +43,6 @@ export const APP_TEXT = {
     DOWNLOAD: 'Download as File',
   },
   LABELS: {
-    OPERATION: 'Operation',
-    RANGE: 'Range',
     NAME: 'Name: ',
     DATE: 'Date: ',
     CLASS: 'Class: ',
@@ -99,5 +69,47 @@ export const UI_MODES = {
 };
 
 export const STORAGE_KEYS = {
-  USER_NAME: 'math_app_user_name_v1',
+  USER_NAME: 'english_app_user_name_v1',
+};
+
+// PDF Configuration
+export const PDF_CONFIG = {
+  // Page dimensions (A4 in mm)
+  PAGE_WIDTH: 210,
+  PAGE_HEIGHT: 297,
+
+  // Margins and spacing
+  MARGIN: 15,
+  BOTTOM_MARGIN: 20,
+
+  // Font sizes
+  TITLE_FONT_SIZE: 16,
+  SUBTITLE_FONT_SIZE: 14,
+  CONTENT_FONT_SIZE: 13,
+  OPERATOR_FONT_SIZE: 15,
+  USER_INFO_FONT_SIZE: 10,
+
+  // User info line configuration
+  USER_INFO: {
+    LINE_LENGTH: 40,
+    FIELD_SPACING: 60,
+    NAME_OFFSET: 15,
+    DATE_OFFSET: 12,
+    CLASS_OFFSET: 13,
+  },
+
+  // Watermark configuration
+  WATERMARK: {
+    OPACITY: 0.15,
+    MARGIN_PERCENT: 0.1,
+    DPI_CONVERSION: 2.83, // Convert mm to pixels at 72 DPI
+    BACKGROUND_OPACITY: 0.1,
+  },
+};
+
+// Canvas and image processing
+export const CANVAS_CONFIG = {
+  CONTEXT_TYPE: '2d',
+  IMAGE_FORMAT: 'image/png',
+  CROSS_ORIGIN: 'anonymous',
 };

@@ -3,7 +3,7 @@
     "isFor": "{{letter}} for {{word}}"
   },
   "app": {
-    "description": "Check out this cool app for learning math!, playing Puzzles, Coloring and lot more fun",
+    "description": "Check out this cool app for learning English!, playing Puzzles, Tracing and lot more fun",
     "pressBackToExit": "Press back again to exit",
     "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Screen rotation lock is not available on this device."
@@ -245,7 +245,7 @@
         "nest": "Nest",
         "nurse": "Nurse",
         "noodle": "Noodle",
-        "octobpus": "Octopus",
+        "octopus": "Octopus",
         "quill": "Quill",
         "quiet": "Quiet",
         "question": "Question",
@@ -283,8 +283,7 @@
     "ai": "AI",
     "accessibility": {
       "subjectSelection": "Subject selection",
-      "funSelection": "Fun selection",
-      "calculatorKeypad": "Calculator keypad"
+      "funSelection": "Fun selection"
     },
     "messages": {
       "shareNotSupported": "Sharing is not supported on this browser/device.",
@@ -295,6 +294,29 @@
     "progress": "Progress",
     "best": "Best",
     "finish": "Finish"
+  },
+  "pdf": {
+    "userInfo": {
+      "name": "Name:",
+      "date": "Date:",
+      "class": "Class:"
+    },
+    "watermark": {
+      "failedToLoad": "Failed to load logo for watermark"
+    },
+    "title": "Passage Reading - ",
+    "failedToSave": "Failed to save PDF: ",
+    "shareTitle": "English Learning Passage",
+    "shareText": "Check out this reading passage from Play & Learn English!",
+    "sharingFailed": "Sharing failed: ",
+    "downloadedMessage": "PDF downloaded successfully",
+    "downloadNotSupported": "PDF download not supported on this browser/device",
+    "sharingAndDownloadNotSupported": "Neither sharing nor downloading is supported",
+    "noSupport": "No support for sharing or downloading",
+    "shareSuccess": "Shared successfully",
+    "shareFailed": "Share failed: ",
+    "sharingNotAvailable": "Sharing is not available",
+    "downloadAsFile": "Download/Share as PDF"
   },
   "wordSearch": {
     "title": "Word Search",
@@ -314,8 +336,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Tiny Steps",
-      "stories": "Stories",
-      "rhymes": "Rhymes",
       "quiz": "Quiz",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +938,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

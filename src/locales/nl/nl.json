@@ -137,7 +137,7 @@
         "ox": "Os",
         "dolphin": "Dolfijn",
         "shark": "Haai",
-        "octopus": "$t(common.items.objects.octobpus)",
+        "octopus": "$t(common.items.objects.octopus)",
         "whale": "Walvis",
         "fish": "Vis",
         "penguin": "Pinguin",
@@ -245,7 +245,7 @@
         "nest": "Vogelnest",
         "nurse": "Verpleegkundige",
         "noodle": "Noedel",
-        "octobpus": "Octopusdier",
+        "octopus": "Octopusdier",
         "quill": "Veer",
         "quiet": "Stil",
         "question": "Vraag",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Kleine stapjes",
-      "stories": "Verhalen",
-      "rhymes": "Rijmpjes",
       "quiz": "Quizspel",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

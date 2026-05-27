@@ -1,9 +1,10 @@
 import { jsPDF } from 'jspdf';
-import { PDF_CONFIG, CANVAS_CONFIG } from '../constants/mathAppConstants.js';
-import { FILE_SETTINGS, MATH_OPERATORS } from '../constants/appConstants.js';
 import {
-  generateQuestion,
-  getOperator,
+  PDF_CONFIG,
+  CANVAS_CONFIG,
+  FILE_SETTINGS,
+} from '../constants/appConstants.js';
+import {
   loadImageAsBase64,
   isCordovaOrCapacitor,
   hasCordovaFileAndSharing,
@@ -19,7 +20,7 @@ export function addUserInfoLine(doc, t) {
   doc.setFont(undefined, 'normal');
 
   // User Name
-  doc.text(t('mathApp.userInfo.name'), PDF_CONFIG.MARGIN, lineY);
+  doc.text(t('pdf.userInfo.name'), PDF_CONFIG.MARGIN, lineY);
   doc.line(
     PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.NAME_OFFSET,
     lineY + 1,
@@ -29,7 +30,7 @@ export function addUserInfoLine(doc, t) {
 
   // Date
   doc.text(
-    t('mathApp.userInfo.date'),
+    t('pdf.userInfo.date'),
     PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.FIELD_SPACING,
     lineY,
   );
@@ -45,7 +46,7 @@ export function addUserInfoLine(doc, t) {
 
   // Class
   doc.text(
-    t('mathApp.userInfo.class'),
+    t('pdf.userInfo.class'),
     PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.FIELD_SPACING * 2,
     lineY,
   );
@@ -136,205 +137,13 @@ export function addWatermarkToPdf(doc, t) {
     };
 
     img.onerror = function () {
-      console.warn(t('mathApp.watermark.failedToLoad'));
+      console.warn(t('pdf.watermark.failedToLoad'));
       resolve(); // Continue without watermark
     };
 
     // Load the logo from public folder
     img.src = '/logo.webp';
   });
-}
-
-export async function downloadPdfFile(selectedOperator, selectedComplexity, numPages = 1, t) {
-  const qrImageBase64 = await loadImageAsBase64('/app_QR.webp');
-
-  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
-
-  // Add watermark to the first page
-  await addWatermarkToPdf(doc, t);
-  const set1Ops = [
-    MATH_OPERATORS.Addition,
-    MATH_OPERATORS.Subtraction,
-    MATH_OPERATORS.Multiplication,
-    MATH_OPERATORS.Division,
-  ];
-  const set2Ops = [MATH_OPERATORS.Comparison, MATH_OPERATORS.Ascending, MATH_OPERATORS.Descending];
-  doc.setFontSize(16);
-  doc.text(`${t('mathApp.pdf.title')}${selectedOperator.toUpperCase()}`, 15, 15);
-  doc.setFontSize(14);
-  let yStart = 25;
-  for (let page = 0; page < numPages; page++) {
-    if (page > 0) {
-      doc.addPage();
-      // Add watermark to each new page
-      await addWatermarkToPdf(doc, t);
-      doc.setFontSize(16);
-      doc.text(`${t('mathApp.pdf.title')}${selectedOperator.toUpperCase()}`, 15, 15);
-      doc.setFontSize(14);
-      yStart = 25;
-    }
-    if (set1Ops.includes(selectedOperator)) {
-      const problems = [];
-      for (let i = 0; i < 24; i++) {
-        const q = generateQuestion(selectedOperator, selectedComplexity);
-        const op = getOperator(selectedOperator);
-        problems.push({
-          num1: q.num1,
-          num2: q.num2,
-          op: op === '__DIVIDE_IMAGE__' || op === '/' ? '÷' : op,
-        });
-      }
-      const cols = 4,
-        rows = 6;
-      const boxW = 45,
-        boxH = 40;
-      for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < cols; c++) {
-          const idx = r * cols + c;
-          const x = 15 + c * boxW;
-          const y = yStart + r * boxH;
-
-          doc.setLineWidth(0.5);
-          doc.setDrawColor(0, 0, 0);
-          doc.rect(x, y, boxW, boxH);
-
-          /* ============================
-         LAST CELL → QR CODE
-      ============================ */
-          if (r === rows - 1 && c === cols - 1) {
-            const padding = 6;
-            const qrSize = Math.min(boxW, boxH) - padding * 2;
-
-            doc.addImage(
-              qrImageBase64,
-              'PNG',
-              x + (boxW - qrSize) / 2,
-              y + (boxH - qrSize) / 2,
-              qrSize,
-              qrSize,
-            );
-
-            continue; // skip question rendering
-          }
-
-          /* ============================
-         EXISTING QUESTION LOGIC
-      ============================ */
-          const centerX = x + boxW / 2;
-          doc.setFontSize(13);
-
-          const num1Str = String(problems[idx].num1);
-          const num2Str = String(problems[idx].num2);
-          const op = problems[idx].op;
-
-          const num1Width = doc.getTextWidth(num1Str);
-          const num2Width = doc.getTextWidth(num2Str);
-          const opWidth = doc.getTextWidth(op);
-
-          const rightEdge = centerX + Math.max(num1Width, num2Width) / 2;
-
-          doc.text(num1Str, rightEdge, y + 14, { align: 'right' });
-
-          const margin = 1.4;
-          doc.setFont(undefined, 'bold');
-          doc.setFontSize(15);
-
-          const opX = rightEdge - num2Width - opWidth - margin;
-          doc.text(op, opX, y + 20, { align: 'left' });
-
-          doc.setFont(undefined, 'normal');
-          doc.setFontSize(13);
-          doc.text(num2Str, rightEdge, y + 20, { align: 'right' });
-
-          doc.setLineWidth(0.5);
-          doc.line(x + 6, y + 24, x + boxW - 6, y + 24);
-        }
-      }
-    } else if (set2Ops.includes(selectedOperator)) {
-      const problems = [];
-      for (let i = 0; i < 48; i++) {
-        const q = generateQuestion(selectedOperator, selectedComplexity);
-        if (selectedOperator === 'Ascending' || selectedOperator === 'Descending') {
-          problems.push(`${q.numbers.join('_')} =`);
-        } else if (selectedOperator === 'Comparison') {
-          problems.push(`${q.num1} _ ${q.num2} =`);
-        }
-      }
-      const cols = 2,
-        rows = 24;
-      const boxW = 85,
-        boxH = 10;
-      for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < cols; c++) {
-          const idx = r * cols + c;
-          const x = 15 + c * boxW;
-          const y = yStart + r * boxH;
-          doc.setLineWidth(0.5);
-          doc.setDrawColor(0, 0, 0);
-          doc.rect(x, y, boxW, boxH);
-          doc.text(problems[idx], x + 3, y + boxH / 2 + 2, { align: 'left', baseline: 'middle' });
-        }
-      }
-    }
-    // Add user information line at bottom of each page
-    addUserInfoLine(doc, t);
-  }
-  const pdfBlob = doc.output('blob');
-  const fileName = FILE_SETTINGS.DEFAULT_PDF_NAME;
-
-  // Improved platform detection
-  const isNative = isCordovaOrCapacitor();
-  const hasPlugins = hasCordovaFileAndSharing();
-
-  if (isNative && hasPlugins) {
-    // Save PDF to file and offer to open/share it
-    savePdfToFile(pdfBlob, fileName, function (err, fileUrl) {
-      if (err) {
-        alert(t('mathApp.pdf.failedToSave') + err);
-        console.error('Cordova file save error:', err);
-      } else {
-        sharePdfWithCordova(fileUrl, t);
-      }
-    });
-  } else if (
-    typeof navigator !== 'undefined' &&
-    navigator.canShare &&
-    navigator.canShare({ files: [new File([pdfBlob], fileName, { type: 'application/pdf' })] })
-  ) {
-    // Web Share API (browser)
-    try {
-      await navigator.share({
-        files: [new File([pdfBlob], fileName, { type: 'application/pdf' })],
-        title: t('mathApp.pdf.shareTitle'),
-        text: t('mathApp.pdf.shareText'),
-      });
-    } catch (err) {
-      alert(t('mathApp.pdf.sharingFailed') + err);
-      console.error('Web Share API error:', err);
-    }
-  } else {
-    // Fallback: try to download the file
-    try {
-      if (window && window.URL && window.URL.createObjectURL) {
-        const url = window.URL.createObjectURL(pdfBlob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = fileName;
-        document.body.appendChild(a);
-        a.click();
-        requestAnimationFrame(() => {
-          document.body.removeChild(a);
-          window.URL.revokeObjectURL(url);
-        });
-        console.log(t('mathApp.pdf.downloadedMessage'));
-      } else {
-        throw new Error(t('mathApp.pdf.downloadNotSupported'));
-      }
-    } catch (err) {
-      alert(t('mathApp.pdf.sharingAndDownloadNotSupported'));
-      console.error(t('mathApp.pdf.noSupport'), err);
-    }
-  }
 }
 
 export async function downloadPassagePdf(passage, t) {
@@ -387,7 +196,7 @@ export async function downloadPassagePdf(passage, t) {
     // Save PDF to file and offer to open/share it
     savePdfToFile(pdfBlob, fileName, function (err, fileUrl) {
       if (err) {
-        alert(t('mathApp.pdf.failedToSave') + err);
+        alert(t('pdf.pdf.failedToSave') + err);
         console.error('Cordova file save error:', err);
       } else {
         sharePdfWithCordova(fileUrl, t);
@@ -402,11 +211,11 @@ export async function downloadPassagePdf(passage, t) {
     try {
       await navigator.share({
         files: [new File([pdfBlob], fileName, { type: 'application/pdf' })],
-        title: t('mathApp.pdf.shareTitle'),
-        text: t('mathApp.pdf.shareText'),
+        title: t('pdf.pdf.shareTitle'),
+        text: t('pdf.pdf.shareText'),
       });
     } catch (err) {
-      alert(t('mathApp.pdf.sharingFailed') + err);
+      alert(t('pdf.pdf.sharingFailed') + err);
       console.error('Web Share API error:', err);
     }
   } else {
@@ -423,13 +232,13 @@ export async function downloadPassagePdf(passage, t) {
           document.body.removeChild(a);
           window.URL.revokeObjectURL(url);
         });
-        console.log(t('mathApp.pdf.downloadedMessage'));
+        console.log(t('pdf.pdf.downloadedMessage'));
       } else {
-        throw new Error(t('mathApp.pdf.downloadNotSupported'));
+        throw new Error(t('pdf.pdf.downloadNotSupported'));
       }
     } catch (err) {
-      alert(t('mathApp.pdf.sharingAndDownloadNotSupported'));
-      console.error(t('mathApp.pdf.noSupport'), err);
+      alert(t('pdf.pdf.sharingAndDownloadNotSupported'));
+      console.error(t('pdf.pdf.noSupport'), err);
     }
   }
 }
@@ -468,18 +277,18 @@ export function savePdfToFile(pdfBlob, fileName, callback) {
 export function sharePdfWithCordova(fileUrl, t) {
   if (window.plugins && window.plugins.socialsharing) {
     window.plugins.socialsharing.share(
-      t('mathApp.pdf.shareText'),
-      t('mathApp.pdf.shareTitle'),
+      t('pdf.pdf.shareText'),
+      t('pdf.pdf.shareTitle'),
       fileUrl,
       null,
       function () {
-        console.log(t('mathApp.pdf.shareSuccess'));
+        console.log(t('pdf.pdf.shareSuccess'));
       },
       function (err) {
-        alert(t('mathApp.pdf.shareFailed') + err);
+        alert(t('pdf.pdf.shareFailed') + err);
       },
     );
   } else {
-    alert(t('mathApp.pdf.sharingNotAvailable'));
+    alert(t('pdf.pdf.sharingNotAvailable'));
   }
 }

@@ -245,7 +245,7 @@
         "nest": "รังนก",
         "nurse": "พยาบาล",
         "noodle": "ก๋วยเตี๋ยว",
-        "octobpus": "ปลาหมึก",
+        "octopus": "ปลาหมึก",
         "quill": "ปากกาขนนก",
         "quiet": "เงียบ",
         "question": "คำถาม",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "ก้าวเล็กๆ",
-      "stories": "Stories",
-      "rhymes": "เพลง",
       "quiz": "ควิซ",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

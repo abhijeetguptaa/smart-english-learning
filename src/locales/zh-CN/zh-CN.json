@@ -245,7 +245,7 @@
         "nest": "鸟巢",
         "nurse": "护士",
         "noodle": "面条",
-        "octobpus": "章鱼",
+        "octopus": "章鱼",
         "quill": "羽毛笔",
         "quiet": "安静",
         "question": "问题",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "小小步伐",
-      "stories": "Stories",
-      "rhymes": "韵文",
       "quiz": "测验挑战",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

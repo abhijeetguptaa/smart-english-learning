@@ -3118,12 +3118,12 @@ export const passageData: any = {
     {
       title: 'The Helpful Teacher',
       passage:
-        'Karan could not solve a math problem in class. His teacher explained it slowly and kindly. Karan understood and solved it himself. He thanked the teacher with a smile.',
+        'Karan could not solve a word puzzle in class. His teacher explained it slowly and kindly. Karan understood and solved it himself. He thanked the teacher with a smile.',
       questions: [
         {
           question: 'What subject was difficult?',
-          options: ['English', 'Math', 'Science', 'Art'],
-          answer: 'Math',
+          options: ['History', 'English', 'Science', 'Art'],
+          answer: 'English',
         },
         {
           question: 'Who helped Karan?',

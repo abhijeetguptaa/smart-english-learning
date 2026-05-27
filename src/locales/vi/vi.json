@@ -245,7 +245,7 @@
         "nest": "Tổ",
         "nurse": "Y tá",
         "noodle": "Mì",
-        "octobpus": "Bạch tuộc",
+        "octopus": "Bạch tuộc",
         "quill": "Bút lông",
         "quiet": "Yên tĩnh",
         "question": "Câu hỏi",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Bước chân nhỏ",
-      "stories": "Stories",
-      "rhymes": "Đồng dao",
       "quiz": "Đố vui",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

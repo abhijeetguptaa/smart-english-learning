@@ -245,7 +245,7 @@
         "nest": "Nest",
         "nurse": "Nurse",
         "noodle": "Noodle",
-        "octobpus": "$t(common.items.animals.octopus)",
+        "octopus": "$t(common.items.animals.octopus)",
         "quill": "Quill",
         "quiet": "Quiet",
         "question": "Question",
@@ -314,8 +314,6 @@
   "home": {
     "categories": {
       "tiny-steps": "Małe kroczki",
-      "stories": "Opowieści",
-      "rhymes": "Rymowanki",
       "quiz": "Quiz",
       "tap-learn": "Tap Learn"
     },
@@ -918,3 +916,4 @@
     "apple": "$t(common.items.food.apple)"
   }
 }
+

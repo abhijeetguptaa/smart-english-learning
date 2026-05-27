@@ -30,12 +30,7 @@ interface StarState {
 
 const isSessionFeature = (f: string) =>
   f === 'wordsearch_hard' ||
-  f === 'wordsearch_complex' ||
-  f === 'mental_math_hard' ||
-  f === 'mental_math_complex' ||
-  /^(Addition|Subtraction|Multiplication|Division|Comparison|Ascending|Descending)_(Hard|Complex)$/i.test(
-    f,
-  );
+  f === 'wordsearch_complex';
 
 const useStarStore = create<StarState>()(
   persist(

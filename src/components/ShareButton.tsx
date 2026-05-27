@@ -15,8 +15,8 @@ const ShareButton: React.FC<ShareButtonProps> = ({ onDownloadClick }) => {
       <button
         className="nav-button nav-button--share share-button"
         onClick={onDownloadClick}
-        title={t('mathApp.downloadAsFile')}
-        aria-label={t('mathApp.downloadAsFile')}
+        title={t('pdf.downloadAsFile')}
+        aria-label={t('pdf.downloadAsFile')}
       >
         🖨️
       </button>
