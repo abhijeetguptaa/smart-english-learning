@@ -16,7 +16,6 @@
     "close": "Tutup",
     "cancel": "Batal",
     "loading": "Memuat...",
-    "comingSoon": "Segera Hadir!",
     "scoreMessage": "Skor Anda adalah {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thailand",
     "zh-CN": "Tionghoa (Sederhana)"
   },
-  "notes": {
-    "title": "Catatan Saya",
-    "placeholder": "Tulis catatanmu di sini...",
-    "addNote": "Tambah Catatan",
-    "noNotes": "Belum ada catatan. Tambahkan satu di atas!",
-    "saveNote": "Simpan",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Memuat pertanyaan...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Jawaban Terpilih:",
     "correctAnswer": "Jawaban Benar:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Hanya untuk Orang Tua",
-    "question": "Harap selesaikan: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Jawaban salah, silakan coba lagi."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Memuat teks...",
     "correctAnswer": "Jawaban yang benar adalah: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Roda Keberuntungan",
-    "spinsLeft": "Sisa Putaran",
-    "autoplay": "Putar Otomatis",
-    "stopAutoplay": "Berhenti",
-    "options": {
-      "tryAgain": "Coba Lagi",
-      "oneMoreChance": "Satu Kesempatan Lagi",
-      "1star": "1 Bintang",
-      "2stars": "2 Bintang",
-      "3stars": "3 Bintang",
-      "5stars": "5 Bintang"
-    },
-    "winMessage": "Kamu menang {{reward}}!",
-    "oneMoreChanceWin": "Luar biasa! Kamu dapat putaran tambahan!",
-    "tryAgainMessage": "Semoga beruntung lain kali!",
-    "comeBackTomorrow": "Kembali besok untuk bermain lagi atau tonton iklan untuk membuka lebih banyak putaran"
   },
   "difficultySelection": {
     "chooseAdventure": "Pilih Petualanganmu"

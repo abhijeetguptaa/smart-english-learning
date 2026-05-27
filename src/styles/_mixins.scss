@@ -235,7 +235,7 @@
   }
 }
 
-@mixin kids-card($bg: rgba(255, 255, 255, 0.9), $radius: 25px, $border: none) {
+@mixin learning-card($bg: rgba(255, 255, 255, 0.9), $radius: 25px, $border: none) {
   background: $bg;
   border-radius: $radius;
   padding: 20px;
@@ -246,7 +246,7 @@
   border: $border;
 }
 
-@mixin kids-title-style {
+@mixin learning-title-style {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   font-weight: 800;
   text-align: center;

@@ -16,7 +16,6 @@
     "close": "Cerrar",
     "cancel": "Cancelar",
     "loading": "Cargando...",
-    "comingSoon": "¡Próximamente!",
     "scoreMessage": "Has obtenido {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Tailandés",
     "zh-CN": "Chino (Simplificado)"
   },
-  "notes": {
-    "title": "Mis Notas",
-    "placeholder": "Escribe tu nota aquí...",
-    "addNote": "Añadir Nota",
-    "noNotes": "No hay notas todavía. ¡Añade una arriba!",
-    "saveNote": "Guardar",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Cargando pregunta...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Respuesta Seleccionada:",
     "correctAnswer": "Respuesta Correcta:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Solo para Padres",
-    "question": "Por favor resuelve: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Respuesta incorrecta, por favor inténtalo de nuevo."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Cargando pasaje...",
     "correctAnswer": "La respuesta correcta era: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Giros",
-    "autoplay": "Reproducción automática",
-    "stopAutoplay": "Detener",
-    "options": {
-      "tryAgain": "Inténtalo de nuevo",
-      "oneMoreChance": "Una oportunidad más",
-      "1star": "1 Estrella",
-      "2stars": "2 Estrellas",
-      "3stars": "3 Estrellas",
-      "5stars": "5 Estrellas"
-    },
-    "winMessage": "¡Ganaste {{reward}}!",
-    "oneMoreChanceWin": "¡Genial! ¡Tienes un giro extra!",
-    "tryAgainMessage": "¡Mejor suerte la próxima vez!",
-    "comeBackTomorrow": "Vuelve mañana para jugar más o mira anuncios para desbloquear más giros"
   },
   "difficultySelection": {
     "chooseAdventure": "Elige Tu Aventura"

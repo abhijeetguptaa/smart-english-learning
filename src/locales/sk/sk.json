@@ -16,7 +16,6 @@
     "close": "Zavrieť",
     "cancel": "Zrušiť",
     "loading": "Loading...",
-    "comingSoon": "Už čoskoro!",
     "scoreMessage": "Dosiahli ste skóre {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thajčina",
     "zh-CN": "Čínština (Zjednodušená)"
   },
-  "notes": {
-    "title": "Moje poznámky",
-    "placeholder": "Sem napíšte svoju poznámku...",
-    "addNote": "Pridať poznámku",
-    "noNotes": "Zatiaľ žiadne poznámky. Pridajte jednu vyššie!",
-    "saveNote": "Uložiť",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Načítavam otázku...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Vybratá odpoveď:",
     "correctAnswer": "Správna odpoveď:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Len pre rodičov",
-    "question": "Prosím vypočítajte: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Nesprávna odpoveď, skúste to prosím znova."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Načítavam text...",
     "correctAnswer": "Správna odpoveď bola: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Koleso šťastia",
-    "spinsLeft": "Zostávajúce točenia",
-    "autoplay": "Automatické prehrávanie",
-    "stopAutoplay": "Zastaviť",
-    "options": {
-      "tryAgain": "Skúsiť znova",
-      "oneMoreChance": "Ešte jedna šanca",
-      "1star": "1 Hviezda",
-      "2stars": "2 Hviezdy",
-      "3stars": "3 Hviezdy",
-      "5stars": "5 Hviezd"
-    },
-    "winMessage": "Vyhrali ste {{reward}}!",
-    "oneMoreChanceWin": "Super! Získali ste točenie navyše!",
-    "tryAgainMessage": "Snáď nabudúce!",
-    "comeBackTomorrow": "Vráťte sa zajtra a hrajte viac alebo si pozrite reklamy a odomknite ďalšie točenia"
   },
   "difficultySelection": {
     "chooseAdventure": "Vyberte si svoje dobrodružstvo"

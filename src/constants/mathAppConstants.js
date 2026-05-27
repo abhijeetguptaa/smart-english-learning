@@ -18,10 +18,10 @@ export const PDF_CONFIG = {
   SUBTITLE_FONT_SIZE: 14,
   CONTENT_FONT_SIZE: 13,
   OPERATOR_FONT_SIZE: 15,
-  STUDENT_INFO_FONT_SIZE: 10,
+  USER_INFO_FONT_SIZE: 10,
 
-  // Student info line configuration
-  STUDENT_INFO: {
+  // User info line configuration
+  USER_INFO: {
     LINE_LENGTH: 40,
     FIELD_SPACING: 60,
     NAME_OFFSET: 15,
@@ -78,7 +78,7 @@ export const FILE_CONFIG = {
 
 // UI Text and Labels
 export const UI_TEXT = {
-  STUDENT_LABELS: {
+  USER_LABELS: {
     NAME: APP_TEXT.LABELS.NAME,
     DATE: APP_TEXT.LABELS.DATE,
     CLASS: APP_TEXT.LABELS.CLASS,

@@ -5,7 +5,7 @@
   "app": {
     "description": "Bekijk deze leuke app om rekenen te leren, puzzels te spelen, te kleuren en nog veel meer plezier te beleven",
     "pressBackToExit": "Druk nogmaals op terug om af te sluiten",
-    "title": "Slim Leren voor Kinderen",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Schermrotatie vergrendelen is niet beschikbaar op dit apparaat."
   },
   "common": {
@@ -16,7 +16,6 @@
     "close": "Sluiten",
     "cancel": "Annuleren",
     "loading": "Laden...",
-    "comingSoon": "Binnenkort beschikbaar!",
     "scoreMessage": "Je hebt {{correctAnswersCount}}/{{quizRounds}} gescoord",
     "feedback": {
       "successMsg": [
@@ -323,15 +322,15 @@
     "subjects": {
       "alphabets": {
         "label": "Alfabet",
-        "title": "Leer het Engelse alfabet met spraaksynthese in Slim Leren voor Kinderen"
+        "title": "Leer het Engelse alfabet met spraaksynthese in Play & Learn English – ABC Games"
       },
       "spellTheWord": {
         "label": "Spellen",
-        "title": "Leer Engelse woorden met plaatjes in Slim Leren voor Kinderen"
+        "title": "Leer Engelse woorden met plaatjes in Play & Learn English – ABC Games"
       },
       "wordSearch": {
         "label": "WordFun",
-        "title": "Speel een woordzoekspel in Slim Leren voor Kinderen"
+        "title": "Speel een woordzoekspel in Play & Learn English – ABC Games"
       },
       "sentenceScramble": {
         "label": "Zinnenpret",
@@ -433,16 +432,6 @@
     "th": "ไทย",
     "zh-CN": "Chinese (Simplified)"
   },
-  "notes": {
-    "title": "Mijn notities",
-    "placeholder": "Schrijf hier je notitie...",
-    "addNote": "Notitie toevoegen",
-    "noNotes": "Nog geen notities. Voeg er hierboven een toe!",
-    "saveNote": "Opslaan",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Vraag laden...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Gekozen antwoord:",
     "correctAnswer": "Juiste antwoord:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Alleen voor ouders",
-    "question": "Los dit op: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Onjuist antwoord, probeer het opnieuw."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -724,24 +708,6 @@
     "loading": "Loading passage...",
     "correctAnswer": "The correct answer was: {{answer}}"
   },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Spins",
-    "autoplay": "Automatisch afspelen",
-    "stopAutoplay": "Stop",
-    "options": {
-      "tryAgain": "Try again",
-      "oneMoreChance": "One more chance",
-      "1star": "1 Star",
-      "2stars": "2 Stars",
-      "3stars": "3 Stars",
-      "5stars": "5 Stars"
-    },
-    "winMessage": "You won {{reward}}!",
-    "oneMoreChanceWin": "Awesome! You got an extra spin!",
-    "tryAgainMessage": "Better luck next time!",
-    "comeBackTomorrow": "Come back tomorrow to play more or watch ads to unlock more spins"
-  },
   "difficultySelection": {
     "chooseAdventure": "Kies je avontuur"
   },
@@ -829,7 +795,7 @@
     "success": "Geweldig! Je hebt het perfect overgetrokken!"
   },
   "welcomeScreen": {
-    "message": "Welkom bij Slim Leren voor Kinderen!",
+    "message": "Welkom bij Play & Learn English – ABC Games!",
     "playButton": "Laten we spelen!"
   },
   "videos": {

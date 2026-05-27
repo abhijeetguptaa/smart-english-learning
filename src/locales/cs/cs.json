@@ -16,7 +16,6 @@
     "close": "Zavřít",
     "cancel": "Zrušit",
     "loading": "Načítání...",
-    "comingSoon": "Již brzy!",
     "scoreMessage": "Dosáhli jste skóre {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thajština",
     "zh-CN": "Čínština (Zjednodušená)"
   },
-  "notes": {
-    "title": "Moje poznámky",
-    "placeholder": "Napište svou poznámku sem...",
-    "addNote": "Přidat poznámku",
-    "noNotes": "Zatím žádné poznámky. Přidejte jednu výše!",
-    "saveNote": "Uložit",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Načítání otázky...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Vybraná odpověď:",
     "correctAnswer": "Správná odpověď:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Pouze pro rodiče",
-    "question": "Prosím vyřešte: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Nesprávná odpověď, zkuste to prosím znovu."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Načítání textu...",
     "correctAnswer": "Správná odpověď byla: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Otočení",
-    "autoplay": "Automatické přehrávání",
-    "stopAutoplay": "Zastavit",
-    "options": {
-      "tryAgain": "Zkuste to znovu",
-      "oneMoreChance": "Ještě jedna šance",
-      "1star": "1 Hvězda",
-      "2stars": "2 Hvězdy",
-      "3stars": "3 Hvězdy",
-      "5stars": "5 Hvězd"
-    },
-    "winMessage": "Vyhráli jste {{reward}}!",
-    "oneMoreChanceWin": "Skvělé! Získali jste další otočení!",
-    "tryAgainMessage": "Hodně štěstí příště!",
-    "comeBackTomorrow": "Vraťte se zítra a hrajte dál, nebo sledujte reklamy pro odemknutí dalších otočení"
   },
   "difficultySelection": {
     "chooseAdventure": "Vyberte si své dobrodružství"

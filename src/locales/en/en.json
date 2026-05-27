@@ -16,7 +16,6 @@
     "close": "Close",
     "cancel": "Cancel",
     "loading": "Loading...",
-    "comingSoon": "Coming Soon!",
     "scoreMessage": "You have scored {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "ไทย",
     "zh-CN": "Chinese (Simplified)"
   },
-  "notes": {
-    "title": "My Notes",
-    "placeholder": "Write your note here...",
-    "addNote": "Add Note",
-    "noNotes": "No notes yet. Add one above!",
-    "saveNote": "Save",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Loading question...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Selected Answer:",
     "correctAnswer": "Correct Answer:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Parents Only",
-    "question": "Please solve: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Incorrect answer, please try again."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -533,7 +517,7 @@
     "claimButton": "Claim 20+ Stars"
   },
   "notifications": {
-    "reminderTitle": "Time to play! 🌟",
+    "reminderTitle": "Time to play! 🌟🌟🌟",
     "reminderBody": "Your streak is waiting! Come earn some stars today."
   },
   "tapLearn": {
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Loading passage...",
     "correctAnswer": "The correct answer was: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Spins",
-    "autoplay": "Autoplay",
-    "stopAutoplay": "Stop",
-    "options": {
-      "tryAgain": "Oops!",
-      "oneMoreChance": "Lucky Spin",
-      "1star": "1 Star",
-      "2stars": "2 Stars",
-      "3stars": "3 Stars",
-      "5stars": "5 Stars"
-    },
-    "winMessage": "You won {{reward}}!",
-    "oneMoreChanceWin": "Awesome! You got an extra spin!",
-    "tryAgainMessage": "Better luck next time!",
-    "comeBackTomorrow": "Come back tomorrow to play more or watch ads to unlock more spins"
   },
   "difficultySelection": {
     "chooseAdventure": "Choose Your Adventure"

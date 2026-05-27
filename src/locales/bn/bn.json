@@ -16,7 +16,6 @@
     "close": "বন্ধ করুন",
     "cancel": "বাতিল",
     "loading": "লোড হচ্ছে...",
-    "comingSoon": "শীঘ্রই আসছে!",
     "scoreMessage": "আপনি {{correctAnswersCount}}/{{quizRounds}} স্কোর করেছেন",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "থাই",
     "zh-CN": "চীনা (সরলীকৃত)"
   },
-  "notes": {
-    "title": "আমার নোটস",
-    "placeholder": "আপনার নোট এখানে লিখুন...",
-    "addNote": "নোট যোগ করুন",
-    "noNotes": "এখনও কোনো নোট নেই। উপরে যোগ করুন!",
-    "saveNote": "সেভ করুন",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "প্রশ্ন লোড হচ্ছে...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "নির্বাচিত উত্তর:",
     "correctAnswer": "সঠিক উত্তর:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "শুধুমাত্র অভিভাবকদের জন্য",
-    "question": "দয়া করে সমাধান করুন: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "ভুল উত্তর, দয়া করে আবার চেষ্টা করুন।"
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "অনুচ্ছেদ লোড হচ্ছে...",
     "correctAnswer": "সঠিক উত্তর ছিল: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "স্পিনগো",
-    "spinsLeft": "স্পিন",
-    "autoplay": "অটোপ্লে",
-    "stopAutoplay": "থামান",
-    "options": {
-      "tryAgain": "আবার চেষ্টা করুন",
-      "oneMoreChance": "আরেকটি সুযোগ",
-      "1star": "১টি স্টার",
-      "2stars": "২টি স্টার",
-      "3stars": "৩টি স্টার",
-      "5stars": "৫টি স্টার"
-    },
-    "winMessage": "আপনি জিতেছেন {{reward}}!",
-    "oneMoreChanceWin": "দারুণ! আপনি একটি বাড়তি সুযোগ পেয়েছেন!",
-    "tryAgainMessage": "পরের বার ভালো ভাগ্য কামনা করি!",
-    "comeBackTomorrow": "আরও খেলতে কাল ফিরে আসুন অথবা আরও ৫টি সুযোগ পেতে বিজ্ঞাপন দেখুন"
   },
   "difficultySelection": {
     "chooseAdventure": "আপনার অ্যাডভেঞ্চার বেছে নিন"

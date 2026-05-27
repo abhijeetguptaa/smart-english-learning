@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import '../styles/Settings.scss';
 import { getGameVolume } from '../utils/soundUtils';
 import { IS_TEST_MODE } from '../constants/appConstants';
-import ParentalGate from './ParentalGate';
 import useStarStore from '../store/useStarStore';
 
 const Settings = ({ userName, onNameSubmit, onClose }) => {
@@ -13,7 +12,6 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
 
   const [name, setName] = useState(userName);
   const [volume, setVolume] = useState(getGameVolume());
-  const [parentalGate, setParentalGate] = useState({ isOpen: false, onConfirm: () => {} });
 
   const supportedLanguages = [
     'en',
@@ -63,10 +61,6 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
       }
     }
     onNameSubmit(nextName);
-  };
-
-  const openParentalGate = (onConfirm) => {
-    setParentalGate({ isOpen: true, onConfirm });
   };
 
   const handleShare = () => {
@@ -160,26 +154,26 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
           <div className="settings-actions">
             <button
               className="level-btn btn-feedback"
-              onClick={() => openParentalGate(handleFeedback)}
+              onClick={handleFeedback}
             >
               {t('settings.feedback')} 💬
             </button>
             <button
               className="level-btn btn-facebook"
-              onClick={() => openParentalGate(handleFacebook)}
+              onClick={handleFacebook}
             >
               {t('settings.facebook')}
             </button>
             {!IS_TEST_MODE && (
               <>
                 <button
-                  onClick={() => openParentalGate(handleShare)}
+                  onClick={handleShare}
                   className="level-btn btn-share"
                 >
                   {t('settings.shareApp')}
                 </button>
                 <button
-                  onClick={() => openParentalGate(handleRateUs)}
+                  onClick={handleRateUs}
                   className="level-btn btn-rate"
                 >
                   {t('settings.rateUs')}
@@ -188,11 +182,6 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
             )}
           </div>
         </div>
-        <ParentalGate
-          isOpen={parentalGate.isOpen}
-          onClose={() => setParentalGate({ ...parentalGate, isOpen: false })}
-          onConfirm={parentalGate.onConfirm}
-        />
       </div>
     </div>
   );

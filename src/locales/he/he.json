@@ -16,7 +16,6 @@
     "close": "סגור",
     "cancel": "ביטול",
     "loading": "טוען...",
-    "comingSoon": "בקרוב!",
     "scoreMessage": "קיבלת {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "תאילנדית",
     "zh-CN": "סינית (מפושטת)"
   },
-  "notes": {
-    "title": "ההערות שלי",
-    "placeholder": "כתוב את ההערה שלך כאן...",
-    "addNote": "הוסף הערה",
-    "noNotes": "אין הערות עדיין. הוסף אחת למעלה!",
-    "saveNote": "שמור",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "טוען שאלה...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "תשובה שנבחרה:",
     "correctAnswer": "תשובה נכונה:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "להורים בלבד",
-    "question": "אנא פתור: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "תשובה לא נכונה, אנא נסה שוב."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "טוען קטע קריאה...",
     "correctAnswer": "התשובה הנכונה הייתה: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "גלגל המזל",
-    "spinsLeft": "סיבובים",
-    "autoplay": "הפעלה אוטומטית",
-    "stopAutoplay": "עצור",
-    "options": {
-      "tryAgain": "נסה שוב",
-      "oneMoreChance": "עוד הזדמנות אחת",
-      "1star": "כוכב אחד",
-      "2stars": "2 כוכבים",
-      "3stars": "3 כוכבים",
-      "5stars": "5 כוכבים"
-    },
-    "winMessage": "זכית ב-{{reward}}!",
-    "oneMoreChanceWin": "מעולה! קיבלת סיבוב נוסף!",
-    "tryAgainMessage": "בהצלחה בפעם הבאה!",
-    "comeBackTomorrow": "חזור מחר כדי לשחק עוד או צפה בפרסומות כדי לפתוח עוד סיבובים"
   },
   "difficultySelection": {
     "chooseAdventure": "בחר את ההרפתקה שלך"

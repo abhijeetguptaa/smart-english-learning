@@ -20,7 +20,7 @@ let isPreloadingRewarded = false;
 let lastAdTime = 0;
 
 /**
- * Families policy safe limits
+ * Conservative ad pacing limits
  */
 const MIN_TIME_BETWEEN_ADS = 180 * 1000; // 1.5 minutes
 const INITIAL_AD_DELAY = 90 * 1000; // 1.5 minutes
@@ -65,8 +65,6 @@ export const initAdMob = async () => {
     }
 
     await AdMob.initialize({
-      tagForChildDirectedTreatment: true,
-      tagForUnderAgeOfConsent: true,
       maxAdContentRating: MaxAdContentRating.General,
       initializeForTesting: TEST_MODE,
     });
@@ -247,7 +245,7 @@ export const showSafeRewarded = () => {
 };
 
 /**
- * Show Interstitial (Families policy safe)
+ * Show Interstitial with conservative pacing
  */
 export const showSafeInterstitial = async () => {
   if (!isNative()) return;

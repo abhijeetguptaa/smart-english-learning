@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 ## Live YouTube Content
 
-Bedtime stories and rhymes now load from the official YouTube Data API v3 and fall back to curated local videos if the API key is missing or the request fails.
+Evening stories and rhymes now load from the official YouTube Data API v3 and fall back to curated local videos if the API key is missing or the request fails.
 
 Set this environment variable before running the app:
 

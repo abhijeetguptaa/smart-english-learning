@@ -16,7 +16,6 @@
     "close": "닫기",
     "cancel": "취소",
     "loading": "Loading...",
-    "comingSoon": "커밍순!",
     "scoreMessage": "당신의 점수는 {{correctAnswersCount}}/{{quizRounds}}입니다",
     "feedback": {
       "successMsg": [
@@ -316,7 +315,7 @@
     "categories": {
       "tiny-steps": "작은 발걸음",
       "stories": "이야기",
-      "rhymes": "동요",
+      "rhymes": "라임",
       "quiz": "Quiz",
       "tap-learn": "Tap Learn"
     },
@@ -433,16 +432,6 @@
     "th": "태국어",
     "zh-CN": "중국어 (간체)"
   },
-  "notes": {
-    "title": "나의 메모",
-    "placeholder": "여기에 메모를 작성하세요...",
-    "addNote": "메모 추가",
-    "noNotes": "아직 메모가 없습니다. 위에 추가해 보세요!",
-    "saveNote": "저장",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "질문을 불러오는 중...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "선택한 답:",
     "correctAnswer": "정답:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "부모님 전용",
-    "question": "문제를 풀어주세요: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "틀린 답입니다. 다시 시도해 주세요."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "지문을 불러오는 중...",
     "correctAnswer": "정답은 {{answer}}였습니다."
-  },
-  "spinWheel": {
-    "title": "행운의 바퀴",
-    "spinsLeft": "남은 횟수",
-    "autoplay": "자동 재생",
-    "stopAutoplay": "중지",
-    "options": {
-      "tryAgain": "다시 시도",
-      "oneMoreChance": "한 번 더 기회",
-      "1star": "별 1개",
-      "2stars": "별 2개",
-      "3stars": "별 3개",
-      "5stars": "별 5개"
-    },
-    "winMessage": "{{reward}}을(를) 획득했습니다!",
-    "oneMoreChanceWin": "멋져요! 추가 기회를 얻었습니다!",
-    "tryAgainMessage": "다음 기회에 행운이 있길!",
-    "comeBackTomorrow": "내일 다시 플레이하거나 광고를 보고 더 많은 기회를 얻으세요"
   },
   "difficultySelection": {
     "chooseAdventure": "모험을 선택하세요"

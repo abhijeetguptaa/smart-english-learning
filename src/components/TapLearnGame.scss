@@ -226,7 +226,7 @@
         }
 
         &.animate-shake {
-          animation: shakeKids 0.8s ease-in-out;
+          animation: shakeLearning 0.8s ease-in-out;
         }
       }
 
@@ -285,7 +285,7 @@
     }
   }
 
-  @keyframes shakeKids {
+  @keyframes shakeLearning {
     0%,
     100% {
       transform: translateX(0) rotate(0);

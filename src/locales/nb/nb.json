@@ -16,7 +16,6 @@
     "close": "Close",
     "cancel": "Cancel",
     "loading": "Loading...",
-    "comingSoon": "Coming Soon!",
     "scoreMessage": "Du fikk {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "ไทย",
     "zh-CN": "Chinese (Simplified)"
   },
-  "notes": {
-    "title": "My Notes",
-    "placeholder": "Write your note here...",
-    "addNote": "Add Note",
-    "noNotes": "Ingen notater ennå. Legg til et over!",
-    "saveNote": "Save",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Laster spørsmål...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Selected Answer:",
     "correctAnswer": "Correct Answer:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Parents Only",
-    "question": "Vennligst løs: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Feil svar, vennligst prøv igjen."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Loading passage...",
     "correctAnswer": "The correct answer was: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Spins",
-    "autoplay": "Autoavspilling",
-    "stopAutoplay": "Stopp",
-    "options": {
-      "tryAgain": "Prøv igjen",
-      "oneMoreChance": "One more chance",
-      "1star": "1 Star",
-      "2stars": "2 Stars",
-      "3stars": "3 Stars",
-      "5stars": "5 Stars"
-    },
-    "winMessage": "You won {{reward}}!",
-    "oneMoreChanceWin": "Awesome! You got an extra spin!",
-    "tryAgainMessage": "Better luck next time!",
-    "comeBackTomorrow": "Kom tilbake i morgen for å spille mer eller se reklamer for å låse opp flere spinn"
   },
   "difficultySelection": {
     "chooseAdventure": "Choose Your Adventure"

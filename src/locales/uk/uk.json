@@ -16,7 +16,6 @@
     "close": "Закрити",
     "cancel": "Скасувати",
     "loading": "Завантаження...",
-    "comingSoon": "Скоро!",
     "scoreMessage": "Ваш результат {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Тайська",
     "zh-CN": "Китайська (спрощена)"
   },
-  "notes": {
-    "title": "Мої нотатки",
-    "placeholder": "Напишіть нотатку тут...",
-    "addNote": "Додати нотатку",
-    "noNotes": "Нотаток поки немає. Додайте одну вище!",
-    "saveNote": "Зберегти",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Завантаження питання...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Вибрана відповідь:",
     "correctAnswer": "Правильна відповідь:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Тільки для батьків",
-    "question": "Будь ласка, розв'яжіть приклад: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Невірна відповідь, спробуйте ще раз."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Завантаження тексту...",
     "correctAnswer": "Правильна відповідь була: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Колесо удачи",
-    "spinsLeft": "Залишилося спроб",
-    "autoplay": "Автовідтворення",
-    "stopAutoplay": "Стоп",
-    "options": {
-      "tryAgain": "Ще раз",
-      "oneMoreChance": "Ще один шанс",
-      "1star": "1 Зірка",
-      "2stars": "2 Зірки",
-      "3stars": "3 Зірки",
-      "5stars": "5 Зірок"
-    },
-    "winMessage": "Ти виграв {{reward}}!",
-    "oneMoreChanceWin": "Чудово! Ти отримав ще одну спробу!",
-    "tryAgainMessage": "Пощастить наступного разу!",
-    "comeBackTomorrow": "Повертайся завтра, щоб пограти ще, або подивися рекламу, щоб отримати більше спроб"
   },
   "difficultySelection": {
     "chooseAdventure": "Вибери свою пригоду"

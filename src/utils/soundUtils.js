@@ -218,7 +218,7 @@ export const speakText = async (text, options = {}) => {
   try {
     isSpeaking = true;
 
-    // Kid voice defaults: pitch 1.6, rate 0.95 (natural but clear), increased volume
+    // Voice defaults: pitch 1.6, rate 0.95 (natural but clear), increased volume
     const finalOptions = {
       lang: i18n.language || 'en-US',
       rate: 0.9,

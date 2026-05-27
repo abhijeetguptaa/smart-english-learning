@@ -16,7 +16,6 @@
     "close": "Kapat",
     "cancel": "İptal",
     "loading": "Yükleniyor...",
-    "comingSoon": "Yakında!",
     "scoreMessage": "{{quizRounds}} üzerinden {{correctAnswersCount}} puan aldınız",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Tayca",
     "zh-CN": "Çince (Basitleştirilmiş)"
   },
-  "notes": {
-    "title": "Notlarım",
-    "placeholder": "Notunuzu buraya yazın...",
-    "addNote": "Not Ekle",
-    "noNotes": "Henüz not yok. Yukarıdan bir tane ekleyin!",
-    "saveNote": "Kaydet",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Soru yükleniyor...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Seçilen Cevap:",
     "correctAnswer": "Doğru Cevap:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Sadece Ebeveynler",
-    "question": "Lütfen çözün: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Yanlış cevap, lütfen tekrar deneyin."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Metin yükleniyor...",
     "correctAnswer": "Doğru cevap şuydu: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Çarkı Çevir",
-    "spinsLeft": "Kalan Çevirme",
-    "autoplay": "Otomatik oynat",
-    "stopAutoplay": "Durdur",
-    "options": {
-      "tryAgain": "Tekrar dene",
-      "oneMoreChance": "Bir şans daha",
-      "1star": "1 Yıldız",
-      "2stars": "2 Yıldız",
-      "3stars": "3 Yıldız",
-      "5stars": "5 Yıldız"
-    },
-    "winMessage": "{{reward}} kazandınız!",
-    "oneMoreChanceWin": "Harika! Ekstra bir çevirme hakkı kazandınız!",
-    "tryAgainMessage": "Bir dahaki sefere bol şans!",
-    "comeBackTomorrow": "Daha fazla oynamak için yarın tekrar gel veya yeni çevirme hakları açmak için reklam izle"
   },
   "difficultySelection": {
     "chooseAdventure": "Maceranı Seç"

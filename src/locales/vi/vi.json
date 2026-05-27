@@ -16,7 +16,6 @@
     "close": "Đóng",
     "cancel": "Hủy",
     "loading": "Đang tải...",
-    "comingSoon": "Sắp ra mắt!",
     "scoreMessage": "Bạn đã đạt được {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Tiếng Thái",
     "zh-CN": "Tiếng Trung (Giản thể)"
   },
-  "notes": {
-    "title": "Ghi chú của tôi",
-    "placeholder": "Viết ghi chú của bạn ở đây...",
-    "addNote": "Thêm ghi chú",
-    "noNotes": "Chưa có ghi chú nào. Hãy thêm một ghi chú ở trên!",
-    "saveNote": "Lưu",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Đang tải câu hỏi...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Câu trả lời đã chọn:",
     "correctAnswer": "Câu trả lời đúng:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Chỉ dành cho cha mẹ",
-    "question": "Vui lòng giải bài toán: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Câu trả lời sai, vui lòng thử lại."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Đang tải văn bản...",
     "correctAnswer": "Câu trả lời đúng là: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Vòng quay may mắn",
-    "spinsLeft": "Số lượt quay còn lại",
-    "autoplay": "Tự động phát",
-    "stopAutoplay": "Dừng",
-    "options": {
-      "tryAgain": "Thử lại",
-      "oneMoreChance": "Thêm một cơ hội",
-      "1star": "1 Sao",
-      "2stars": "2 Sao",
-      "3stars": "3 Sao",
-      "5stars": "5 Sao"
-    },
-    "winMessage": "Bạn đã trúng {{reward}}!",
-    "oneMoreChanceWin": "Tuyệt vời! Bạn đã nhận được một lượt quay bổ sung!",
-    "tryAgainMessage": "Chúc bạn may mắn lần sau!",
-    "comeBackTomorrow": "Hãy quay lại vào ngày mai để chơi tiếp hoặc xem quảng cáo để mở thêm lượt quay"
   },
   "difficultySelection": {
     "chooseAdventure": "Chọn cuộc phiêu lưu của bạn"

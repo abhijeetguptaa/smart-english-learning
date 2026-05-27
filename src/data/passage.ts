@@ -261,7 +261,7 @@ export const passageData: any = {
     {
       title: 'Ball',
       passage:
-        'Ball is round. Children like to play with a ball. It can roll on the ground. We can throw and catch it. Playing with a ball is fun.',
+        'Ball is round. Learners like to play with a ball. It can roll on the ground. We can throw and catch it. Playing with a ball is fun.',
       questions: [
         {
           question: 'What shape is a ball?',
@@ -270,8 +270,8 @@ export const passageData: any = {
         },
         {
           question: 'Who likes to play with a ball?',
-          options: ['Children', 'Birds', 'Fish', 'Trees'],
-          answer: 'Children',
+          options: ['Learners', 'Birds', 'Fish', 'Trees'],
+          answer: 'Learners',
         },
         {
           question: 'Where can the ball roll?',
@@ -311,7 +311,7 @@ export const passageData: any = {
     {
       title: 'Bus',
       passage:
-        'Bus is big. It carries many people. It runs on the road. Children go to school by bus. Bus has many seats.',
+        'Bus is big. It carries many people. It runs on the road. Learners go to class by bus. Bus has many seats.',
       questions: [
         { question: 'How is the bus?', options: ['Big', 'Tiny', 'Small', 'Thin'], answer: 'Big' },
         {
@@ -325,9 +325,9 @@ export const passageData: any = {
           answer: 'Road',
         },
         {
-          question: 'Who goes to school by bus?',
-          options: ['Children', 'Birds', 'Cats', 'Cows'],
-          answer: 'Children',
+          question: 'Who goes to class by bus?',
+          options: ['Learners', 'Birds', 'Cats', 'Cows'],
+          answer: 'Learners',
         },
       ],
     },
@@ -407,7 +407,7 @@ export const passageData: any = {
     {
       title: 'Mango',
       passage:
-        'Mango is a juicy fruit. It is yellow or orange. It tastes very sweet. Children love mangoes. Mango is called the king of fruits.',
+        'Mango is a juicy fruit. It is yellow or orange. It tastes very sweet. Learners love mangoes. Mango is called the king of fruits.',
       questions: [
         {
           question: 'How is the mango?',
@@ -421,8 +421,8 @@ export const passageData: any = {
         },
         {
           question: 'Who loves mangoes?',
-          options: ['Children', 'Cars', 'Fish', 'Trees'],
-          answer: 'Children',
+          options: ['Learners', 'Cars', 'Fish', 'Trees'],
+          answer: 'Learners',
         },
         {
           question: 'What is mango called?',
@@ -457,7 +457,7 @@ export const passageData: any = {
     {
       title: 'Milk',
       passage:
-        'Milk is white. It is healthy to drink. Children drink milk daily. Milk makes bones strong. Milk comes from cows.',
+        'Milk is white. It is healthy to drink. Learners drink milk daily. Milk makes bones strong. Milk comes from cows.',
       questions: [
         {
           question: 'What color is milk?',
@@ -466,8 +466,8 @@ export const passageData: any = {
         },
         {
           question: 'Who drinks milk daily?',
-          options: ['Children', 'Cars', 'Birds', 'Trees'],
-          answer: 'Children',
+          options: ['Learners', 'Cars', 'Birds', 'Trees'],
+          answer: 'Learners',
         },
         {
           question: 'What does milk make strong?',
@@ -482,27 +482,27 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'School',
+      title: 'Class',
       passage:
-        'School is a place to learn. Children go to school daily. Teachers teach lessons. We read and write in school. School makes us smart.',
+        'Class is a place to learn. Learners go to class daily. Teachers teach lessons. We read and write in class. Class makes us smart.',
       questions: [
         {
-          question: 'What is school?',
+          question: 'What is class?',
           options: ['Place to learn', 'Shop', 'Farm', 'Park'],
           answer: 'Place to learn',
         },
         {
-          question: 'Who goes to school?',
-          options: ['Children', 'Cars', 'Birds', 'Fish'],
-          answer: 'Children',
+          question: 'Who goes to class?',
+          options: ['Learners', 'Cars', 'Birds', 'Fish'],
+          answer: 'Learners',
         },
         {
-          question: 'Who teaches in school?',
+          question: 'Who teaches in class?',
           options: ['Teachers', 'Doctors', 'Drivers', 'Farmers'],
           answer: 'Teachers',
         },
         {
-          question: 'What does school make us?',
+          question: 'What does class make us?',
           options: ['Smart', 'Sad', 'Weak', 'Slow'],
           answer: 'Smart',
         },
@@ -511,7 +511,7 @@ export const passageData: any = {
     {
       title: 'Teacher',
       passage:
-        'Teacher helps us learn. Teacher teaches in school. Teacher gives us homework. Teacher is kind and caring. We respect our teacher.',
+        'Teacher helps us learn. Teacher teaches in class. Teacher gives us assignment. Teacher is kind and caring. We respect our teacher.',
       questions: [
         {
           question: 'Who helps us learn?',
@@ -520,8 +520,8 @@ export const passageData: any = {
         },
         {
           question: 'Where does the teacher teach?',
-          options: ['School', 'Road', 'Farm', 'Shop'],
-          answer: 'School',
+          options: ['Class', 'Road', 'Farm', 'Shop'],
+          answer: 'Class',
         },
         {
           question: 'How is the teacher?',
@@ -565,7 +565,7 @@ export const passageData: any = {
     {
       title: 'Pencil',
       passage:
-        'Pencil is used to write. It has a sharp tip. We can erase pencil marks. Children use pencils in school. Pencil is very useful.',
+        'Pencil is used to write. It has a sharp tip. We can erase pencil marks. Learners use pencils in class. Pencil is very useful.',
       questions: [
         {
           question: 'What is pencil used for?',
@@ -579,16 +579,16 @@ export const passageData: any = {
         },
         { question: 'Can we erase pencil marks?', options: ['Yes', 'No'], answer: 'Yes' },
         {
-          question: 'Where do children use pencils?',
-          options: ['School', 'River', 'Sky', 'Farm'],
-          answer: 'School',
+          question: 'Where do learners use pencils?',
+          options: ['Class', 'River', 'Sky', 'Farm'],
+          answer: 'Class',
         },
       ],
     },
     {
       title: 'Eraser',
       passage:
-        'Eraser removes pencil marks. It is small and soft. Children use erasers in school. It keeps notebooks clean. Eraser is helpful.',
+        'Eraser removes pencil marks. It is small and soft. Learners use erasers in class. It keeps notebooks clean. Eraser is helpful.',
       questions: [
         {
           question: 'What does an eraser remove?',
@@ -598,8 +598,8 @@ export const passageData: any = {
         { question: 'How is the eraser?', options: ['Soft', 'Hard', 'Hot', 'Wet'], answer: 'Soft' },
         {
           question: 'Who uses erasers?',
-          options: ['Children', 'Fish', 'Birds', 'Cars'],
-          answer: 'Children',
+          options: ['Learners', 'Fish', 'Birds', 'Cars'],
+          answer: 'Learners',
         },
         {
           question: 'What does eraser keep clean?',
@@ -611,7 +611,7 @@ export const passageData: any = {
     {
       title: 'Bag',
       passage:
-        'Bag carries our books. Children take bags to school. Bags have many pockets. We keep things safe in a bag. Bag is useful for school.',
+        'Bag carries our books. Learners take bags to class. Bags have many pockets. We keep things safe in a bag. Bag is useful for class.',
       questions: [
         {
           question: 'What does a bag carry?',
@@ -619,22 +619,22 @@ export const passageData: any = {
           answer: 'Books',
         },
         {
-          question: 'Who takes bags to school?',
-          options: ['Children', 'Birds', 'Fish', 'Trees'],
-          answer: 'Children',
+          question: 'Who takes bags to class?',
+          options: ['Learners', 'Birds', 'Fish', 'Trees'],
+          answer: 'Learners',
         },
         {
           question: 'What do bags have?',
           options: ['Pockets', 'Wings', 'Fins', 'Roots'],
           answer: 'Pockets',
         },
-        { question: 'Are bags useful for school?', options: ['Yes', 'No'], answer: 'Yes' },
+        { question: 'Are bags useful for class?', options: ['Yes', 'No'], answer: 'Yes' },
       ],
     },
     {
       title: 'Chair',
       passage:
-        'Chair is used to sit. It has four legs. We sit on chairs at home and school. Chairs keep us comfortable. Chair is furniture.',
+        'Chair is used to sit. It has four legs. We sit on chairs at home and class. Chairs keep us comfortable. Chair is furniture.',
       questions: [
         {
           question: 'What is a chair used for?',
@@ -648,8 +648,8 @@ export const passageData: any = {
         },
         {
           question: 'Where do we sit on chairs?',
-          options: ['Home and school', 'Water', 'Tree', 'Road'],
-          answer: 'Home and school',
+          options: ['Home and class', 'Water', 'Tree', 'Road'],
+          answer: 'Home and class',
         },
         {
           question: 'Chair is what?',
@@ -757,7 +757,7 @@ export const passageData: any = {
     {
       title: 'Rain',
       passage:
-        'Rain falls from clouds. It gives water to plants. Children like to play in rain. Rain makes weather cool. Too much rain causes floods.',
+        'Rain falls from clouds. It gives water to plants. Learners like to play in rain. Rain makes weather cool. Too much rain causes floods.',
       questions: [
         {
           question: 'Where does rain fall from?',
@@ -924,7 +924,7 @@ export const passageData: any = {
         },
         {
           question: 'Where does the doctor work?',
-          options: ['Hospital', 'School', 'Farm', 'Shop'],
+          options: ['Hospital', 'Class', 'Farm', 'Shop'],
           answer: 'Hospital',
         },
         {
@@ -978,7 +978,7 @@ export const passageData: any = {
         },
         {
           question: 'Whom do police catch?',
-          options: ['Thieves', 'Birds', 'Fish', 'Children'],
+          options: ['Thieves', 'Birds', 'Fish', 'Learners'],
           answer: 'Thieves',
         },
         {
@@ -1096,7 +1096,7 @@ export const passageData: any = {
     {
       title: 'Hat',
       passage:
-        'Hat is worn on the head. It protects us from sun. Hats come in many colors. Children like to wear hats. Hat keeps us cool.',
+        'Hat is worn on the head. It protects us from sun. Hats come in many colors. Learners like to wear hats. Hat keeps us cool.',
       questions: [
         {
           question: 'Where do we wear a hat?',
@@ -1110,8 +1110,8 @@ export const passageData: any = {
         },
         {
           question: 'Who likes to wear hats?',
-          options: ['Children', 'Fish', 'Cars', 'Trees'],
-          answer: 'Children',
+          options: ['Learners', 'Fish', 'Cars', 'Trees'],
+          answer: 'Learners',
         },
         {
           question: 'What does a hat keep us?',
@@ -1173,7 +1173,7 @@ export const passageData: any = {
     {
       title: 'Bicycle',
       passage:
-        'Bicycle has two wheels. We ride it on the road. It does not need fuel. Riding a bicycle is good exercise. Children like bicycles.',
+        'Bicycle has two wheels. We ride it on the road. It does not need fuel. Riding a bicycle is good exercise. Learners like bicycles.',
       questions: [
         {
           question: 'How many wheels does a bicycle have?',
@@ -1278,7 +1278,7 @@ export const passageData: any = {
         },
         {
           question: 'Where does it go?',
-          options: ['Hospital', 'School', 'Farm', 'Shop'],
+          options: ['Hospital', 'Class', 'Farm', 'Shop'],
           answer: 'Hospital',
         },
         {
@@ -1766,7 +1766,7 @@ export const passageData: any = {
     {
       title: 'Kangaroo',
       passage:
-        'Kangaroo is an animal from Australia. It has strong back legs. It jumps high. Baby kangaroo stays in a pouch. Kangaroos eat grass.',
+        'Kangaroo is an animal from Australia. It has strong back legs. It jumps high. Joey stays in a pouch. Kangaroos eat grass.',
       questions: [
         {
           question: 'Where is kangaroo from?',
@@ -1779,7 +1779,7 @@ export const passageData: any = {
           answer: 'Jump',
         },
         {
-          question: 'Where does baby kangaroo stay?',
+          question: 'Where does joey stay?',
           options: ['Pouch', 'Nest', 'Tree', 'Water'],
           answer: 'Pouch',
         },
@@ -1795,7 +1795,7 @@ export const passageData: any = {
     {
       title: 'The Blue Kite',
       passage:
-        'On a bright Sunday, Kabir went to an open field with his blue kite. His father helped him lift it into the clear sky. Soon, the kite danced in the gentle wind. Kabir felt proud and laughed happily. He promised to share the kite with other children so everyone could enjoy the game.',
+        'On a bright Sunday, Kabir went to an open field with his blue kite. His mentor helped him lift it into the clear sky. Soon, the kite danced in the gentle wind. Kabir felt proud and laughed happily. He promised to share the kite with other learners so everyone could enjoy the game.',
       questions: [
         {
           question: 'What color was Kabir’s kite?',
@@ -1804,8 +1804,8 @@ export const passageData: any = {
         },
         {
           question: 'Who helped Kabir?',
-          options: ['Friend', 'Father', 'Teacher', 'Brother'],
-          answer: 'Father',
+          options: ['Friend', 'Mentor', 'Teacher', 'Friend'],
+          answer: 'Mentor',
         },
         {
           question: 'How did Kabir feel?',
@@ -1822,7 +1822,7 @@ export const passageData: any = {
     {
       title: 'The Small Library',
       passage:
-        'In Anya’s classroom corner stood a small shelf of colorful books. Every afternoon, students quietly read on a soft mat. Anya loved animal stories. One day, she finished a whole book alone. Her teacher gave her a shiny star sticker. Anya decided to read a little every day.',
+        'In Anya’s classroom corner stood a small shelf of colorful books. Every afternoon, learners quietly read on a soft mat. Anya loved animal stories. One day, she finished a whole book alone. Her teacher gave her a shiny star sticker. Anya decided to read a small amount every day.',
       questions: [
         {
           question: 'Where was the shelf?',
@@ -1849,7 +1849,7 @@ export const passageData: any = {
     {
       title: 'The Friendly Bus Driver',
       passage:
-        'Every morning, a yellow school bus stopped near Rahul’s home. The driver greeted children with a warm smile and ensured they sat safely. He told short funny stories. On Rahul’s birthday, he gave him a small paper badge. The children liked him because he cared for them kindly.',
+        'Every morning, a yellow bus stopped near Rahul’s home. The driver greeted learners with a warm smile and ensured they sat safely. He told short funny stories. On Rahul’s birthday, he gave him a small paper badge. The learners liked him because he cared for them kindly.',
       questions: [
         {
           question: 'What color was the bus?',
@@ -1867,7 +1867,7 @@ export const passageData: any = {
           answer: 'Paper badge',
         },
         {
-          question: 'Why did children like him?',
+          question: 'Why did learners like him?',
           options: ['Fast driving', 'Loud voice', 'Kind care', 'Sleeping'],
           answer: 'Kind care',
         },
@@ -1876,11 +1876,11 @@ export const passageData: any = {
     {
       title: 'The Quiet Snowman',
       passage:
-        'During a winter trip, Sara and her brother built a tall snowman. They used stones for eyes, a carrot for the nose, and wrapped a red scarf around its neck. The snowman stood quietly in the cold air. Sara clicked a photo to remember the happy snowy day.',
+        'During a winter trip, Sara and her friend built a tall snowman. They used stones for eyes, a carrot for the nose, and wrapped a red scarf around its neck. The snowman stood quietly in the cold air. Sara clicked a photo to remember the happy snowy day.',
       questions: [
         {
           question: 'Where was Sara?',
-          options: ['Beach', 'Mountains', 'Desert', 'School'],
+          options: ['Beach', 'Mountains', 'Desert', 'Class'],
           answer: 'Mountains',
         },
         {
@@ -1930,12 +1930,12 @@ export const passageData: any = {
     {
       title: 'The Orange Butterfly',
       passage:
-        'In the school garden, Tara saw an orange butterfly resting on a yellow flower. She stood very still so it would not fly away. Soon, the butterfly opened its soft wings and moved gently in the warm air. Watching it made Tara feel calm and happy.',
+        'In the garden, Tara saw an orange butterfly resting on a yellow flower. She stood very still so it would not fly away. Soon, the butterfly opened its soft wings and moved gently in the warm air. Watching it made Tara feel calm and happy.',
       questions: [
         {
           question: 'Where did Tara see the butterfly?',
-          options: ['Park', 'School garden', 'Classroom', 'Road'],
-          answer: 'School garden',
+          options: ['Park', 'Garden', 'Classroom', 'Road'],
+          answer: 'Garden',
         },
         {
           question: 'What color was the butterfly?',
@@ -1957,7 +1957,7 @@ export const passageData: any = {
     {
       title: 'The New Pencil Box',
       passage:
-        'On the first day of school, Mohit carried a new blue pencil box. Inside were sharp pencils, a small eraser, and a shiny ruler. He kept everything neatly on his desk. His teacher praised him for being tidy. Mohit felt proud and promised to care for his things daily.',
+        'On the first day of class, Mohit carried a new blue pencil box. Inside were sharp pencils, a small eraser, and a shiny ruler. He kept everything neatly on his desk. His teacher praised him for being tidy. Mohit felt proud and promised to care for his things daily.',
       questions: [
         {
           question: 'What color was the pencil box?',
@@ -1971,7 +1971,7 @@ export const passageData: any = {
         },
         {
           question: 'Who praised Mohit?',
-          options: ['Friend', 'Mother', 'Teacher', 'Driver'],
+          options: ['Friend', 'Housemate', 'Teacher', 'Driver'],
           answer: 'Teacher',
         },
         {
@@ -1984,11 +1984,11 @@ export const passageData: any = {
     {
       title: 'The Evening Star',
       passage:
-        'Each evening, Sana looked at the sky from her balcony. After sunset, a bright star appeared above the houses. Her grandmother told stories about stars guiding travelers at night. Sana felt peaceful and safe. She waited for the shining star before going to sleep happily.',
+        'Each evening, Sana looked at the sky from her balcony. After sunset, a bright star appeared above the houses. Her grandhousemate told stories about stars guiding travelers at night. Sana felt peaceful and safe. She waited for the shining star before going to sleep happily.',
       questions: [
         {
           question: 'Where did Sana watch the sky?',
-          options: ['Roof', 'Balcony', 'School', 'Park'],
+          options: ['Roof', 'Balcony', 'Class', 'Park'],
           answer: 'Balcony',
         },
         {
@@ -1998,8 +1998,8 @@ export const passageData: any = {
         },
         {
           question: 'Who told the stories?',
-          options: ['Teacher', 'Friend', 'Grandmother', 'Brother'],
-          answer: 'Grandmother',
+          options: ['Teacher', 'Friend', 'Grandhousemate', 'Friend'],
+          answer: 'Grandhousemate',
         },
         {
           question: 'How did Sana feel?',
@@ -2009,9 +2009,9 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'The Little Drum',
+      title: 'The Small Drum',
       passage:
-        'Ritu received a small toy drum during a festival. She tapped it softly with tiny sticks and heard cheerful sounds. Her cousin clapped along, and soon other children joined. Laughter filled the room. Ritu learned that simple music can bring people together happily.',
+        'Ritu received a small toy drum during a festival. She tapped it softly with tiny sticks and heard cheerful sounds. Her cousin clapped along, and soon other learners joined. Laughter filled the room. Ritu learned that simple music can bring people together happily.',
       questions: [
         {
           question: 'What gift did Ritu get?',
@@ -2020,7 +2020,7 @@ export const passageData: any = {
         },
         {
           question: 'Who clapped with her?',
-          options: ['Teacher', 'Cousin', 'Neighbor', 'Mother'],
+          options: ['Teacher', 'Cousin', 'Neighbor', 'Housemate'],
           answer: 'Cousin',
         },
         {
@@ -2038,7 +2038,7 @@ export const passageData: any = {
     {
       title: 'The Clean Classroom',
       passage:
-        'After the last lesson, students saw paper pieces on the classroom floor. They decided to clean together. Some picked up paper, while others arranged books and chairs neatly. Soon, the room looked fresh and tidy. The children felt happy and promised to keep their classroom clean every day.',
+        'After the last lesson, learners saw paper pieces on the classroom floor. They decided to clean together. Some picked up paper, while others arranged books and chairs neatly. Soon, the room looked fresh and tidy. The learners felt happy and promised to keep their classroom clean every day.',
       questions: [
         {
           question: 'What was on the floor?',
@@ -2046,7 +2046,7 @@ export const passageData: any = {
           answer: 'Paper pieces',
         },
         {
-          question: 'What did students decide?',
+          question: 'What did learners decide?',
           options: ['Go home', 'Play', 'Clean the room', 'Sleep'],
           answer: 'Clean the room',
         },
@@ -2079,7 +2079,7 @@ export const passageData: any = {
         },
         {
           question: 'Who found the pencil?',
-          options: ['Riya', 'Aman', 'Teacher', 'Mother'],
+          options: ['Riya', 'Aman', 'Teacher', 'Housemate'],
           answer: 'Aman',
         },
         {
@@ -2144,9 +2144,9 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'The Helpful Brother',
+      title: 'The Helpful Friend',
       passage:
-        'Neha was trying to lift a heavy box of books. Her brother Arjun came quickly and helped her carry it to the table. Neha thanked him and gave him a hug. They both smiled happily.',
+        'Neha was trying to lift a heavy box of books. Her friend Arjun came quickly and helped her carry it to the table. Neha thanked him and gave him a hug. They both smiled happily.',
       questions: [
         {
           question: 'What was heavy?',
@@ -2155,8 +2155,8 @@ export const passageData: any = {
         },
         {
           question: 'Who helped Neha?',
-          options: ['Friend', 'Teacher', 'Brother', 'Mother'],
-          answer: 'Brother',
+          options: ['Friend', 'Teacher', 'Friend', 'Housemate'],
+          answer: 'Friend',
         },
         {
           question: 'Where did they keep the box?',
@@ -2177,7 +2177,7 @@ export const passageData: any = {
       questions: [
         {
           question: 'Where do they walk?',
-          options: ['Mall', 'Park', 'Road', 'School'],
+          options: ['Mall', 'Park', 'Road', 'Class'],
           answer: 'Park',
         },
         {
@@ -2209,7 +2209,7 @@ export const passageData: any = {
         },
         {
           question: 'Who helped Lina?',
-          options: ['Friend', 'Teacher', 'Brother', 'Mother'],
+          options: ['Friend', 'Teacher', 'Friend', 'Housemate'],
           answer: 'Teacher',
         },
         {
@@ -2254,7 +2254,7 @@ export const passageData: any = {
     {
       title: 'The Flying Kite',
       passage:
-        'On a windy afternoon, Sara flew her blue kite. The kite went higher and higher in the sky. Her little brother clapped with joy. They both enjoyed the bright sunny day.',
+        'On a windy afternoon, Sara flew her blue kite. The kite went higher and higher in the sky. Her small friend clapped with joy. They both enjoyed the bright sunny day.',
       questions: [
         {
           question: 'What color was the kite?',
@@ -2268,8 +2268,8 @@ export const passageData: any = {
         },
         {
           question: 'Who clapped?',
-          options: ['Mother', 'Brother', 'Friend', 'Teacher'],
-          answer: 'Brother',
+          options: ['Housemate', 'Friend', 'Friend', 'Teacher'],
+          answer: 'Friend',
         },
         {
           question: 'What kind of day was it?',
@@ -2281,7 +2281,7 @@ export const passageData: any = {
     {
       title: 'The Busy Ants',
       passage:
-        'A line of tiny ants walked near the kitchen wall. They carried small crumbs of food together. Maya watched them quietly and learned how teamwork helps. She felt amazed by the little ants.',
+        'A line of tiny ants walked near the kitchen wall. They carried small crumbs of food together. Maya watched them quietly and learned how teamwork helps. She felt amazed by the small ants.',
       questions: [
         {
           question: 'Where were the ants?',
@@ -2312,7 +2312,7 @@ export const passageData: any = {
       questions: [
         {
           question: 'Who tells the stories?',
-          options: ['Mother', 'Teacher', 'Grandma', 'Friend'],
+          options: ['Housemate', 'Teacher', 'Grandma', 'Friend'],
           answer: 'Grandma',
         },
         {
@@ -2335,12 +2335,12 @@ export const passageData: any = {
     {
       title: 'The New Friend',
       passage:
-        'A new boy joined the class today. He looked shy and quiet. Pooja shared her lunch and spoke kindly to him. Soon, the boy smiled and became her friend.',
+        'A new learner joined the class today. He looked shy and quiet. Pooja shared her lunch and spoke kindly to him. Soon, the learner smiled and became her friend.',
       questions: [
         {
           question: 'Who joined the class?',
-          options: ['Girl', 'Boy', 'Teacher', 'Dog'],
-          answer: 'Boy',
+          options: ['Learner', 'Learner', 'Teacher', 'Dog'],
+          answer: 'Learner',
         },
         {
           question: 'How did he look?',
@@ -2362,7 +2362,7 @@ export const passageData: any = {
     {
       title: 'The Clean Garden',
       passage:
-        'Some children saw plastic in the park garden. They picked it up and put it in a bin. Flowers looked brighter after the cleaning. The children felt proud of their good work.',
+        'Some learners saw plastic in the park garden. They picked it up and put it in a bin. Flowers looked brighter after the cleaning. The learners felt proud of their good work.',
       questions: [
         {
           question: 'What was in the garden?',
@@ -2380,7 +2380,7 @@ export const passageData: any = {
           answer: 'Bright',
         },
         {
-          question: 'How did children feel?',
+          question: 'How did learners feel?',
           options: ['Proud', 'Sad', 'Angry', 'Hungry'],
           answer: 'Proud',
         },
@@ -2389,7 +2389,7 @@ export const passageData: any = {
     {
       title: 'The Missing Button',
       passage:
-        'Vikram noticed a button missing from his shirt. His mother quickly stitched a new one. Vikram thanked her and wore the shirt to school. He felt neat and ready for the day.',
+        'Vikram noticed a button missing from his shirt. His housemate quickly stitched a new one. Vikram thanked her and wore the shirt to class. He felt neat and ready for the day.',
       questions: [
         {
           question: 'What was missing?',
@@ -2398,13 +2398,13 @@ export const passageData: any = {
         },
         {
           question: 'Who fixed it?',
-          options: ['Father', 'Mother', 'Friend', 'Teacher'],
-          answer: 'Mother',
+          options: ['Mentor', 'Housemate', 'Friend', 'Teacher'],
+          answer: 'Housemate',
         },
         {
           question: 'Where did he go?',
-          options: ['Market', 'Park', 'School', 'Shop'],
-          answer: 'School',
+          options: ['Market', 'Park', 'Class', 'Shop'],
+          answer: 'Class',
         },
         {
           question: 'How did he feel?',
@@ -2430,7 +2430,7 @@ export const passageData: any = {
         },
         {
           question: 'Who got slices too?',
-          options: ['Brother', 'Sister', 'Friend', 'Teacher'],
+          options: ['Friend', 'Sister', 'Friend', 'Teacher'],
           answer: 'Sister',
         },
         {
@@ -2443,7 +2443,7 @@ export const passageData: any = {
     {
       title: 'The Quiet Library',
       passage:
-        'Rina entered the school library softly. Children were reading books in silence. She picked a storybook about animals. The quiet place helped her focus and learn.',
+        'Rina entered the library softly. Learners were reading books in silence. She picked a storybook about animals. The quiet place helped her focus and learn.',
       questions: [
         {
           question: 'Where did Rina go?',
@@ -2451,7 +2451,7 @@ export const passageData: any = {
           answer: 'Library',
         },
         {
-          question: 'What were children doing?',
+          question: 'What were learners doing?',
           options: ['Running', 'Reading', 'Eating', 'Singing'],
           answer: 'Reading',
         },
@@ -2468,9 +2468,9 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'The Little Bird',
+      title: 'The Small Bird',
       passage:
-        'A small bird fell from its nest in the tree. Rohan gently picked it up and placed it back safely. The mother bird chirped happily nearby. Rohan felt kind and brave.',
+        'A small bird fell from its nest in the tree. Rohan gently picked it up and placed it back safely. The housemate bird chirped happily nearby. Rohan felt kind and brave.',
       questions: [
         {
           question: 'Where did the bird fall from?',
@@ -2483,7 +2483,7 @@ export const passageData: any = {
           answer: 'Rohan',
         },
         {
-          question: 'What did the mother bird do?',
+          question: 'What did the housemate bird do?',
           options: ['Flew away', 'Chirped', 'Slept', 'Cried'],
           answer: 'Chirped',
         },
@@ -2497,7 +2497,7 @@ export const passageData: any = {
     {
       title: 'The Blue Balloon',
       passage:
-        'Nina got a blue balloon at the fair. It floated high when she held the string. She laughed and showed it to her father. The balloon made her day special.',
+        'Nina got a blue balloon at the fair. It floated high when she held the string. She laughed and showed it to her mentor. The balloon made her day special.',
       questions: [
         {
           question: 'What did Nina get?',
@@ -2511,7 +2511,7 @@ export const passageData: any = {
         },
         {
           question: 'Where did she get it?',
-          options: ['School', 'Fair', 'Park', 'Home'],
+          options: ['Class', 'Fair', 'Park', 'Home'],
           answer: 'Fair',
         },
         {
@@ -2551,7 +2551,7 @@ export const passageData: any = {
     {
       title: 'The Warm Soup',
       passage:
-        'It was a cold evening at home. Mother made hot vegetable soup for everyone. The family sat together and enjoyed the warm meal. They felt cozy and happy inside.',
+        'It was a cold evening at home. Housemate made hot vegetable soup for everyone. The household sat together and enjoyed the warm meal. They felt cozy and happy inside.',
       questions: [
         {
           question: 'What was the weather like?',
@@ -2559,14 +2559,14 @@ export const passageData: any = {
           answer: 'Cold',
         },
         {
-          question: 'What did mother make?',
+          question: 'What did housemate make?',
           options: ['Rice', 'Soup', 'Cake', 'Juice'],
           answer: 'Soup',
         },
         {
           question: 'Who ate together?',
-          options: ['Friends', 'Family', 'Neighbors', 'Students'],
-          answer: 'Family',
+          options: ['Friends', 'Household', 'Neighbors', 'Learners'],
+          answer: 'Household',
         },
         {
           question: 'How did they feel?',
@@ -2578,7 +2578,7 @@ export const passageData: any = {
     {
       title: 'The New Shoes',
       passage:
-        'Amit wore his new black shoes to school. They shined brightly in the sunlight. His friends liked them very much. Amit walked proudly with a big smile.',
+        'Amit wore his new black shoes to class. They shined brightly in the sunlight. His friends liked them very much. Amit walked proudly with a big smile.',
       questions: [
         {
           question: 'What did Amit wear?',
@@ -2592,7 +2592,7 @@ export const passageData: any = {
         },
         {
           question: 'Who liked the shoes?',
-          options: ['Teacher', 'Friends', 'Driver', 'Brother'],
+          options: ['Teacher', 'Friends', 'Driver', 'Friend'],
           answer: 'Friends',
         },
         {
@@ -2619,7 +2619,7 @@ export const passageData: any = {
         },
         {
           question: 'Who watched the bee?',
-          options: ['Siya', 'Ravi', 'Mother', 'Teacher'],
+          options: ['Siya', 'Ravi', 'Housemate', 'Teacher'],
           answer: 'Siya',
         },
         {
@@ -2695,7 +2695,7 @@ export const passageData: any = {
         },
         {
           question: 'Who shared food?',
-          options: ['Mother', 'Isha', 'Brother', 'Friend'],
+          options: ['Housemate', 'Isha', 'Friend', 'Friend'],
           answer: 'Isha',
         },
         {
@@ -2713,7 +2713,7 @@ export const passageData: any = {
     {
       title: 'The Clean Hands',
       passage:
-        'Before eating, Pihu washed her hands with soap and water. Her mother smiled at her good habit. Clean hands kept her safe from germs. Pihu felt healthy and proud.',
+        'Before eating, Pihu washed her hands with soap and water. Her housemate smiled at her good habit. Clean hands kept her safe from germs. Pihu felt healthy and proud.',
       questions: [
         {
           question: 'What did Pihu wash?',
@@ -2727,8 +2727,8 @@ export const passageData: any = {
         },
         {
           question: 'Who smiled at her?',
-          options: ['Teacher', 'Mother', 'Friend', 'Doctor'],
-          answer: 'Mother',
+          options: ['Teacher', 'Housemate', 'Friend', 'Doctor'],
+          answer: 'Housemate',
         },
         {
           question: 'How did Pihu feel?',
@@ -2754,7 +2754,7 @@ export const passageData: any = {
         },
         {
           question: 'Who did Mohan share with?',
-          options: ['Friend', 'Brother', 'Sister', 'Teacher'],
+          options: ['Friend', 'Friend', 'Sister', 'Teacher'],
           answer: 'Sister',
         },
         {
@@ -2771,7 +2771,7 @@ export const passageData: any = {
       questions: [
         {
           question: 'Where was the tree?',
-          options: ['Park', 'School', 'Near house', 'Road'],
+          options: ['Park', 'Class', 'Near house', 'Road'],
           answer: 'Near house',
         },
         {
@@ -2819,9 +2819,9 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'The School Bell',
+      title: 'The Class Bell',
       passage:
-        'The school bell rang loudly in the morning. Children walked quickly to their classrooms. The teacher greeted them with a smile. Learning began happily.',
+        'The class bell rang loudly in the morning. Learners walked quickly to their classrooms. The teacher greeted them with a smile. Learning began happily.',
       questions: [
         {
           question: 'What rang loudly?',
@@ -2829,7 +2829,7 @@ export const passageData: any = {
           answer: 'Bell',
         },
         {
-          question: 'Where did children go?',
+          question: 'Where did learners go?',
           options: ['Playground', 'Classrooms', 'Home', 'Market'],
           answer: 'Classrooms',
         },
@@ -2848,7 +2848,7 @@ export const passageData: any = {
     {
       title: 'The Yellow Bus',
       passage:
-        'Every morning, a yellow bus stopped near Ritu’s house. She waved goodbye to her parents and got inside. The bus carried many children to school. They talked and laughed together.',
+        'Every morning, a yellow bus stopped near Ritu’s house. She waved goodbye to her household and got inside. The bus carried many learners to class. They talked and laughed together.',
       questions: [
         {
           question: 'What color was the bus?',
@@ -2862,11 +2862,11 @@ export const passageData: any = {
         },
         {
           question: 'Where did the bus go?',
-          options: ['Park', 'Market', 'School', 'Farm'],
-          answer: 'School',
+          options: ['Park', 'Market', 'Class', 'Farm'],
+          answer: 'Class',
         },
         {
-          question: 'What did children do inside?',
+          question: 'What did learners do inside?',
           options: ['Sleep', 'Talk and laugh', 'Cry', 'Read alone'],
           answer: 'Talk and laugh',
         },
@@ -2902,7 +2902,7 @@ export const passageData: any = {
     {
       title: 'The Bright Rainbow',
       passage:
-        'After the rain stopped, a rainbow appeared in the sky. It showed many beautiful colors. Children looked up with wonder. The sky looked magical and bright.',
+        'After the rain stopped, a rainbow appeared in the sky. It showed many beautiful colors. Learners looked up with wonder. The sky looked magical and bright.',
       questions: [
         {
           question: 'When did the rainbow appear?',
@@ -2915,7 +2915,7 @@ export const passageData: any = {
           answer: 'Sky',
         },
         {
-          question: 'How did children look?',
+          question: 'How did learners look?',
           options: ['Angry', 'Wonder', 'Sleepy', 'Tired'],
           answer: 'Wonder',
         },
@@ -2987,7 +2987,7 @@ export const passageData: any = {
       questions: [
         {
           question: 'Who needed help?',
-          options: ['Child', 'Old man', 'Dog', 'Friend'],
+          options: ['Learner', 'Old man', 'Dog', 'Friend'],
           answer: 'Old man',
         },
         {
@@ -3010,7 +3010,7 @@ export const passageData: any = {
     {
       title: 'The Green Park',
       passage:
-        'On Sunday, Nikhil visited a green park with his family. He ran on the soft grass and played on the slide. Birds chirped happily in the trees. The day felt fresh and joyful.',
+        'On Sunday, Nikhil visited a green park with his household. He ran on the soft grass and played on the slide. Birds chirped happily in the trees. The day felt fresh and joyful.',
       questions: [
         {
           question: 'When did Nikhil visit the park?',
@@ -3019,8 +3019,8 @@ export const passageData: any = {
         },
         {
           question: 'Who went with him?',
-          options: ['Friends', 'Family', 'Teacher', 'Neighbors'],
-          answer: 'Family',
+          options: ['Friends', 'Household', 'Teacher', 'Neighbors'],
+          answer: 'Household',
         },
         {
           question: 'What did birds do?',
@@ -3037,17 +3037,17 @@ export const passageData: any = {
     {
       title: 'The Glass of Milk',
       passage:
-        'Before bedtime, Riya drank a warm glass of milk. Her mother said it would make her strong. Riya finished it quickly and brushed her teeth. She slept peacefully all night.',
+        'Before evening, Riya drank a warm glass of milk. Her housemate said it would make her strong. Riya finished it quickly and brushed her teeth. She slept peacefully all night.',
       questions: [
         {
           question: 'When did Riya drink milk?',
-          options: ['Morning', 'Afternoon', 'Bedtime', 'Noon'],
-          answer: 'Bedtime',
+          options: ['Morning', 'Afternoon', 'Evening', 'Noon'],
+          answer: 'Evening',
         },
         {
           question: 'Who gave the advice?',
-          options: ['Teacher', 'Mother', 'Friend', 'Doctor'],
-          answer: 'Mother',
+          options: ['Teacher', 'Housemate', 'Friend', 'Doctor'],
+          answer: 'Housemate',
         },
         {
           question: 'What did Riya do after drinking?',
@@ -3064,7 +3064,7 @@ export const passageData: any = {
     {
       title: 'The Busy Morning',
       passage:
-        'The alarm rang early in the morning. Aarav packed his school bag and wore his uniform. He ate breakfast with his family. Soon, he was ready for school.',
+        'The alarm rang early in the morning. Aarav packed his bag and wore his uniform. He ate breakfast with his household. Soon, he was ready for class.',
       questions: [
         {
           question: 'What rang early?',
@@ -3073,18 +3073,18 @@ export const passageData: any = {
         },
         {
           question: 'What did Aarav pack?',
-          options: ['Toy box', 'School bag', 'Lunch plate', 'Pillow'],
-          answer: 'School bag',
+          options: ['Toy box', 'Bag', 'Lunch plate', 'Pillow'],
+          answer: 'Bag',
         },
         {
           question: 'Who ate breakfast with him?',
-          options: ['Friends', 'Family', 'Teacher', 'Driver'],
-          answer: 'Family',
+          options: ['Friends', 'Household', 'Teacher', 'Driver'],
+          answer: 'Household',
         },
         {
           question: 'Where was he ready to go?',
-          options: ['Park', 'Market', 'School', 'Garden'],
-          answer: 'School',
+          options: ['Park', 'Market', 'Class', 'Garden'],
+          answer: 'Class',
         },
       ],
     },
@@ -3127,7 +3127,7 @@ export const passageData: any = {
         },
         {
           question: 'Who helped Karan?',
-          options: ['Friend', 'Teacher', 'Brother', 'Father'],
+          options: ['Friend', 'Teacher', 'Friend', 'Mentor'],
           answer: 'Teacher',
         },
         {
@@ -3172,10 +3172,10 @@ export const passageData: any = {
     {
       title: 'The Singing Class',
       passage:
-        'During music time, children sang a happy song together. Their teacher played the piano softly. The room filled with sweet sounds. Everyone enjoyed the cheerful moment.',
+        'During music time, learners sang a happy song together. Their teacher played the piano softly. The room filled with sweet sounds. Everyone enjoyed the cheerful moment.',
       questions: [
         {
-          question: 'What did children sing?',
+          question: 'What did learners sing?',
           options: ['Poem', 'Happy song', 'Story', 'Prayer'],
           answer: 'Happy song',
         },
@@ -3208,7 +3208,7 @@ export const passageData: any = {
         },
         {
           question: 'Who watched the cat?',
-          options: ['Neel', 'Riya', 'Mother', 'Teacher'],
+          options: ['Neel', 'Riya', 'Housemate', 'Teacher'],
           answer: 'Neel',
         },
         {
@@ -3226,7 +3226,7 @@ export const passageData: any = {
     {
       title: 'The Fresh Lemonade',
       passage:
-        'On a hot afternoon, Pia made fresh lemonade. She mixed lemon juice, sugar, and cold water. Her family drank it with smiles. The cool drink felt refreshing.',
+        'On a hot afternoon, Pia made fresh lemonade. She mixed lemon juice, sugar, and cold water. Her household drank it with smiles. The cool drink felt refreshing.',
       questions: [
         {
           question: 'What did Pia make?',
@@ -3240,8 +3240,8 @@ export const passageData: any = {
         },
         {
           question: 'Who drank it?',
-          options: ['Friends', 'Family', 'Neighbors', 'Teacher'],
-          answer: 'Family',
+          options: ['Friends', 'Household', 'Neighbors', 'Teacher'],
+          answer: 'Household',
         },
         {
           question: 'How did the drink feel?',
@@ -3262,7 +3262,7 @@ export const passageData: any = {
         },
         {
           question: 'Where did villagers go?',
-          options: ['School', 'Market', 'Park', 'Temple'],
+          options: ['Class', 'Market', 'Park', 'Temple'],
           answer: 'Market',
         },
         {
@@ -3294,7 +3294,7 @@ export const passageData: any = {
         },
         {
           question: 'Who watched it?',
-          options: ['Ritu', 'Aman', 'Teacher', 'Brother'],
+          options: ['Ritu', 'Aman', 'Teacher', 'Friend'],
           answer: 'Ritu',
         },
         {
@@ -3307,7 +3307,7 @@ export const passageData: any = {
     {
       title: 'The Festival Lights',
       passage:
-        'Colorful lights decorated the houses during the festival. Children wore new clothes and shared sweets. Music played in the streets. The night felt bright and joyful.',
+        'Colorful lights decorated the houses during the festival. Learners wore new clothes and shared sweets. Music played in the streets. The night felt bright and joyful.',
       questions: [
         {
           question: 'What decorated the houses?',
@@ -3315,7 +3315,7 @@ export const passageData: any = {
           answer: 'Lights',
         },
         {
-          question: 'What did children share?',
+          question: 'What did learners share?',
           options: ['Books', 'Sweets', 'Toys', 'Shoes'],
           answer: 'Sweets',
         },
@@ -3332,14 +3332,14 @@ export const passageData: any = {
       ],
     },
     {
-      title: 'The Little Helper',
+      title: 'The Small Helper',
       passage:
-        'Sam helped his father water the plants in the evening. He carried a small watering can carefully. The plants looked fresh and green. Sam felt happy to help.',
+        'Sam helped his mentor water the plants in the evening. He carried a small watering can carefully. The plants looked fresh and green. Sam felt happy to help.',
       questions: [
         {
           question: 'Who did Sam help?',
-          options: ['Teacher', 'Father', 'Friend', 'Brother'],
-          answer: 'Father',
+          options: ['Teacher', 'Mentor', 'Friend', 'Friend'],
+          answer: 'Mentor',
         },
         {
           question: 'What did he carry?',
@@ -3361,7 +3361,7 @@ export const passageData: any = {
     {
       title: 'The Bright Classroom',
       passage:
-        'Sunlight entered the classroom through wide windows. Students opened their books and read quietly. The teacher wrote new words on the board. Learning felt exciting and clear.',
+        'Sunlight entered the classroom through wide windows. Learners opened their books and read quietly. The teacher wrote new words on the board. Learning felt exciting and clear.',
       questions: [
         {
           question: 'What entered the classroom?',
@@ -3369,7 +3369,7 @@ export const passageData: any = {
           answer: 'Sunlight',
         },
         {
-          question: 'What did students open?',
+          question: 'What did learners open?',
           options: ['Bags', 'Books', 'Boxes', 'Doors'],
           answer: 'Books',
         },
@@ -3417,7 +3417,7 @@ export const passageData: any = {
     {
       title: 'The Ancient Banyan Tree',
       passage:
-        'In the heart of a deep forest stood an ancient banyan tree with massive, twisting roots that reached toward the ground like giant fingers. For over a hundred years, it had provided a safe home for countless families of monkeys, squirrels, and colorful birds. Below its heavy green leaves, the air always felt cool and fresh, even on the hottest summer days. Local villagers believed the tree was a silent guardian of the woods. Children often gathered near its base to listen to the whispering wind and play among the sturdy roots that felt like secret walls.',
+        'In the heart of a deep forest stood an ancient banyan tree with massive, twisting roots that reached toward the ground like giant fingers. For over a hundred years, it had provided a safe home for countless households of monkeys, squirrels, and colorful birds. Below its heavy green leaves, the air always felt cool and fresh, even on the hottest summer days. Local villagers believed the tree was a silent guardian of the woods. Learners often gathered near its base to listen to the whispering wind and play among the sturdy roots that felt like secret walls.',
       questions: [
         {
           question: 'What reached toward the ground like giant fingers?',
@@ -3450,7 +3450,7 @@ export const passageData: any = {
           answer: 'It was a silent guardian',
         },
         {
-          question: 'What did the children listen to near the tree?',
+          question: 'What did the learners listen to near the tree?',
           options: ['Loud music', 'Whispering wind', 'Running water', 'Bird songs only'],
           answer: 'Whispering wind',
         },
@@ -3459,7 +3459,7 @@ export const passageData: any = {
     {
       title: 'The Space Station Adventure',
       passage:
-        'Commander Leo looked through the thick glass window of the International Space Station. Below him, the Earth looked like a beautiful blue marble floating in the dark silence of space. He was working on a special project to grow vegetables without soil. His robot assistant, Sparky, helped him check the temperature and light every hour. Living in space was exciting, but Leo sometimes missed the smell of rain and the feeling of soft grass. He spent his free time writing letters to his family back home, telling them about the amazing bright stars he saw every day.',
+        'Commander Leo looked through the thick glass window of the International Space Station. Below him, the Earth looked like a beautiful blue marble floating in the dark silence of space. He was working on a special project to grow vegetables without soil. His robot assistant, Sparky, helped him check the temperature and light every hour. Living in space was exciting, but Leo sometimes missed the smell of rain and the feeling of soft grass. He spent his free time writing letters to his household back home, telling them about the amazing bright stars he saw every day.',
       questions: [
         {
           question: 'Who was looking through the glass window?',
@@ -3483,7 +3483,7 @@ export const passageData: any = {
         },
         {
           question: 'Who helped Leo with the project?',
-          options: ['Another commander', 'His robot assistant, Sparky', 'His family', 'A doctor'],
+          options: ['Another commander', 'His robot assistant, Sparky', 'His household', 'A doctor'],
           answer: 'His robot assistant, Sparky',
         },
         {
@@ -3495,11 +3495,11 @@ export const passageData: any = {
           question: 'How did Leo spend his free time?',
           options: [
             'Sleeping',
-            'Writing letters to his family',
+            'Writing letters to his household',
             'Playing games',
             'Repairing robots',
           ],
-          answer: 'Writing letters to his family',
+          answer: 'Writing letters to his household',
         },
       ],
     },
@@ -3590,7 +3590,7 @@ export const passageData: any = {
     {
       title: 'The Mystery of the Secret Cave',
       passage:
-        'Maya and her older brother Sam discovered a hidden entrance behind a waterfall during their summer hike. The cave inside was filled with sparkling crystals that glowed like stars in the dark. They used a strong flashlight to see the walls, which were covered in ancient paintings of hunters and mammoths. Sam warned Maya to walk carefully because the floor was slippery and wet. They found a small wooden box buried in the sand at the back of the cave. Inside were old coins from a city that no longer existed. It was their greatest adventure ever.',
+        'Maya and her older friend Sam discovered a hidden entrance behind a waterfall during their summer hike. The cave inside was filled with sparkling crystals that glowed like stars in the dark. They used a strong flashlight to see the walls, which were covered in ancient paintings of hunters and mammoths. Sam warned Maya to walk carefully because the floor was slippery and wet. They found a small wooden box buried in the sand at the back of the cave. Inside were old coins from a city that no longer existed. It was their greatest adventure ever.',
       questions: [
         {
           question: 'Where was the hidden entrance to the cave?',
@@ -3674,7 +3674,7 @@ export const passageData: any = {
     {
       title: 'The Library of Whispers',
       passage:
-        'Deep in the city stood a very old library with shelves that reached the high ceiling. It was called the Library of Whispers because the books seemed to hum softly when someone walked past. A young girl named Elena visited every Saturday to find stories about ancient magic. The librarian, Mr. Finch, wore silver glasses and always knew exactly where every book was hidden. He gave Elena a special key to the "Mystery Section" in the basement. There, she found a book with a lock that opened only when she whispered her favorite story to it. It was a magical afternoon.',
+        'Deep in the city stood a very old library with shelves that reached the high ceiling. It was called the Library of Whispers because the books seemed to hum softly when someone walked past. A curious learner named Elena visited every Saturday to find stories about ancient magic. The librarian, Mr. Finch, wore silver glasses and always knew exactly where every book was hidden. He gave Elena a special key to the "Mystery Section" in the basement. There, she found a book with a lock that opened only when she whispered her favorite story to it. It was a magical afternoon.',
       questions: [
         {
           question: 'Why was it called the Library of Whispers?',
@@ -3924,7 +3924,7 @@ export const passageData: any = {
     {
       title: 'The Kingdom of Coral',
       passage:
-        'Beneath the tropical ocean waves lies a bustling city called a coral reef. It is made of millions of tiny animals that build hard limestone skeletons over thousands of years. These reefs provide a safe nursery for baby fish and a hiding spot for slippery eels. Brightly colored sea anemones wave in the current, protecting clownfish with their stinging tentacles. Giant sea turtles often stop by to snack on seagrass and rest in the warm water. Protecting the reef is very important because it keeps the entire ocean healthy and full of amazing life.',
+        'Beneath the tropical ocean waves lies a bustling city called a coral reef. It is made of millions of tiny animals that build hard limestone skeletons over thousands of years. These reefs provide a safe shelter for small fish and a hiding spot for slippery eels. Brightly colored sea anemones wave in the current, protecting clownfish with their stinging tentacles. Giant sea turtles often stop by to snack on seagrass and rest in the warm water. Protecting the reef is very important because it keeps the entire ocean healthy and full of amazing life.',
       questions: [
         {
           question: 'What are coral reefs made of?',
@@ -3932,9 +3932,9 @@ export const passageData: any = {
           answer: 'Tiny animals and skeletons',
         },
         {
-          question: 'Which animal uses the reef as a nursery?',
-          options: ['Baby fish', 'Eagles', 'Monkeys', 'Dogs'],
-          answer: 'Baby fish',
+          question: 'Which animal uses the reef as a shelter?',
+          options: ['Small fish', 'Eagles', 'Monkeys', 'Dogs'],
+          answer: 'Small fish',
         },
         {
           question: 'How do anemones protect clownfish?',
@@ -4028,7 +4028,7 @@ export const passageData: any = {
     {
       title: 'The Life of a Giant Panda',
       passage:
-        'High in the misty mountains of China, the giant panda lives among thick bamboo forests. Pandas are famous for their black and white fur, which helps them hide in the shadows and snow. A panda spends nearly twelve hours every day eating bamboo stems, leaves, and shoots. They have a special bone in their wrist that acts like a thumb to help them grip the bamboo tightly. Even though they are large bears, pandas are excellent climbers and can even swim in cold rivers. Baby pandas, called cubs, stay close to their mothers for two years.',
+        'High in the misty mountains of China, the giant panda lives among thick bamboo forests. Pandas are famous for their black and white fur, which helps them hide in the shadows and snow. A panda spends nearly twelve hours every day eating bamboo stems, leaves, and shoots. They have a special bone in their wrist that acts like a thumb to help them grip the bamboo tightly. Even though they are large bears, pandas are excellent climbers and can even swim in cold rivers. Panda cubs, called cubs, stay close to their housemates for two years.',
       questions: [
         {
           question: 'Where do giant pandas live?',
@@ -4061,12 +4061,12 @@ export const passageData: any = {
           answer: 'A special wrist bone',
         },
         {
-          question: 'What are baby pandas called?',
+          question: 'What are panda cubs called?',
           options: ['Puppies', 'Cubs', 'Kittens', 'Calves'],
           answer: 'Cubs',
         },
         {
-          question: 'How long do cubs stay with their mothers?',
+          question: 'How long do cubs stay with their housemates?',
           options: ['One month', 'Five years', 'Two years', 'Ten years'],
           answer: 'Two years',
         },
@@ -4384,7 +4384,7 @@ export const passageData: any = {
     {
       title: 'The Majestic Blue Whale',
       passage:
-        'The blue whale is the largest animal to ever live on Earth, even bigger than the largest dinosaurs! It can grow as long as three school buses parked end-to-end. Despite their massive size, blue whales eat tiny shrimp-like creatures called krill. They use large plates in their mouths, called baleen, to filter the krill from the cold ocean water. A blue whale can hold its breath for a long time, but it must come to the surface to breathe air through its blowhole. When it exhales, it sprays a tall fountain of water into the sky.',
+        'The blue whale is the largest animal to ever live on Earth, even bigger than the largest dinosaurs! It can grow as long as three buses parked end-to-end. Despite their massive size, blue whales eat tiny shrimp-like creatures called krill. They use large plates in their mouths, called baleen, to filter the krill from the cold ocean water. A blue whale can hold its breath for a long time, but it must come to the surface to breathe air through its blowhole. When it exhales, it sprays a tall fountain of water into the sky.',
       questions: [
         {
           question: 'How big is a blue whale compared to dinosaurs?',
@@ -4423,8 +4423,8 @@ export const passageData: any = {
         },
         {
           question: 'How long can a blue whale grow?',
-          options: ['One car length', 'Three school buses long', 'Ten feet', 'A mile'],
-          answer: 'Three school buses long',
+          options: ['One car length', 'Three buses long', 'Ten feet', 'A mile'],
+          answer: 'Three buses long',
         },
       ],
     },
@@ -4646,11 +4646,11 @@ export const passageData: any = {
     {
       title: 'The Busy Life of Ants',
       passage:
-        'Ants may be small, but they are some of the hardest workers in the animal kingdom. They live in large groups called colonies, where every ant has a special job to do. The queen ant is the leader and lays all the eggs, while worker ants find food and protect the nest. Ants use their long antennas to "smell" and communicate with each other by leaving invisible chemical trails. Some ants can lift objects that are fifty times heavier than their own bodies! They work together perfectly to build complex tunnels and nurseries deep underground to keep their family safe.',
+        'Ants may be small, but they are some of the hardest workers in the animal kingdom. They live in large groups called colonies, where every ant has a special job to do. The queen ant is the leader and lays all the eggs, while worker ants find food and protect the nest. Ants use their long antennas to "smell" and communicate with each other by leaving invisible chemical trails. Some ants can lift objects that are fifty times heavier than their own bodies! They work together perfectly to build complex tunnels and nurseries deep underground to keep their household safe.',
       questions: [
         {
           question: 'What are ant groups called?',
-          options: ['Herds', 'Colonies', 'Schools', 'Flocks'],
+          options: ['Herds', 'Colonies', 'Classs', 'Flocks'],
           answer: 'Colonies',
         },
         {
@@ -4824,7 +4824,7 @@ export const passageData: any = {
     {
       title: 'The Importance of Recycling',
       passage:
-        'Recycling is a simple way that everyone can help protect our beautiful planet Earth. When we recycle materials like paper, glass, and plastic, they are taken to special factories to be turned into new products. This saves energy and keeps our oceans and forests clean from trash. For example, old soda cans can be melted down to make new cans or even parts for bicycles! Many cities provide colorful bins to make it easy for families to sort their waste. By reducing, reusing, and recycling every day, we ensure that the Earth stays healthy for all the animals and people who live here.',
+        'Recycling is a simple way that everyone can help protect our beautiful planet Earth. When we recycle materials like paper, glass, and plastic, they are taken to special factories to be turned into new products. This saves energy and keeps our oceans and forests clean from trash. For example, old soda cans can be melted down to make new cans or even parts for bicycles! Many cities provide colorful bins to make it easy for households to sort their waste. By reducing, reusing, and recycling every day, we ensure that the Earth stays healthy for all the animals and people who live here.',
       questions: [
         {
           question: 'What are three materials we can recycle?',
@@ -4857,7 +4857,7 @@ export const passageData: any = {
           answer: 'New cans or bicycle parts',
         },
         {
-          question: 'What do cities provide to help families sort waste?',
+          question: 'What do cities provide to help households sort waste?',
           options: ['Colorful bins', 'Free cars', 'Large bags', 'Books'],
           answer: 'Colorful bins',
         },
@@ -4905,7 +4905,7 @@ export const passageData: any = {
         },
         {
           question: 'What must the butterfly do before it can fly?',
-          options: ['Eat a leaf', 'Wait for its wings to dry', 'Sing a song', 'Find its mother'],
+          options: ['Eat a leaf', 'Wait for its wings to dry', 'Sing a song', 'Find its housemate'],
           answer: 'Wait for its wings to dry',
         },
       ],
@@ -5012,7 +5012,7 @@ export const passageData: any = {
     {
       title: 'The Benefits of Exercise',
       passage:
-        'Exercise is any activity that moves your body and gets your heart beating faster. When you run, jump, or swim, your muscles become stronger and your heart stays healthy. Exercise also helps your brain work better, making it easier to focus on schoolwork and solve difficult problems. It can even make you feel happier by releasing special chemicals in your body that improve your mood. Experts recommend that children play and move for at least one hour every day. Whether you are playing soccer or just dancing in your room, moving your body is a great way to stay fit!',
+        'Exercise is any activity that moves your body and gets your heart beating faster. When you run, jump, or swim, your muscles become stronger and your heart stays healthy. Exercise also helps your brain work better, making it easier to focus on assignments and solve difficult problems. It can even make you feel happier by releasing special chemicals in your body that improve your mood. Experts recommend that learners play and move for at least one hour every day. Whether you are playing soccer or just dancing in your room, moving your body is a great way to stay fit!',
       questions: [
         {
           question: 'What does exercise do to your heart?',
@@ -5055,13 +5055,13 @@ export const passageData: any = {
           answer: 'Can make you feel happier',
         },
         {
-          question: 'How long should children move every day?',
+          question: 'How long should learners move every day?',
           options: ['Five minutes', 'At least one hour', 'Ten hours', 'One minute'],
           answer: 'At least one hour',
         },
         {
           question: 'Is dancing considered exercise?',
-          options: ['Yes', 'No', 'Only if it’s slow', 'Only in a school'],
+          options: ['Yes', 'No', 'Only if it’s slow', 'Only in a class'],
           answer: 'Yes',
         },
       ],
@@ -5257,7 +5257,7 @@ export const passageData: any = {
     {
       title: 'Life in the Saharan Desert',
       passage:
-        'The Sahara is the largest hot desert in the world, stretching across Northern Africa. During the day, the sun makes the sand extremely hot, but at night, the temperature can drop and feel quite cold. Very few plants grow there because there is so little rain. However, animals like fennec foxes and scorpions have learned to survive by hiding underground during the heat of the day. Some people, known as nomads, travel across the desert with their herds of camels and goats. They look for small areas with water and palm trees, called oases, to rest and drink.',
+        'The Sahara is the largest hot desert in the world, stretching across Northern Africa. During the day, the sun makes the sand extremely hot, but at night, the temperature can drop and feel quite cold. Very few plants grow there because there is so small rain. However, animals like fennec foxes and scorpions have learned to survive by hiding underground during the heat of the day. Some people, known as nomads, travel across the desert with their herds of camels and goats. They look for small areas with water and palm trees, called oases, to rest and drink.',
       questions: [
         {
           question: 'Where is the Sahara desert located?',
@@ -5276,8 +5276,8 @@ export const passageData: any = {
         },
         {
           question: 'Why do few plants grow in the Sahara?',
-          options: ['Too much wind', 'So little rain', 'Too many animals', 'Too much salt'],
-          answer: 'So little rain',
+          options: ['Too much wind', 'So small rain', 'Too many animals', 'Too much salt'],
+          answer: 'So small rain',
         },
         {
           question: 'How do fennec foxes survive the heat?',
@@ -5304,7 +5304,7 @@ export const passageData: any = {
     {
       title: 'Polar Bears and the Sea Ice',
       passage:
-        'Polar bears are the kings of the Arctic, living on the frozen sea ice near the North Pole. They have thick white fur that is actually transparent, trapping the sun’s heat to keep them warm. Below their fur, they have black skin and a heavy layer of fat. Polar bears use the sea ice as a platform to hunt for seals, which are their main source of food. They are excellent swimmers and can travel for miles in the freezing water using their large paws like paddles. During the winter, mother bears build cozy dens in the snow to protect their small cubs.',
+        'Polar bears are the kings of the Arctic, living on the frozen sea ice near the North Pole. They have thick white fur that is actually transparent, trapping the sun’s heat to keep them warm. Below their fur, they have black skin and a heavy layer of fat. Polar bears use the sea ice as a platform to hunt for seals, which are their main source of food. They are excellent swimmers and can travel for miles in the freezing water using their large paws like paddles. During the winter, housemate bears build cozy dens in the snow to protect their small cubs.',
       questions: [
         {
           question: 'Where do polar bears live?',
@@ -5332,7 +5332,7 @@ export const passageData: any = {
           answer: 'Their large paws',
         },
         {
-          question: 'Where does a mother bear protect her cubs?',
+          question: 'Where does a housemate bear protect her cubs?',
           options: ['In a tree', 'In a cozy snow den', 'In the water', 'On a rock'],
           answer: 'In a cozy snow den',
         },
@@ -5425,7 +5425,7 @@ export const passageData: any = {
     {
       title: 'Amazing Animal Migrations',
       passage:
-        'Migration is a long journey that some animals take every year to find food or a warmer place to live. Monarch butterflies are famous for flying thousands of miles from Canada to the forests of Mexico. They use the sun and the Earth’s magnetic field to find their way without a map. Humpback whales also migrate, swimming from cold polar waters to warm tropical oceans to have their babies. Even some birds fly across entire continents to escape the cold winter. These incredible journeys show how animals are perfectly connected to the changing seasons of our planet.',
+        'Migration is a long journey that some animals take every year to find food or a warmer place to live. Monarch butterflies are famous for flying thousands of miles from Canada to the forests of Mexico. They use the sun and the Earth’s magnetic field to find their way without a map. Humpback whales also migrate, swimming from cold polar waters to warm tropical oceans to have their offspring. Even some birds fly across entire continents to escape the cold winter. These incredible journeys show how animals are perfectly connected to the changing seasons of our planet.',
       questions: [
         {
           question: 'What is migration?',
@@ -5456,11 +5456,11 @@ export const passageData: any = {
           question: 'Why do humpback whales migrate?',
           options: [
             'To find ice',
-            'To have babies in warm water',
+            'To have offspring in warm water',
             'To look for gold',
             'To sleep longer',
           ],
-          answer: 'To have babies in warm water',
+          answer: 'To have offspring in warm water',
         },
         {
           question: 'What do birds try to escape during migration?',
@@ -5670,7 +5670,7 @@ export const passageData: any = {
     {
       title: 'The invention of the Printing Press',
       passage:
-        'Before the printing press was invented, books had to be written by hand, which took many months or even years. This meant that books were very rare and expensive, and few people knew how to read. Around the year 1440, Johannes Gutenberg invented a machine that used metal letters to print pages much faster. He would arrange the letters, cover them in ink, and press them onto paper. This allowed hundreds of copies of a book to be made in a short time. This invention helped spread knowledge, allowed more people to go to school, and changed the world forever by making information available to everyone.',
+        'Before the printing press was invented, books had to be written by hand, which took many months or even years. This meant that books were very rare and expensive, and few people knew how to read. Around the year 1440, Johannes Gutenberg invented a machine that used metal letters to print pages much faster. He would arrange the letters, cover them in ink, and press them onto paper. This allowed hundreds of copies of a book to be made in a short time. This invention helped spread knowledge, allowed more people to go to class, and changed the world forever by making information available to everyone.',
       questions: [
         {
           question: 'How were books made before the printing press?',
@@ -5756,7 +5756,7 @@ export const passageData: any = {
         },
         {
           question: 'Is the brain a simple organ?',
-          options: ['Yes', 'No, it is the most complex', 'Only in babies', 'Only in animals'],
+          options: ['Yes', 'No, it is the most complex', 'Only in offspring', 'Only in animals'],
           answer: 'No, it is the most complex',
         },
       ],

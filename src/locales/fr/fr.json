@@ -16,7 +16,6 @@
     "close": "Fermer",
     "cancel": "Annuler",
     "loading": "Chargement...",
-    "comingSoon": "Bientôt disponible !",
     "scoreMessage": "Vous avez obtenu {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thaï",
     "zh-CN": "Chinois (Simplifié)"
   },
-  "notes": {
-    "title": "Mes Notes",
-    "placeholder": "Écrivez votre note ici...",
-    "addNote": "Ajouter une note",
-    "noNotes": "Aucune note pour le moment. Ajoutez-en une ci-dessus !",
-    "saveNote": "Enregistrer",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Chargement de la question...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Réponse choisie :",
     "correctAnswer": "Réponse correcte :",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Pour les parents uniquement",
-    "question": "Veuillez résoudre : {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Réponse incorrecte, veuillez réessayer."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Chargement du texte...",
     "correctAnswer": "La réponse correcte était : {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Lancés",
-    "autoplay": "Lecture automatique",
-    "stopAutoplay": "Arrêter",
-    "options": {
-      "tryAgain": "Réessaie",
-      "oneMoreChance": "Une chance de plus",
-      "1star": "1 Étoile",
-      "2stars": "2 Étoiles",
-      "3stars": "3 Étoiles",
-      "5stars": "5 Étoiles"
-    },
-    "winMessage": "Tu as gagné {{reward}} !",
-    "oneMoreChanceWin": "Génial ! Tu as obtenu un lancé supplémentaire !",
-    "tryAgainMessage": "Plus de chance la prochaine fois !",
-    "comeBackTomorrow": "Reviens demain pour jouer plus ou regarde des pubs pour débloquer plus de lancés"
   },
   "difficultySelection": {
     "chooseAdventure": "Choisis ton aventure"

@@ -16,7 +16,6 @@
     "close": "Închide",
     "cancel": "Anulează",
     "loading": "Se încarcă...",
-    "comingSoon": "În curând!",
     "scoreMessage": "Ai obținut scorul {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thai",
     "zh-CN": "Chineză (Simplificată)"
   },
-  "notes": {
-    "title": "Notițele mele",
-    "placeholder": "Scrie notița aici...",
-    "addNote": "Adaugă notiță",
-    "noNotes": "Nicio notiță încă. Adaugă una mai sus!",
-    "saveNote": "Salvează",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Se încarcă întrebarea...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Răspuns selectat:",
     "correctAnswer": "Răspuns corect:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Doar pentru părinți",
-    "question": "Te rugăm să rezolvi: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Răspuns incorect, te rugăm să încerci din nou."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Se încarcă textul...",
     "correctAnswer": "Răspunsul corect a fost: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Roata norocului",
-    "spinsLeft": "Învârtiri rămase",
-    "autoplay": "Redare automată",
-    "stopAutoplay": "Stop",
-    "options": {
-      "tryAgain": "Încearcă din nou",
-      "oneMoreChance": "Încă o șansă",
-      "1star": "1 Stea",
-      "2stars": "2 Stele",
-      "3stars": "3 Stele",
-      "5stars": "5 Stele"
-    },
-    "winMessage": "Ai câștigat {{reward}}!",
-    "oneMoreChanceWin": "Grozav! Ai primit o învârtire în plus!",
-    "tryAgainMessage": "Mai mult noroc data viitoare!",
-    "comeBackTomorrow": "Revino mâine pentru a te juca mai mult sau vezi reclame pentru a debloca mai multe învârtiri"
   },
   "difficultySelection": {
     "chooseAdventure": "Alege-ți aventura"

@@ -16,7 +16,6 @@
     "close": "Fechar",
     "cancel": "Cancelar",
     "loading": "A carregar...",
-    "comingSoon": "Em breve!",
     "scoreMessage": "Você marcou {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Tailandês",
     "zh-CN": "Chinês (Simplificado)"
   },
-  "notes": {
-    "title": "Minhas Notas",
-    "placeholder": "Escreva sua nota aqui...",
-    "addNote": "Adicionar Nota",
-    "noNotes": "Ainda não há notas. Adicione uma acima!",
-    "saveNote": "Salvar",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Carregando pergunta...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Resposta Selecionada:",
     "correctAnswer": "Resposta Correta:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Somente para Pais",
-    "question": "Por favor resolva: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Resposta incorreta, tente novamente."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Carregando texto...",
     "correctAnswer": "A resposta corretta era: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Roda da Fortuna",
-    "spinsLeft": "Giro(s) restante(s)",
-    "autoplay": "Reprodução automática",
-    "stopAutoplay": "Parar",
-    "options": {
-      "tryAgain": "Tente novamente",
-      "oneMoreChance": "Mais uma chance",
-      "1star": "1 Estrela",
-      "2stars": "2 Estrelas",
-      "3stars": "3 Estrelas",
-      "5stars": "5 Estrelas"
-    },
-    "winMessage": "Você ganhou {{reward}}!",
-    "oneMoreChanceWin": "Incrível! Você ganhou um giro extra!",
-    "tryAgainMessage": "Mais sorte na próxima vez!",
-    "comeBackTomorrow": "Volte amanhã para jogar mais ou assista a anúncios para desbloquear mais giros"
   },
   "difficultySelection": {
     "chooseAdventure": "Escolha Sua Aventura"

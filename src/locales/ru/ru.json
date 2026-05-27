@@ -16,7 +16,6 @@
     "close": "Закрыть",
     "cancel": "Отмена",
     "loading": "Loading...",
-    "comingSoon": "Скоро!",
     "scoreMessage": "Ваш результат {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Тайский",
     "zh-CN": "Китайский (упрощенный)"
   },
-  "notes": {
-    "title": "Мои заметки",
-    "placeholder": "Напишите заметку здесь...",
-    "addNote": "Добавить заметку",
-    "noNotes": "Заметок пока нет. Добавьте одну выше!",
-    "saveNote": "Сохранить",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Загрузка вопроса...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Выбранный ответ:",
     "correctAnswer": "Правильный ответ:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Только для родителей",
-    "question": "Пожалуйста, решите пример: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Неверный ответ, попробуйте еще раз."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Загрузка текста...",
     "correctAnswer": "Правильный ответ был: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Колесо удачи",
-    "spinsLeft": "Осталось попыток",
-    "autoplay": "Автовоспроизведение",
-    "stopAutoplay": "Стоп",
-    "options": {
-      "tryAgain": "Еще раз",
-      "oneMoreChance": "Еще один шанс",
-      "1star": "1 Звезда",
-      "2stars": "2 Звезды",
-      "3stars": "3 Звезды",
-      "5stars": "5 Звезд"
-    },
-    "winMessage": "Ты выиграл {{reward}}!",
-    "oneMoreChanceWin": "Здорово! Ты получил еще одну попытку!",
-    "tryAgainMessage": "Повезет в следующий раз!",
-    "comeBackTomorrow": "Возвращайся завтра, чтобы поиграть еще, или посмотри рекламу, чтобы получить больше попыток"
   },
   "difficultySelection": {
     "chooseAdventure": "Выбери свое приключение"

@@ -16,7 +16,6 @@
     "close": "Stäng",
     "cancel": "Avbryt",
     "loading": "Laddar...",
-    "comingSoon": "Kommer snart!",
     "scoreMessage": "Du fick {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thailändska",
     "zh-CN": "Kinesiska (Förenklad)"
   },
-  "notes": {
-    "title": "Mina anteckningar",
-    "placeholder": "Skriv din anteckning här...",
-    "addNote": "Lägg till anteckning",
-    "noNotes": "Inga anteckningar än. Lägg till en ovan!",
-    "saveNote": "Spara",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Laddar fråga...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Valt svar:",
     "correctAnswer": "Rätt svar:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Endast för föräldrar",
-    "question": "Vänligen lös: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Fel svar, försök igen."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Laddar text...",
     "correctAnswer": "Rätt svar var: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Lyckohjul",
-    "spinsLeft": "Snurr kvar",
-    "autoplay": "Auto-uppspelning",
-    "stopAutoplay": "Stopp",
-    "options": {
-      "tryAgain": "Försök igen",
-      "oneMoreChance": "En chans till",
-      "1star": "1 Stjärna",
-      "2stars": "2 Stjärnor",
-      "3stars": "3 Stjärnor",
-      "5stars": "5 Stjärnor"
-    },
-    "winMessage": "Du vann {{reward}}!",
-    "oneMoreChanceWin": "Härligt! Du fick ett extra snurr!",
-    "tryAgainMessage": "Bättre lycka nästa gång!",
-    "comeBackTomorrow": "Kom tillbaka imorgon för att spela mer eller se reklam för att låsa upp fler snurr"
   },
   "difficultySelection": {
     "chooseAdventure": "Välj ditt äventyr"

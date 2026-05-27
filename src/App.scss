@@ -306,14 +306,14 @@ body,
 
 .subtitle {
   font-size: 20px;
-  @extend .kids-title;
+  @extend .learning-title;
   color: #f767df;
   margin-bottom: 16px;
 }
 
 .title {
   font-size: 24px;
-  @extend .kids-title;
+  @extend .learning-title;
   margin-bottom: 24px;
   color: #ff4081;
 }
@@ -322,7 +322,7 @@ body,
 // BACKGROUNDS
 // =============================================================================
 
-.kids-bg {
+.learning-bg {
   min-height: 100vh;
   padding: 24px 0px;
   text-align: center;

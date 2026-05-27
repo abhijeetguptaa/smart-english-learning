@@ -31,7 +31,7 @@ export const quizData: any = {
       a: 'Frog',
     },
     {
-      q: 'What do you call a baby cat?',
+      q: "What do you call a cat's offspring?",
       o: ['Puppy', 'Kitten', 'Cub', 'Calf'],
       a: 'Kitten',
     },
@@ -41,7 +41,7 @@ export const quizData: any = {
       a: 'Sheep',
     },
     {
-      q: 'What do you call a baby dog?',
+      q: "What do you call a dog's offspring?",
       o: ['Kitten', 'Puppy', 'Cub', 'Calf'],
       a: 'Puppy',
     },
@@ -51,7 +51,7 @@ export const quizData: any = {
       a: 'Elephant',
     },
     {
-      q: 'Which animal is known for carrying its baby in a pouch?',
+      q: 'Which animal is known for carrying its offspring in a pouch?',
       o: ['Kangaroo', 'Elephant', 'Tiger', 'Lion'],
       a: 'Kangaroo',
     },
@@ -71,7 +71,7 @@ export const quizData: any = {
       a: 'Zebra',
     },
     {
-      q: 'What do you call a baby cow?',
+      q: "What do you call a cow's offspring?",
       o: ['Puppy', 'Kitten', 'Calf', 'Cub'],
       a: 'Calf',
     },
@@ -86,8 +86,8 @@ export const quizData: any = {
       a: 'Camel',
     },
     {
-      q: 'What do you call a baby horse?',
-      o: ['Calf', 'Foal', 'Cub', 'Kid'],
+      q: "What do you call a horse's offspring?",
+      o: ['Calf', 'Foal', 'Cub', 'Lamb'],
       a: 'Foal',
     },
     {
@@ -121,8 +121,8 @@ export const quizData: any = {
       a: 'Beaver',
     },
     {
-      q: 'What is a baby sheep called?',
-      o: ['Calf', 'Lamb', 'Kid', 'Puppy'],
+      q: "What is a sheep's offspring called?",
+      o: ['Calf', 'Lamb', 'Cub', 'Puppy'],
       a: 'Lamb',
     },
     {
@@ -141,7 +141,7 @@ export const quizData: any = {
       a: 'Camel',
     },
     {
-      q: 'What do you call a baby bear?',
+      q: "What do you call a bear's offspring?",
       o: ['Puppy', 'Cub', 'Kitten', 'Calf'],
       a: 'Cub',
     },
@@ -161,9 +161,9 @@ export const quizData: any = {
       a: 'Opossum',
     },
     {
-      q: 'What do you call a baby goat?',
-      o: ['Calf', 'Lamb', 'Kid', 'Puppy'],
-      a: 'Kid',
+      q: "What do you call a goat's offspring?",
+      o: ['Calf', 'Lamb', 'Goatling', 'Puppy'],
+      a: 'Goatling',
     },
     {
       q: 'Which animal has eight arms?',
@@ -182,8 +182,8 @@ export const quizData: any = {
     },
     {
       q: 'What do you call a group of fish?',
-      o: ['Flock', 'School', 'Pack', 'Herd'],
-      a: 'School',
+      o: ['Flock', 'Shoal', 'Pack', 'Herd'],
+      a: 'Shoal',
     },
     {
       q: 'Which animal is known for its excellent memory?',
@@ -211,7 +211,7 @@ export const quizData: any = {
       a: 'Chimpanzee',
     },
     {
-      q: 'What do you call a baby elephant?',
+      q: "What do you call an elephant's offspring?",
       o: ['Puppy', 'Kitten', 'Calf', 'Cub'],
       a: 'Calf',
     },
@@ -231,7 +231,7 @@ export const quizData: any = {
       a: 'Owl',
     },
     {
-      q: 'What do you call a baby kangaroo?',
+      q: "What do you call a kangaroo's offspring?",
       o: ['Cub', 'Joey', 'Kit', 'Pup'],
       a: 'Joey',
     },
@@ -406,7 +406,7 @@ export const quizData: any = {
       a: 'Roots',
     },
     {
-      q: 'What color is a school bus?',
+      q: 'What color is a common bus?',
       o: ['Red', 'Blue', 'Green', 'Yellow'],
       a: 'Yellow',
     },

@@ -16,7 +16,6 @@
     "close": "关闭",
     "cancel": "取消",
     "loading": "正在加载...",
-    "comingSoon": "敬请期待！",
     "scoreMessage": "你的得分是 {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -316,7 +315,7 @@
     "categories": {
       "tiny-steps": "小小步伐",
       "stories": "Stories",
-      "rhymes": "儿歌",
+      "rhymes": "韵文",
       "quiz": "测验挑战",
       "tap-learn": "Tap Learn"
     },
@@ -433,16 +432,6 @@
     "th": "泰语",
     "zh-CN": "中文 (简体)"
   },
-  "notes": {
-    "title": "我的笔记",
-    "placeholder": "在这里写下你的笔记...",
-    "addNote": "添加笔记",
-    "noNotes": "还没有笔记。在上方添加一个吧！",
-    "saveNote": "保存",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "正在加载问题...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "选定的回答：",
     "correctAnswer": "正确回答：",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "家长专属",
-    "question": "请解决问题：{{num1}} + {{num2}} = ?",
-    "wrongAnswer": "回答错误，请重试。"
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "正在加载短文...",
     "correctAnswer": "正确答案是：{{answer}}"
-  },
-  "spinWheel": {
-    "title": "幸运大转盘",
-    "spinsLeft": "剩余次数",
-    "autoplay": "自动播放",
-    "stopAutoplay": "停止",
-    "options": {
-      "tryAgain": "再试一次",
-      "oneMoreChance": "多一次机会",
-      "1star": "1 颗星",
-      "2stars": "2 颗星",
-      "3stars": "3 颗星",
-      "5stars": "5 颗星"
-    },
-    "winMessage": "你赢得了 {{reward}}！",
-    "oneMoreChanceWin": "太棒了！你获得了一次额外次数！",
-    "tryAgainMessage": "下次好运！",
-    "comeBackTomorrow": "明天再来玩，或者观看广告解锁更多次数"
   },
   "difficultySelection": {
     "chooseAdventure": "选择你的冒险"

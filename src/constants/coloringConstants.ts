@@ -18,7 +18,7 @@ export const COLOR_NAMES: { [key: string]: string } = {
   '#000080': 'Navy Blue',
   '#000000': 'Black',
 
-  '#FFD1DC': 'Baby Pink',
+  '#FFD1DC': 'Blush Pink',
   '#B0E0E6': 'Powder Blue',
   '#FFD700': 'Gold',
   '#C0C0C0': 'Silver',

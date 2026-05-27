@@ -10,54 +10,54 @@ import {
   b64toBlob,
 } from './utils.js';
 
-// Helper function to add student information line at bottom of PDF
-export function addStudentInfoLine(doc, t) {
+// Helper function to add user information line at bottom of PDF
+export function addUserInfoLine(doc, t) {
   const lineY = PDF_CONFIG.PAGE_HEIGHT - PDF_CONFIG.BOTTOM_MARGIN;
 
-  // Set font for student info
-  doc.setFontSize(PDF_CONFIG.STUDENT_INFO_FONT_SIZE);
+  // Set font for user info
+  doc.setFontSize(PDF_CONFIG.USER_INFO_FONT_SIZE);
   doc.setFont(undefined, 'normal');
 
-  // Student Name
-  doc.text(t('mathApp.studentInfo.name'), PDF_CONFIG.MARGIN, lineY);
+  // User Name
+  doc.text(t('mathApp.userInfo.name'), PDF_CONFIG.MARGIN, lineY);
   doc.line(
-    PDF_CONFIG.MARGIN + PDF_CONFIG.STUDENT_INFO.NAME_OFFSET,
+    PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.NAME_OFFSET,
     lineY + 1,
-    PDF_CONFIG.MARGIN + PDF_CONFIG.STUDENT_INFO.NAME_OFFSET + PDF_CONFIG.STUDENT_INFO.LINE_LENGTH,
+    PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.NAME_OFFSET + PDF_CONFIG.USER_INFO.LINE_LENGTH,
     lineY + 1,
   );
 
   // Date
   doc.text(
-    t('mathApp.studentInfo.date'),
-    PDF_CONFIG.MARGIN + PDF_CONFIG.STUDENT_INFO.FIELD_SPACING,
+    t('mathApp.userInfo.date'),
+    PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.FIELD_SPACING,
     lineY,
   );
   doc.line(
-    PDF_CONFIG.MARGIN + PDF_CONFIG.STUDENT_INFO.FIELD_SPACING + PDF_CONFIG.STUDENT_INFO.DATE_OFFSET,
+    PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.FIELD_SPACING + PDF_CONFIG.USER_INFO.DATE_OFFSET,
     lineY + 1,
     PDF_CONFIG.MARGIN +
-      PDF_CONFIG.STUDENT_INFO.FIELD_SPACING +
-      PDF_CONFIG.STUDENT_INFO.DATE_OFFSET +
-      PDF_CONFIG.STUDENT_INFO.LINE_LENGTH,
+      PDF_CONFIG.USER_INFO.FIELD_SPACING +
+      PDF_CONFIG.USER_INFO.DATE_OFFSET +
+      PDF_CONFIG.USER_INFO.LINE_LENGTH,
     lineY + 1,
   );
 
   // Class
   doc.text(
-    t('mathApp.studentInfo.class'),
-    PDF_CONFIG.MARGIN + PDF_CONFIG.STUDENT_INFO.FIELD_SPACING * 2,
+    t('mathApp.userInfo.class'),
+    PDF_CONFIG.MARGIN + PDF_CONFIG.USER_INFO.FIELD_SPACING * 2,
     lineY,
   );
   doc.line(
     PDF_CONFIG.MARGIN +
-      PDF_CONFIG.STUDENT_INFO.FIELD_SPACING * 2 +
-      PDF_CONFIG.STUDENT_INFO.CLASS_OFFSET,
+      PDF_CONFIG.USER_INFO.FIELD_SPACING * 2 +
+      PDF_CONFIG.USER_INFO.CLASS_OFFSET,
     lineY + 1,
     PDF_CONFIG.MARGIN +
-      PDF_CONFIG.STUDENT_INFO.FIELD_SPACING * 2 +
-      PDF_CONFIG.STUDENT_INFO.CLASS_OFFSET +
-      PDF_CONFIG.STUDENT_INFO.LINE_LENGTH,
+      PDF_CONFIG.USER_INFO.FIELD_SPACING * 2 +
+      PDF_CONFIG.USER_INFO.CLASS_OFFSET +
+      PDF_CONFIG.USER_INFO.LINE_LENGTH,
     lineY + 1,
   );
 }
@@ -276,8 +276,8 @@ export async function downloadPdfFile(selectedOperator, selectedComplexity, numP
         }
       }
     }
-    // Add student information line at bottom of each page
-    addStudentInfoLine(doc, t);
+    // Add user information line at bottom of each page
+    addUserInfoLine(doc, t);
   }
   const pdfBlob = doc.output('blob');
   const fileName = FILE_SETTINGS.DEFAULT_PDF_NAME;
@@ -373,8 +373,8 @@ export async function downloadPassagePdf(passage, t) {
     });
   });
 
-  // Add student information line at bottom of each page
-  addStudentInfoLine(doc, t);
+  // Add user information line at bottom of each page
+  addUserInfoLine(doc, t);
 
   const pdfBlob = doc.output('blob');
   const fileName = FILE_SETTINGS.DEFAULT_PASSAGE_PDF_NAME;

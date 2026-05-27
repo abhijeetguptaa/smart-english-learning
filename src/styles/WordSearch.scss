@@ -158,7 +158,7 @@
   }
 
   .white-bg-card {
-    @include kids-card(rgba(255, 255, 255, 0.9), 12px, 3px solid rgb(215 115 115 / 85%));
+    @include learning-card(rgba(255, 255, 255, 0.9), 12px, 3px solid rgb(215 115 115 / 85%));
     box-shadow: 0 10px 24px rgba(120, 180, 255, 0.14);
     padding: 0;
   }

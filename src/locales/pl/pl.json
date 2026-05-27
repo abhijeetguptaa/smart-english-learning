@@ -16,7 +16,6 @@
     "close": "Close",
     "cancel": "Cancel",
     "loading": "Loading...",
-    "comingSoon": "Wkrótce!",
     "scoreMessage": "Twój wynik to {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "ไทย",
     "zh-CN": "Chiński (Uproszczony)"
   },
-  "notes": {
-    "title": "My Notes",
-    "placeholder": "Wpisz tutaj swoją notatkę...",
-    "addNote": "Dodaj notatkę",
-    "noNotes": "Nie ma jeszcze żadnych notatek. Dodaj jedną powyżej!",
-    "saveNote": "Save",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Ładowanie pytania...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Wybrana odpowiedź:",
     "correctAnswer": "Poprawna odpowiedź:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Tylko dla rodziców",
-    "question": "Rozwiąż zadanie: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Błędna odpowiedź, spróbuj ponownie."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Ładowanie tekstu...",
     "correctAnswer": "Poprawna odpowiedź to: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Koło fortuny",
-    "spinsLeft": "Pozostało kręceń",
-    "autoplay": "Autoodtwarzanie",
-    "stopAutoplay": "Zatrzymaj",
-    "options": {
-      "tryAgain": "Spróbuj ponownie",
-      "oneMoreChance": "One more chance",
-      "1star": "1 Star",
-      "2stars": "2 Stars",
-      "3stars": "3 Stars",
-      "5stars": "5 Stars"
-    },
-    "winMessage": "Wygrałeś {{reward}}!",
-    "oneMoreChanceWin": "Super! Masz dodatkowe kręcenie!",
-    "tryAgainMessage": "Powodzenia następnym razem!",
-    "comeBackTomorrow": "Wróć jutro, aby grać dalej lub oglądaj reklamy, aby odblokować więcej kręceń"
   },
   "difficultySelection": {
     "chooseAdventure": "Wybierz swoją przygodę"

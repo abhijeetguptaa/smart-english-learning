@@ -145,7 +145,7 @@ const SentenceScramble = () => {
   const correctWordsArr = currentQuestion?.correct.split(' ') || [];
 
   return (
-    <div className="sentence-scramble-container kids-bg">
+    <div className="sentence-scramble-container learning-bg">
       <motion.h1 initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="title">
         🌟 {t('sentenceScramble.title', 'Sentence Scramble')} 🧩
       </motion.h1>

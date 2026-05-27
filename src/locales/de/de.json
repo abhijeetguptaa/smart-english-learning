@@ -5,7 +5,7 @@
   "app": {
     "description": "Schau dir diese coole App zum Mathelernen, Puzzeln, Ausmalen und vieles mehr an!",
     "pressBackToExit": "Drücke erneut Zurück, um die App zu verlassen",
-    "title": "Smartes Lernen für Kinder",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Bildschirmrotationssperre ist auf diesem Gerät nicht verfügbar."
   },
   "common": {
@@ -16,7 +16,6 @@
     "close": "Schließen",
     "cancel": "Abbrechen",
     "loading": "Laden...",
-    "comingSoon": "Demnächst!",
     "scoreMessage": "Du hast {{correctAnswersCount}}/{{quizRounds}} erreicht",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thailändisch",
     "zh-CN": "Chinesisch (Vereinfacht)"
   },
-  "notes": {
-    "title": "Meine Notizen",
-    "placeholder": "Schreibe deine Notiz hier...",
-    "addNote": "Notiz hinzufügen",
-    "noNotes": "Noch keine Notizen. Füge oben eine hinzu!",
-    "saveNote": "Speichern",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Frage wird geladen...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Ausgewählte Antwort:",
     "correctAnswer": "Richtige Antwort:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Nur für Eltern",
-    "question": "Bitte lösen: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Falsche Antwort, bitte versuche es erneut."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Text wird geladen...",
     "correctAnswer": "Die richtige Antwort war: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Spingo",
-    "spinsLeft": "Versuche",
-    "autoplay": "Autoplay",
-    "stopAutoplay": "Stopp",
-    "options": {
-      "tryAgain": "Nochmal versuchen",
-      "oneMoreChance": "Eine weitere Chance",
-      "1star": "1 Stern",
-      "2stars": "2 Sterne",
-      "3stars": "3 Sterne",
-      "5stars": "5 Sterne"
-    },
-    "winMessage": "Du hast {{reward}} gewonnen!",
-    "oneMoreChanceWin": "Super! Du hast einen Extra-Versuch bekommen!",
-    "tryAgainMessage": "Viel Glück beim nächsten Mal!",
-    "comeBackTomorrow": "Komm morgen wieder für mehr Versuche oder sieh dir Anzeigen an, um mehr freizuschalten"
   },
   "difficultySelection": {
     "chooseAdventure": "Wähle dein Abenteuer"

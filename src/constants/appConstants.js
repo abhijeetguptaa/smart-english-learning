@@ -63,7 +63,7 @@ export const NUMBER_GENERATION = {
 // UI Text and Labels
 export const APP_TEXT = {
   TITLES: {
-    SMART_KIDS_LEARNING: 'Play & Learn English – ABC Games',
+    SMART_ENGLISH_LEARNING: 'Play & Learn English – ABC Games',
   },
   BUTTONS: {
     GO_HOME: 'Go Home',

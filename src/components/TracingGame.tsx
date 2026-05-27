@@ -297,20 +297,20 @@ export default function TracingGame({ mode = 'alphabets' }: TracingGameProps) {
     };
 
     const setCanvasSize = () => {
-      const parent = drawingCanvas.parentElement;
-      if (parent) {
-        drawingCanvas.width = parent.clientWidth;
-        drawingCanvas.height = parent.clientHeight;
-        outlineCanvas.width = parent.clientWidth;
-        outlineCanvas.height = parent.clientHeight;
-        maskCanvas.width = parent.clientWidth;
-        maskCanvas.height = parent.clientHeight;
-        regionCanvas.width = parent.clientWidth;
-        regionCanvas.height = parent.clientHeight;
+      const container = drawingCanvas.parentElement;
+      if (container) {
+        drawingCanvas.width = container.clientWidth;
+        drawingCanvas.height = container.clientHeight;
+        outlineCanvas.width = container.clientWidth;
+        outlineCanvas.height = container.clientHeight;
+        maskCanvas.width = container.clientWidth;
+        maskCanvas.height = container.clientHeight;
+        regionCanvas.width = container.clientWidth;
+        regionCanvas.height = container.clientHeight;
         if (!offscreenCanvasRef.current)
           offscreenCanvasRef.current = document.createElement('canvas');
-        offscreenCanvasRef.current.width = parent.clientWidth;
-        offscreenCanvasRef.current.height = parent.clientHeight;
+        offscreenCanvasRef.current.width = container.clientWidth;
+        offscreenCanvasRef.current.height = container.clientHeight;
         void loadItem();
       }
     };

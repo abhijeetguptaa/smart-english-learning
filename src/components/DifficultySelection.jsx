@@ -28,7 +28,7 @@ const DifficultySelection = ({ difficulties, baseRoute }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`kids-bg flex-center column difficulty-selection`}>
+    <div className={`learning-bg flex-center column difficulty-selection`}>
       <div className="difficulty-grid">
         {difficulties.map((d) => (
           <motion.div

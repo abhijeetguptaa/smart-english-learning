@@ -69,14 +69,14 @@ const PassageSelection = () => {
 
   if (isPassagesLoading) {
     return (
-      <div className="kids-bg">
+      <div className="learning-bg">
         <h2 className="subtitle">{t('passageReading.loading')}</h2>
       </div>
     );
   }
 
   return (
-    <div className="kids-bg">
+    <div className="learning-bg">
       <h2 className="subtitle">{t('passageSelection.pickLevel')}</h2>
 
       <div className="levels-grid">

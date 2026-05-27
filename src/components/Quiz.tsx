@@ -184,7 +184,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="app-container quiz-page kids-bg">
+    <div className="app-container quiz-page learning-bg">
       <div className="quiz-container">
         {/* Progress Header */}
         <div className="quiz-header">

@@ -16,7 +16,6 @@
     "close": "閉じる",
     "cancel": "キャンセル",
     "loading": "読み込み中...",
-    "comingSoon": "近日公開！",
     "scoreMessage": "あなたのスコアは {{correctAnswersCount}}/{{quizRounds}} です",
     "feedback": {
       "successMsg": [
@@ -316,7 +315,7 @@
     "categories": {
       "tiny-steps": "タイニーステップ",
       "stories": "おはなし",
-      "rhymes": "童謡",
+      "rhymes": "韻文",
       "quiz": "Quiz",
       "tap-learn": "Tap Learn"
     },
@@ -433,16 +432,6 @@
     "th": "タイ語",
     "zh-CN": "中国語（簡体字）"
   },
-  "notes": {
-    "title": "マイメモ",
-    "placeholder": "ここにメモを書いてください...",
-    "addNote": "メモを追加",
-    "noNotes": "まだメモがありません。上から追加してね！",
-    "saveNote": "保存",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "問題を読み込み中...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "選んだ答え：",
     "correctAnswer": "正しい答え：",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "保護者の方へ",
-    "question": "計算してください: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "答えが違います。もう一度試してください。"
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "文章をよみこみ中...",
     "correctAnswer": "正しいこたえは： {{answer}}"
-  },
-  "spinWheel": {
-    "title": "スピンホイール",
-    "spinsLeft": "のこりの回数",
-    "autoplay": "自動再生",
-    "stopAutoplay": "停止",
-    "options": {
-      "tryAgain": "もういっかい",
-      "oneMoreChance": "チャンスをもう一回",
-      "1star": "スター1こ",
-      "2stars": "スター2こ",
-      "3stars": "スター3こ",
-      "5stars": "スター5こ"
-    },
-    "winMessage": "{{reward}} をゲットしたよ！",
-    "oneMoreChanceWin": "すごい！もう一回まわせるよ！",
-    "tryAgainMessage": "次はがんばろう！",
-    "comeBackTomorrow": "あしたまた遊びにきてね。動画をみるとあと5回まわせるよ"
   },
   "difficultySelection": {
     "chooseAdventure": "冒険をえらぼう"

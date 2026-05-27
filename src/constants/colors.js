@@ -1,4 +1,4 @@
-// Kid-friendly colors for category cards and subject buttons
+// Learning-friendly colors for category cards and subject buttons
 export const CATEGORY_COLORS = [
   '#FF3B3B', // Sharp Red
   '#C94FD6', // Sharp Magenta

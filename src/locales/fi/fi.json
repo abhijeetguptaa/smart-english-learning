@@ -16,7 +16,6 @@
     "close": "Sulje",
     "cancel": "Peruuta",
     "loading": "Ladataan...",
-    "comingSoon": "Tulossa pian!",
     "scoreMessage": "Sait pisteet {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thai",
     "zh-CN": "Kiina (Yksinkertaistettu)"
   },
-  "notes": {
-    "title": "Muistiinpanoni",
-    "placeholder": "Kirjoita muistiinpanosi tähän...",
-    "addNote": "Lisää muistiinpano",
-    "noNotes": "Ei vielä muistiinpanoja. Lisää yksi ylhäältä!",
-    "saveNote": "Tallenna",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Ladataan kysymystä...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Valittu vastaus:",
     "correctAnswer": "Oikea vastaus:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Vain vanhemmille",
-    "question": "Ratkaise: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Väärä vastaus, yritä uudelleen."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Ladataan tekstiä...",
     "correctAnswer": "Oikea vastaus oli: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Onnenpyörä",
-    "spinsLeft": "Pyöräytyksiä",
-    "autoplay": "Automaattinen toisto",
-    "stopAutoplay": "Pysäytä",
-    "options": {
-      "tryAgain": "Yritä uudelleen",
-      "oneMoreChance": "Vielä yksi mahdollisuus",
-      "1star": "1 tähti",
-      "2stars": "2 tähteä",
-      "3stars": "3 tähteä",
-      "5stars": "5 tähteä"
-    },
-    "winMessage": "Voitit {{reward}}!",
-    "oneMoreChanceWin": "Hienoa! Sait lisäpyöräytyksen!",
-    "tryAgainMessage": "Parempi onni ensi kerralla!",
-    "comeBackTomorrow": "Palaa huomenna pelaamaan lisää tai katso mainoksia avataksesi lisää pyöräytyksiä"
   },
   "difficultySelection": {
     "chooseAdventure": "Valitse seikkailusi"

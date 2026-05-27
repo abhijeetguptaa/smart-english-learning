@@ -16,7 +16,6 @@
     "close": "Bezárás",
     "cancel": "Mégse",
     "loading": "Betöltés...",
-    "comingSoon": "Hamarosan!",
     "scoreMessage": "A pontszámod: {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Thai",
     "zh-CN": "Kínai (Egyszerűsített)"
   },
-  "notes": {
-    "title": "Jegyzeteim",
-    "placeholder": "Írd ide a jegyzetedet...",
-    "addNote": "Jegyzet hozzáadása",
-    "noNotes": "Még nincsenek jegyzetek. Adj hozzá egyet fent!",
-    "saveNote": "Mentés",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Kérdés betöltése...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Választott válasz:",
     "correctAnswer": "Helyes válasz:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Csak szülőknek",
-    "question": "Kérjük, oldja meg: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Helytelen válasz, kérjük, próbálja újra."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Szöveg betöltése...",
     "correctAnswer": "A helyes válasz ez volt: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Szerencsekerék",
-    "spinsLeft": "Hátralévő pörgetések",
-    "autoplay": "Automatikus lejátszás",
-    "stopAutoplay": "Stop",
-    "options": {
-      "tryAgain": "Próbáld újra",
-      "oneMoreChance": "Még egy esély",
-      "1star": "1 Csillag",
-      "2stars": "2 Csillag",
-      "3stars": "3 Csillag",
-      "5stars": "5 Csillag"
-    },
-    "winMessage": "Nyertél {{reward}}-ot!",
-    "oneMoreChanceWin": "Nagyszerű! Kaptál egy extra pörgetést!",
-    "tryAgainMessage": "Sok sikert legközelebb!",
-    "comeBackTomorrow": "Gyere vissza holnap több játékért, vagy nézz hirdetéseket további pörgetések feloldásához"
   },
   "difficultySelection": {
     "chooseAdventure": "Válaszd ki a kalandodat"

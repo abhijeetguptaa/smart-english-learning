@@ -16,7 +16,6 @@
     "close": "إغلاق",
     "cancel": "إلغاء",
     "loading": "جاري التحميل...",
-    "comingSoon": "قريباً!",
     "scoreMessage": "لقد سجلت {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "التايلاندية",
     "zh-CN": "الصينية (المبسطة)"
   },
-  "notes": {
-    "title": "ملاحظاتي",
-    "placeholder": "اكتب ملاحظتك هنا...",
-    "addNote": "إضافة ملاحظة",
-    "noNotes": "لا توجد ملاحظات بعد. أضف واحدة أعلاه!",
-    "saveNote": "حفظ",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "جاري تحميل السؤال...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "الإجابة المختارة:",
     "correctAnswer": "الإجابة الصحيحة:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "للآباء فقط",
-    "question": "يرجى حل المسألة: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "إجابة غير صحيحة، يرجى المحاولة مرة أخرى."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "جاري تحميل النص...",
     "correctAnswer": "كانت الإجابة الصحيحة هي: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "سبينغو",
-    "spinsLeft": "المحاولات",
-    "autoplay": "تشغيل تلقائي",
-    "stopAutoplay": "إيقاف",
-    "options": {
-      "tryAgain": "حاول مرة أخرى",
-      "oneMoreChance": "فرصة أخرى",
-      "1star": "نجمة واحدة",
-      "2stars": "نجمتان",
-      "3stars": "3 نجوم",
-      "5stars": "5 نجوم"
-    },
-    "winMessage": "لقد فزت بـ {{reward}}!",
-    "oneMoreChanceWin": "رائع! لقد حصلت على محاولة إضافية!",
-    "tryAgainMessage": "حظاً أوفر في المرة القادمة!",
-    "comeBackTomorrow": "عد غداً للعب أكثر أو شاهد الإعلانات لفتح المزيد من المحاولات"
   },
   "difficultySelection": {
     "chooseAdventure": "اختر مغامرتك"

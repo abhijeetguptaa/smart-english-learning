@@ -16,7 +16,6 @@
     "close": "Chiudi",
     "cancel": "Annulla",
     "loading": "Caricamento...",
-    "comingSoon": "Prossimamente!",
     "scoreMessage": "Hai ottenuto {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -433,16 +432,6 @@
     "th": "Tailandese",
     "zh-CN": "Cinese (Semplificato)"
   },
-  "notes": {
-    "title": "Le mie Note",
-    "placeholder": "Scrivi qui la tua nota...",
-    "addNote": "Aggiungi Nota",
-    "noNotes": "Nessuna nota ancora. Aggiungine una sopra!",
-    "saveNote": "Salva",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "Caricamento della domanda...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "Risposta Selezionata:",
     "correctAnswer": "Risposta Corretta:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "Solo per i Genitori",
-    "question": "Per favore risolvi: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "Risposta errata, per favore riprova."
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "Caricamento brano...",
     "correctAnswer": "La risposta corretta era: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "Ruota della Fortuna",
-    "spinsLeft": "Giri rimasti",
-    "autoplay": "Riproduzione automatica",
-    "stopAutoplay": "Ferma",
-    "options": {
-      "tryAgain": "Riprova",
-      "oneMoreChance": "Un'altra possibilità",
-      "1star": "1 Stella",
-      "2stars": "2 Stelle",
-      "3stars": "3 Stelle",
-      "5stars": "5 Stelle"
-    },
-    "winMessage": "Hai vinto {{reward}}!",
-    "oneMoreChanceWin": "Fantastico! Hai ottenuto un giro extra!",
-    "tryAgainMessage": "Più fortuna la prossima volta!",
-    "comeBackTomorrow": "Torna domani per giocare di più o guarda annunci per sbloccare altri giri"
   },
   "difficultySelection": {
     "chooseAdventure": "Scegli la Tua Avventura"

@@ -16,7 +16,6 @@
     "close": "बंद करें",
     "cancel": "रद्द करें",
     "loading": "लोड हो रहा है...",
-    "comingSoon": "जल्द आ रहा है!",
     "scoreMessage": "आपने {{correctAnswersCount}}/{{quizRounds}} स्कोर किया है",
     "feedback": {
       "successMsg": [
@@ -316,7 +315,7 @@
     "categories": {
       "tiny-steps": "छोटे कदम",
       "stories": "वीडियो देखें",
-      "rhymes": "बाल कविताएं",
+      "rhymes": "कविताएं",
       "quiz": "क्विज़",
       "tap-learn": "Tap Learn"
     },
@@ -433,16 +432,6 @@
     "th": "थाई",
     "zh-CN": "चीनी (सरलीकृत)"
   },
-  "notes": {
-    "title": "मेरे नोट्स",
-    "placeholder": "अपना नोट यहाँ लिखें...",
-    "addNote": "नोट जोड़ें",
-    "noNotes": "अभी तक कोई नोट्स नहीं हैं। ऊपर एक जोड़ें!",
-    "saveNote": "सहेजें",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "प्रश्न लोड हो रहा है...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "चुना गया उत्तर:",
     "correctAnswer": "सही उत्तर:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "केवल माता-पिता के लिए",
-    "question": "कृपया हल करें: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "गलत उत्तर, कृपया पुनः प्रयास करें।"
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "गद्यांश लोड हो रहा है...",
     "correctAnswer": "सही उत्तर था: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "स्पिन व्हील",
-    "spinsLeft": "बाकी स्पिन",
-    "autoplay": "ऑटोप्ले",
-    "stopAutoplay": "रोकें",
-    "options": {
-      "tryAgain": "फिर से कोशिश करें",
-      "oneMoreChance": "एक और मौका",
-      "1star": "1 सितारा",
-      "2stars": "2 सितारे",
-      "3stars": "3 सितारे",
-      "5stars": "5 सितारे"
-    },
-    "winMessage": "आपने {{reward}} जीता!",
-    "oneMoreChanceWin": "शानदार! आपको एक अतिरिक्त स्पिन मिला!",
-    "tryAgainMessage": "अगली बार बेहतर भाग्य की कामना करते हैं!",
-    "comeBackTomorrow": "अधिक खेलने के लिए कल वापस आएं या अधिक स्पिन अनलॉक करने के लिए विज्ञापन देखें"
   },
   "difficultySelection": {
     "chooseAdventure": "अपना साहसिक कार्य चुनें"

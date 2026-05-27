@@ -16,7 +16,6 @@
     "close": "ปิด",
     "cancel": "ยกเลิก",
     "loading": "กำลังโหลด...",
-    "comingSoon": "เร็วๆ นี้!",
     "scoreMessage": "คุณทำคะแนนได้ {{correctAnswersCount}}/{{quizRounds}}",
     "feedback": {
       "successMsg": [
@@ -316,7 +315,7 @@
     "categories": {
       "tiny-steps": "ก้าวเล็กๆ",
       "stories": "Stories",
-      "rhymes": "เพลงเด็ก",
+      "rhymes": "เพลง",
       "quiz": "ควิซ",
       "tap-learn": "Tap Learn"
     },
@@ -433,16 +432,6 @@
     "th": "ไทย",
     "zh-CN": "จีน (ตัวย่อ)"
   },
-  "notes": {
-    "title": "บันทึกของฉัน",
-    "placeholder": "เขียนบันทึกของคุณที่นี่...",
-    "addNote": "เพิ่มบันทึก",
-    "noNotes": "ยังไม่มีบันทึก เพิ่มบันทึกได้ที่ด้านบน!",
-    "saveNote": "บันทึก",
-    "cancelEdit": "$t(common.cancel)",
-    "editIcon": "✏️",
-    "deleteIcon": "🗑️"
-  },
   "questionBox": {
     "loadingQuestion": "กำลังโหลดคำถาม...",
     "loading": "$t(common.loading)",
@@ -455,11 +444,6 @@
     "selectedAnswer": "คำตอบที่เลือก:",
     "correctAnswer": "คำตอบที่ถูกต้อง:",
     "scoreMessage": "$t(common.scoreMessage)"
-  },
-  "parentalGate": {
-    "title": "สำหรับผู้ปกครองเท่านั้น",
-    "question": "โปรดแก้โจทย์: {{num1}} + {{num2}} = ?",
-    "wrongAnswer": "คำตอบไม่ถูกต้อง โปรดลองอีกครั้ง"
   },
   "quiz": {
     "easy": "$t(common.levels.easy)",
@@ -723,24 +707,6 @@
   "passageReading": {
     "loading": "กำลังโหลดข้อความ...",
     "correctAnswer": "คำตอบที่ถูกต้องคือ: {{answer}}"
-  },
-  "spinWheel": {
-    "title": "วงล้อนำโชค",
-    "spinsLeft": "เหลือการหมุน",
-    "autoplay": "เล่นอัตโนมัติ",
-    "stopAutoplay": "หยุด",
-    "options": {
-      "tryAgain": "ลองใหม่",
-      "oneMoreChance": "อีกหนึ่งโอกาส",
-      "1star": "1 ดาว",
-      "2stars": "2 ดาว",
-      "3stars": "3 ดาว",
-      "5stars": "5 ดาว"
-    },
-    "winMessage": "คุณได้รับ {{reward}}!",
-    "oneMoreChanceWin": "เยี่ยม! คุณได้รับโอกาสหมุนเพิ่ม!",
-    "tryAgainMessage": "ขอให้โชคดีในครั้งต่อไป!",
-    "comeBackTomorrow": "กลับมาใหม่พรุ่งนี้เพื่อเล่นต่อ หรือดูโฆษณาเพื่อปลดล็อกการหมุนเพิ่ม"
   },
   "difficultySelection": {
     "chooseAdventure": "เลือกการผจญภัยของคุณ"
