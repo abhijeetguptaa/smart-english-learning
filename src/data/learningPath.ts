@@ -336,7 +336,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 33,
-    title: 'Level 33: Reading Master',
+    title: 'Level 33: Word Master',
     tasks: [
       {
         id: 'l33_t2',
@@ -434,7 +434,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 44,
-    title: 'Level 44: Reading Legend',
+    title: 'Level 44: Vocabulary Legend',
     tasks: [
       {
         id: 'l44_t2',
@@ -564,7 +564,7 @@ export const LEARNING_PATH_LEVELS: Level[] = [
   },
   {
     id: 57,
-    title: 'Level 57: Rocket Reading',
+    title: 'Level 57: Rocket Vocabulary',
     tasks: [
       {
         id: 'l57_t2',

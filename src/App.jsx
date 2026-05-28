@@ -13,23 +13,9 @@ import useRetentionStore from './store/useRetentionStore';
 import { useLearningPathStore } from './store/useLearningPathStore';
 const Alphabets = lazy(() => import('./components/Alphabets.tsx'));
 
-const TracingSelection = lazy(() => import('./components/TracingSelection.jsx'));
-const TracingGame = lazy(() => import('./components/TracingGame.tsx'));
-const WordSearch = lazy(() => import('./components/WordSearch.jsx'));
-const WordSearchDifficultySelector = lazy(
-  () => import('./components/WordSearchDifficultySelector.jsx'),
-);
-const SentenceScramble = lazy(() => import('./components/SentenceScramble.tsx'));
-const SentenceScrambleDifficultySelector = lazy(
-  () => import('./components/SentenceScrambleDifficultySelector.jsx'),
-);
-const Quiz = lazy(() => import('./components/Quiz.tsx'));
-const QuizDifficultySelector = lazy(() => import('./components/QuizDifficultySelector.tsx'));
 const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'));
 const Settings = lazy(() => import('./components/Settings.jsx'));
-const PassageReading = lazy(() => import('./components/PassageReading.jsx'));
 const DifficultySelection = lazy(() => import('./components/DifficultySelection.jsx'));
-const PassageSelection = lazy(() => import('./components/PassageSelection.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
 const loadLearningPath = () => import('./components/LearningPath.tsx');
@@ -81,20 +67,11 @@ const NON_GAME_ROUTES = new Set([
   '/',
   '/tiny-steps',
   '/english',
-  '/passages',
   '/tap-learn',
 ]);
 
 function isGameplayRoute(pathname) {
-  if (NON_GAME_ROUTES.has(pathname)) {
-    return false;
-  }
-
-  if (pathname.startsWith('/passages/')) {
-    return false;
-  }
-
-  return true;
+  return !NON_GAME_ROUTES.has(pathname);
 }
 
 function getOrientationLockType(type) {
@@ -150,18 +127,6 @@ function Home() {
       path: '/sentence-scramble',
       icon: '/sentence-scramble.webp',
       label: t('home.subjects.sentenceScramble.label'),
-    },
-    {
-      id: 'passages',
-      path: '/passages',
-      icon: '/passages.webp',
-      label: t('home.subjects.passages.label'),
-    },
-    {
-      id: 'tracing',
-      path: '/alphabet-tracing',
-      icon: '/alphabet-tracing.png',
-      label: t('home.subjects.tracing.label'),
     },
     {
       id: 'quiz',
@@ -571,7 +536,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tiny-steps" element={<LearningPath />} />
           <Route path="/alphabets" element={<Alphabets />} />
-          <Route path="/alphabet-tracing" element={<TracingGame mode="alphabets" />} />
           <Route path="/wordsearch" element={<WordSearchDifficultySelector />} />
           <Route path="/wordsearch/:difficulty" element={<WordSearch />} />
           <Route path="/english-words" element={<EnglishWordsSpell />} />
@@ -581,31 +545,6 @@ export default function App() {
           <Route path="/quiz/:difficulty" element={<Quiz />} />
           <Route path="/tap-learn" element={<TapLearnSelection />} />
           <Route path="/tap-learn/:gameType" element={<TapLearnRoute />} />
-          <Route
-            path="/passages"
-            element={
-              <DifficultySelection
-                difficulties={[
-                  { key: 'easy', label: t('common.levels.easy'), emoji: '🐣', color: '#60a5fa' },
-                  {
-                    key: 'medium',
-                    label: t('common.levels.medium'),
-                    emoji: '🐼',
-                    color: '#f59e0b',
-                  },
-                  {
-                    key: 'hard',
-                    label: t('common.levels.hard'),
-                    emoji: '🐘',
-                    color: '#ef4444',
-                  },
-                ]}
-                baseRoute="/passages"
-              />
-            }
-          />
-          <Route path="/passages/:difficulty" element={<PassageSelection />} />
-          <Route path="/passage/:difficulty/:id" element={<PassageReading />} />
         </Routes>
       </Suspense>
 

@@ -5,7 +5,7 @@
   "app": {
     "description": "تحقق من هذا التطبيق الرائع لتعلم الرياضيات، ولعب الألغاز، والتلوين والمزيد من المرح!",
     "pressBackToExit": "اضغط على رجوع مرة أخرى للخروج",
-    "title": "تعلم الأطفال الأذكياء",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "قفل تدوير الشاشة غير متوفر على هذا الجهاز."
   },
   "common": {
@@ -320,27 +320,19 @@
     "subjects": {
       "alphabets": {
         "label": "الحروف الأبجدية",
-        "title": "تعلم الحروف الأبجدية الإنجليزية مع تركيب الكلام في تعلم الأطفال الأذكياء"
+        "title": "تعلم الحروف الأبجدية الإنجليزية مع تركيب الكلام في تعلم  الأذكياء"
       },
       "spellTheWord": {
         "label": "سبيل بلاي",
-        "title": "تعلم الكلمات الإنجليزية مع الصور في تعلم الأطفال الأذكياء"
+        "title": "تعلم الكلمات الإنجليزية مع الصور في تعلم  الأذكياء"
       },
       "wordSearch": {
         "label": "وورد فان",
-        "title": "العب لعبة لغز البحث عن الكلمات في تعلم الأطفال الأذكياء"
+        "title": "العب لعبة لغز البحث عن الكلمات في تعلم  الأذكياء"
       },
       "sentenceScramble": {
         "label": "ترتيب الجملة",
         "title": "رتّب الكلمات لتكوين جملة صحيحة"
-      },
-      "passages": {
-        "label": "قراءة",
-        "title": "اقرأ النص وأجب عن الأسئلة"
-      },
-      "tracing": {
-        "label": "التتبع",
-        "title": "تعلم الكتابة مع التتبع التفاعلي"
       },
       "tapLearnLetters": {
         "label": "الحروف",
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "الأشكال",
         "title": "انقر لتعلّم الأشكال المختلفة"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "تعلم كتابة الحروف بالتتبع التفاعلي"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "خريطة المغامرة",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(الهدف: {{count}})",
     "levelCompleteMessage": "تم إكمال المستوى",
     "skipLevel": "شاهد إعلانًا للتخطي",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "اختر مستوى ⭐",
-    "level": "مستوى {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "جاري تحميل النص...",
-    "correctAnswer": "كانت الإجابة الصحيحة هي: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "اختر مغامرتك"
   },
-  "tracing": {
-    "0": "صفر",
-    "1": "واحد",
-    "2": "اثنان",
-    "3": "ثلاثة",
-    "4": "أربعة",
-    "5": "خمسة",
-    "6": "ستة",
-    "7": "سبعة",
-    "8": "ثمانية",
-    "9": "تسعة",
-    "title": "متعة التتبع",
-    "instruction": "اتبع الخطوط المنقطة!",
-    "lines": "خطوط",
-    "shapes": "أشكال",
-    "standingLine": "خط عمودي",
-    "sleepingLine": "خط أفقي",
-    "slantingLineRight": "خط مائل",
-    "slantingLineLeft": "خط مائل",
-    "square": "مربع",
-    "triangle": "مثلث",
-    "circle": "دائرة",
-    "oval": "بيضاوي",
-    "rectangle": "مستطيل",
-    "pentagon": "مخمس",
-    "star": "نجمة",
-    "line": "خط",
-    "heart": "قلب",
-    "diamond": "ماسة",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "مذهل! لقد تتبعتها بشكل مثالي!"
-  },
   "welcomeScreen": {
-    "message": "مرحبًا بكم في تعلم الأطفال الأذكياء!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "لنلعب!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "يوغا",
     "Yacht": "يخت",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "خيط",
     "Zoom": "تكبير",
     "Zip": "سحاب",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

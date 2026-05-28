@@ -334,14 +334,6 @@
         "label": "Meningslek",
         "title": "Ordna orden för att skapa en korrekt mening"
       },
-      "passages": {
-        "label": "Läsning",
-        "title": "Läs texten och svara på frågorna"
-      },
-      "tracing": {
-        "label": "Spårning",
-        "title": "Lär dig skriva med interaktiv spårning"
-      },
       "tapLearnLetters": {
         "label": "Bokstäver",
         "title": "Tryck på rätt bokstav för att lära dig det engelska alfabetet"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "Former",
         "title": "Tryck på rätt form för att lära dig geometri"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "Lär dig skriva bokstäver med interaktiv spårning"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "Äventyrskarta",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Mål: {{count}})",
     "levelCompleteMessage": "Nivå slutförd",
     "skipLevel": "Se annons för att hoppa över",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Välj en nivå ⭐",
-    "level": "Nivå {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Laddar text...",
-    "correctAnswer": "Rätt svar var: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Välj ditt äventyr"
   },
-  "tracing": {
-    "0": "Noll",
-    "1": "$t(countingExercise.numbers.1)",
-    "2": "$t(countingExercise.numbers.2)",
-    "3": "$t(countingExercise.numbers.3)",
-    "4": "$t(countingExercise.numbers.4)",
-    "5": "$t(countingExercise.numbers.5)",
-    "6": "$t(countingExercise.numbers.6)",
-    "7": "$t(countingExercise.numbers.7)",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "$t(countingExercise.numbers.9)",
-    "title": "Rolig spårning",
-    "instruction": "Följ de streckade linjerna!",
-    "lines": "Linjer",
-    "shapes": "$t(home.subjects.tapLearnShapes.label)",
-    "standingLine": "Stående linje",
-    "sleepingLine": "Liggande linje",
-    "slantingLineRight": "Lutande linje",
-    "slantingLineLeft": "Lutande linje",
-    "square": "$t(common.items.shapes.square)",
-    "triangle": "$t(common.items.shapes.triangle)",
-    "circle": "$t(common.items.shapes.circle)",
-    "oval": "Oval",
-    "rectangle": "Rektangel",
-    "pentagon": "Pentagon",
-    "star": "$t(common.items.shapes.star)",
-    "line": "Linje",
-    "heart": "$t(common.items.shapes.heart)",
-    "diamond": "$t(common.items.shapes.diamond)",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Fantastiskt! Du spårade det perfekt!"
-  },
   "welcomeScreen": {
-    "message": "Välkommen till Play & Learn English – ABC Games!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "Låt oss spela!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Yoga",
     "Yacht": "Yacht",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Garn",
     "Zoom": "Zoom",
     "Zip": "Dragkedja",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

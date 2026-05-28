@@ -334,14 +334,6 @@
         "label": "句子排序",
         "title": "重新排列单词以形成正确的句子"
       },
-      "passages": {
-        "label": "阅读",
-        "title": "阅读短文并回答问题"
-      },
-      "tracing": {
-        "label": "描摹",
-        "title": "通过互动描摹学习书写"
-      },
       "tapLearnLetters": {
         "label": "字母",
         "title": "点击正确的字母来学习英文字母"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "形状",
         "title": "点击正确的形状来学习几何知识"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "通过互动描摹学习写字母"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "冒险地图",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(目标: {{count}})",
     "levelCompleteMessage": "关卡完成",
     "skipLevel": "观看广告跳过",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "选择一个等级 ⭐",
-    "level": "等级 {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "正在加载短文...",
-    "correctAnswer": "正确答案是：{{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "选择你的冒险"
   },
-  "tracing": {
-    "0": "零",
-    "1": "$t(countingExercise.numbers.1)",
-    "2": "$t(countingExercise.numbers.2)",
-    "3": "$t(countingExercise.numbers.3)",
-    "4": "$t(countingExercise.numbers.4)",
-    "5": "$t(countingExercise.numbers.5)",
-    "6": "$t(countingExercise.numbers.6)",
-    "7": "$t(countingExercise.numbers.7)",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "$t(countingExercise.numbers.9)",
-    "title": "描摹乐趣",
-    "instruction": "沿着虚线描摹！",
-    "lines": "线条",
-    "shapes": "形状",
-    "standingLine": "竖线",
-    "sleepingLine": "横线",
-    "slantingLineRight": "斜线",
-    "slantingLineLeft": "斜线",
-    "square": "正方形",
-    "triangle": "三角形",
-    "circle": "圆形",
-    "oval": "椭圆形",
-    "rectangle": "长方形",
-    "pentagon": "五边形",
-    "star": "星形",
-    "line": "线条",
-    "heart": "心形",
-    "diamond": "菱形",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "太棒了！你描摹得非常完美！"
-  },
   "welcomeScreen": {
-    "message": "欢迎来到 Play & Learn English – ABC Games！",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "开始玩吧！"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "瑜伽",
     "Yacht": "游艇",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "毛线",
     "Zoom": "缩放",
     "Zip": "拉链",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

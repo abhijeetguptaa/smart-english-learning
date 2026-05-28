@@ -334,14 +334,6 @@
         "label": "Ghép câu",
         "title": "Sắp xếp lại các từ để tạo thành câu đúng"
       },
-      "passages": {
-        "label": "Đọc",
-        "title": "Đọc đoạn văn và trả lời câu hỏi"
-      },
-      "tracing": {
-        "label": "Tập tô",
-        "title": "Học viết bằng tính năng tập tô tương tác"
-      },
       "tapLearnLetters": {
         "label": "Chữ cái",
         "title": "Chạm vào đúng chữ cái để học bảng chữ cái tiếng Anh"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "Hình khối",
         "title": "Chạm vào đúng hình khối để học về hình học"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "Học cách viết bảng chữ cái bằng tính năng tập tô tương tác"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "Bản đồ phiêu lưu",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Mục tiêu: {{count}})",
     "levelCompleteMessage": "Hoàn thành cấp độ",
     "skipLevel": "Xem quảng cáo để bỏ qua",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Chọn một cấp độ ⭐",
-    "level": "Cấp độ {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Đang tải văn bản...",
-    "correctAnswer": "Câu trả lời đúng là: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Chọn cuộc phiêu lưu của bạn"
   },
-  "tracing": {
-    "0": "Số không",
-    "1": "$t(countingExercise.numbers.1)",
-    "2": "$t(countingExercise.numbers.2)",
-    "3": "$t(countingExercise.numbers.3)",
-    "4": "$t(countingExercise.numbers.4)",
-    "5": "$t(countingExercise.numbers.5)",
-    "6": "$t(countingExercise.numbers.6)",
-    "7": "$t(countingExercise.numbers.7)",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "$t(countingExercise.numbers.9)",
-    "title": "Tập tô thú vị",
-    "instruction": "Hãy theo các đường đứt nét!",
-    "lines": "Đường nét",
-    "shapes": "$t(home.subjects.tapLearnShapes.label)",
-    "standingLine": "Nét đứng",
-    "sleepingLine": "Nét ngang",
-    "slantingLineRight": "Nét xiên",
-    "slantingLineLeft": "Nét xiên",
-    "square": "$t(common.items.shapes.square)",
-    "triangle": "$t(common.items.shapes.triangle)",
-    "circle": "$t(common.items.shapes.circle)",
-    "oval": "Hình bầu dục",
-    "rectangle": "Hình chữ nhật",
-    "pentagon": "Hình ngũ giác",
-    "star": "$t(common.items.shapes.star)",
-    "line": "Đường thẳng",
-    "heart": "$t(common.items.shapes.heart)",
-    "diamond": "$t(common.items.shapes.diamond)",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Tuyệt vời! Bạn đã tô nó một cách hoàn hảo!"
-  },
   "welcomeScreen": {
-    "message": "Chào mừng bạn đến với Play & Learn English – ABC Games!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "Cùng chơi nào!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Yoga",
     "Yacht": "Du thuyền",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Sợi len",
     "Zoom": "Phóng to",
     "Zip": "Khóa kéo",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

@@ -56,7 +56,6 @@ export const APP_TEXT = {
 // File and sharing configuration
 export const FILE_SETTINGS = {
   DEFAULT_PDF_NAME: 'smart-english-learning.pdf',
-  DEFAULT_PASSAGE_PDF_NAME: 'smart-english-learning-passage.pdf',
   PDF_TYPE: 'application/pdf',
   SHARE_TITLE: 'Play & Learn English – ABC Games',
   SHARE_TEXT: 'Play & Learn English – ABC Games PDF attached.',

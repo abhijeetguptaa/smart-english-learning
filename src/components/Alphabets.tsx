@@ -1,4 +1,3 @@
-// This component provides a fun and interactive way for learners to learn the English alphabet. It displays each letter of the alphabet, along with a set of words that start with that letter. The user can click on a word to see an icon representing that word and hear the word spoken aloud.
 import React, { useEffect, useState, KeyboardEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { alphabetData, MODAL_ICON_SIZE } from '../data/alphabet';

@@ -31,29 +31,14 @@ export const quizData: any = {
       a: 'Frog',
     },
     {
-      q: "What do you call a cat's offspring?",
-      o: ['Puppy', 'Kitten', 'Cub', 'Calf'],
-      a: 'Kitten',
-    },
-    {
       q: 'Which animal gives us wool?',
       o: ['Cow', 'Sheep', 'Goat', 'Horse'],
       a: 'Sheep',
     },
     {
-      q: "What do you call a dog's offspring?",
-      o: ['Kitten', 'Puppy', 'Cub', 'Calf'],
-      a: 'Puppy',
-    },
-    {
       q: 'Which animal has a trunk?',
       o: ['Lion', 'Tiger', 'Elephant', 'Bear'],
       a: 'Elephant',
-    },
-    {
-      q: 'Which animal is known for carrying its offspring in a pouch?',
-      o: ['Kangaroo', 'Elephant', 'Tiger', 'Lion'],
-      a: 'Kangaroo',
     },
     {
       q: 'Which bird cannot fly?',
@@ -71,11 +56,6 @@ export const quizData: any = {
       a: 'Zebra',
     },
     {
-      q: "What do you call a cow's offspring?",
-      o: ['Puppy', 'Kitten', 'Calf', 'Cub'],
-      a: 'Calf',
-    },
-    {
       q: 'Which animal produces honey?',
       o: ['Butterfly', 'Bee', 'Ant', 'Mosquito'],
       a: 'Bee',
@@ -84,11 +64,6 @@ export const quizData: any = {
       q: 'Which animal has a hump on its back?',
       o: ['Horse', 'Camel', 'Elephant', 'Deer'],
       a: 'Camel',
-    },
-    {
-      q: "What do you call a horse's offspring?",
-      o: ['Calf', 'Foal', 'Cub', 'Lamb'],
-      a: 'Foal',
     },
     {
       q: 'Which animal is known for being very slow?',
@@ -121,11 +96,6 @@ export const quizData: any = {
       a: 'Beaver',
     },
     {
-      q: "What is a sheep's offspring called?",
-      o: ['Calf', 'Lamb', 'Cub', 'Puppy'],
-      a: 'Lamb',
-    },
-    {
       q: 'Which animal is known for its long neck?',
       o: ['Elephant', 'Giraffe', 'Horse', 'Cow'],
       a: 'Giraffe',
@@ -141,11 +111,6 @@ export const quizData: any = {
       a: 'Camel',
     },
     {
-      q: "What do you call a bear's offspring?",
-      o: ['Puppy', 'Cub', 'Kitten', 'Calf'],
-      a: 'Cub',
-    },
-    {
       q: 'Which animal has the longest lifespan?',
       o: ['Dog', 'Elephant', 'Tortoise', 'Cat'],
       a: 'Tortoise',
@@ -159,11 +124,6 @@ export const quizData: any = {
       q: 'Which animal is known for playing dead?',
       o: ['Opossum', 'Dog', 'Cat', 'Rabbit'],
       a: 'Opossum',
-    },
-    {
-      q: "What do you call a goat's offspring?",
-      o: ['Calf', 'Lamb', 'Goatling', 'Puppy'],
-      a: 'Goatling',
     },
     {
       q: 'Which animal has eight arms?',
@@ -211,11 +171,6 @@ export const quizData: any = {
       a: 'Chimpanzee',
     },
     {
-      q: "What do you call an elephant's offspring?",
-      o: ['Puppy', 'Kitten', 'Calf', 'Cub'],
-      a: 'Calf',
-    },
-    {
       q: 'Which insect makes a web?',
       o: ['Ant', 'Spider', 'Bee', 'Butterfly'],
       a: 'Spider',
@@ -229,11 +184,6 @@ export const quizData: any = {
       q: 'Which animal can fly and is active at night?',
       o: ['Owl', 'Sparrow', 'Duck', 'Peacock'],
       a: 'Owl',
-    },
-    {
-      q: "What do you call a kangaroo's offspring?",
-      o: ['Cub', 'Joey', 'Kit', 'Pup'],
-      a: 'Joey',
     },
     {
       q: 'Which animal is known for its quills?',
@@ -446,11 +396,6 @@ export const quizData: any = {
       a: 'Strawberry',
     },
     {
-      q: 'What do you use to write on a blackboard?',
-      o: ['Pen', 'Pencil', 'Chalk', 'Crayon'],
-      a: 'Chalk',
-    },
-    {
       q: 'Which animal says "Meow"?',
       o: ['Dog', 'Cat', 'Cow', 'Pig'],
       a: 'Cat',
@@ -556,9 +501,9 @@ export const quizData: any = {
       a: '5',
     },
     {
-      q: 'What do you call the brother of your father?',
-      o: ['Aunt', 'Uncle', 'Grandfather', 'Cousin'],
-      a: 'Uncle',
+      q: 'Which season comes after winter?',
+      o: ['Summer', 'Spring', 'Autumn', 'Rainy'],
+      a: 'Spring',
     },
     {
       q: 'What do you call a house made of ice?',
@@ -768,7 +713,7 @@ export const quizData: any = {
       a: 'H2O',
     },
     {
-      q: 'Who is known as the "Father of Computers"?',
+      q: 'Who invented the analytical engine?',
       o: ['Alan Turing', 'Bill Gates', 'Steve Jobs', 'Charles Babbage'],
       a: 'Charles Babbage',
     },
@@ -841,11 +786,6 @@ export const quizData: any = {
       q: 'Which planet is known for its rings?',
       o: ['Jupiter', 'Saturn', 'Neptune', 'Uranus'],
       a: 'Saturn',
-    },
-    {
-      q: 'How many teeth does an adult human normally have?',
-      o: ['28', '30', '32', '34'],
-      a: '32',
     },
     {
       q: 'Which element is represented by the symbol "Fe"?',
@@ -1126,7 +1066,7 @@ export const quizData: any = {
     },
     {
       q: 'Who was the first woman to win a Nobel Prize?',
-      o: ['Mother Teresa', 'Marie Curie', 'Rosalind Franklin', 'Jane Goodall'],
+      o: ['Ada Lovelace', 'Marie Curie', 'Rosalind Franklin', 'Jane Goodall'],
       a: 'Marie Curie',
     },
     {

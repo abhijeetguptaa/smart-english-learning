@@ -334,14 +334,6 @@
         "label": "Склади речення",
         "title": "Перестав слова, щоб утворити правильне речення"
       },
-      "passages": {
-        "label": "Читання",
-        "title": "Прочитай текст і дай відповіді на питання"
-      },
-      "tracing": {
-        "label": "Обведення",
-        "title": "Вчися писати за допомогою інтерактивного обведення"
-      },
       "tapLearnLetters": {
         "label": "Букви",
         "title": "Торкнись правильної букви, щоб вивчити англійський алфавіт"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "Фігури",
         "title": "Торкнись правильної фігури, щоб дізнатися про геометрію"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "Вчися писати букви за допомогою інтерактивного обведення"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "Карта пригод",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Ціль: {{count}})",
     "levelCompleteMessage": "Рівень пройдено",
     "skipLevel": "Подивитися рекламу, щоб пропустити",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Вибери рівень ⭐",
-    "level": "Рівень {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Завантаження тексту...",
-    "correctAnswer": "Правильна відповідь була: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Вибери свою пригоду"
   },
-  "tracing": {
-    "0": "Нуль",
-    "1": "$t(countingExercise.numbers.1)",
-    "2": "$t(countingExercise.numbers.2)",
-    "3": "$t(countingExercise.numbers.3)",
-    "4": "$t(countingExercise.numbers.4)",
-    "5": "$t(countingExercise.numbers.5)",
-    "6": "$t(countingExercise.numbers.6)",
-    "7": "$t(countingExercise.numbers.7)",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "$t(countingExercise.numbers.9)",
-    "title": "Веселе малювання",
-    "instruction": "Слідуйте за пунктирними лініями!",
-    "lines": "Лінії",
-    "shapes": "Фігури",
-    "standingLine": "Вертикальна лінія",
-    "sleepingLine": "Горизонтальна лінія",
-    "slantingLineRight": "Похила лінія",
-    "slantingLineLeft": "Похила лінія",
-    "square": "Квадрат",
-    "triangle": "Трикутник",
-    "circle": "Коло",
-    "oval": "Овал",
-    "rectangle": "Прямокутник",
-    "pentagon": "П'ятикутник",
-    "star": "Зірка",
-    "line": "Лінія",
-    "heart": "Серце",
-    "diamond": "Ромб",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Чудово! Ти все обвів ідеально!"
-  },
   "welcomeScreen": {
-    "message": "Ласкаво просимо до Play & Learn English – ABC Games!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "Пограємо!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Йога",
     "Yacht": "Яхта",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Пряжа",
     "Zoom": "Зум",
     "Zip": "Блискавка",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

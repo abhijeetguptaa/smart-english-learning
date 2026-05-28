@@ -1,4 +1,3 @@
-// This component provides a fun and interactive word spelling game for learners. It displays an image and a set of shuffled letters, and the user has to drag and drop the letters in the correct order to spell the word. The user can also hear the word spoken aloud, and get a hint if they are stuck.
 import { useState, useEffect, cloneElement } from 'react';
 import '../styles/EnglishWordsSpell.scss';
 import { speakText } from '../utils/soundUtils';

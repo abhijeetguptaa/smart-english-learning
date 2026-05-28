@@ -5,7 +5,7 @@
   "app": {
     "description": "গণিত শেখার, পাজল খেলা, রং করা এবং আরও অনেক মজার জন্য এই দারুণ অ্যাপটি দেখুন",
     "pressBackToExit": "বের হতে আবার পিছনে বোতাম টিপুন",
-    "title": "স্মার্ট কিডস লার্নিং",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "এই ডিভাইসে স্ক্রিন রোটেশন লক উপলব্ধ নয়।"
   },
   "common": {
@@ -320,27 +320,19 @@
     "subjects": {
       "alphabets": {
         "label": "বর্ণমালা",
-        "title": "স্মার্ট কিডস লার্নিং-এ স্পিচ সিন্থেসিসের সাথে ইংরেজি বর্ণমালা শিখুন"
+        "title": "Play & Learn English – ABC Games-এ স্পিচ সিন্থেসিসের সাথে ইংরেজি বর্ণমালা শিখুন"
       },
       "spellTheWord": {
         "label": "স্পেলপ্লে",
-        "title": "স্মার্ট কিডস লার্নিং-এ ছবির মাধ্যমে ইংরেজি শব্দ শিখুন"
+        "title": "Play & Learn English – ABC Games-এ ছবির মাধ্যমে ইংরেজি শব্দ শিখুন"
       },
       "wordSearch": {
         "label": "ওয়ার্ডফান",
-        "title": "স্মার্ট কিডস লার্নিং-এ শব্দ খোঁজার পাজল গেম খেলুন"
+        "title": "Play & Learn English – ABC Games-এ শব্দ খোঁজার পাজল গেম খেলুন"
       },
       "sentenceScramble": {
         "label": "বাক্য মজা",
         "title": "শব্দগুলো সাজিয়ে সঠিক বাক্য তৈরি করো"
-      },
-      "passages": {
-        "label": "পড়া",
-        "title": "অনুচ্ছেদ পড়ুন এবং প্রশ্নের উত্তর দিন"
-      },
-      "tracing": {
-        "label": "ট্রেসিং",
-        "title": "ইন্টারেক্টিভ ট্রেসিংয়ের সাথে লিখতে শিখুন"
       },
       "tapLearnLetters": {
         "label": "অক্ষর",
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "আকৃতি",
         "title": "ট্যাপ করে বিভিন্ন আকৃতি শিখো"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "ইন্টারেক্টিভ ট্রেসিংয়ের মাধ্যমে বর্ণমালা লিখতে শিখুন"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "অ্যাডভেঞ্চার ম্যাপ",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(লক্ষ্য: {{count}})",
     "levelCompleteMessage": "লেভেল সম্পন্ন হয়েছে",
     "skipLevel": "এড়িয়ে যেতে বিজ্ঞাপন দেখুন",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "একটি লেভেল বেছে নিন ⭐",
-    "level": "লেভেল {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "অনুচ্ছেদ লোড হচ্ছে...",
-    "correctAnswer": "সঠিক উত্তর ছিল: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "আপনার অ্যাডভেঞ্চার বেছে নিন"
   },
-  "tracing": {
-    "0": "শূন্য",
-    "1": "এক",
-    "2": "দুই",
-    "3": "তিন",
-    "4": "চার",
-    "5": "পাঁচ",
-    "6": "ছয়",
-    "7": "সাত",
-    "8": "আট",
-    "9": "নয়",
-    "title": "ট্রেসিং মজা",
-    "instruction": "বিন্দুযুক্ত রেখা অনুসরণ করুন!",
-    "lines": "রেখা",
-    "shapes": "আকৃতি",
-    "standingLine": "খাড়া রেখা",
-    "sleepingLine": "শোয়ানো রেখা",
-    "slantingLineRight": "হেলানো রেখা",
-    "slantingLineLeft": "হেলানো রেখা",
-    "square": "বর্গক্ষেত্র",
-    "triangle": "ত্রিভুজ",
-    "circle": "বৃত্ত",
-    "oval": "ডিম্বাকৃতি",
-    "rectangle": "আয়তক্ষেত্র",
-    "pentagon": "পঞ্চভুজ",
-    "star": "তারা",
-    "line": "রেখা",
-    "heart": "হৃদয়",
-    "diamond": "হীরা",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "অসাধারণ! আপনি এটি নিখুঁতভাবে ট্রেস করেছেন!"
-  },
   "welcomeScreen": {
-    "message": "স্মার্ট কিডস লার্নিং-এ আপনাকে স্বাগতম!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "চলুন খেলি!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "যোগব্যায়াম",
     "Yacht": "ইয়ট",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "সুতো",
     "Zoom": "জুম",
     "Zip": "চেইন",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

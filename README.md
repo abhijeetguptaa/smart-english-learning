@@ -1,14 +1,12 @@
 # Play & Learn English – ABC Games
 
-This is an interactive English learning application for children, built with React, Vite, and Capacitor.
+This is an interactive English learning application, built with React, Vite, and Capacitor.
 
 ## Features
 - **Alphabets**: Learn letters with speech synthesis.
 - **SpellPlay**: Learn words with pictures.
 - **WordFun**: Word search puzzles.
 - **Sentence Fun**: Rearrange words to form correct sentences.
-- **Reading**: Practice reading with passages and quizzes.
-- **Tracing**: Learn to write with interactive tracing.
 - **Tap Learn**: Identify objects across various categories (Animals, Colors, Food, etc.).
 
 ## Setup

@@ -334,14 +334,6 @@
         "label": "Setningslek",
         "title": "Ordne ordene for å lage en riktig setning"
       },
-      "passages": {
-        "label": "Reading",
-        "title": "Les teksten og svar på spørsmålene"
-      },
-      "tracing": {
-        "label": "Tracing",
-        "title": "Learn to write with interactive tracing"
-      },
       "tapLearnLetters": {
         "label": "Bokstaver",
         "title": "Trykk på riktig bokstav for å lære det engelske alfabetet"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "Former",
         "title": "Trykk på riktig form for å lære geometri"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "Learn to write alphabets with interactive tracing"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "Eventyrkart",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Mål: {{count}})",
     "levelCompleteMessage": "Nivå fullført",
     "skipLevel": "Se reklame for å hoppe over",
@@ -696,101 +683,8 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Velg et nivå ⭐",
-    "level": "Nivå {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Loading passage...",
-    "correctAnswer": "The correct answer was: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Choose Your Adventure"
-  },
-  "tracing": {
-    "0": "Zero",
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five",
-    "6": "Six",
-    "7": "Seven",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "Nine",
-    "title": "Tracing Fun",
-    "instruction": "Follow the dotted lines!",
-    "lines": "Lines",
-    "shapes": "$t(home.subjects.tapLearnShapes.label)",
-    "standingLine": "Standing Line",
-    "sleepingLine": "Sleeping Line",
-    "slantingLineRight": "Slanting Line",
-    "slantingLineLeft": "Slanting Line",
-    "square": "$t(common.items.shapes.square)",
-    "triangle": "$t(common.items.shapes.triangle)",
-    "circle": "$t(common.items.shapes.circle)",
-    "oval": "Oval",
-    "rectangle": "Rectangle",
-    "pentagon": "Pentagon",
-    "star": "$t(common.items.shapes.star)",
-    "line": "Line",
-    "heart": "$t(common.items.shapes.heart)",
-    "diamond": "$t(common.items.shapes.diamond)",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
     "message": "Welcome to Play & Learn English – ABC Games!",
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Yoga",
     "Yacht": "Yacht",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Yarn",
     "Zoom": "Zoom",
     "Zip": "Glidelås",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

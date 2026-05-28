@@ -334,14 +334,6 @@
         "label": "Zinnenpret",
         "title": "Zet de woorden in de juiste volgorde om een goede zin te maken"
       },
-      "passages": {
-        "label": "Lezen",
-        "title": "Lees de tekst en beantwoord de vragen"
-      },
-      "tracing": {
-        "label": "Overtrekken",
-        "title": "Leer schrijven met interactieve overtrekoefeningen"
-      },
       "tapLearnLetters": {
         "label": "Letters",
         "title": "Tik op de juiste letter om het Engelse alfabet te leren"
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "Vormen",
         "title": "Tik op de juiste vorm om meetkunde te leren"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "Leer letters schrijven met interactieve overtrekoefeningen"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "Avonturenkaart",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Doel: {{count}})",
     "levelCompleteMessage": "Level voltooid",
     "skipLevel": "Bekijk advertentie om over te slaan",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Kies een Niveau ⭐",
-    "level": "Level {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Loading passage...",
-    "correctAnswer": "The correct answer was: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Kies je avontuur"
   },
-  "tracing": {
-    "0": "Nul",
-    "1": "Een",
-    "2": "Twee",
-    "3": "Drie",
-    "4": "Vier",
-    "5": "Vijf",
-    "6": "Zes",
-    "7": "Zeven",
-    "8": "Acht",
-    "9": "Negen",
-    "title": "Overtrekpret",
-    "instruction": "Volg de stippellijnen!",
-    "lines": "Lijnen",
-    "shapes": "Vormen",
-    "standingLine": "Staande lijn",
-    "sleepingLine": "Liggende lijn",
-    "slantingLineRight": "Schuine lijn",
-    "slantingLineLeft": "Schuine lijn",
-    "square": "Vierkant",
-    "triangle": "Driehoek",
-    "circle": "Cirkel",
-    "oval": "Ovaal",
-    "rectangle": "Rechthoek",
-    "pentagon": "Vijfhoek",
-    "star": "Ster",
-    "line": "Lijn",
-    "heart": "Hart",
-    "diamond": "Ruit",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Geweldig! Je hebt het perfect overgetrokken!"
-  },
   "welcomeScreen": {
-    "message": "Welkom bij Play & Learn English – ABC Games!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "Laten we spelen!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Yoga",
     "Yacht": "Yacht",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Yarn",
     "Zoom": "Zoom",
     "Zip": "Zip",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

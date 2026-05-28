@@ -5,7 +5,7 @@
   "app": {
     "description": "गणित सीखने, पहेलियाँ खेलने, रंग भरने और बहुत कुछ मनोरंजन के लिए इस शानदार ऐप को देखें!, खेलने पहेली, रंग और बहुत मज़ा",
     "pressBackToExit": "बाहर निकलने के लिए फिर से वापस दबाएं",
-    "title": "स्मार्ट किड्स लर्निंग",
+    "title": "Play & Learn English – ABC Games",
     "orientationLockError": "इस डिवाइस पर स्क्रीन रोटेशन लॉक उपलब्ध नहीं है।"
   },
   "common": {
@@ -320,27 +320,19 @@
     "subjects": {
       "alphabets": {
         "label": "वर्णमाला",
-        "title": "स्मार्ट किड्स लर्निंग में स्पीच सिंथेसिस के साथ अंग्रेजी वर्णमाला सीखें"
+        "title": "Play & Learn English – ABC Games में स्पीच सिंथेसिस के साथ अंग्रेजी वर्णमाला सीखें"
       },
       "spellTheWord": {
         "label": "शब्द की वर्तनी",
-        "title": "स्मार्ट किड्स लर्निंग में चित्रों के साथ अंग्रेजी शब्द सीखें"
+        "title": "Play & Learn English – ABC Games में चित्रों के साथ अंग्रेजी शब्द सीखें"
       },
       "wordSearch": {
         "label": "शब्द खोज",
-        "title": "स्मार्ट किड्स लर्निंग में शब्द खोज पहेली खेलें"
+        "title": "Play & Learn English – ABC Games में शब्द खोज पहेली खेलें"
       },
       "sentenceScramble": {
         "label": "वाक्य मज़ा",
         "title": "शब्दों को सही क्रम में लगाकर वाक्य बनाइए"
-      },
-      "passages": {
-        "label": "पढ़ना",
-        "title": "गद्यांश पढ़ें और प्रश्नों के उत्तर दें"
-      },
-      "tracing": {
-        "label": "ट्रेसिंग",
-        "title": "इंटरैक्टिव ट्रेसिंग के साथ लिखना सीखें"
       },
       "tapLearnLetters": {
         "label": "अक्षर",
@@ -389,10 +381,6 @@
       "tapLearnShapes": {
         "label": "आकार",
         "title": "टैप करके अलग-अलग आकार सीखें"
-      },
-      "alphabetTracing": {
-        "label": "$t(coloring.categories.alphabet)",
-        "title": "इंटरैक्टिव ट्रेसिंग के साथ अक्षर लिखना सीखें"
       }
     }
   },
@@ -491,7 +479,6 @@
   },
   "learningPath": {
     "title": "साहसिक मानचित्र",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(लक्ष्य: {{count}})",
     "levelCompleteMessage": "लेवल पूरा हुआ",
     "skipLevel": "छोड़ने के लिए विज्ञापन देखें",
@@ -696,104 +683,11 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "स्तर चुनें ⭐",
-    "level": "स्तर {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "गद्यांश लोड हो रहा है...",
-    "correctAnswer": "सही उत्तर था: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "अपना साहसिक कार्य चुनें"
   },
-  "tracing": {
-    "0": "शून्य",
-    "1": "$t(countingExercise.numbers.1)",
-    "2": "$t(countingExercise.numbers.2)",
-    "3": "$t(countingExercise.numbers.3)",
-    "4": "$t(countingExercise.numbers.4)",
-    "5": "$t(countingExercise.numbers.5)",
-    "6": "$t(countingExercise.numbers.6)",
-    "7": "$t(countingExercise.numbers.7)",
-    "8": "$t(countingExercise.numbers.8)",
-    "9": "$t(countingExercise.numbers.9)",
-    "title": "ट्रेसिंग मज़ा",
-    "instruction": "बिंदीदार रेखाओं का पालन करें!",
-    "lines": "रेखाएँ",
-    "shapes": "आकार",
-    "standingLine": "खड़ी रेखा",
-    "sleepingLine": "पड़ी रेखा",
-    "slantingLineRight": "तिरछी रेखा",
-    "slantingLineLeft": "तिरछी रेखा",
-    "square": "$t(common.items.shapes.square)",
-    "triangle": "$t(common.items.shapes.triangle)",
-    "circle": "$t(common.items.shapes.circle)",
-    "oval": "$t(common.items.shapes.oval)",
-    "rectangle": "$t(common.items.shapes.rectangle)",
-    "pentagon": "$t(common.items.shapes.pentagon)",
-    "star": "$t(common.items.shapes.star)",
-    "line": "रेखा",
-    "heart": "$t(common.items.shapes.heart)",
-    "diamond": "$t(common.items.shapes.diamond)",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "शानदार! आपने इसे बिल्कुल सही ट्रेस किया!"
-  },
   "welcomeScreen": {
-    "message": "स्मार्ट किड्स लर्निंग में आपका स्वागत है!",
+    "message": "Welcome to Play & Learn English – ABC Games!",
     "playButton": "खेलते हैं!"
   },
   "videos": {
@@ -905,15 +799,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "योग",
     "Yacht": "नौका",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "धागा",
     "Zoom": "ज़ूम",
     "Zip": "ज़िप",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-

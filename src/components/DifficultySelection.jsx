@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Passages.scss';
 import { useTranslation } from 'react-i18next';
 
 const LockIcon = () => (

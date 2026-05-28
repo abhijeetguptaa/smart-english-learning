@@ -3,7 +3,7 @@
     "isFor": "{{letter}} for {{word}}"
   },
   "app": {
-    "description": "Check out this cool app for learning English!, playing Puzzles, Tracing and lot more fun",
+    "description": "Check out this cool app for learning English!, playing Puzzles and lot more fun",
     "pressBackToExit": "Press back again to exit",
     "title": "Play & Learn English – ABC Games",
     "orientationLockError": "Screen rotation lock is not available on this device."
@@ -304,10 +304,10 @@
     "watermark": {
       "failedToLoad": "Failed to load logo for watermark"
     },
-    "title": "Passage Reading - ",
+    "title": "",
     "failedToSave": "Failed to save PDF: ",
-    "shareTitle": "English Learning Passage",
-    "shareText": "Check out this reading passage from Play & Learn English!",
+    "shareTitle": "English Learning Progress",
+    "shareText": "Check out my English learning progress from Play & Learn English!",
     "sharingFailed": "Sharing failed: ",
     "downloadedMessage": "PDF downloaded successfully",
     "downloadNotSupported": "PDF download not supported on this browser/device",
@@ -356,14 +356,6 @@
         "label": "Sentence Fun",
         "title": "Rearrange words to form a correct sentence"
       },
-      "passages": {
-        "label": "Reading",
-        "title": "Read the passage and answer the questions"
-      },
-      "tracing": {
-        "label": "Tracing",
-        "title": "Learn to write with interactive tracing"
-      },
       "tapLearnLetters": {
         "label": "Letters",
         "title": "Tap the correct letter to learn English alphabets"
@@ -411,10 +403,6 @@
       "tapLearnShapes": {
         "label": "Shapes",
         "title": "Tap the correct shape to learn about geometry"
-      },
-      "alphabetTracing": {
-        "label": "Alphabet",
-        "title": "Learn to write alphabets with interactive tracing"
       }
     }
   },
@@ -513,7 +501,6 @@
   },
   "learningPath": {
     "title": "Adventure Map",
-    "levelUnlock": "$t(passageSelection.level)",
     "targetScore": "(Target: {{count}})",
     "levelCompleteMessage": "Level Completed",
     "skipLevel": "Watch Ad to Skip",
@@ -718,101 +705,8 @@
       }
     }
   },
-  "passageSelection": {
-    "pickLevel": "Pick a Level ⭐",
-    "level": "Level {{level}}",
-    "stars": "⭐⭐⭐",
-    "lock": "🔒"
-  },
-  "passageReading": {
-    "loading": "Loading passage...",
-    "correctAnswer": "The correct answer was: {{answer}}"
-  },
   "difficultySelection": {
     "chooseAdventure": "Choose Your Adventure"
-  },
-  "tracing": {
-    "0": "Zero",
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five",
-    "6": "Six",
-    "7": "Seven",
-    "8": "Eight",
-    "9": "Nine",
-    "title": "Tracing Fun",
-    "instruction": "Follow the dotted lines!",
-    "lines": "Lines",
-    "shapes": "Shapes",
-    "standingLine": "Standing Line",
-    "sleepingLine": "Sleeping Line",
-    "slantingLineRight": "Slanting Line",
-    "slantingLineLeft": "Slanting Line",
-    "square": "Square",
-    "triangle": "Triangle",
-    "circle": "Circle",
-    "oval": "Oval",
-    "rectangle": "Rectangle",
-    "pentagon": "Pentagon",
-    "star": "Star",
-    "line": "Line",
-    "heart": "Heart",
-    "diamond": "Diamond",
-    "A": "A",
-    "B": "B",
-    "C": "C",
-    "D": "D",
-    "E": "E",
-    "F": "F",
-    "G": "G",
-    "H": "H",
-    "I": "I",
-    "J": "J",
-    "K": "K",
-    "L": "L",
-    "M": "M",
-    "N": "N",
-    "O": "O",
-    "P": "P",
-    "Q": "Q",
-    "R": "R",
-    "S": "S",
-    "T": "T",
-    "U": "U",
-    "V": "V",
-    "W": "W",
-    "X": "X",
-    "Y": "Y",
-    "Z": "Z",
-    "a": "a",
-    "b": "b",
-    "c": "c",
-    "d": "d",
-    "e": "e",
-    "f": "f",
-    "g": "g",
-    "h": "h",
-    "i": "i",
-    "j": "j",
-    "k": "k",
-    "l": "l",
-    "m": "m",
-    "n": "n",
-    "o": "o",
-    "p": "p",
-    "q": "q",
-    "r": "r",
-    "s": "s",
-    "t": "t",
-    "u": "u",
-    "v": "v",
-    "w": "w",
-    "x": "x",
-    "y": "y",
-    "z": "z",
-    "success": "Amazing! You traced it perfectly!"
   },
   "welcomeScreen": {
     "message": "Welcome to Play & Learn English – ABC Games!",
@@ -927,15 +821,12 @@
     "Worm": "$t(common.items.animals.worm)",
     "Wolf": "$t(common.items.animals.wolf)",
     "X-ray": "$t(common.items.objects.xray)",
-    "X": "$t(tracing.X)",
     "Yoga": "Yoga",
     "Yacht": "Yacht",
     "Yellow": "$t(common.items.colors.yellow)",
     "Yarn": "Yarn",
     "Zoom": "Zoom",
     "Zip": "Zip",
-    "Zero": "$t(tracing.0)",
     "apple": "$t(common.items.food.apple)"
   }
 }
-
