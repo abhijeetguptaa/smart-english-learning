@@ -11,11 +11,21 @@ import WelcomeScreen from './components/WelcomeScreen';
 import { STORAGE_KEYS } from './constants/appConstants';
 import useRetentionStore from './store/useRetentionStore';
 import { useLearningPathStore } from './store/useLearningPathStore';
-const Alphabets = lazy(() => import('./components/Alphabets.tsx'));
+import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
+const Alphabets = lazy(() => import('./components/Alphabets.tsx'));
+const WordSearch = lazy(() => import('./components/WordSearch.jsx'));
+const WordSearchDifficultySelector = lazy(
+  () => import('./components/WordSearchDifficultySelector.jsx'),
+);
+const SentenceScramble = lazy(() => import('./components/SentenceScramble.tsx'));
+const SentenceScrambleDifficultySelector = lazy(
+  () => import('./components/SentenceScrambleDifficultySelector.jsx'),
+);
+const Quiz = lazy(() => import('./components/Quiz.tsx'));
+const QuizDifficultySelector = lazy(() => import('./components/QuizDifficultySelector.tsx'));
 const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'));
 const Settings = lazy(() => import('./components/Settings.jsx'));
-const DifficultySelection = lazy(() => import('./components/DifficultySelection.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
 const loadLearningPath = () => import('./components/LearningPath.tsx');
@@ -66,7 +76,6 @@ function scheduleAfterFirstPaint(task, delay = 0) {
 const NON_GAME_ROUTES = new Set([
   '/',
   '/tiny-steps',
-  '/english',
   '/tap-learn',
 ]);
 
@@ -77,8 +86,6 @@ function isGameplayRoute(pathname) {
 function getOrientationLockType(type) {
   return type.startsWith('landscape') ? 'landscape-primary' : 'portrait-primary';
 }
-
-import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
 function Home() {
   const { t } = useTranslation();
