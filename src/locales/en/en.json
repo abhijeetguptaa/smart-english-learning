@@ -3,15 +3,15 @@
     "isFor": "{{letter}} for {{word}}"
   },
   "app": {
-    "description": "Check out this cool app for learning English!, playing Puzzles and lot more fun",
+    "description": "Improve your English skills with interactive exercises and puzzles.",
     "pressBackToExit": "Press back again to exit",
-    "title": "Play & Learn English – ABC Games",
+    "title": "Smart English Learning",
     "orientationLockError": "Screen rotation lock is not available on this device."
   },
   "common": {
     "questionMark": "?",
     "newGame": "New Game",
-    "appName": "$t(app.title)",
+    "appName": "Smart English Learning",
     "done": "Done",
     "close": "Close",
     "cancel": "Cancel",
@@ -20,20 +20,18 @@
     "feedback": {
       "successMsg": [
         "Great Job!",
-        "Super Star!",
+        "Excellent!",
         "You Win!",
         "Well Done!",
         "Fantastic!",
         "Amazing!",
         "Brilliant!",
-        "So Smart!",
         "Wonderful!",
         "Perfect!",
         "Outstanding!",
-        "Bravo!",
-        "You are Rock!",
+        "Success!",
         "Excellent!",
-        "High Five!"
+        "Keep it up!"
       ],
       "looseMsg": [
         "Good Try!",
@@ -203,7 +201,7 @@
         "cake": "Cake",
         "chocolate": "Chocolate",
         "candy": "Candy",
-        "lollipop": "Lollipop",
+        "lamp": "Lamp",
         "popcorn": "Popcorn",
         "egg": "Egg",
         "melon": "Melon",
@@ -226,7 +224,7 @@
         "earth": "Earth",
         "fire": "Fire",
         "flower": "Flower",
-        "gun": "Gun",
+        "gear": "Gear",
         "gift": "Gift",
         "hat": "Hat",
         "house": "House",
@@ -234,7 +232,7 @@
         "idea": "Idea",
         "island": "Island",
         "jacket": "Jacket",
-        "joker": "Joker",
+        "jack": "Jack",
         "jar": "Jar",
         "key": "Key",
         "king": "King",
@@ -258,7 +256,7 @@
         "tree": "Tree",
         "ufo": "UFO",
         "utensils": "Utensils",
-        "unicorn": "Unicorn",
+        "uranium": "Uranium",
         "vase": "Vase",
         "violin": "Violin",
         "water": "Water",
@@ -283,7 +281,7 @@
     "ai": "AI",
     "accessibility": {
       "subjectSelection": "Subject selection",
-      "funSelection": "Fun selection"
+      "funSelection": "Visual Learning"
     },
     "messages": {
       "shareNotSupported": "Sharing is not supported on this browser/device.",
@@ -297,34 +295,34 @@
   },
   "pdf": {
     "userInfo": {
-      "name": "Name:",
+      "name": "User:",
       "date": "Date:",
-      "class": "Class:"
-    },
-    "watermark": {
-      "failedToLoad": "Failed to load logo for watermark"
-    },
-    "title": "",
-    "failedToSave": "Failed to save PDF: ",
-    "shareTitle": "English Learning Progress",
-    "shareText": "Check out my English learning progress from Play & Learn English!",
-    "sharingFailed": "Sharing failed: ",
-    "downloadedMessage": "PDF downloaded successfully",
-    "downloadNotSupported": "PDF download not supported on this browser/device",
-    "sharingAndDownloadNotSupported": "Neither sharing nor downloading is supported",
-    "noSupport": "No support for sharing or downloading",
-    "shareSuccess": "Shared successfully",
-    "shareFailed": "Share failed: ",
-    "sharingNotAvailable": "Sharing is not available",
-    "downloadAsFile": "Download/Share as PDF"
+      "class": "ID:"
+    }
   },
+  "watermark": {
+    "failedToLoad": "Failed to load logo for watermark"
+  },
+  "title": "",
+  "failedToSave": "Failed to save PDF: ",
+  "shareTitle": "English Learning Progress",
+  "shareText": "Check out my English learning progress from Smart English Learning!",
+  "sharingFailed": "Sharing failed: ",
+  "downloadedMessage": "PDF downloaded successfully",
+  "downloadNotSupported": "PDF download not supported on this browser/device",
+  "sharingAndDownloadNotSupported": "Neither sharing nor downloading is supported",
+  "noSupport": "No support for sharing or downloading",
+  "shareSuccess": "Shared successfully",
+  "shareFailed": "Share failed: ",
+  "sharingNotAvailable": "Sharing is not available",
+  "downloadAsFile": "Download/Share as PDF",
   "wordSearch": {
     "title": "Word Search",
-    "tapForHelp": "Tap a word for help! ✨",
+    "tapForHelp": "Tap a word for help.",
     "selectionOverlay": "Selection overlay"
   },
   "englishWordsSpell": {
-    "title": "English Words Spell the Word Game",
+    "title": "English Word Spelling",
     "theWordIs": "The word is ",
     "theWordIsHint": "The word is: ",
     "spellingError": "Spelling is not correct. Please try again.",
@@ -335,74 +333,73 @@
   },
   "home": {
     "categories": {
-      "tiny-steps": "Tiny Steps",
       "quiz": "Quiz",
-      "tap-learn": "Tap Learn"
+      "tap-learn": "Visual Learning"
     },
     "subjects": {
       "alphabets": {
         "label": "Alphabets",
-        "title": "Learn English alphabet with speech synthesis in Play & Learn English – ABC Games"
+        "title": "Master the English alphabet with interactive tools"
       },
       "spellTheWord": {
-        "label": "SpellPlay",
-        "title": "Learn English words with pictures in Play & Learn English – ABC Games"
+        "label": "Spelling",
+        "title": "Improve your spelling and vocabulary with visual aids"
       },
       "wordSearch": {
-        "label": "WordFun",
-        "title": "Play a word search puzzle game in Play & Learn English – ABC Games"
+        "label": "Word Search",
+        "title": "Expand your vocabulary through word search puzzles"
       },
       "sentenceScramble": {
-        "label": "Sentence Fun",
-        "title": "Rearrange words to form a correct sentence"
+        "label": "Grammar",
+        "title": "Practice sentence structure and grammar"
       },
       "tapLearnLetters": {
         "label": "Letters",
-        "title": "Tap the correct letter to learn English alphabets"
+        "title": "Identify and learn English letters"
       },
       "tapLearnFarmAnimals": {
         "label": "Farm Animals",
-        "title": "Tap the correct farm animal"
+        "title": "Learn names of farm animals"
       },
       "tapLearnWildAnimals": {
         "label": "Wild Animals",
-        "title": "Tap the correct wild animal"
+        "title": "Learn names of wild animals"
       },
       "tapLearnSeaAnimals": {
         "label": "Sea Animals",
-        "title": "Tap the correct sea animal"
+        "title": "Learn names of sea animals"
       },
       "tapLearnInsects": {
         "label": "Insects",
-        "title": "Tap the correct insect"
+        "title": "Learn names of insects"
       },
       "tapLearnColors": {
         "label": "Colors",
-        "title": "Tap the correct color to learn colors"
+        "title": "Identify and learn different colors"
       },
       "tapLearnVegetables": {
         "label": "Vegetables",
-        "title": "Tap the correct vegetable to learn their names"
+        "title": "Learn names of vegetables"
       },
       "tapLearnFruits": {
         "label": "Fruits",
-        "title": "Tap the correct fruit to learn their names"
+        "title": "Learn names of fruits"
       },
       "tapLearnVehicles": {
         "label": "Vehicles",
-        "title": "Tap the correct vehicle"
+        "title": "Learn names of vehicles"
       },
       "tapLearnFood": {
         "label": "Food",
-        "title": "Tap the correct food item"
+        "title": "Learn names of food items"
       },
       "tapLearnInstruments": {
-        "label": "$t(settings.music)",
-        "title": "Tap the correct musical instrument"
+        "label": "Instruments",
+        "title": "Learn names of musical instruments"
       },
       "tapLearnShapes": {
         "label": "Shapes",
-        "title": "Tap the correct shape to learn about geometry"
+        "title": "Identify and learn geometric shapes"
       }
     }
   },
@@ -483,49 +480,12 @@
   "sentenceScramble": {
     "title": "Sentence Scramble",
     "tapWords": "Tap words to build a sentence",
-    "correct": "Great job! That is a perfect sentence.",
-    "wrong": "Not quite right. Try again!",
-    "skipLevel": "Skip"
-  },
-  "unlockModal": {
-    "title": "Unlock Level!",
-    "cost": "It costs {{cost}} stars to unlock this level.",
-    "balance": "You currently have {{stars}} stars in your balance.",
-    "notEnoughCoins": "You don't have enough stars!",
-    "watchAd": "Watch Ad to Unlock",
-    "loadingAd": "Loading Ad...",
-    "featureUnlocked": "Level Unlocked!",
-    "unlockWithStars": "Use {{cost}} ⭐",
-    "watchFullAd": "Please watch the full ad to unlock this level.",
-    "adFailed": "Failed to load ad ({{code}}). Please try again later or use stars."
-  },
-  "learningPath": {
-    "title": "Adventure Map",
-    "targetScore": "(Target: {{count}})",
-    "levelCompleteMessage": "Level Completed",
-    "skipLevel": "Watch Ad to Skip",
-    "phases": {
-      "foundation": "🌈 Foundation Fields",
-      "expanding": "🌲 Expanding Woods",
-      "challenging": "🏔️ Challenge Peaks",
-      "mastery": "🌊 Mastery Ocean",
-      "grandmaster": "✨ Grand Master Galaxy",
-      "cosmic": "🚀 Cosmic Voyager",
-      "deepsea": "🐙 Deep Sea Discovery",
-      "jungle": "🌿 Jungle Journey",
-      "ancient": "🏺 Ancient Ruins",
-      "legend": "👑 Ultimate Legend"
-    }
-  },
-  "retention": {
-    "dayStreak": "Day Streak",
-    "dailyBonus": "Daily Bonus!",
-    "claimMessage": "Come back every day to keep your streak and earn more stars!",
-    "claimButton": "Claim 20+ Stars"
+    "correct": "Correct sentence structure.",
+    "wrong": "Not quite right. Try again!"
   },
   "notifications": {
-    "reminderTitle": "Time to play! 🌟🌟🌟",
-    "reminderBody": "Your streak is waiting! Come earn some stars today."
+    "reminderTitle": "Ready to learn? 🌟",
+    "reminderBody": "Continue your learning journey today!"
   },
   "tapLearn": {
     "items": {
@@ -686,7 +646,7 @@
         "cake": "$t(common.items.food.cake)",
         "chocolate": "$t(common.items.food.chocolate)",
         "candy": "$t(common.items.food.candy)",
-        "lollipop": "$t(common.items.food.lollipop)",
+        "lamp": "$t(common.items.food.lamp)",
         "popcorn": "$t(common.items.food.popcorn)",
         "fries": "Fries",
         "hotdog": "Hot Dog",
@@ -706,18 +666,18 @@
     }
   },
   "difficultySelection": {
-    "chooseAdventure": "Choose Your Adventure"
+    "chooseAdventure": "Choose Your Level"
   },
   "welcomeScreen": {
-    "message": "Welcome to Play & Learn English – ABC Games!",
-    "playButton": "Let's Play!"
+    "message": "Welcome to Smart English Learning!",
+    "playButton": "Start Learning"
   },
   "videos": {
     "visitChannel": "Visit YouTube Channel",
     "selectToPlay": "Select a video to play"
   },
   "words": {
-    "Apple": "$t(common.items.food.apple)",
+    "Desk": "Desk",
     "Ball": "$t(common.items.objects.ball)",
     "Cat": "$t(common.items.animals.cat)",
     "Dog": "$t(common.items.animals.dog)",
@@ -756,7 +716,7 @@
     "Duck": "$t(common.items.animals.duck)",
     "Dolphin": "$t(common.items.animals.dolphin)",
     "Doughnut": "Doughnut",
-    "Dinosaur": "$t(coloring.icons.Dinosaur)",
+    "Desk": "Desk",
     "Eye": "$t(common.items.objects.eye)",
     "Eagle": "$t(common.items.animals.eagle)",
     "Egg": "$t(common.items.food.egg)",
@@ -764,7 +724,7 @@
     "Fire": "$t(common.items.objects.fire)",
     "Frog": "$t(common.items.animals.frog)",
     "Flower": "$t(common.items.objects.flower)",
-    "Gun": "$t(common.items.objects.gun)",
+    "Gear": "Gear",
     "Grapes": "$t(common.items.food.grapes)",
     "Gift": "$t(common.items.objects.gift)",
     "Hat": "$t(common.items.objects.hat)",
@@ -774,12 +734,12 @@
     "Idea": "$t(common.items.objects.idea)",
     "Island": "$t(common.items.objects.island)",
     "Jacket": "$t(common.items.objects.jacket)",
-    "Joker": "$t(common.items.objects.joker)",
+    "Jack": "Jack",
     "Jar": "$t(common.items.objects.jar)",
     "Key": "$t(common.items.objects.key)",
     "King": "$t(common.items.objects.king)",
     "Kangaroo": "$t(common.items.animals.kangaroo)",
-    "Lollipop": "$t(common.items.food.lollipop)",
+    "Lamp": "Lamp",
     "Leaf": "$t(common.items.objects.leaf)",
     "Ladybug": "$t(common.items.animals.ladybug)",
     "Lemon": "$t(common.items.food.lemon)",
@@ -813,7 +773,7 @@
     "Train": "$t(common.items.vehicles.train)",
     "UFO": "$t(common.items.objects.ufo)",
     "Utensils": "$t(common.items.objects.utensils)",
-    "Unicorn": "$t(common.items.objects.unicorn)",
+    "Uranium": "Uranium",
     "Vase": "$t(common.items.objects.vase)",
     "Violin": "$t(common.items.objects.violin)",
     "Vulture": "$t(common.items.animals.vulture)",

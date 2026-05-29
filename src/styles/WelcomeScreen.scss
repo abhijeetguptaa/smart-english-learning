@@ -12,8 +12,8 @@
   overflow: hidden;
   font-family: $font-family-primary;
 
-  // Brighter, cheerful gradient
-  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  // Professional, clean gradient
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   z-index: 15;
 
   &__content {
@@ -21,44 +21,41 @@
     padding: $spacing-md;
     color: #2c3e50;
     text-align: center;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 
   .game-logo {
     width: 90%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     margin-bottom: $spacing-md;
-    animation: pop-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    animation: fadeIn 1s ease-out forwards;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
 
     @media (orientation: landscape) {
-      width: 250px;
+      width: 200px;
     }
   }
 
   .welcome-message {
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
     margin-bottom: $spacing-lg;
     color: #34495e;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 1px;
     opacity: 0;
-    animation: fadeIn 1s ease-out 0.5s forwards;
-    text-shadow: 2px 4px 0px rgba(255, 255, 255, 0.5);
+    animation: fadeIn 1s ease-out 0.3s forwards;
+    text-shadow: none;
   }
 
   .play-button {
-    // Pulse animation for the play button
-    animation: pulse 2s infinite;
-    font-size: 24px;
-    padding: 5px 24px;
-    border-radius: 12px;
+    font-size: 20px;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-weight: 600;
 
     opacity: 0;
-    animation:
-      fadeIn 1s ease-out 1s forwards,
-      pulse 2s infinite 1s;
+    animation: fadeIn 1s ease-out 0.6s forwards;
   }
 }

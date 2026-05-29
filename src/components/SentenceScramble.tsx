@@ -5,8 +5,6 @@ import { useTranslation } from 'react-i18next';
 import { SENTENCE_SCRAMBLE_DATA } from '../data/sentenceScrambleData';
 import { playCorrectSound, playIncorrectSound, playTapSound, speakText } from '../utils/soundUtils';
 import SuccessModal from './SuccessModal';
-import LooseModal from './LooseModal';
-import useUnlockModalStore from '../store/useUnlockModalStore';
 import '../styles/SentenceScramble.scss';
 import '../styles/EnglishWordsSpell.scss';
 import { FcUndo } from 'react-icons/fc';
@@ -14,7 +12,6 @@ import { FcUndo } from 'react-icons/fc';
 const SentenceScramble = () => {
   const { difficulty = 'easy' } = useParams<{ difficulty: string }>();
   const { t } = useTranslation();
-  const { openModal } = useUnlockModalStore();
 
   const storageKey = `sentence_scramble_progress_${difficulty}`;
 
@@ -129,13 +126,6 @@ const SentenceScramble = () => {
     localStorage.setItem(storageKey, nextIndex.toString());
   };
 
-  const handleSkip = () => {
-    playTapSound();
-    openModal(t('sentenceScramble.skipLevel', 'Skip Sentence'), 60, () => {
-      handleNext();
-    });
-  };
-
   const showHint = () => {
     playTapSound();
     setShowFullHint(true);
@@ -147,7 +137,7 @@ const SentenceScramble = () => {
   return (
     <div className="sentence-scramble-container learning-bg">
       <motion.h1 initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="title">
-        🌟 {t('sentenceScramble.title', 'Sentence Scramble')} 🧩
+        {t('sentenceScramble.title', 'Sentence Scramble')}
       </motion.h1>
 
       <div className="game-area">
@@ -171,7 +161,7 @@ const SentenceScramble = () => {
           </AnimatePresence>
           {selectedWords.length === 0 && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="placeholder">
-              ✨ {t('sentenceScramble.tapWords', 'Tap words to build a sentence')} ✨
+              {t('sentenceScramble.tapWords', 'Tap words to build a sentence')}
             </motion.div>
           )}
         </motion.div>
@@ -216,17 +206,9 @@ const SentenceScramble = () => {
             className="game-btn hint"
             onClick={showHint}
           >
-            💡 {t('common.actions.hint', 'Hint')}
+            {t('common.actions.hint', 'Hint')}
           </motion.button>
         </div>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="game-btn skip"
-          onClick={handleSkip}
-        >
-          🎥 {t('sentenceScramble.skipLevel', 'Skip')}
-        </motion.button>
       </div>
 
       {showFullHint && (
@@ -256,14 +238,12 @@ const SentenceScramble = () => {
       )}
 
       {showFailure && (
-        <LooseModal
-          handleClose={() => {
-            setShowFailure(false);
-            handleReset();
-          }}
-          message={t('sentenceScramble.wrong', 'Not quite right. Try again!')}
-          showNewGame={false}
-        />
+        <div className="failure-feedback">
+          <p>{t('sentenceScramble.wrong', 'Not quite right. Try again!')}</p>
+          <button onClick={() => { setShowFailure(false); handleReset(); }}>
+            {t('common.actions.tryAgain', 'Try Again')}
+          </button>
+        </div>
       )}
     </div>
   );

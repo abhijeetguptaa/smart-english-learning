@@ -20,7 +20,7 @@ export const alphabetData = [
   {
     letter: 'D',
     smallLetter: 'd',
-    words: ['Duck', 'Dolphin', 'Doughnut', 'Dinosaur'],
+    words: ['Duck', 'Dolphin', 'Doughnut', 'Desk'],
   },
   {
     letter: 'E',
@@ -35,7 +35,7 @@ export const alphabetData = [
   {
     letter: 'G',
     smallLetter: 'g',
-    words: ['Goat', 'Gun', 'Grapes', 'Gift'],
+    words: ['Goat', 'Gear', 'Grapes', 'Gift'],
   },
   {
     letter: 'H',
@@ -50,7 +50,7 @@ export const alphabetData = [
   {
     letter: 'J',
     smallLetter: 'j',
-    words: ['Jellyfish', 'Jacket', 'Joker', 'Jar'],
+    words: ['Jellyfish', 'Jacket', 'Jack', 'Jar'],
   },
   {
     letter: 'K',
@@ -60,7 +60,7 @@ export const alphabetData = [
   {
     letter: 'L',
     smallLetter: 'l',
-    words: ['Lollipop', 'Leaf', 'Ladybug', 'Lemon'],
+    words: ['Lamp', 'Leaf', 'Ladybug', 'Lemon'],
   },
   {
     letter: 'M',
@@ -105,7 +105,7 @@ export const alphabetData = [
   {
     letter: 'U',
     smallLetter: 'u',
-    words: ['Umbrella', 'UFO', 'Utensils', 'Unicorn'],
+    words: ['Umbrella', 'UFO', 'Utensils', 'Uranium'],
   },
   {
     letter: 'V',

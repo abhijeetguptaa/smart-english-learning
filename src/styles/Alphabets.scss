@@ -12,10 +12,10 @@
     transform: translate(0, 0) rotate(0deg);
   }
   33% {
-    transform: translate(30px, -50px) rotate(5deg);
+    transform: translate(10px, -15px) rotate(2deg);
   }
   66% {
-    transform: translate(-20px, 20px) rotate(-5deg);
+    transform: translate(-5px, 5px) rotate(-2deg);
   }
 }
 
@@ -25,7 +25,7 @@
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-30px) scale(1.1);
+    transform: translateY(-10px) scale(1.02);
   }
 }
 
@@ -42,96 +42,11 @@
 }
 
 .alphabet-page {
-  // Vibrant Magical Pastel Sky Gradient
-  background: linear-gradient(
-    135deg,
-    #ffecd2 0%,
-    #fcb69f 20%,
-    #ff9a9e 40%,
-    #a18cd1 60%,
-    #84fab0 80%,
-    #8fd3f4 100%
-  );
-  background-size: 400% 400%;
-  animation: gradient-shift 20s ease infinite;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
   padding-bottom: 80px;
   position: relative;
   overflow: hidden;
-
-  // Playful multi-colored polka dot pattern
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-      radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, transparent 15%),
-      radial-gradient(circle, rgba(255, 255, 255, 0.2) 15%, transparent 15%);
-    background-size: 60px 60px;
-    background-position:
-      0 0,
-      30px 30px;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .bg-shape {
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-    font-family: 'Fredoka One', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.25;
-  }
-
-  .shape-1 {
-    top: 5%;
-    left: 10%;
-    font-size: 100px;
-    color: #ffd600;
-    animation: float-slow 15s infinite ease-in-out;
-    &::before {
-      content: '★';
-    }
-  }
-
-  .shape-2 {
-    top: 15%;
-    right: 15%;
-    font-size: 150px;
-    color: #ff80ab;
-    animation: float-bubble 12s infinite ease-in-out;
-    &::before {
-      content: '●';
-    }
-  }
-
-  .shape-3 {
-    bottom: 0%;
-    left: 15%;
-    font-size: 180px;
-    color: #ffffff;
-    animation: float-slow 20s infinite ease-in-out reverse;
-    &::before {
-      content: '☁';
-    }
-  }
-
-  .shape-4 {
-    bottom: 20%;
-    right: 10%;
-    font-size: 120px;
-    color: #ff4081;
-    animation: float-bubble 10s infinite ease-in-out reverse;
-    &::before {
-      content: '♥';
-    }
-  }
 }
 
 .alphabet-card {
@@ -176,7 +91,7 @@
 }
 
 %letter-base {
-  font-family: 'Fredoka One', 'Baloo 2', 'Comic Sans MS', sans-serif;
+  font-family: $font-family-primary;
   color: white;
   background: $color-primary;
   border: 6px solid white;
@@ -192,40 +107,40 @@
 // Dynamic colors for letters
 .letter-variant-0 .letter-capital,
 .letter-variant-0 .letter-small {
-  background: #ff6b6b;
+  background: #e57373;
 }
 .letter-variant-1 .letter-capital,
 .letter-variant-1 .letter-small {
-  background: #4ecdc4;
+  background: #4db6ac;
 }
 .letter-variant-2 .letter-capital,
 .letter-variant-2 .letter-small {
-  background: #ffe66d;
+  background: #fff176;
   color: #555;
 }
 .letter-variant-3 .letter-capital,
 .letter-variant-3 .letter-small {
-  background: #ff9f43;
+  background: #ffb74d;
 }
 .letter-variant-4 .letter-capital,
 .letter-variant-4 .letter-small {
-  background: #a29bfe;
+  background: #9575cd;
 }
 
 @keyframes letter-float {
   0%,
   100% {
-    transform: rotate(-3deg);
+    transform: rotate(-1deg);
   }
   50% {
-    transform: rotate(3deg);
+    transform: rotate(1deg);
   }
 }
 
 .letter-capital {
   @extend %letter-base;
   font-size: clamp(5rem, 15vw, 7rem);
-  transform: rotate(-3deg);
+  transform: rotate(-1deg);
   animation: letter-float 3s infinite ease-in-out;
 }
 
@@ -233,7 +148,7 @@
   @extend %letter-base;
   font-size: clamp(3rem, 10vw, 4.5rem);
   margin-left: -0.5rem;
-  transform: rotate(5deg);
+  transform: rotate(1deg);
   animation: letter-float 3s infinite ease-in-out 0.5s;
 }
 
@@ -292,7 +207,7 @@
 }
 
 .word-spelling {
-  font-family: 'Baloo 2', sans-serif;
+  font-family: $font-family-primary;
   font-size: 1.4rem;
   font-weight: 700;
   color: $color-primary-dark;
@@ -327,7 +242,7 @@
 }
 
 .modal-close {
-  @include close-button(#ff6b6b);
+  @include close-button(#e57373);
 
   &:hover {
     transform: scale(1.1) rotate(90deg);
@@ -350,7 +265,7 @@
 }
 
 .modal-spelling {
-  font-family: 'Fredoka One', 'Baloo 2', sans-serif;
+  font-family: $font-family-primary;
   font-size: clamp(2.5rem, 12vw, 4rem);
   color: #333;
   letter-spacing: 1px;
@@ -394,7 +309,7 @@
     }
 
     &.nav-button--back {
-      background: #ff9f43;
+      background: #ffb74d;
       box-shadow: 0 8px 20px rgba(255, 159, 67, 0.4);
     }
   }

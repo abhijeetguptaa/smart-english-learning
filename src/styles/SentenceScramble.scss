@@ -14,10 +14,10 @@
 
   .title {
     font-size: 2.5rem;
-    color: #ff4081;
+    color: #d81b60;
     text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.8);
     margin-bottom: $spacing-xl;
-    font-family: 'Fredoka One', sans-serif;
+    font-family: $font-family-primary;
   }
 
   .game-area {
@@ -93,25 +93,25 @@
     }
 
     &.pool {
-      background: #4fc3f7;
+      background: #64b5f6;
       color: white;
-      border-color: #81d4fa;
-      box-shadow: 0 8px 0 #0288d1;
+      border-color: #90caf9;
+      box-shadow: 0 8px 0 #1e88e5;
 
       &:nth-child(even) {
-        background: #69f0ae;
-        border-color: #a7ffd0;
-        box-shadow: 0 8px 0 #00c853;
+        background: #81c784;
+        border-color: #a5d6a7;
+        box-shadow: 0 8px 0 #43a047;
       }
       &:nth-child(3n) {
-        background: #ff80ab;
-        border-color: #ffb2cc;
-        box-shadow: 0 8px 0 #f50057;
+        background: #f06292;
+        border-color: #f48fb1;
+        box-shadow: 0 8px 0 #d81b60;
       }
       &:nth-child(4n) {
-        background: #ffab40;
-        border-color: #ffd194;
-        box-shadow: 0 8px 0 #e65100;
+        background: #ffb74d;
+        border-color: #ffcc80;
+        box-shadow: 0 8px 0 #f57c00;
       }
     }
 
@@ -155,14 +155,14 @@
     }
 
     &.hint {
-      background: #c084fc;
+      background: #9575cd;
       color: #2c3e50;
-      box-shadow: 0 8px 0 #7c3aed;
+      box-shadow: 0 8px 0 #673ab7;
     }
     &.skip {
-      background: #00bcd4;
+      background: #4dd0e1;
       color: white;
-      box-shadow: 0 8px 0 #0097a7;
+      box-shadow: 0 8px 0 #00acc1;
     }
   }
 
@@ -187,7 +187,7 @@
     width: auto;
     max-width: 90%;
     background: #fff;
-    border: 8px solid #ffc107;
+    border: 8px solid #ffd54f;
     border-radius: 40px;
     padding: $spacing-xl $spacing-md;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
@@ -197,7 +197,7 @@
       position: absolute;
       top: -20px;
       right: -20px;
-      background: #f44336;
+      background: #ef5350;
       color: white;
       border: 4px solid #fff;
       width: 50px;
@@ -239,7 +239,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 

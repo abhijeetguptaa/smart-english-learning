@@ -4,32 +4,11 @@ import { alphabetData, MODAL_ICON_SIZE } from '../data/alphabet';
 import '../styles/Alphabets.scss';
 import { playTapSound, speakText, stopSpeech } from '../utils/soundUtils';
 import { wordToEmoji, createCustomIcon } from '../data/iconMapping';
-import { useLearningPathStore } from '../store/useLearningPathStore';
-import { useNavigate, useLocation } from 'react-router-dom';
-import SuccessModal from './SuccessModal';
-import { finishLearningPathTask, isLearningPathTaskActive } from '../utils/learningPathUtils';
 
 const Alphabets = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const location = useLocation();
-  const {
-    currentActiveTask,
-    completeTask,
-    setActiveTask,
-    completedTasks,
-    setIsTaskReadyToComplete,
-  } = useLearningPathStore();
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
-  const [visitedLetterIndices, setVisitedLetterIndices] = useState<Set<number>>(new Set([0]));
   const [modalWord, setModalWord] = useState('');
-  const [showWinModal, setShowWinModal] = useState(false);
-
-  const isLearningPathTask = isLearningPathTaskActive(
-    currentActiveTask,
-    location.pathname,
-    location.search,
-  );
 
   const currentLetter = alphabetData[currentLetterIndex];
 
@@ -41,33 +20,6 @@ const Alphabets = () => {
     speakLetter();
   }, [currentLetter.letter]);
 
-  const isAlreadyCompleted =
-    isLearningPathTask && currentActiveTask && completedTasks[currentActiveTask.id];
-
-  const levelId = currentActiveTask
-    ? parseInt(currentActiveTask.id.substring(1).split('_')[0])
-    : 100; // Default to all if not in learning path
-  const maxIndexForLevel = Math.min(levelId * 6 - 1, alphabetData.length - 1);
-
-  const handleFinish = () => {
-    if (currentActiveTask && isLearningPathTask) {
-      setShowWinModal(true);
-    }
-  };
-
-  const handleWinModalClose = () => {
-    if (
-      !finishLearningPathTask({
-        currentActiveTask,
-        completeTask,
-        setActiveTask,
-        navigate,
-      })
-    ) {
-      navigate(-1);
-    }
-    setShowWinModal(false);
-  };
   const speak = async (text: string) => {
     await stopSpeech();
     await speakText(text);
@@ -86,59 +38,10 @@ const Alphabets = () => {
     return () => window.removeEventListener('keydown', onEsc as any);
   }, [modalWord]);
 
-  useEffect(() => {
-    setVisitedLetterIndices((prev) => {
-      if (prev.has(currentLetterIndex)) return prev;
-      const next = new Set(prev);
-      next.add(currentLetterIndex);
-      return next;
-    });
-  }, [currentLetterIndex]);
-
-  // Adjust visited check for the current level range
-  const hasVisitedAllLettersInRange = Array.from({ length: maxIndexForLevel + 1 }).every((_, i) =>
-    visitedLetterIndices.has(i),
-  );
-
-  useEffect(() => {
-    if (
-      isLearningPathTask &&
-      currentLetterIndex === maxIndexForLevel &&
-      hasVisitedAllLettersInRange
-    ) {
-      setIsTaskReadyToComplete(true);
-    }
-  }, [
-    currentLetterIndex,
-    hasVisitedAllLettersInRange,
-    isLearningPathTask,
-    maxIndexForLevel,
-    setIsTaskReadyToComplete,
-  ]);
-
-  // Listen for the back button click from App.jsx via a custom event
-  useEffect(() => {
-    const handleTrigger = () => {
-      handleFinish();
-    };
-    window.addEventListener('trigger-task-completion', handleTrigger);
-    return () => window.removeEventListener('trigger-task-completion', handleTrigger);
-  }, []);
+  const maxIndex = alphabetData.length - 1;
 
   return (
     <div className="app-container alphabet-page">
-      <div className="bg-shape shape-1"></div>
-      <div className="bg-shape shape-2"></div>
-      <div className="bg-shape shape-3"></div>
-      <div className="bg-shape shape-4"></div>
-      {showWinModal && (
-        <SuccessModal
-          handleClose={handleWinModalClose}
-          message=""
-          starsWon={5}
-          skipStarAward={isAlreadyCompleted}
-        />
-      )}
       {modalWord && (
         <div className="modal-overlay" onClick={() => setModalWord('')}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -204,28 +107,20 @@ const Alphabets = () => {
         <button
           onClick={() => {
             playTapSound();
-            setCurrentLetterIndex((i) => {
-              if (isLearningPathTask && i === 0) return 0;
-              return i === 0 ? maxIndexForLevel : i - 1;
-            });
+            setCurrentLetterIndex((i) => (i === 0 ? maxIndex : i - 1));
           }}
           className="nav-button nav-control-button nav-button--back"
           aria-label={t('common.actions.previous')}
-          disabled={isLearningPathTask && currentLetterIndex === 0}
         >
           <span className="text-white text-2xl rotate-180">➜</span>
         </button>
         <button
           onClick={() => {
             playTapSound();
-            setCurrentLetterIndex((i) => {
-              if (isLearningPathTask && i === maxIndexForLevel) return i;
-              return i === maxIndexForLevel ? 0 : i + 1;
-            });
+            setCurrentLetterIndex((i) => (i === maxIndex ? 0 : i + 1));
           }}
           className="nav-button nav-control-button nav-button--next"
           aria-label={t('common.actions.next')}
-          disabled={isLearningPathTask && currentLetterIndex === maxIndexForLevel}
         >
           <span className="text-white text-2xl">➜</span>
         </button>

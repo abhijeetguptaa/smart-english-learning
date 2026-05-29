@@ -35,7 +35,7 @@ export const NUMBER_GENERATION = {
 // UI Text and Labels
 export const APP_TEXT = {
   TITLES: {
-    SMART_ENGLISH_LEARNING: 'Play & Learn English – ABC Games',
+    SMART_ENGLISH_LEARNING: 'Smart English Learning',
   },
   BUTTONS: {
     GO_HOME: 'Go Home',
@@ -43,9 +43,9 @@ export const APP_TEXT = {
     DOWNLOAD: 'Download as File',
   },
   LABELS: {
-    NAME: 'Name: ',
+    NAME: 'User: ',
     DATE: 'Date: ',
-    CLASS: 'Class: ',
+    CLASS: 'ID: ',
   },
   EMOJIS: {
     SHARE: '📤',
@@ -57,8 +57,8 @@ export const APP_TEXT = {
 export const FILE_SETTINGS = {
   DEFAULT_PDF_NAME: 'smart-english-learning.pdf',
   PDF_TYPE: 'application/pdf',
-  SHARE_TITLE: 'Play & Learn English – ABC Games',
-  SHARE_TEXT: 'Play & Learn English – ABC Games PDF attached.',
+  SHARE_TITLE: 'Smart English Learning',
+  SHARE_TEXT: 'Check out my English learning progress with Smart English Learning!',
 };
 
 // Modal and UI states

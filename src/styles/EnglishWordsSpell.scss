@@ -11,7 +11,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background: radial-gradient(circle at top left, #f4d163 0%, #fff0f5 50%, #94d0ec 100%);
+  background: radial-gradient(circle at top left, #eec550 0%, #fdf6f8 50%, #8abed6 100%);
   font-family: $font-family-primary;
   overflow-x: hidden;
 }
@@ -292,7 +292,7 @@
   margin: 0;
   font-size: $font-size-2xl;
   color: #5d4037;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: $font-family-primary;
   strong {
     color: #fbc02d;
     font-size: $font-size-xl;
@@ -346,10 +346,10 @@
 @keyframes float {
   0%,
   100% {
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
   }
   50% {
-    transform: rotate(5deg);
+    transform: rotate(2deg);
   }
 }
 
@@ -359,7 +359,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
 

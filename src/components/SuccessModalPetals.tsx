@@ -1,14 +1,8 @@
 const SYMBOLS = [
-  'petal',
-  'heart',
-  'star-symbol',
-  'candy',
   'sym-sparkle',
   'sym-burst',
   'sym-dot',
-  'sym-note',
   'sym-star-2',
-  'sym-flower',
 ];
 
 export default function SuccessModalPetals() {

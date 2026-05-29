@@ -337,71 +337,14 @@
   z-index: 1;
 }
 
-.petal,
-.heart,
-.star-symbol,
-.candy,
 .sym-sparkle,
 .sym-burst,
 .sym-dot,
-.sym-note,
-.sym-star-2,
-.sym-flower {
+.sym-star-2 {
   position: absolute;
   opacity: 0.8;
   animation: petal-fall linear infinite;
   pointer-events: none;
-}
-
-.petal {
-  border-radius: 150% 0 150% 0;
-}
-
-.heart {
-  width: 20px;
-  height: 20px;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 10px;
-    height: 16px;
-    border-radius: 10px 10px 0 0;
-    background: inherit;
-  }
-  &::before {
-    left: 10px;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-  }
-  &::after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-  }
-}
-
-.star-symbol {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-}
-
-.candy::before {
-  content: '🍬';
-  font-size: 1.2rem;
-  display: block;
-  color: inherit;
 }
 
 .sym-sparkle::before {
@@ -422,36 +365,18 @@
   display: block;
   color: inherit;
 }
-.sym-note::before {
-  content: '♬';
-  font-size: 1.5rem;
-  display: block;
-  color: inherit;
-}
 .sym-star-2::before {
   content: '✯';
   font-size: 1.5rem;
   display: block;
   color: inherit;
 }
-.sym-flower::before {
-  content: '❀';
-  font-size: 1.5rem;
-  display: block;
-  color: inherit;
-}
 
 @for $i from 1 through 60 {
-  .petal:nth-child(#{$i}),
-  .heart:nth-child(#{$i}),
-  .star-symbol:nth-child(#{$i}),
-  .candy:nth-child(#{$i}),
   .sym-sparkle:nth-child(#{$i}),
   .sym-burst:nth-child(#{$i}),
   .sym-dot:nth-child(#{$i}),
-  .sym-note:nth-child(#{$i}),
-  .sym-star-2:nth-child(#{$i}),
-  .sym-flower:nth-child(#{$i}) {
+  .sym-star-2:nth-child(#{$i}) {
     $size: math.random(20) + 15 + px; // Slightly larger
     width: $size;
     height: $size;
@@ -466,28 +391,10 @@
     // Shining color variants
     $petal-colors: (#ff9a9e, #a1c4fd, #84fab0, #f6d365, #e0c3fc, #ffecd2, #d4fc79, #cfd9df);
 
-    $petal-gradients: (
-      radial-gradient(circle at 30% 30%, #ff9a9e 0%, #fecfef 99%, #fecfef 100%),
-      radial-gradient(circle at 30% 30%, #a1c4fd 0%, #c2e9fb 100%),
-      radial-gradient(circle at 30% 30%, #84fab0 0%, #8fd3f4 100%),
-      radial-gradient(circle at 30% 30%, #f6d365 0%, #fda085 100%),
-      radial-gradient(circle at 30% 30%, #e0c3fc 0%, #8ec5fc 100%),
-      radial-gradient(circle at 30% 30%, #ffecd2 0%, #fcb69f 100%),
-      radial-gradient(circle at 30% 30%, #d4fc79 0%, #96e6a1 100%),
-      radial-gradient(circle at 30% 30%, #cfd9df 0%, #e2ebf0 100%)
-    );
-
     $random-index: math.random(list.length($petal-colors));
     $color: list.nth($petal-colors, $random-index);
-    $gradient: list.nth($petal-gradients, $random-index);
 
     color: $color;
-    // Apply gradient only to shapes that use background
-    &.petal,
-    &.heart,
-    &.star-symbol {
-      background: $gradient;
-    }
   }
 }
 

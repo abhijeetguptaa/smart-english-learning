@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Baloo 2"', 'sans-serif'],
-        cursive: ['"Baloo 2"', 'sans-serif'],
+        sans: ['"Inter"', '"Roboto"', 'sans-serif'],
+        cursive: ['"Inter"', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

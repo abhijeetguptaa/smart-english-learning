@@ -1,6 +1,6 @@
-# Play & Learn English – ABC Games
+# Smart English Learning
 
-This is an interactive English learning application, built with React, Vite, and Capacitor.
+This is an interactive English learning application, built with React, Vite, and Capacitor. It is designed for learners of all ages to practice and improve their English skills.
 
 ## Features
 - **Alphabets**: Learn letters with speech synthesis.

@@ -88,7 +88,6 @@ export const TAP_LEARN_DATA: Record<GameType, TapLearnOption[]> = {
     { id: 'triangle', label: 'Triangle', value: '▲', color: '#22c55e' },
     { id: 'star', label: 'Star', value: '⭐' },
     { id: 'diamond', label: 'Diamond', value: '💎' },
-    { id: 'heart', label: 'Heart', value: '❤️' },
     { id: 'oval', label: 'Oval', value: '🥚' },
   ],
   farmAnimals: [
@@ -184,7 +183,7 @@ export const TAP_LEARN_DATA: Record<GameType, TapLearnOption[]> = {
     { id: 'cake', label: 'Cake', value: '🍰' },
     { id: 'chocolate', label: 'Chocolate', value: '🍫' },
     { id: 'candy', label: 'Candy', value: '🍬' },
-    { id: 'lollipop', label: 'Lollipop', value: '🍭' },
+    { id: 'bread', label: 'Bread', value: '🍞' },
     { id: 'popcorn', label: 'Popcorn', value: '🍿' },
     { id: 'fries', label: 'Fries', value: '🍟' },
     { id: 'hotdog', label: 'Hot Dog', value: '🌭' },

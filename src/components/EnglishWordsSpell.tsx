@@ -5,44 +5,11 @@ import { countingIconData } from '../data/iconMapping';
 import { useTranslation } from 'react-i18next';
 import SuccessModal from './SuccessModal';
 import { getRandomVisibleColor } from '../utils/utils';
-import { useLearningPathStore } from '../store/useLearningPathStore';
-import useUnlockModalStore from '../store/useUnlockModalStore';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { finishLearningPathTask, isLearningPathTaskActive } from '../utils/learningPathUtils';
 
 const EnglishWordsSpell = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const location = useLocation();
-  const {
-    currentActiveTask,
-    completeTask,
-    setActiveTask,
-    completedTasks,
-    setIsTaskReadyToComplete,
-  } = useLearningPathStore();
-  const { openModal } = useUnlockModalStore();
   const [usedIndices, setUsedIndices] = useState<number[]>([]);
   const [currentWordIndex, setCurrentWordIndex] = useState(-1);
-
-  const isLearningPathTask = isLearningPathTaskActive(
-    currentActiveTask,
-    location.pathname,
-    location.search,
-  );
-
-  const handleSkipLevel = () => {
-    const target = currentActiveTask?.targetScore || 10;
-    const cost = target * 15;
-
-    openModal(t('common.actions.skip'), cost, () => {
-      if (isLearningPathTask && currentActiveTask) {
-        setSolvedCount(target);
-        setIsCorrect(true);
-        setIsTaskReadyToComplete(true);
-      }
-    });
-  };
 
   useEffect(() => {
     // Initialize first word
@@ -57,13 +24,10 @@ const EnglishWordsSpell = () => {
   const [showHint, setShowHint] = useState(false);
   const [showError, setShowError] = useState(false);
   const [iconColor, setIconColor] = useState('');
-  const [solvedCount, setSolvedCount] = useState(0);
 
   const currentWord =
     currentWordIndex !== -1 ? countingIconData[currentWordIndex] : countingIconData[0];
   const Icon = currentWord.image;
-  const isAlreadyCompleted =
-    isLearningPathTask && currentActiveTask && completedTasks[currentActiveTask.id];
 
   // Initialize game for current word
   useEffect(() => {
@@ -93,14 +57,7 @@ const EnglishWordsSpell = () => {
         setShowError(!isWordCorrect);
         if (isWordCorrect) {
           setTimeout(() => {
-            const nextSolvedCount = solvedCount + 1;
             setIsCorrect(true);
-            setSolvedCount(nextSolvedCount);
-
-            const target = currentActiveTask?.targetScore || 10;
-            if (isLearningPathTask && currentActiveTask && nextSolvedCount >= target) {
-              setIsTaskReadyToComplete(true);
-            }
           }, 500);
         }
       } else {
@@ -118,7 +75,6 @@ const EnglishWordsSpell = () => {
 
     const newDroppedLetters = [...droppedLetters];
     newDroppedLetters[emptyIndex] = letter;
-    // We can store color if needed, but for now just use it for the selectable button
     setDroppedLetters(newDroppedLetters);
 
     const newShuffledLetters = [...shuffledLetters];
@@ -206,46 +162,12 @@ const EnglishWordsSpell = () => {
     setUsedIndices((prev) => [...prev, randomIndex]);
   };
 
-  const handleSuccessClose = () => {
-    const target = currentActiveTask?.targetScore || 10;
-    if (isLearningPathTask && currentActiveTask && solvedCount >= target) {
-      finishLearningPathTask({
-        currentActiveTask,
-        completeTask,
-        setActiveTask,
-        navigate,
-      });
-      return;
-    }
-    showNextWord();
-  };
-
   return (
     <div
       className="english-words-spell"
       role="application"
       aria-label={t('englishWordsSpell.title')}
     >
-      {isLearningPathTask && currentActiveTask && (
-        <>
-          <div className="task-progress-banner">
-            {t('common.progress')}: {solvedCount} / {currentActiveTask.targetScore}
-          </div>
-          <button
-            className="btn-skip-level"
-            onClick={handleSkipLevel}
-            title={t('common.actions.skip')}
-            style={{
-              position: 'absolute',
-              top: '60px',
-              right: '10px',
-              zIndex: 1,
-            }}
-          >
-            <span className="skip-icon">⏭️</span> {t('common.actions.skip')}
-          </button>
-        </>
-      )}
       <main className="spell-main" role="main">
         {/* Image Display */}
         <div className="image-container">
@@ -350,10 +272,9 @@ const EnglishWordsSpell = () => {
         {/* Success Message */}
         {isCorrect && (
           <SuccessModal
-            handleClose={handleSuccessClose}
+            handleClose={showNextWord}
             message=""
             starsWon={1}
-            skipStarAward={isAlreadyCompleted}
           />
         )}
       </main>

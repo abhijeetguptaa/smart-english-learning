@@ -7,48 +7,11 @@ import { IS_TEST_MODE } from '../constants/appConstants';
 import useStarStore from '../store/useStarStore';
 
 const Settings = ({ userName, onNameSubmit, onClose }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { stars, addStars } = useStarStore();
 
   const [name, setName] = useState(userName);
   const [volume, setVolume] = useState(getGameVolume());
-
-  const supportedLanguages = [
-    'en',
-    'hi',
-    'ar',
-    'cs',
-    'da',
-    'de',
-    'es-ES',
-    'es-419',
-    'fi',
-    'fr',
-    'hu',
-    'id',
-    'it',
-    'he',
-    'ja',
-    'ko',
-    'nl',
-    'nb',
-    'pl',
-    'pt-BR',
-    'ro',
-    'ru',
-    'sk',
-    'sv',
-    'th',
-    'tr',
-    'uk',
-    'vi',
-    'zh-CN',
-  ];
-
-  const handleLanguageChange = (e) => {
-    const newLang = e.target.value;
-    i18n.changeLanguage(newLang);
-  };
 
   const handleNameChange = (e) => {
     const nextName = e.target.value;
@@ -117,14 +80,6 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
               <div className="input-group">
                 <input value={name} onChange={handleNameChange} className="px-3" maxLength={16} />
               </div>
-
-              <select onChange={handleLanguageChange} value={i18n.language} className="px-3">
-                {supportedLanguages.map((code) => (
-                  <option key={code} value={code}>
-                    {t(`languages.${code}`)}
-                  </option>
-                ))}
-              </select>
 
               <div className="volume-control-wrapper">
                 <button className="volume-btn" onClick={() => handleVolumeChangeFromButtons(0)}>

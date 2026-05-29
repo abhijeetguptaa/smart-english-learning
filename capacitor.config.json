@@ -1,6 +1,6 @@
 {
   "appId": "smart.english.learning",
-  "appName": "Play & Learn English – ABC Games",
+  "appName": "Smart English Learning",
   "webDir": "dist",
   "server": {
     "androidScheme": "https",

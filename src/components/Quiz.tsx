@@ -2,10 +2,8 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { quizData } from '../data/quiz';
 import '../styles/Quiz.scss';
 import { useTranslation } from 'react-i18next';
-import { useLearningPathStore } from '../store/useLearningPathStore';
-import { useNavigate, useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { speakText, stopSpeech } from '../utils/soundUtils';
-import { finishLearningPathTask, isLearningPathTaskActive } from '../utils/learningPathUtils';
 import { QUIZ_ROUNDS } from '../utils/utils';
 import SuccessModal from './SuccessModal';
 import { showSafeRewarded } from '../utils/admob';
@@ -14,9 +12,7 @@ import { useSparkleBurst } from '@/hooks/useSparkleBurst';
 const Quiz = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
   const { difficulty } = useParams();
-  const { currentActiveTask, completeTask, setActiveTask } = useLearningPathStore();
   const complexity = difficulty || 'easy';
   const [currentIndex, setCurrentIndex] = useState(() => {
     const saved = localStorage.getItem(`quiz_index_${complexity}`);
@@ -150,29 +146,12 @@ const Quiz = () => {
 
       const nextSessionCount = sessionQuestionCount + 1;
       setSessionQuestionCount(nextSessionCount);
-      const isCurrentLearningPathTask = isLearningPathTaskActive(
-        currentActiveTask,
-        location.pathname,
-        location.search,
-      );
-      const isLast = currentIndex === questions.length - 1;
 
       pendingPostEmojiActionRef.current = () => {
         if (nextSessionCount >= QUIZ_ROUNDS) {
           setShowWinModal(true);
           return;
         }
-
-        if (isLast && isCurrentLearningPathTask && currentActiveTask) {
-          finishLearningPathTask({
-            currentActiveTask,
-            completeTask,
-            setActiveTask,
-            navigate,
-          });
-          return;
-        }
-
         handleNext();
       };
     }
@@ -277,11 +256,6 @@ const Quiz = () => {
             quizRounds: QUIZ_ROUNDS,
           })}
           starsWon={correctCount > 0 ? Math.ceil((correctCount / QUIZ_ROUNDS) * 5) : 0}
-          skipStarAward={isLearningPathTaskActive(
-            currentActiveTask,
-            location.pathname,
-            location.search,
-          )}
           showNewGame={false}
         ></SuccessModal>
       )}

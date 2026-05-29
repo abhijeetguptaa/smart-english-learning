@@ -1,18 +1,15 @@
 import { memo, useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { generateWordSearch } from '../utils/wordSearchUtils';
 import { alphabetData } from '../data/alphabet.ts';
 import { WORD_SEARCH_CONSTANTS } from '../constants/wordSearchConstants';
 import '../styles/WordSearch.scss';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next';
 import SuccessModal from './SuccessModal.tsx';
-import DifficultySelection from './DifficultySelection'; // Import DifficultySelection
 import { speakText, playCorrectSound } from '../utils/soundUtils.js';
 import { useSparkleBurst } from '../hooks/useSparkleBurst.tsx';
-import { useLearningPathStore } from '../store/useLearningPathStore';
 import { wordToEmoji } from '../data/iconMapping';
 import { formatElapsedTime } from '../utils/timeUtils';
-import { finishLearningPathTask, isLearningPathTaskActive } from '../utils/learningPathUtils';
 
 function getRandomWordsFromAlphabet(count = 5) {
   const allWords = alphabetData
@@ -59,10 +56,9 @@ const WordListItem = memo(function WordListItem({ word, isFound, onSelectWord })
 });
 
 const WordSearch = () => {
-  const { t } = useTranslation(); // Initialize useTranslation
+  const { t } = useTranslation();
   const { difficulty } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
   const { triggerSparkleBurst, SparkleRenderer } = useSparkleBurst();
 
   const [grid, setGrid] = useState([]);
@@ -77,19 +73,10 @@ const WordSearch = () => {
   const [gameStartedTime, setGameStartedTime] = useState(null); // Timestamp when game started
   const [highlightedGridWordCells, setHighlightedGridWordCells] = useState([]); // New state for highlighted cells from list
   const [matchedEmoji, setMatchedEmoji] = useState(null);
-  const [solvedCount, setSolvedCount] = useState(0);
   const gridRef = useRef(null);
   const timerRafRef = useRef(null);
   const matchedEmojiRafRef = useRef(null);
   const colorPalette = WORD_SEARCH_CONSTANTS.COLOR_PALETTE;
-  const { currentActiveTask, completeTask, setActiveTask, setIsTaskReadyToComplete } =
-    useLearningPathStore();
-
-  const isLearningPathTask = isLearningPathTaskActive(
-    currentActiveTask,
-    location.pathname,
-    location.search,
-  );
 
   const startGame = useCallback(
     (difficulty) => {
@@ -117,8 +104,7 @@ const WordSearch = () => {
 
   useEffect(() => {
     startGame(difficulty);
-    setIsTaskReadyToComplete(false);
-  }, [difficulty, startGame, setIsTaskReadyToComplete]);
+  }, [difficulty, startGame]);
 
   const restartGame = () => {
     setHighlightedGridWordCells([]);
@@ -230,45 +216,13 @@ const WordSearch = () => {
   useEffect(() => {
     if (foundWords.length === placedWords.length && placedWords.length > 0 && !win) {
       setWin(true);
-      const nextSolved = solvedCount + 1;
-      setSolvedCount(nextSolved);
-
-      if (isLearningPathTask) {
-        const target = currentActiveTask?.targetScore || 1;
-        if (nextSolved >= target) {
-          completeTask(currentActiveTask.id);
-          setIsTaskReadyToComplete(true);
-        }
-      }
     }
-  }, [
-    foundWords,
-    placedWords,
-    currentActiveTask,
-    completeTask,
-    isLearningPathTask,
-    setIsTaskReadyToComplete,
-    solvedCount,
-    win,
-  ]);
+  }, [foundWords, placedWords, win]);
 
   const handleWinModalClose = () => {
-    if (isLearningPathTask) {
-      const target = currentActiveTask?.targetScore || 1;
-      if (solvedCount >= target) {
-        finishLearningPathTask({
-          currentActiveTask,
-          completeTask,
-          setActiveTask,
-          navigate,
-        });
-      } else {
-        restartGame();
-      }
-    } else {
-      restartGame();
-    }
+    restartGame();
   };
+
   function arraysEqual(a, b) {
     if (a.length !== b.length) return false;
     for (let i = 0; i < a.length; i++) {
@@ -428,11 +382,6 @@ const WordSearch = () => {
 
   return (
     <div className="py-md-4 vertical-center wordsearch-container">
-      {isLearningPathTask && (
-        <div className="task-progress-banner">
-          {t('common.progress')}: {solvedCount} / {currentActiveTask.targetScore || 1}
-        </div>
-      )}
       <div className="row justify-content-center w-100">
         <div className="col-12 col-md-10 col-lg-8">
           {win && <SuccessModal handleClose={handleWinModalClose} message="" starsWon={4} />}
@@ -475,7 +424,7 @@ const WordSearch = () => {
                             <line
                               x1={selectedLineProps.x1}
                               y1={selectedLineProps.y1}
-                              x2={selectedLineProps.x2}
+                              x2={selectedLineProps.y2}
                               y2={selectedLineProps.y2}
                               stroke={
                                 colorPalette[permanentlyFoundWords.length % colorPalette.length]

@@ -9,8 +9,6 @@ import { App as CapacitorApp } from '@capacitor/app';
 import { Toast } from '@capacitor/toast';
 import WelcomeScreen from './components/WelcomeScreen';
 import { STORAGE_KEYS } from './constants/appConstants';
-import useRetentionStore from './store/useRetentionStore';
-import { useLearningPathStore } from './store/useLearningPathStore';
 import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
 const Alphabets = lazy(() => import('./components/Alphabets.tsx'));
@@ -28,10 +26,6 @@ const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'
 const Settings = lazy(() => import('./components/Settings.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
-const loadLearningPath = () => import('./components/LearningPath.tsx');
-const LearningPath = lazy(loadLearningPath);
-const UnlockModal = lazy(() => import('./components/UnlockModal.tsx'));
-const DailyBonusModal = lazy(() => import('./components/DailyBonusModal'));
 const Stars = lazy(() => import('./components/Stars'));
 
 const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
@@ -75,7 +69,6 @@ function scheduleAfterFirstPaint(task, delay = 0) {
 
 const NON_GAME_ROUTES = new Set([
   '/',
-  '/tiny-steps',
   '/tap-learn',
 ]);
 
@@ -105,12 +98,6 @@ function Home() {
   }, []);
 
   const categories = [
-    {
-      id: 'tiny-steps',
-      path: '/tiny-steps',
-      icon: '/tiny-steps.webp',
-      label: t('home.categories.tiny-steps'),
-    },
     {
       id: 'alphabets',
       path: '/alphabets',
@@ -156,12 +143,6 @@ function Home() {
     return true;
   });
 
-  useEffect(() => {
-    return scheduleAfterFirstPaint(() => {
-      loadLearningPath();
-    }, 1200);
-  }, []);
-
   return (
     <main className="landing-page" role="main">
       <nav className="subject-selection" role="navigation">
@@ -170,8 +151,6 @@ function Home() {
             key={category.id}
             to={category.path}
             className="subject-icon-button"
-            onPointerEnter={category.id === 'tiny-steps' ? loadLearningPath : undefined}
-            onFocus={category.id === 'tiny-steps' ? loadLearningPath : undefined}
             style={{
               '--card-color': getCategoryColor(index),
               '--bg-color': getCategoryBGColor(index),
@@ -197,7 +176,6 @@ export default function App() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
-  const isAnimating = useLearningPathStore((state) => state.isAnimating);
 
   const [userName, setUserName] = useState(
     () => localStorage.getItem(USER_NAME_KEY) || t('common.defaultUserName'),
@@ -214,15 +192,7 @@ export default function App() {
   const hasScheduledNotificationPrompt = useRef(false);
   const lastOrientationLockRef = useRef('unlocked');
 
-  const { checkLogin } = useRetentionStore();
-
   pathnameRef.current = location.pathname;
-
-  useEffect(() => {
-    return scheduleAfterFirstPaint(() => {
-      checkLogin();
-    }, 300);
-  }, [checkLogin]);
 
   useEffect(() => {
     return scheduleAfterFirstPaint(() => {
@@ -235,11 +205,6 @@ export default function App() {
       hasScheduledNotificationPrompt.current ||
       localStorage.getItem(NOTIFICATION_PROMPT_KEY) === 'true'
     ) {
-      return;
-    }
-
-    const { totalDaysPlayed } = useRetentionStore.getState();
-    if (totalDaysPlayed < 3) {
       return;
     }
 
@@ -373,8 +338,6 @@ export default function App() {
         setIsSettingsOpen(false);
         return;
       }
-      if (useLearningPathStore.getState().isAnimating && pathnameRef.current === '/tiny-steps')
-        return;
       const [{ stopSpeech, stopAllTones }, { pauseMusic }] = await Promise.all([
         loadSoundUtils(),
         loadBgMusicManager(),
@@ -382,24 +345,6 @@ export default function App() {
       stopSpeech();
       stopAllTones();
       pauseMusic();
-
-      const { currentActiveTask, isTaskReadyToComplete } = useLearningPathStore.getState();
-
-      if (currentActiveTask && isTaskReadyToComplete) {
-        window.dispatchEvent(new CustomEvent('trigger-task-completion'));
-        return;
-      }
-
-      if (currentActiveTask) {
-        useLearningPathStore.getState().setActiveTask(null);
-        navigate('/tiny-steps');
-        return;
-      }
-
-      if (pathnameRef.current === '/tiny-steps') {
-        navigate('/');
-        return;
-      }
 
       if (pathnameRef.current !== '/') {
         navigate(-1);
@@ -517,23 +462,8 @@ export default function App() {
       stopSpeech();
     });
 
-    const { isTaskReadyToComplete, currentActiveTask, setActiveTask } =
-      useLearningPathStore.getState();
-
-    if (currentActiveTask && isTaskReadyToComplete) {
-      window.dispatchEvent(new CustomEvent('trigger-task-completion'));
-      return;
-    }
-
-    if (currentActiveTask) {
-      setActiveTask(null);
-      navigate('/tiny-steps');
-    } else if (location.pathname === '/tiny-steps') {
-      navigate('/');
-    } else {
-      navigate(-1);
-    }
-  }, [navigate, location.pathname]);
+    navigate(-1);
+  }, [navigate]);
 
   return (
     <div className="app app-wrapper" role="application">
@@ -541,7 +471,6 @@ export default function App() {
       <Suspense fallback={<div>{t('common.loading')}</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/tiny-steps" element={<LearningPath />} />
           <Route path="/alphabets" element={<Alphabets />} />
           <Route path="/wordsearch" element={<WordSearchDifficultySelector />} />
           <Route path="/wordsearch/:difficulty" element={<WordSearch />} />
@@ -559,7 +488,6 @@ export default function App() {
         <button
           className="nav-button nav-button--setting"
           onClick={() => setIsSettingsOpen(true)}
-          disabled={isAnimating && location.pathname === '/tiny-steps'}
         >
           <img src="/setting.webp" alt={t('settings.title')} />
         </button>
@@ -567,14 +495,11 @@ export default function App() {
         <button
           className="nav-button nav-button--home"
           onClick={handleBackClick}
-          disabled={isAnimating && location.pathname === '/tiny-steps'}
         >
           <span className="homeButton">⇦</span>
         </button>
       )}
       <Suspense fallback={null}>
-        {isDeferredUiReady && <UnlockModal />}
-        {isDeferredUiReady && !showWelcomeScreen && <DailyBonusModal />}
         {isSettingsOpen && (
           <Settings
             userName={userName}
