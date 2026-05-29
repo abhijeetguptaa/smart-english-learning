@@ -69,6 +69,7 @@ export const UI_MODES = {
 
 export const STORAGE_KEYS = {
   USER_NAME: 'english_app_user_name_v1',
+  USER_AGE: 'english_app_user_age_v1',
 };
 
 // PDF Configuration

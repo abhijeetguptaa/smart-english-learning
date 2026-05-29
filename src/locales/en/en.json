@@ -60,10 +60,10 @@
       "hint": "Hint"
     },
     "levels": {
-      "easy": "Easy",
-      "medium": "Medium",
-      "complex": "Complex",
-      "hard": "Hard",
+      "easy": "Beginner",
+      "medium": "Intermediate",
+      "complex": "Advanced",
+      "hard": "Expert",
       "expert": "Expert"
     },
     "items": {
@@ -281,7 +281,7 @@
     "ai": "AI",
     "accessibility": {
       "subjectSelection": "Subject selection",
-      "funSelection": "Visual Learning"
+      "funSelection": "Interactive Lessons"
     },
     "messages": {
       "shareNotSupported": "Sharing is not supported on this browser/device.",
@@ -334,7 +334,7 @@
   "home": {
     "categories": {
       "quiz": "Quiz",
-      "tap-learn": "Visual Learning"
+      "tap-learn": "Interactive Lessons"
     },
     "subjects": {
       "alphabets": {
@@ -672,12 +672,18 @@
     "message": "Welcome to Smart English Learning!",
     "playButton": "Start Learning"
   },
+  "ageScreen": {
+    "title": "Please enter your age",
+    "description": "This helps us provide a better experience for you.",
+    "placeholder": "Your age",
+    "submit": "Continue",
+    "invalidAge": "Please enter a valid age."
+  },
   "videos": {
     "visitChannel": "Visit YouTube Channel",
     "selectToPlay": "Select a video to play"
   },
   "words": {
-    "Desk": "Desk",
     "Ball": "$t(common.items.objects.ball)",
     "Cat": "$t(common.items.animals.cat)",
     "Dog": "$t(common.items.animals.dog)",
@@ -787,6 +793,6 @@
     "Yarn": "Yarn",
     "Zoom": "Zoom",
     "Zip": "Zip",
-    "apple": "$t(common.items.food.apple)"
+    "Apple": "Apple"
   }
 }

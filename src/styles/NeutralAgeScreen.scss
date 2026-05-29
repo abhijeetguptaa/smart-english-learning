@@ -1,0 +1,77 @@
+@use './variables' as *;
+@use './mixins' as *;
+@use './animations' as *;
+
+.age-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include flex-center();
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  z-index: 100; // Higher than welcome screen
+  font-family: $font-family-primary;
+
+  &__content {
+    background: white;
+    padding: $spacing-lg;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  &__title {
+    font-size: $font-size-lg;
+    color: #2c3e50;
+    margin-bottom: $spacing-sm;
+    font-weight: 600;
+  }
+
+  &__description {
+    color: #7f8c8d;
+    margin-bottom: $spacing-lg;
+    font-size: $font-size-md;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: $font-size-lg;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: white;
+    color: #2c3e50;
+
+    &:focus {
+      border-color: #3498db;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    padding: $spacing-sm;
+    font-size: $font-size-md;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__error {
+    color: #e74c3c;
+    font-size: $font-size-sm;
+    margin-top: -$spacing-xs;
+  }
+}

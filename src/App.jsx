@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { App as CapacitorApp } from '@capacitor/app';
 import { Toast } from '@capacitor/toast';
 import WelcomeScreen from './components/WelcomeScreen';
+import NeutralAgeScreen from './components/NeutralAgeScreen';
 import { STORAGE_KEYS } from './constants/appConstants';
 import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
@@ -181,6 +182,9 @@ export default function App() {
     () => localStorage.getItem(USER_NAME_KEY) || t('common.defaultUserName'),
   );
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
+  const [isAgeSet, setIsAgeSet] = useState(
+    () => !!localStorage.getItem(STORAGE_KEYS.USER_AGE),
+  );
   const [isDeferredUiReady, setIsDeferredUiReady] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const lastBackPress = useRef(0);
@@ -465,6 +469,11 @@ export default function App() {
     navigate(-1);
   }, [navigate]);
 
+  const handleAgeSubmit = useCallback((age) => {
+    localStorage.setItem(STORAGE_KEYS.USER_AGE, age.toString());
+    setIsAgeSet(true);
+  }, []);
+
   return (
     <div className="app app-wrapper" role="application">
       <Suspense fallback={null}>{!showWelcomeScreen && <Stars />}</Suspense>
@@ -509,7 +518,8 @@ export default function App() {
         )}
       </Suspense>
 
-      {showWelcomeScreen && <WelcomeScreen onPlay={handlePlay} />}
+      {showWelcomeScreen && isAgeSet && <WelcomeScreen onPlay={handlePlay} />}
+      {showWelcomeScreen && !isAgeSet && <NeutralAgeScreen onAgeSubmit={handleAgeSubmit} />}
     </div>
   );
 }
