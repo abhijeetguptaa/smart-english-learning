@@ -145,21 +145,27 @@ const Quiz = () => {
       }
 
       const nextSessionCount = sessionQuestionCount + 1;
-      setSessionQuestionCount(nextSessionCount);
 
       pendingPostEmojiActionRef.current = () => {
+        setSessionQuestionCount(nextSessionCount);
+        handleNext();
         if (nextSessionCount >= QUIZ_ROUNDS) {
           setShowWinModal(true);
-          return;
         }
-        handleNext();
       };
     }
   };
 
   const handleWinModalClose = () => {
     setShowWinModal(false);
-    navigate(-1);
+    setSessionQuestionCount(0);
+    setCorrectCount(0);
+  };
+
+  const handleNewRound = () => {
+    setShowWinModal(false);
+    setSessionQuestionCount(0);
+    setCorrectCount(0);
   };
 
   return (
@@ -256,8 +262,9 @@ const Quiz = () => {
             quizRounds: QUIZ_ROUNDS,
           })}
           starsWon={correctCount > 0 ? Math.ceil((correctCount / QUIZ_ROUNDS) * 5) : 0}
-          showNewGame={false}
-        ></SuccessModal>
+          showNewGame={true}
+          onNewGame={handleNewRound}
+        />
       )}
     </div>
   );

@@ -99,7 +99,7 @@ const TapLearnSelection = () => {
               className="subject-icon subject-icon--img-homepage"
               src={category.icon}
               alt={category.label}
-              loading={index < 4 ? 'eager' : 'lazy'}
+              loading="eager"
               decoding="async"
             />
             <div className="gameName">{category.label}</div>

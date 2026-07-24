@@ -48,7 +48,10 @@ const WordSearchCell = memo(function WordSearchCell({
 const WordListItem = memo(function WordListItem({ word, isFound, onSelectWord }) {
   return (
     <li className="wordsearch-word-list-item">
-      <span className={`wordsearch-word ${isFound ? 'found' : ''}`} onClick={() => onSelectWord(word)}>
+      <span
+        className={`wordsearch-word ${isFound ? 'found' : ''}`}
+        onClick={() => onSelectWord(word)}
+      >
         {word}
       </span>
     </li>
@@ -156,26 +159,29 @@ const WordSearch = () => {
     setSelectedCells([[row, col]]);
   }, []);
 
-  const handleCellMouseEnter = useCallback((row, col) => {
-    if (!isSelecting) return;
-    setSelectedCells((prev) => {
-      if (prev.length === 0) return [[row, col]];
-      const [startRow, startCol] = prev[0];
-      const dr = row - startRow;
-      const dc = col - startCol;
-      if (dr === 0 || dc === 0 || Math.abs(dr) === Math.abs(dc)) {
-        const length = Math.max(Math.abs(dr), Math.abs(dc));
-        const stepR = dr === 0 ? 0 : dr / Math.abs(dr);
-        const stepC = dc === 0 ? 0 : dc / Math.abs(dc);
-        const cells = [];
-        for (let i = 0; i <= length; i++) {
-          cells.push([startRow + i * stepR, startCol + i * stepC]);
+  const handleCellMouseEnter = useCallback(
+    (row, col) => {
+      if (!isSelecting) return;
+      setSelectedCells((prev) => {
+        if (prev.length === 0) return [[row, col]];
+        const [startRow, startCol] = prev[0];
+        const dr = row - startRow;
+        const dc = col - startCol;
+        if (dr === 0 || dc === 0 || Math.abs(dr) === Math.abs(dc)) {
+          const length = Math.max(Math.abs(dr), Math.abs(dc));
+          const stepR = dr === 0 ? 0 : dr / Math.abs(dr);
+          const stepC = dc === 0 ? 0 : dc / Math.abs(dc);
+          const cells = [];
+          for (let i = 0; i <= length; i++) {
+            cells.push([startRow + i * stepR, startCol + i * stepC]);
+          }
+          return cells;
         }
-        return cells;
-      }
-      return prev;
-    });
-  }, [isSelecting]);
+        return prev;
+      });
+    },
+    [isSelecting],
+  );
 
   const handleMouseUp = useCallback(() => {
     if (!isSelecting || selectedCells.length === 0) {
@@ -223,6 +229,14 @@ const WordSearch = () => {
     restartGame();
   };
 
+  const [resizeTick, setResizeTick] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setResizeTick((t) => t + 1);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   function arraysEqual(a, b) {
     if (a.length !== b.length) return false;
     for (let i = 0; i < a.length; i++) {
@@ -231,25 +245,67 @@ const WordSearch = () => {
     return true;
   }
 
-  const getSVGLineProps = (cells) => {
-    if (cells.length < 2) return null;
-    const [startRow, startCol] = cells[0];
-    const [endRow, endCol] = cells[cells.length - 1];
-    const table = gridRef.current;
-    if (!table) return null;
-    const rect = table.getBoundingClientRect();
-    const cellWidth = rect.width / gridSize;
-    const cellHeight = rect.height / gridSize;
-    const x1 = startCol * cellWidth + cellWidth / 2;
-    const y1 = startRow * cellHeight + cellHeight / 2;
-    const x2 = endCol * cellWidth + cellWidth / 2;
-    const y2 = endRow * cellHeight + cellHeight / 2;
-    return { x1, y1, x2, y2, width: rect.width, height: rect.height, cellHeight };
-  };
+  const getSVGLineProps = useCallback(
+    (cells) => {
+      if (!cells || cells.length < 2) return null;
+      const table = gridRef.current;
+      if (!table) return null;
+      const wrapper = table.closest('.wordsearch-table-wrapper') || table.parentElement;
+      if (!wrapper) return null;
+
+      const wrapperRect = wrapper.getBoundingClientRect();
+      const [startRow, startCol] = cells[0];
+      const [endRow, endCol] = cells[cells.length - 1];
+
+      const startCell = table.rows?.[startRow]?.cells?.[startCol];
+      const endCell = table.rows?.[endRow]?.cells?.[endCol];
+
+      let x1, y1, x2, y2, cellHeight;
+
+      if (startCell && endCell) {
+        const startRect = startCell.getBoundingClientRect();
+        const endRect = endCell.getBoundingClientRect();
+
+        x1 = startRect.left + startRect.width / 2 - wrapperRect.left;
+        y1 = startRect.top + startRect.height / 2 - wrapperRect.top;
+        x2 = endRect.left + endRect.width / 2 - wrapperRect.left;
+        y2 = endRect.top + endRect.height / 2 - wrapperRect.top;
+        cellHeight = startRect.height;
+      } else {
+        const tableRect = table.getBoundingClientRect();
+        const offsetX = tableRect.left - wrapperRect.left;
+        const offsetY = tableRect.top - wrapperRect.top;
+        const cellWidth = tableRect.width / gridSize;
+        cellHeight = tableRect.height / gridSize;
+
+        x1 = offsetX + startCol * cellWidth + cellWidth / 2;
+        y1 = offsetY + startRow * cellHeight + cellHeight / 2;
+        x2 = offsetX + endCol * cellWidth + cellWidth / 2;
+        y2 = offsetY + endRow * cellHeight + cellHeight / 2;
+      }
+
+      return { x1, y1, x2, y2, width: wrapperRect.width, height: wrapperRect.height, cellHeight };
+    },
+    [gridSize],
+  );
 
   const getCellFromTouch = (touch, tableRef) => {
     const table = tableRef.current;
     if (!table) return null;
+
+    const elem = document.elementFromPoint(touch.clientX, touch.clientY);
+    if (elem) {
+      const td = elem.closest('td');
+      if (td && table.contains(td)) {
+        const tr = td.parentElement;
+        const row = tr && tr.parentElement ? Array.from(tr.parentElement.children).indexOf(tr) : -1;
+        const col = Array.from(td.parentElement.children).indexOf(td);
+        if (row >= 0 && row < gridSize && col >= 0 && col < gridSize) {
+          return [row, col];
+        }
+      }
+    }
+
     const rect = table.getBoundingClientRect();
     const x = touch.clientX - rect.left;
     const y = touch.clientY - rect.top;
@@ -304,22 +360,25 @@ const WordSearch = () => {
     return highlightedGridWordCells.some((cell) => cell[0] === row && cell[1] === col);
   };
 
-  const handleWordListItemClick = useCallback((word) => {
-    speakText(word);
-    const wordToHighlight = placedWords.find((pw) => pw.word === word);
+  const handleWordListItemClick = useCallback(
+    (word) => {
+      speakText(word);
+      const wordToHighlight = placedWords.find((pw) => pw.word === word);
 
-    if (wordToHighlight) {
-      const isCurrentlyHighlighted =
-        highlightedGridWordCells.length > 0 &&
-        arraysEqual(highlightedGridWordCells, wordToHighlight.positions);
+      if (wordToHighlight) {
+        const isCurrentlyHighlighted =
+          highlightedGridWordCells.length > 0 &&
+          arraysEqual(highlightedGridWordCells, wordToHighlight.positions);
 
-      if (isCurrentlyHighlighted) {
-        setHighlightedGridWordCells([]);
-      } else {
-        setHighlightedGridWordCells(wordToHighlight.positions);
+        if (isCurrentlyHighlighted) {
+          setHighlightedGridWordCells([]);
+        } else {
+          setHighlightedGridWordCells(wordToHighlight.positions);
+        }
       }
-    }
-  }, [placedWords, highlightedGridWordCells]);
+    },
+    [placedWords, highlightedGridWordCells],
+  );
 
   const selectedLineProps = getSVGLineProps(selectedCells);
   const permanentlyFoundLines = useMemo(
@@ -343,7 +402,7 @@ const WordSearch = () => {
           );
         })
         .filter(Boolean),
-    [permanentlyFoundWords, colorPalette, gridSize],
+    [permanentlyFoundWords, colorPalette, getSVGLineProps, resizeTick],
   );
 
   const renderedGrid = useMemo(
@@ -411,8 +470,6 @@ const WordSearch = () => {
                     <SparkleRenderer />
                     <svg
                       className="wordsearch-svg-overlay"
-                      width={selectedLineProps?.width || '100%'}
-                      height={selectedLineProps?.height || '100%'}
                       role="img"
                       aria-label={t('wordSearch.selectionOverlay')}
                     >
@@ -424,7 +481,7 @@ const WordSearch = () => {
                             <line
                               x1={selectedLineProps.x1}
                               y1={selectedLineProps.y1}
-                              x2={selectedLineProps.y2}
+                              x2={selectedLineProps.x2}
                               y2={selectedLineProps.y2}
                               stroke={
                                 colorPalette[permanentlyFoundWords.length % colorPalette.length]
@@ -439,6 +496,12 @@ const WordSearch = () => {
                       {permanentlyFoundLines}
                     </svg>
 
+                    {matchedEmoji && (
+                      <div className="wordsearch-matched-emoji-overlay">
+                        <span className="matched-emoji">{matchedEmoji}</span>
+                      </div>
+                    )}
+
                     <table
                       className="table table-bordered wordsearch-table user-select-none"
                       ref={gridRef}
@@ -446,9 +509,7 @@ const WordSearch = () => {
                       onTouchMove={handleTouchMove}
                       onTouchEnd={handleTouchEnd}
                     >
-                      <tbody>
-                        {renderedGrid}
-                      </tbody>
+                      <tbody>{renderedGrid}</tbody>
                     </table>
                   </div>
                 </div>
@@ -465,11 +526,6 @@ const WordSearch = () => {
               </div>
             </div>
           </div>
-          {matchedEmoji && (
-            <div className="wordsearch-matched-emoji-overlay">
-              <span className="matched-emoji">{matchedEmoji}</span>
-            </div>
-          )}
         </div>
       </div>
     </div>
