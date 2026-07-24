@@ -1,16 +1,50 @@
-import React, { useEffect, useState, KeyboardEvent } from 'react';
+import React, { useEffect, useState, useMemo, KeyboardEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { alphabetData, MODAL_ICON_SIZE } from '../data/alphabet';
 import '../styles/Alphabets.scss';
 import { playTapSound, speakText, stopSpeech } from '../utils/soundUtils';
 import { wordToEmoji, createCustomIcon } from '../data/iconMapping';
 
+const SPELLING_COLORS = [
+  '#e91e63', // Vibrant Pink
+  '#d81b60', // Deep Rose
+  '#8e24aa', // Bright Purple
+  '#673ab7', // Deep Purple
+  '#3f51b5', // Royal Blue
+  '#1e88e5', // Bright Blue
+  '#0288d1', // Ocean Cyan
+  '#00897b', // Dark Teal
+  '#2e7d32', // Forest Green
+  '#43a047', // Apple Green
+  '#ef6c00', // Bright Orange
+  '#e65100', // Deep Orange
+  '#c62828', // Crimson Red
+];
+
+const getRandomColor = () => SPELLING_COLORS[Math.floor(Math.random() * SPELLING_COLORS.length)];
+
 const Alphabets = () => {
   const { t } = useTranslation();
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [modalWord, setModalWord] = useState('');
+  const [modalColor, setModalColor] = useState<string>('');
 
   const currentLetter = alphabetData[currentLetterIndex];
+
+  // Randomly assign font colors to word-spelling elements whenever current letter changes
+  const wordColors = useMemo(() => {
+    return currentLetter.words.reduce((acc, word) => {
+      acc[word] = getRandomColor();
+      return acc;
+    }, {} as Record<string, string>);
+  }, [currentLetterIndex, currentLetter]);
+
+  // Randomly select font color for modal-spelling whenever modal is opened
+  useEffect(() => {
+    if (modalWord) {
+      setModalColor(getRandomColor());
+    }
+  }, [modalWord]);
 
   useEffect(() => {
     const speakLetter = async () => {
@@ -57,7 +91,9 @@ const Alphabets = () => {
                 size: MODAL_ICON_SIZE,
               })}
             </div>
-            <div className="word-spelling modal-spelling">{t(`words.${modalWord}`)}</div>
+            <div className="word-spelling modal-spelling" style={{ color: modalColor }}>
+              {t(`words.${modalWord}`)}
+            </div>
           </div>
         </div>
       )}
@@ -94,10 +130,12 @@ const Alphabets = () => {
             >
               <div className="word-icon">
                 {React.createElement(createCustomIcon(wordToEmoji[word.toUpperCase()]), {
-                  size: 64,
+                  size: 48,
                 })}
               </div>
-              <div className="word-spelling">{t(`words.${word}`)}</div>
+              <div className="word-spelling" style={{ color: wordColors[word] }}>
+                {t(`words.${word}`)}
+              </div>
             </div>
           ))}
         </div>

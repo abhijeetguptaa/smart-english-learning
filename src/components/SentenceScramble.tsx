@@ -54,6 +54,7 @@ const SentenceScramble = () => {
     setSelectedWords([]);
     setAttempts(0);
     setHintIndex(-1);
+    setShowFailure(false);
   }, [currentQuestion]);
 
   const handleCheck = useCallback(() => {
@@ -104,6 +105,10 @@ const SentenceScramble = () => {
     playTapSound();
     speakText(word);
 
+    if (showFailure) {
+      setShowFailure(false);
+    }
+
     if (isSelected) {
       setSelectedWords((prev) => prev.filter((_, i) => i !== index));
       setShuffledWords((prev) => [...prev, word]);
@@ -115,6 +120,7 @@ const SentenceScramble = () => {
 
   const handleReset = () => {
     playTapSound();
+    setShowFailure(false);
     initGame();
   };
 
@@ -237,14 +243,33 @@ const SentenceScramble = () => {
         />
       )}
 
-      {showFailure && (
-        <div className="failure-feedback">
-          <p>{t('sentenceScramble.wrong', 'Not quite right. Try again!')}</p>
-          <button onClick={() => { setShowFailure(false); handleReset(); }}>
-            {t('common.actions.tryAgain', 'Try Again')}
-          </button>
-        </div>
-      )}
+      <AnimatePresence>
+        {showFailure && (
+          <motion.div
+            className="failure-feedback"
+            initial={{ opacity: 0, y: 20, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+          >
+            <span className="failure-icon" role="img" aria-label="thinking">
+              🤔
+            </span>
+            <p className="failure-message">{t('sentenceScramble.wrong', 'Not quite right. Try again!')}</p>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="try-again-btn"
+              onClick={() => {
+                setShowFailure(false);
+                handleReset();
+              }}
+            >
+              {t('common.actions.tryAgain', 'Try Again')}
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

@@ -208,8 +208,8 @@
 
 @mixin close-button($bg-color: #ff4757, $size: 44px) {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -14px;
+  right: -14px;
   width: $size;
   height: $size;
   background: $bg-color;

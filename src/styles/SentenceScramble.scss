@@ -13,7 +13,7 @@
   justify-content: center;
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #d81b60;
     text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.8);
     margin-bottom: $spacing-xl;
@@ -212,6 +212,59 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
   }
+
+  // FAILURE FEEDBACK STYLES
+  .failure-feedback {
+    margin-top: $spacing-md;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-md;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
+    border: 3px solid #ff6b6b;
+    border-radius: 25px;
+    padding: $spacing-sm $spacing-lg;
+    box-shadow:
+      0 10px 25px rgba(239, 68, 68, 0.2),
+      inset 0 2px 4px rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+
+    .failure-icon {
+      font-size: 2rem;
+      animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    }
+
+    .failure-message {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #c92a2a;
+      font-family: $font-family-primary;
+      flex: 1;
+    }
+
+    .try-again-btn {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5253 100%);
+      color: white;
+      border: 2px solid #ff8787;
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(238, 82, 83, 0.35);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+
+      &:hover {
+        background: linear-gradient(135deg, #ff5252 0%, #d63031 100%);
+      }
+    }
+  }
 }
 
 @keyframes overlay-fade-in {
@@ -243,6 +296,26 @@
   }
 }
 
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 @media (max-width: 480px) {
   .sentence-scramble-container {
     .word-tile {
@@ -251,6 +324,21 @@
     .controls {
       .game-btn {
         justify-content: center;
+      }
+    }
+    .failure-feedback {
+      flex-direction: column;
+      gap: $spacing-xs;
+      padding: $spacing-sm;
+
+      .failure-message {
+        font-size: 1.1rem;
+      }
+
+      .try-again-btn {
+        width: 100%;
+        padding: 6px 16px;
+        font-size: 1rem;
       }
     }
   }

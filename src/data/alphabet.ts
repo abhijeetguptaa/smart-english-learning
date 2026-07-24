@@ -1,5 +1,5 @@
 export const LIST_ICON_SIZE = 64;
-export const MODAL_ICON_SIZE = 180;
+export const MODAL_ICON_SIZE = 128;
 
 export const alphabetData = [
   {
@@ -20,7 +20,7 @@ export const alphabetData = [
   {
     letter: 'D',
     smallLetter: 'd',
-    words: ['Duck', 'Dolphin', 'Doughnut', 'Desk'],
+    words: ['Duck', 'Dolphin', 'Donut', 'Desk'],
   },
   {
     letter: 'E',
@@ -60,7 +60,7 @@ export const alphabetData = [
   {
     letter: 'L',
     smallLetter: 'l',
-    words: ['Lamp', 'Leaf', 'Ladybug', 'Lemon'],
+    words: ['Lollipop', 'Leaf', 'Ladybug', 'Lemon'],
   },
   {
     letter: 'M',

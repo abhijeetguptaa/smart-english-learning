@@ -51,7 +51,7 @@
 
 .alphabet-card {
   @include card(0, 40px, $shadow-lg, $color-white);
-  width: 92%;
+  width: 96%;
   max-width: 600px;
   text-align: center;
   margin: 20px auto;
@@ -208,7 +208,7 @@
 
 .word-spelling {
   font-family: $font-family-primary;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: $color-primary-dark;
   text-transform: capitalize;

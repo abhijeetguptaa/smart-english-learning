@@ -48,8 +48,8 @@
 // =============================================================================
 
 %bubbly-box {
-  inline-size: 58px;
-  block-size: 65px;
+  inline-size: 54px;
+  block-size: 54px;
   border-radius: $radius-2xl;
   @include flex-center(row);
   user-select: none;
@@ -376,14 +376,3 @@
   }
 }
 
-// =============================================================================
-// ERRORS
-// =============================================================================
-
-.spelling-error-line {
-  margin-top: $spacing-md;
-  color: #e53935;
-  font-weight: bold;
-  font-size: $font-size-lg;
-  animation: pop-in 0.3s ease;
-}

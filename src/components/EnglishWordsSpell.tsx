@@ -200,10 +200,6 @@ const EnglishWordsSpell = () => {
                 );
               })}
             </div>
-            {/* Small error line below slots */}
-            {showError && !isCorrect && (
-              <div className="spelling-error-line">{t('englishWordsSpell.spellingError')}</div>
-            )}
           </div>
 
           {/* Selectable Letters */}
