@@ -234,12 +234,18 @@ export default function App() {
       return;
     }
 
+    const userAge = localStorage.getItem(STORAGE_KEYS.USER_AGE);
+    if (!userAge) {
+      return; // Don't start ads until age is verified
+    }
+
+    const isChild = parseInt(userAge, 10) < 13;
     hasStartedDeferredServices.current = true;
 
     scheduleAfterFirstPaint(() => {
       loadAdMob()
         .then(async ({ initAdMob, warmAdCaches }) => {
-          await initAdMob();
+          await initAdMob(isChild);
           window.setTimeout(() => {
             warmAdCaches().catch((err) => console.error('Ad cache warmup failed:', err));
           }, 45000);

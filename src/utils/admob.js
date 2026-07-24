@@ -51,7 +51,7 @@ const trackAdImpressionAsync = (adType, adPlacement) => {
 /**
  * Initialize AdMob
  */
-export const initAdMob = async () => {
+export const initAdMob = async (isChild = false) => {
   if (!isNative() || isInitialized) return;
 
   try {
@@ -61,12 +61,15 @@ export const initAdMob = async () => {
         interstitialId: INTERSTITIAL_ID,
         rewardedId: REWARDED_ID,
         envMode: import.meta.env.MODE,
+        isChild,
       });
     }
 
     await AdMob.initialize({
       maxAdContentRating: MaxAdContentRating.General,
       initializeForTesting: TEST_MODE,
+      tagForChildDirectedTreatment: isChild,
+      tagForUnderAgeOfConsent: isChild,
     });
 
     isInitialized = true;

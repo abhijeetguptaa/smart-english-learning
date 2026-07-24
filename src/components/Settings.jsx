@@ -1,10 +1,11 @@
 // Component for user settings, language selection.
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Settings.scss';
 import { getGameVolume } from '../utils/soundUtils';
-import { IS_TEST_MODE } from '../constants/appConstants';
+import { IS_TEST_MODE, STORAGE_KEYS } from '../constants/appConstants';
 import useStarStore from '../store/useStarStore';
+import ParentalGate from './ParentalGate';
 
 const Settings = ({ userName, onNameSubmit, onClose }) => {
   const { t } = useTranslation();
@@ -12,6 +13,22 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
 
   const [name, setName] = useState(userName);
   const [volume, setVolume] = useState(getGameVolume());
+  const [showGate, setShowGate] = useState(false);
+  const [pendingAction, setPendingAction] = useState(null);
+
+  const isChild = useMemo(() => {
+    const age = localStorage.getItem(STORAGE_KEYS.USER_AGE);
+    return age ? parseInt(age, 10) < 13 : true;
+  }, []);
+
+  const handleActionWithGate = (action) => {
+    if (isChild) {
+      setPendingAction(() => action);
+      setShowGate(true);
+    } else {
+      action();
+    }
+  };
 
   const handleNameChange = (e) => {
     const nextName = e.target.value;
@@ -109,26 +126,26 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
           <div className="settings-actions">
             <button
               className="level-btn btn-feedback"
-              onClick={handleFeedback}
+              onClick={() => handleActionWithGate(handleFeedback)}
             >
               {t('settings.feedback')} 💬
             </button>
             <button
               className="level-btn btn-facebook"
-              onClick={handleFacebook}
+              onClick={() => handleActionWithGate(handleFacebook)}
             >
               {t('settings.facebook')}
             </button>
             {!IS_TEST_MODE && (
               <>
                 <button
-                  onClick={handleShare}
+                  onClick={() => handleActionWithGate(handleShare)}
                   className="level-btn btn-share"
                 >
                   {t('settings.shareApp')}
                 </button>
                 <button
-                  onClick={handleRateUs}
+                  onClick={() => handleActionWithGate(handleRateUs)}
                   className="level-btn btn-rate"
                 >
                   {t('settings.rateUs')}
@@ -138,6 +155,18 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
           </div>
         </div>
       </div>
+      {showGate && (
+        <ParentalGate
+          onConfirm={() => {
+            setShowGate(false);
+            if (pendingAction) pendingAction();
+          }}
+          onCancel={() => {
+            setShowGate(false);
+            setPendingAction(null);
+          }}
+        />
+      )}
     </div>
   );
 };

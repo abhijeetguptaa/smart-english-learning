@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import { speakText, playTapSound, playApplauseSound } from '../utils/soundUtils';
 import '../styles/SuccessModal.scss';
 import { useTranslation } from 'react-i18next';
@@ -6,10 +6,11 @@ import useStarStore from '../store/useStarStore';
 import { trackStarsEarned } from '../utils/analytics';
 import { useSparkleBurst } from '../hooks/useSparkleBurst';
 import { getRandomItem } from '../utils/utils';
-import { IS_TEST_MODE } from '../constants/appConstants';
+import { IS_TEST_MODE, STORAGE_KEYS } from '../constants/appConstants';
 import FlyingStars from './FlyingStars';
 import SuccessModalPetals from './SuccessModalPetals';
 import { showSafeInterstitial } from '../utils/admob';
+import ParentalGate from './ParentalGate';
 
 const SuccessModal = ({
   handleClose,
@@ -29,6 +30,12 @@ const SuccessModal = ({
   const pendingActionRef = useRef<(() => void) | null>(null);
   const { triggerSparkleBurst, SparkleRenderer } = useSparkleBurst();
   const [showMistakes, setShowMistakes] = useState(false);
+  const [showGate, setShowGate] = useState(false);
+
+  const isChild = useMemo(() => {
+    const age = localStorage.getItem(STORAGE_KEYS.USER_AGE);
+    return age ? parseInt(age, 10) < 13 : true;
+  }, []);
 
   // TRIGGER INTERSTITIAL AD (Safe Moment: Success Modal Dismissal)
   // & APPLAUSE SOUND (Safe Moment: Success Modal Display)
@@ -87,7 +94,7 @@ const SuccessModal = ({
 
   useEffect(() => {
     if (timerRef.current) cancelAnimationFrame(timerRef.current);
-    if (showMistakes || isClosing || animationData) {
+    if (showMistakes || isClosing || animationData || showGate) {
       return;
     }
 
@@ -118,9 +125,17 @@ const SuccessModal = ({
       if (timerRef.current) cancelAnimationFrame(timerRef.current);
       timerRef.current = null;
     };
-  }, [showMistakes, isClosing, animationData]);
+  }, [showMistakes, isClosing, animationData, showGate]);
 
   const handleRateUs = () => {
+    if (isChild) {
+      setShowGate(true);
+    } else {
+      performRateUs();
+    }
+  };
+
+  const performRateUs = () => {
     localStorage.setItem('hasRated', 'true');
     window.open('https://play.google.com/store/apps/details?id=smart.english.learning', '_blank');
     handleCloseClick();
@@ -296,6 +311,15 @@ const SuccessModal = ({
         </button>
       </div>
 
+      {showGate && (
+        <ParentalGate
+          onConfirm={() => {
+            setShowGate(false);
+            performRateUs();
+          }}
+          onCancel={() => setShowGate(false)}
+        />
+      )}
     </div>
   );
 };
