@@ -335,7 +335,8 @@
   "home": {
     "categories": {
       "quiz": "Quiz",
-      "tap-learn": "Interactive Lessons"
+      "tap-learn": "Interactive Lessons",
+      "wordDefense": "Word Defense"
     },
     "subjects": {
       "alphabets": {

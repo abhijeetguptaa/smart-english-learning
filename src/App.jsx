@@ -27,7 +27,9 @@ const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'
 const Settings = lazy(() => import('./components/Settings.jsx'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
+const WordDefenseMain = lazy(() => import('./components/WordDefense/WordDefenseMain.tsx'));
 const Stars = lazy(() => import('./components/Stars'));
+
 
 const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
 let soundUtilsPromise;
@@ -134,6 +136,12 @@ function Home() {
       path: '/tap-learn',
       icon: '/alphabet.webp',
       label: t('home.categories.tap-learn', 'Tap Learn'),
+    },
+    {
+      id: 'word-defense',
+      path: '/word-defense',
+      icon: '/quiz.webp',
+      label: t('home.categories.wordDefense', 'Word Defense'),
     },
   ];
 
@@ -496,6 +504,7 @@ export default function App() {
           <Route path="/quiz/:difficulty" element={<Quiz />} />
           <Route path="/tap-learn" element={<TapLearnSelection />} />
           <Route path="/tap-learn/:gameType" element={<TapLearnRoute />} />
+          <Route path="/word-defense" element={<WordDefenseMain />} />
         </Routes>
       </Suspense>
 
