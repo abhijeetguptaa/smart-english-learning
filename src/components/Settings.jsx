@@ -70,6 +70,10 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
     window.open('https://wa.me/919717094901', '_blank');
   };
 
+  const handlePrivacyPolicy = () => {
+    window.open('privacy-policy.html', '_blank');
+  };
+
   const handleVolumeChange = (e) => {
     const newVolume = parseFloat(e.target.value);
     setVolume(newVolume);
@@ -135,6 +139,12 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
               onClick={() => handleActionWithGate(handleFacebook)}
             >
               {t('settings.facebook')}
+            </button>
+            <button
+              className="level-btn btn-privacy"
+              onClick={() => handleActionWithGate(handlePrivacyPolicy)}
+            >
+              {t('settings.privacyPolicy')} 🔒
             </button>
             {!IS_TEST_MODE && (
               <>

@@ -473,7 +473,8 @@
     "rateUs": "Rate Us",
     "music": "Music",
     "facebook": "Facebook Page",
-    "feedback": "Feedback"
+    "feedback": "Feedback",
+    "privacyPolicy": "Privacy Policy"
   },
   "successModal": {
     "rateUsPrompt": "If you like the app, please consider rating us 5 stars on the Play Store!",
