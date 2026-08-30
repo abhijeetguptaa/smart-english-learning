@@ -274,5 +274,5 @@ export const isSpeechSupported = () => true;
 
 export const getGameVolume = () => {
   const storedVolume = localStorage.getItem('gameVolume');
-  return storedVolume ? parseFloat(storedVolume) : 0.1;
+  return storedVolume ? parseFloat(storedVolume) : 0.05;
 };

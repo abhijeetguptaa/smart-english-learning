@@ -1,9 +1,11 @@
-import React, { useEffect, useState, useMemo, KeyboardEvent } from 'react';
+import React, { useEffect, useState, useMemo, KeyboardEvent, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { alphabetData, MODAL_ICON_SIZE } from '../data/alphabet';
 import '../styles/Alphabets.scss';
-import { playTapSound, speakText, stopSpeech } from '../utils/soundUtils';
+import { playTapSound, speakText, stopSpeech, stopAllTones } from '../utils/soundUtils';
+import { pauseMusic, playMusic } from '../utils/bgMusicManager';
 import { wordToEmoji, createCustomIcon } from '../data/iconMapping';
+import { getShortForWord, getShortEmbedUrl, LETTER_FALLBACK_SHORTS } from '../data/shortsData';
 
 const SPELLING_COLORS = [
   '#e91e63', // Vibrant Pink
@@ -28,6 +30,24 @@ const Alphabets = () => {
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [modalWord, setModalWord] = useState('');
   const [modalColor, setModalColor] = useState<string>('');
+  const [activeShortId, setActiveShortId] = useState<string | null>(null);
+  const [videoTitle, setVideoTitle] = useState<string>('');
+  const [isOnline, setIsOnline] = useState<boolean>(() =>
+    typeof navigator !== 'undefined' ? navigator.onLine : true,
+  );
+
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
 
   const currentLetter = alphabetData[currentLetterIndex];
 
@@ -59,23 +79,111 @@ const Alphabets = () => {
     await speakText(text);
   };
 
+  const handlePlayShort = useCallback((shortId: string, title: string) => {
+    playTapSound();
+    stopSpeech();
+    stopAllTones();
+    pauseMusic();
+    setActiveShortId(shortId);
+    setVideoTitle(title);
+  }, []);
+
+  const handleCloseShort = useCallback(() => {
+    playTapSound();
+    setActiveShortId(null);
+    setVideoTitle('');
+    playMusic();
+  }, []);
+
+  const handleLetterClick = () => {
+    if (isOnline) {
+      const shortId =
+        LETTER_FALLBACK_SHORTS[currentLetter.letter] ||
+        getShortForWord(currentLetter.words[0], currentLetter.letter);
+      handlePlayShort(
+        shortId,
+        `${currentLetter.letter} for ${t(`words.${currentLetter.words[0]}`)}`,
+      );
+    } else {
+      speak(`${currentLetter.letter}`);
+    }
+  };
+
+  const handleWordClick = (word: string) => {
+    if (isOnline) {
+      const shortId = getShortForWord(word, currentLetter.letter);
+      handlePlayShort(shortId, t(`words.${word}`));
+    } else {
+      setModalWord(word);
+      speak(
+        t('alphabet.isFor', {
+          letter: currentLetter.letter,
+          word: t(`words.${word}`),
+        }),
+      );
+    }
+  };
+
   const onLetterKeyPress = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
-      speak(`${currentLetter.letter}, ${currentLetter.smallLetter}`);
+      handleLetterClick();
     }
   };
 
   useEffect(() => {
-    if (!modalWord) return;
-    const onEsc = (e: KeyboardEvent) => e.key === 'Escape' && setModalWord('');
+    const onEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (activeShortId) {
+          handleCloseShort();
+        } else if (modalWord) {
+          setModalWord('');
+        }
+      }
+    };
     window.addEventListener('keydown', onEsc as any);
     return () => window.removeEventListener('keydown', onEsc as any);
-  }, [modalWord]);
+  }, [activeShortId, modalWord, handleCloseShort]);
+
+  // Clean up on component unmount
+  useEffect(() => {
+    return () => {
+      stopSpeech();
+      stopAllTones();
+    };
+  }, []);
 
   const maxIndex = alphabetData.length - 1;
 
   return (
     <div className="app-container alphabet-page">
+      {/* YouTube Shorts Modal (When online) */}
+      {activeShortId && (
+        <div className="modal-overlay video-modal-overlay" onClick={handleCloseShort}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="video-modal-header">
+              <span className="video-modal-title">{videoTitle}</span>
+              <button
+                className="modal-close video-modal-close"
+                aria-label={t('common.close')}
+                onClick={handleCloseShort}
+              >
+                ✕
+              </button>
+            </div>
+            <div className="shorts-iframe-wrapper">
+              <iframe
+                src={getShortEmbedUrl(activeShortId)}
+                title={`YouTube Short - ${videoTitle}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="shorts-iframe"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Offline Word Detail Modal */}
       {modalWord && (
         <div className="modal-overlay" onClick={() => setModalWord('')}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -103,9 +211,7 @@ const Alphabets = () => {
           <div
             className="letter-pair"
             tabIndex={0}
-            onClick={() => {
-              speak(`${currentLetter.letter}`);
-            }}
+            onClick={handleLetterClick}
             onKeyPress={onLetterKeyPress}
           >
             <span className="letter-capital">{currentLetter.letter}</span>
@@ -118,15 +224,7 @@ const Alphabets = () => {
             <div
               key={word}
               className="word-item"
-              onClick={() => {
-                setModalWord(word);
-                speak(
-                  t('alphabet.isFor', {
-                    letter: currentLetter.letter,
-                    word: t(`words.${word}`),
-                  }),
-                );
-              }}
+              onClick={() => handleWordClick(word)}
             >
               <div className="word-icon">
                 {React.createElement(createCustomIcon(wordToEmoji[word.toUpperCase()]), {

@@ -16,7 +16,15 @@ const Quiz = () => {
   const complexity = difficulty || 'easy';
   const [currentIndex, setCurrentIndex] = useState(() => {
     const saved = localStorage.getItem(`quiz_index_${complexity}`);
-    return saved ? parseInt(saved, 10) : 0;
+    const total = (quizData[complexity] || []).length || 1;
+    if (saved !== null) {
+      const savedIndex = parseInt(saved, 10);
+      const nextIndex = isNaN(savedIndex) ? 0 : (savedIndex + 1) % total;
+      localStorage.setItem(`quiz_index_${complexity}`, String(nextIndex));
+      return nextIndex;
+    }
+    localStorage.setItem(`quiz_index_${complexity}`, '0');
+    return 0;
   });
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
