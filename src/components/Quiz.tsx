@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { quizData } from '../data/quiz';
 import '../styles/Quiz.scss';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { speakText, stopSpeech } from '../utils/soundUtils';
 import { QUIZ_ROUNDS } from '../utils/utils';
 import SuccessModal from './SuccessModal';
@@ -11,7 +11,6 @@ import { useSparkleBurst } from '@/hooks/useSparkleBurst';
 
 const Quiz = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const { difficulty } = useParams();
   const complexity = difficulty || 'easy';
   const [currentIndex, setCurrentIndex] = useState(() => {
@@ -26,8 +25,8 @@ const Quiz = () => {
     localStorage.setItem(`quiz_index_${complexity}`, '0');
     return 0;
   });
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [isCorrect, setIsCorrect] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [answered, setAnswered] = useState(false);
   const [isEmojiVisible, setIsEmojiVisible] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
@@ -139,7 +138,7 @@ const Quiz = () => {
     action?.();
   };
 
-  const handleAnswer = (option) => {
+  const handleAnswer = (option: string) => {
     if (!answered) {
       const isAnswerCorrect = option === question.a;
       setSelectedAnswer(option);
@@ -213,7 +212,7 @@ const Quiz = () => {
             </div>
 
             <div className="quiz-options">
-              {question.o.map((option, idx) => (
+              {question.o.map((option: string, idx: number) => (
                 <button
                   key={idx}
                   className={`quiz-option color-${idx % 4} ${

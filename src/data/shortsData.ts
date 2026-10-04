@@ -241,7 +241,7 @@ export function getShortForWord(word: string, letter?: string): string {
  * Builds the official embed URL for a YouTube Short with autoplay and origin parameters.
  */
 export function getShortEmbedUrl(videoId: string): string {
-  const url = new URL(`https://www.youtube.com/embed/${videoId}`);
+  const url = new URL(`https://www.youtube-nocookie.com/embed/${videoId}`);
   url.searchParams.set('autoplay', '1');
   url.searchParams.set('rel', '0');
   url.searchParams.set('playsinline', '1');

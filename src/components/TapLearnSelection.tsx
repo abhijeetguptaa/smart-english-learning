@@ -3,10 +3,17 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getCategoryColor, getCategoryBGColor } from '../constants/colors';
 
-const TapLearnSelection = () => {
+interface TapLearnCategory {
+  id: string;
+  path: string;
+  icon: string;
+  label: string;
+}
+
+const TapLearnSelection: React.FC = () => {
   const { t } = useTranslation();
 
-  const categories = [
+  const categories: TapLearnCategory[] = [
     {
       id: 'letters',
       path: '/tap-learn/letters',
@@ -89,11 +96,13 @@ const TapLearnSelection = () => {
             key={category.id}
             to={category.path}
             className="subject-icon-button"
-            style={{
-              '--card-color': getCategoryColor(index),
-              '--bg-color': getCategoryBGColor(index),
-              animationDelay: `${index * 0.1}s`,
-            }}
+            style={
+              {
+                '--card-color': getCategoryColor(index),
+                '--bg-color': getCategoryBGColor(index),
+                animationDelay: `${index * 0.1}s`,
+              } as React.CSSProperties
+            }
           >
             <img
               className="subject-icon subject-icon--img-homepage"

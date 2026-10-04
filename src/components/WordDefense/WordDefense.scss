@@ -256,17 +256,52 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
-  z-index: 10;
+  padding: 8px 16px;
+  width: 100%;
+  z-index: 30;
 
-  .wd-pause-btn {
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  .wd-hud-btn {
+    background: rgba(15, 23, 42, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.25);
     color: white;
-    border-radius: 12px;
-    padding: 8px 12px;
-    font-size: 16px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.15s ease;
+
+    &:active {
+      transform: scale(0.92);
+    }
+  }
+
+  .wd-top-lives-hud {
+    margin: 0;
+  }
+}
+
+.wd-header-back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: transform 0.15s ease;
+
+  &:active {
+    transform: scale(0.92);
   }
 }
 

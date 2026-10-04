@@ -1,5 +1,6 @@
 import { LocalNotifications } from '@capacitor/local-notifications';
 import { Capacitor } from '@capacitor/core';
+import type { TFunction } from 'i18next';
 
 export async function requestNotificationPermission() {
   if (Capacitor.getPlatform() === 'web') return false;
@@ -12,7 +13,7 @@ export async function requestNotificationPermission() {
   return true;
 }
 
-export async function scheduleDailyReminder(t: any) {
+export async function scheduleDailyReminder(t: TFunction) {
   if (Capacitor.getPlatform() === 'web') return;
 
   // Cancel any existing notifications first

@@ -7,21 +7,27 @@ import { IS_TEST_MODE, STORAGE_KEYS } from '../constants/appConstants';
 import useStarStore from '../store/useStarStore';
 import ParentalGate from './ParentalGate';
 
-const Settings = ({ userName, onNameSubmit, onClose }) => {
+export interface SettingsProps {
+  userName: string;
+  onNameSubmit: (name: string) => void;
+  onClose: () => void;
+}
+
+const Settings: React.FC<SettingsProps> = ({ userName, onNameSubmit, onClose }) => {
   const { t } = useTranslation();
   const { stars, addStars } = useStarStore();
 
   const [name, setName] = useState(userName);
   const [volume, setVolume] = useState(getGameVolume());
   const [showGate, setShowGate] = useState(false);
-  const [pendingAction, setPendingAction] = useState(null);
+  const [pendingAction, setPendingAction] = useState<(() => void) | null>(null);
 
   const isChild = useMemo(() => {
     const age = localStorage.getItem(STORAGE_KEYS.USER_AGE);
     return age ? parseInt(age, 10) < 13 : true;
   }, []);
 
-  const handleActionWithGate = (action) => {
+  const handleActionWithGate = (action: () => void) => {
     if (isChild) {
       setPendingAction(() => action);
       setShowGate(true);
@@ -30,7 +36,7 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
     }
   };
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const nextName = e.target.value;
     setName(nextName);
 
@@ -74,16 +80,17 @@ const Settings = ({ userName, onNameSubmit, onClose }) => {
     window.open('privacy-policy.html', '_blank');
   };
 
-  const handleVolumeChange = (e) => {
+  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newVolume = parseFloat(e.target.value);
     setVolume(newVolume);
-    localStorage.setItem('gameVolume', newVolume);
+    localStorage.setItem('gameVolume', String(newVolume));
     window.dispatchEvent(new CustomEvent('volumechange', { detail: { volume: newVolume } }));
   };
-  const handleVolumeChangeFromButtons = (value) => {
+
+  const handleVolumeChangeFromButtons = (value: number) => {
     const newVolume = value;
     setVolume(newVolume);
-    localStorage.setItem('gameVolume', newVolume);
+    localStorage.setItem('gameVolume', String(newVolume));
     window.dispatchEvent(new CustomEvent('volumechange', { detail: { volume: newVolume } }));
   };
 

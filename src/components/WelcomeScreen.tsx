@@ -2,7 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/WelcomeScreen.scss';
 
-const WelcomeScreen = ({ onPlay }) => {
+export interface WelcomeScreenProps {
+  onPlay: () => void;
+}
+
+const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onPlay }) => {
   const { t } = useTranslation();
 
   return (

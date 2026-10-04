@@ -5,6 +5,12 @@
 
 let isAnalyticsInitialized = false;
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
 // Standard Facebook Event Names
 export const FB_EVENTS = {
   VIEW_CONTENT: 'ViewContent',
@@ -17,7 +23,7 @@ export const FB_EVENTS = {
   SPENT_CREDITS: 'fb_mobile_spent_credits',
   AD_CLICK: 'AdClick',
   AD_IMPRESSION: 'AdImpression',
-};
+} as const;
 
 // Custom App Events
 export const APP_EVENTS = {
@@ -27,12 +33,12 @@ export const APP_EVENTS = {
   FEATURE_UNLOCK_ATTEMPT: 'FeatureUnlockAttempt',
   FEATURE_UNLOCKED: 'FeatureUnlocked',
   AD_IMPRESSION: 'AdImpression',
-};
+} as const;
 
 /**
  * Initialize Analytics
  */
-export const initAnalytics = () => {
+export const initAnalytics = (): void => {
   if (isAnalyticsInitialized) {
     return;
   }
@@ -41,11 +47,9 @@ export const initAnalytics = () => {
 };
 
 /**
- * Log a Facebook Event
- * @param {string} eventName - Standard or Custom event name
- * @param {object} params - Additional parameters for the event
+ * Log an event
  */
-export const logEvent = (eventName, params = {}) => {
+export const logEvent = (eventName: string, params: Record<string, unknown> = {}): void => {
   try {
     if (import.meta.env.DEV || import.meta.env.VITE_ADMOB_TEST_MODE === 'true') {
       console.log(`[Analytics Event]: ${eventName}`, params);
@@ -62,36 +66,39 @@ export const logEvent = (eventName, params = {}) => {
 /**
  * Helper: Track Exercise Start
  */
-export const trackExerciseStart = (operator, difficulty) => {
+export const trackExerciseStart = (operator: string, difficulty: string): void => {
   logEvent(APP_EVENTS.EXERCISE_START, {
     content_name: operator,
     content_category: 'Exercise',
-    difficulty: difficulty,
+    difficulty,
   });
 };
 
 /**
  * Helper: Track Exercise Completion
  */
-export const trackExerciseComplete = (operator, difficulty, score) => {
+export const trackExerciseComplete = (
+  operator: string,
+  difficulty: string,
+  score: number,
+): void => {
   logEvent(APP_EVENTS.EXERCISE_COMPLETE, {
     content_name: operator,
-    difficulty: difficulty,
+    difficulty,
     value: score,
     currency: 'STAR',
   });
 
-  // Also log standard level achieved for Facebook
   logEvent(FB_EVENTS.LEVEL_ACHIEVED, {
     fb_level: `${operator}_${difficulty}`,
-    score: score,
+    score,
   });
 };
 
 /**
  * Helper: Track Star Earned
  */
-export const trackStarsEarned = (amount, source) => {
+export const trackStarsEarned = (amount: number, source: string): void => {
   logEvent(APP_EVENTS.STAR_EARNED, {
     value: amount,
     content_id: source,
@@ -101,7 +108,7 @@ export const trackStarsEarned = (amount, source) => {
 /**
  * Helper: Track Feature Unlock
  */
-export const trackFeatureUnlocked = (featureName, cost) => {
+export const trackFeatureUnlocked = (featureName: string, cost: number): void => {
   logEvent(APP_EVENTS.FEATURE_UNLOCKED, {
     content_name: featureName,
     value: cost,
@@ -117,7 +124,7 @@ export const trackFeatureUnlocked = (featureName, cost) => {
 /**
  * Helper: Track Ad Impression
  */
-export const trackAdImpression = (adType, adPlacement) => {
+export const trackAdImpression = (adType: string, adPlacement: string): void => {
   logEvent(FB_EVENTS.AD_IMPRESSION, {
     ad_type: adType,
     placement: adPlacement,

@@ -1,22 +1,22 @@
-import i18n from 'i18next';
+import i18n, { BackendModule } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 const supportedLngs = ['en'];
 
-const localeLoaders = {
+const localeLoaders: Record<string, () => Promise<{ default: Record<string, unknown> }>> = {
   en: () => import('./locales/en/en.json'),
 };
 
-const dynamicLocaleBackend = {
+const dynamicLocaleBackend: BackendModule = {
   type: 'backend',
   init: () => {},
   read: async (language, _namespace, callback) => {
     try {
-      const loader = localeLoaders.en;
+      const loader = localeLoaders[language] || localeLoaders.en;
       const module = await loader();
       callback(null, module.default);
     } catch (error) {
-      callback(error, false);
+      callback(error as Error, false);
     }
   },
 };

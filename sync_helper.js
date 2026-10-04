@@ -56,6 +56,7 @@ locales.forEach((lang) => {
   if (!fs.existsSync(langPath)) return;
   const target = JSON.parse(fs.readFileSync(langPath, 'utf8'));
   const merged = merge(en, target);
+  void merged;
 
   // Find all keys that need translation (marked with __isNew or still in English)
   // For simplicity, this script just identifies what's missing.

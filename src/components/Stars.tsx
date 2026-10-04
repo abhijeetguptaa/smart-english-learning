@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Stars.scss';
 import useStarStore from '../store/useStarStore';
 
-const Stars = () => {
+const Stars: React.FC = () => {
   const stars = useStarStore((state) => state.stars);
   return (
     <div className="stars-container">

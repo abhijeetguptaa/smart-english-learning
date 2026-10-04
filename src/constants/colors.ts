@@ -1,5 +1,5 @@
 // Learning-friendly colors for category cards and subject buttons
-export const CATEGORY_COLORS = [
+export const CATEGORY_COLORS: readonly string[] = [
   '#FF3B3B', // Sharp Red
   '#C94FD6', // Sharp Magenta
   '#1DA1C1', // Sharp Blue
@@ -13,7 +13,7 @@ export const CATEGORY_COLORS = [
   '#4B00C9', // Sharp Indigo
 ];
 
-export const CATEGORY_BG_COLORS = [
+export const CATEGORY_BG_COLORS: readonly string[] = [
   'rgba(255, 220, 220, 1)', // Ultra Light Red
   'rgba(248, 235, 249, 1)', // Ultra Light Magenta
   'rgba(220, 240, 248, 1)', // Ultra Light Blue
@@ -29,13 +29,11 @@ export const CATEGORY_BG_COLORS = [
 
 /**
  * Returns a color from the CATEGORY_COLORS array based on the index.
- * @param {number} index
- * @returns {string}
  */
-export const getCategoryColor = (index) => {
+export const getCategoryColor = (index: number): string => {
   return CATEGORY_COLORS[index % CATEGORY_COLORS.length];
 };
 
-export const getCategoryBGColor = (index) => {
-  return CATEGORY_BG_COLORS[index % CATEGORY_COLORS.length];
+export const getCategoryBGColor = (index: number): string => {
+  return CATEGORY_BG_COLORS[index % CATEGORY_BG_COLORS.length];
 };

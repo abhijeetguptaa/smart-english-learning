@@ -1,4 +1,4 @@
-import { wordToEmoji, countingIcon } from './iconMapping';
+import { wordToEmoji } from './iconMapping';
 import { TAP_LEARN_DATA } from './tapLearnData';
 
 export interface MonsterAnswer {

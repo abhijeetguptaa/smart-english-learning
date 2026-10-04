@@ -1,9 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
-const LockIcon = () => (
+export interface DifficultyOption {
+  key: string;
+  label: string;
+  emoji?: string;
+  image?: string;
+  color?: string;
+  locked?: boolean;
+  path?: string;
+  onClick?: () => void;
+}
+
+export interface DifficultySelectionProps {
+  difficulties: DifficultyOption[];
+  baseRoute: string;
+  extraClass?: string;
+}
+
+const LockIcon: React.FC = () => (
   <div className="lock-icon-overlay">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,12 +38,15 @@ const LockIcon = () => (
   </div>
 );
 
-const DifficultySelection = ({ difficulties, baseRoute }) => {
+const DifficultySelection: React.FC<DifficultySelectionProps> = ({
+  difficulties,
+  baseRoute,
+  extraClass = '',
+}) => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
 
   return (
-    <div className={`learning-bg flex-center column difficulty-selection`}>
+    <div className={`learning-bg flex-center column difficulty-selection ${extraClass}`.trim()}>
       <div className="difficulty-grid">
         {difficulties.map((d) => (
           <motion.div

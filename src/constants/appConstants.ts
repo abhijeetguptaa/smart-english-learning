@@ -9,7 +9,9 @@ export const DIFFICULTY_LEVELS = {
   MEDIUM: 'medium',
   HARD: 'hard',
   COMPLEX: 'complex',
-};
+} as const;
+
+export type DifficultyLevel = (typeof DIFFICULTY_LEVELS)[keyof typeof DIFFICULTY_LEVELS];
 
 // Quiz and Animation Settings
 export const QUIZ_SETTINGS = {
@@ -65,12 +67,12 @@ export const FILE_SETTINGS = {
 export const UI_MODES = {
   DOWNLOAD: 'download',
   SHARE: 'share',
-};
+} as const;
 
 export const STORAGE_KEYS = {
   USER_NAME: 'english_app_user_name_v1',
   USER_AGE: 'english_app_user_age_v1',
-};
+} as const;
 
 // PDF Configuration
 export const PDF_CONFIG = {

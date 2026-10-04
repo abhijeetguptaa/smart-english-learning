@@ -12,7 +12,26 @@ import SuccessModalPetals from './SuccessModalPetals';
 import { showSafeInterstitial } from '../utils/admob';
 import ParentalGate from './ParentalGate';
 
-const SuccessModal = ({
+export interface IncorrectQuestion {
+  question: string;
+  userAnswer: string;
+  correctAnswer: string;
+}
+
+export interface SuccessModalProps {
+  handleClose: () => void;
+  message?: string;
+  starsWon?: number;
+  skipStarAward?: boolean;
+  incorrectQuestions?: IncorrectQuestion[];
+  showNewGame?: boolean;
+  onNewGame?: () => void;
+  bestTime?: number | null;
+  isNewBestTime?: boolean;
+  disableAds?: boolean;
+}
+
+const SuccessModal: React.FC<SuccessModalProps> = ({
   handleClose,
   message = '',
   starsWon = 1,
@@ -23,7 +42,7 @@ const SuccessModal = ({
   bestTime = null,
   isNewBestTime = false,
   disableAds = false,
-}: any) => {
+}) => {
   const { t } = useTranslation();
   const { addStar } = useStarStore();
   const hasAwardedStars = useRef(false);
@@ -43,9 +62,9 @@ const SuccessModal = ({
     playApplauseSound();
   }, []);
 
-  const [applauseText] = useState(() => {
-    const list: any = t('common.feedback.successMsg', { returnObjects: true });
-    return getRandomItem(list);
+  const [applauseText] = useState<string>(() => {
+    const list = t('common.feedback.successMsg', { returnObjects: true }) as string[];
+    return (Array.isArray(list) ? getRandomItem(list) : null) || 'Awesome!';
   });
 
   const [shouldShowRateUs, setShouldShowRateUs] = useState(false);
@@ -87,10 +106,11 @@ const SuccessModal = ({
         range: 400,
       });
     }
-  }, [starsWon, triggerSparkleBurst, message, skipStarAward]);
+  }, [starsWon, triggerSparkleBurst, message, skipStarAward, t]);
 
   const [timeLeft, setTimeLeft] = useState(10);
   const timerRef = useRef<number | null>(null);
+  const handleCloseClickRef = useRef<() => void>(() => {});
 
   useEffect(() => {
     if (timerRef.current) cancelAnimationFrame(timerRef.current);
@@ -110,7 +130,7 @@ const SuccessModal = ({
         setTimeLeft((prev) => {
           const next = Math.max(0, prev - steps);
           if (next === 0) {
-            handleCloseClick();
+            handleCloseClickRef.current();
           }
           return next;
         });
@@ -173,6 +193,7 @@ const SuccessModal = ({
   const handleCloseClick = () => {
     startExitFlow(handleClose, { showAd: true });
   };
+  handleCloseClickRef.current = handleCloseClick;
 
   const handleNewGameClick = () => {
     startExitFlow(onNewGame || handleClose);
@@ -202,7 +223,7 @@ const SuccessModal = ({
             <div className="success-content-wrapper">
               <div className="success-main-info">
                 <h2 className="applause">
-                  {applauseText.split('').map((letter: any, index: number) => (
+                  {applauseText.split('').map((letter, index) => (
                     <span
                       key={index}
                       style={{ animationDelay: `${index * 0.1}s` }}
@@ -262,7 +283,7 @@ const SuccessModal = ({
           <div className="mistakes-container">
             <h3>{t('questionBox.showMistakes')}</h3>
             <div className="mistakes-list">
-              {incorrectQuestions.map((item: any, index: number) => (
+              {incorrectQuestions.map((item, index) => (
                 <div key={index} className="incorrect-question-item">
                   <div className="incorrect-question-text">
                     <strong>{t('questionBox.question')}</strong> {item.question}

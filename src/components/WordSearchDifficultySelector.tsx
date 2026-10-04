@@ -1,12 +1,12 @@
 import React from 'react';
-import DifficultySelection from './DifficultySelection';
+import DifficultySelection, { DifficultyOption } from './DifficultySelection';
 import { useTranslation } from 'react-i18next';
 import { DIFFICULTY_LEVELS } from '../constants/appConstants';
 
-const WordSearchDifficultySelector = () => {
+const WordSearchDifficultySelector: React.FC = () => {
   const { t } = useTranslation();
 
-  const wordSearchDifficulties = [
+  const wordSearchDifficulties: DifficultyOption[] = [
     { key: DIFFICULTY_LEVELS.EASY, label: t('common.levels.easy'), emoji: '🌱', color: '#60a5fa' },
     {
       key: DIFFICULTY_LEVELS.MEDIUM,

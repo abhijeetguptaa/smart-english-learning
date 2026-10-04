@@ -29,13 +29,17 @@ const FlyingStars: React.FC<FlyingStarsProps> = ({
   const [stars, setStars] = useState<Star[]>([]);
   const arrivedCountRef = useRef(0);
   const completedRef = useRef(false);
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
+  const onStarArrivedRef = useRef(onStarArrived);
+  onStarArrivedRef.current = onStarArrived;
 
   useEffect(() => {
     arrivedCountRef.current = 0;
     completedRef.current = false;
 
     if (count <= 0) {
-      onComplete();
+      onCompleteRef.current();
       return;
     }
 
@@ -56,12 +60,12 @@ const FlyingStars: React.FC<FlyingStarsProps> = ({
 
   const handleStarEnd = (starId: number) => {
     setStars((current) => current.filter((star) => star.id !== starId));
-    onStarArrived();
+    onStarArrivedRef.current();
     arrivedCountRef.current += 1;
 
     if (arrivedCountRef.current === count && !completedRef.current) {
       completedRef.current = true;
-      requestAnimationFrame(onComplete);
+      requestAnimationFrame(() => onCompleteRef.current());
     }
   };
 

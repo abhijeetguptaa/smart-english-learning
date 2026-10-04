@@ -5,6 +5,7 @@ import {
   RewardAdPluginEvents,
 } from '@capacitor-community/admob';
 import { Capacitor } from '@capacitor/core';
+import type { PluginListenerHandle } from '@capacitor/core';
 
 const INTERSTITIAL_ID = import.meta.env.VITE_ADMOB_INTERSTITIAL_ID;
 const REWARDED_ID = import.meta.env.VITE_ADMOB_REWARDED_ID;
@@ -22,23 +23,28 @@ let lastAdTime = 0;
 /**
  * Conservative ad pacing limits
  */
-const MIN_TIME_BETWEEN_ADS = 180 * 1000; // 1.5 minutes
+const MIN_TIME_BETWEEN_ADS = 180 * 1000; // 3 minutes
 const INITIAL_AD_DELAY = 90 * 1000; // 1.5 minutes
 const INTERSTITIAL_PROBABILITY = 1; // 100% chance to show an ad when triggered
 
 const GAME_LOAD_TIME = Date.now();
-const isNative = () => Capacitor.isNativePlatform();
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const isNative = (): boolean => Capacitor.isNativePlatform();
+const delay = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
 
-const isValidAdUnitId = (id) => typeof id === 'string' && /^ca-app-pub-\d{16}\/\d{10}$/.test(id);
+const isValidAdUnitId = (id: unknown): id is string =>
+  typeof id === 'string' && /^ca-app-pub-\d{16}\/\d{10}$/.test(id);
 
-const createAdError = (message, code) => {
-  const error = new Error(message);
+export interface AdError extends Error {
+  code?: string;
+}
+
+const createAdError = (message: string, code: string): AdError => {
+  const error: AdError = new Error(message);
   error.code = code;
   return error;
 };
 
-const trackAdImpressionAsync = (adType, adPlacement) => {
+const trackAdImpressionAsync = (adType: string, adPlacement: string): void => {
   import('./analytics')
     .then(({ trackAdImpression }) => trackAdImpression(adType, adPlacement))
     .catch((error) => {
@@ -51,7 +57,7 @@ const trackAdImpressionAsync = (adType, adPlacement) => {
 /**
  * Initialize AdMob
  */
-export const initAdMob = async (isChild = false) => {
+export const initAdMob = async (isChild = false): Promise<void> => {
   if (!isNative() || isInitialized) return;
 
   try {
@@ -80,7 +86,7 @@ export const initAdMob = async (isChild = false) => {
   }
 };
 
-export const warmAdCaches = async () => {
+export const warmAdCaches = async (): Promise<void> => {
   if (!isNative()) return;
 
   if (!isInitialized) {
@@ -95,7 +101,7 @@ export const warmAdCaches = async () => {
 /**
  * Preload Interstitial
  */
-export const preloadInterstitial = async () => {
+export const preloadInterstitial = async (): Promise<void> => {
   if (!isNative() || isPreloadingInterstitial) return;
 
   if (!isValidAdUnitId(INTERSTITIAL_ID)) {
@@ -128,7 +134,7 @@ export const preloadInterstitial = async () => {
 /**
  * Preload Rewarded Ad
  */
-export const preloadRewardedAd = async () => {
+export const preloadRewardedAd = async (): Promise<void> => {
   if (!isNative() || isPreloadingRewarded) return;
 
   if (!isValidAdUnitId(REWARDED_ID)) {
@@ -161,7 +167,7 @@ export const preloadRewardedAd = async () => {
 /**
  * Show Rewarded Ad
  */
-export const showSafeRewarded = () => {
+export const showSafeRewarded = (): Promise<void> => {
   return new Promise((resolve, reject) => {
     (async () => {
       if (!isNative()) {
@@ -171,7 +177,9 @@ export const showSafeRewarded = () => {
 
       let rewarded = false;
       let settled = false;
-      let dismissedListener, rewardListener, failedToShowListener;
+      let dismissedListener: PluginListenerHandle | undefined;
+      let rewardListener: PluginListenerHandle | undefined;
+      let failedToShowListener: PluginListenerHandle | undefined;
 
       const cleanup = async () => {
         dismissedListener?.remove();
@@ -187,7 +195,7 @@ export const showSafeRewarded = () => {
         }, 5000);
       };
 
-      const settle = async (callback) => {
+      const settle = async (callback: () => void) => {
         if (settled) return;
         settled = true;
         await cleanup();
@@ -250,7 +258,7 @@ export const showSafeRewarded = () => {
 /**
  * Show Interstitial with conservative pacing
  */
-export const showSafeInterstitial = async () => {
+export const showSafeInterstitial = async (): Promise<void> => {
   if (!isNative()) return;
 
   if (!isValidAdUnitId(INTERSTITIAL_ID)) {
@@ -262,15 +270,15 @@ export const showSafeInterstitial = async () => {
 
   const now = Date.now();
 
-  // Initial delay: Don't show ads in the first 5 minutes of game load
+  // Initial delay: Don't show ads in the first 1.5 minutes of game load
   if (now - GAME_LOAD_TIME < INITIAL_AD_DELAY) {
     if (import.meta.env.DEV) {
-      console.log('Skipping interstitial: first 5 minutes of game load');
+      console.log('Skipping interstitial: first minutes of game load');
     }
     return;
   }
 
-  // Rate limiting: Only show one interstitial every 2 minutes
+  // Rate limiting: Only show one interstitial every 3 minutes
   if (now - lastAdTime < MIN_TIME_BETWEEN_ADS) {
     if (import.meta.env.DEV) {
       console.log('Skipping interstitial: too soon since last ad');
@@ -286,8 +294,8 @@ export const showSafeInterstitial = async () => {
     return;
   }
 
-  let dismissedListener;
-  let failedToShowListener;
+  let dismissedListener: PluginListenerHandle | undefined;
+  let failedToShowListener: PluginListenerHandle | undefined;
 
   const cleanup = async () => {
     dismissedListener?.remove();
@@ -349,6 +357,6 @@ export const showSafeInterstitial = async () => {
 /**
  * Legacy support
  */
-export const showInterstitialAd = async () => {
+export const showInterstitialAd = async (): Promise<void> => {
   await showSafeInterstitial();
 };

@@ -8,6 +8,7 @@ interface RotatingParticlesProps {
 
 const RotatingParticles: React.FC<RotatingParticlesProps> = ({ isSpinning }) => {
   const particles = useMemo(() => {
+    if (!isSpinning) return [];
     const count = 40; // Increased count for more variety
     const icons = ['✨', '⭐', '🌟'];
 
@@ -38,7 +39,7 @@ const RotatingParticles: React.FC<RotatingParticlesProps> = ({ isSpinning }) => 
               '--start-angle': `${p.angle}deg`,
               animationDelay: `${p.delay}s`,
               animationDuration: `${p.speed}s`,
-            } as any
+            } as React.CSSProperties
           }
         >
           <div
@@ -48,7 +49,7 @@ const RotatingParticles: React.FC<RotatingParticlesProps> = ({ isSpinning }) => 
                 fontSize: `${p.size}rem`,
                 animationDelay: `${p.delay}s`,
                 animationDuration: `${p.speed}s`,
-              } as any
+              } as React.CSSProperties
             }
           >
             {p.emoji}

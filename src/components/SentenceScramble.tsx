@@ -3,7 +3,14 @@ import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { SENTENCE_SCRAMBLE_DATA } from '../data/sentenceScrambleData';
-import { playCorrectSound, playIncorrectSound, playTapSound, speakText } from '../utils/soundUtils';
+import {
+  playCorrectSound,
+  playIncorrectSound,
+  playTapSound,
+  speakText,
+  stopSpeech,
+  stopAllTones,
+} from '../utils/soundUtils';
 import SuccessModal from './SuccessModal';
 import '../styles/SentenceScramble.scss';
 import '../styles/EnglishWordsSpell.scss';
@@ -28,7 +35,9 @@ const SentenceScramble = () => {
   const [hintIndex, setHintIndex] = useState(-1);
   const [showFullHint, setShowFullHint] = useState(false);
 
-  const questions = SENTENCE_SCRAMBLE_DATA[difficulty] || SENTENCE_SCRAMBLE_DATA.easy;
+  const questions =
+    SENTENCE_SCRAMBLE_DATA[difficulty as keyof typeof SENTENCE_SCRAMBLE_DATA] ||
+    SENTENCE_SCRAMBLE_DATA.easy;
 
   // Safety check for index out of bounds if data changed
   useEffect(() => {
@@ -85,6 +94,13 @@ const SentenceScramble = () => {
   useEffect(() => {
     initGame();
   }, [initGame]);
+
+  useEffect(() => {
+    return () => {
+      stopSpeech();
+      stopAllTones();
+    };
+  }, []);
 
   useEffect(() => {
     if (

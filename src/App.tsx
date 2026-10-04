@@ -1,7 +1,7 @@
-import { useState, useEffect, Suspense, lazy, useRef, useCallback } from 'react';
+import React, { useState, useEffect, Suspense, lazy, useRef, useCallback } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
-import { ScreenOrientation } from '@capacitor/screen-orientation';
+import { ScreenOrientation, type OrientationLockType } from '@capacitor/screen-orientation';
 import './index.css'; // Tailwind first
 import './App.scss';
 import { useTranslation } from 'react-i18next';
@@ -11,50 +11,55 @@ import WelcomeScreen from './components/WelcomeScreen';
 import { STORAGE_KEYS } from './constants/appConstants';
 import { getCategoryColor, getCategoryBGColor } from './constants/colors';
 
-const Alphabets = lazy(() => import('./components/Alphabets.tsx'));
-const WordSearch = lazy(() => import('./components/WordSearch.jsx'));
+const Alphabets = lazy(() => import('./components/Alphabets'));
+const WordSearch = lazy(() => import('./components/WordSearch'));
 const WordSearchDifficultySelector = lazy(
-  () => import('./components/WordSearchDifficultySelector.jsx'),
+  () => import('./components/WordSearchDifficultySelector'),
 );
-const SentenceScramble = lazy(() => import('./components/SentenceScramble.tsx'));
+const SentenceScramble = lazy(() => import('./components/SentenceScramble'));
 const SentenceScrambleDifficultySelector = lazy(
-  () => import('./components/SentenceScrambleDifficultySelector.jsx'),
+  () => import('./components/SentenceScrambleDifficultySelector'),
 );
-const Quiz = lazy(() => import('./components/Quiz.tsx'));
-const QuizDifficultySelector = lazy(() => import('./components/QuizDifficultySelector.tsx'));
-const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell.tsx'));
-const Settings = lazy(() => import('./components/Settings.jsx'));
-const TapLearnRoute = lazy(() => import('./components/TapLearnRoute.tsx'));
-const TapLearnSelection = lazy(() => import('./components/TapLearnSelection.jsx'));
-const WordDefenseMain = lazy(() => import('./components/WordDefense/WordDefenseMain.tsx'));
+const Quiz = lazy(() => import('./components/Quiz'));
+const QuizDifficultySelector = lazy(() => import('./components/QuizDifficultySelector'));
+const EnglishWordsSpell = lazy(() => import('./components/EnglishWordsSpell'));
+const Settings = lazy(() => import('./components/Settings'));
+const TapLearnRoute = lazy(() => import('./components/TapLearnRoute'));
+const TapLearnSelection = lazy(() => import('./components/TapLearnSelection'));
+const WordDefenseMain = lazy(() => import('./components/WordDefense/WordDefenseMain'));
 const Stars = lazy(() => import('./components/Stars'));
 
-
 const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
-let soundUtilsPromise;
-let bgMusicManagerPromise;
-let admobPromise;
-let notificationsPromise;
+let soundUtilsPromise: Promise<typeof import('./utils/soundUtils')> | undefined;
+let bgMusicManagerPromise: Promise<typeof import('./utils/bgMusicManager')> | undefined;
+let admobPromise: Promise<typeof import('./utils/admob')> | undefined;
+let notificationsPromise: Promise<typeof import('./utils/notifications')> | undefined;
 
 const loadSoundUtils = () => (soundUtilsPromise ??= import('./utils/soundUtils'));
 const loadBgMusicManager = () => (bgMusicManagerPromise ??= import('./utils/bgMusicManager'));
-const loadAdMob = () => (admobPromise ??= import('@/utils/admob'));
+const loadAdMob = () => (admobPromise ??= import('./utils/admob'));
 const loadNotifications = () => (notificationsPromise ??= import('./utils/notifications'));
 
 const NOTIFICATION_PROMPT_KEY = 'notifications_prompted_v2';
 
-function scheduleAfterFirstPaint(task, delay = 0) {
-  let timeoutId;
-  let frameId;
-  let idleId;
+interface IdleWindow {
+  requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
+  cancelIdleCallback?: (handle: number) => void;
+}
+
+function scheduleAfterFirstPaint(task: () => void, delay = 0): () => void {
+  let timeoutId: number | undefined;
+  let idleId: number | undefined;
 
   const run = () => {
     timeoutId = window.setTimeout(task, delay);
   };
 
-  frameId = window.requestAnimationFrame(() => {
-    if (typeof window.requestIdleCallback === 'function') {
-      idleId = window.requestIdleCallback(run, { timeout: 2500 });
+  const win = window as unknown as IdleWindow;
+
+  const frameId = window.requestAnimationFrame(() => {
+    if (typeof win.requestIdleCallback === 'function') {
+      idleId = win.requestIdleCallback(run, { timeout: 2500 });
     } else {
       run();
     }
@@ -62,27 +67,34 @@ function scheduleAfterFirstPaint(task, delay = 0) {
 
   return () => {
     window.cancelAnimationFrame(frameId);
-    if (typeof idleId === 'number' && typeof window.cancelIdleCallback === 'function') {
-      window.cancelIdleCallback(idleId);
+    if (typeof idleId === 'number' && typeof win.cancelIdleCallback === 'function') {
+      win.cancelIdleCallback(idleId);
     }
-    window.clearTimeout(timeoutId);
+    if (timeoutId !== undefined) {
+      window.clearTimeout(timeoutId);
+    }
   };
 }
 
-const NON_GAME_ROUTES = new Set([
-  '/',
-  '/tap-learn',
-]);
+const NON_GAME_ROUTES = new Set(['/', '/tap-learn']);
 
-function isGameplayRoute(pathname) {
+function isGameplayRoute(pathname: string): boolean {
   return !NON_GAME_ROUTES.has(pathname);
 }
 
-function getOrientationLockType(type) {
+function getOrientationLockType(type: string): OrientationLockType {
   return type.startsWith('landscape') ? 'landscape-primary' : 'portrait-primary';
 }
 
-function Home() {
+interface CategoryItem {
+  id: string;
+  path: string;
+  icon: string;
+  label: string;
+  isOnline?: boolean;
+}
+
+function Home(): React.JSX.Element {
   const { t } = useTranslation();
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
@@ -99,7 +111,7 @@ function Home() {
     };
   }, []);
 
-  const categories = [
+  const categories: CategoryItem[] = [
     {
       id: 'alphabets',
       path: '/alphabets',
@@ -159,11 +171,13 @@ function Home() {
             key={category.id}
             to={category.path}
             className="subject-icon-button"
-            style={{
-              '--card-color': getCategoryColor(index),
-              '--bg-color': getCategoryBGColor(index),
-              animationDelay: `${index * 0.1}s`,
-            }}
+            style={
+              {
+                '--card-color': getCategoryColor(index),
+                '--bg-color': getCategoryBGColor(index),
+                animationDelay: `${index * 0.1}s`,
+              } as React.CSSProperties
+            }
           >
             <img
               className="subject-icon subject-icon--img-homepage"
@@ -180,16 +194,15 @@ function Home() {
   );
 }
 
-export default function App() {
+export default function App(): React.JSX.Element {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [userName, setUserName] = useState(
+  const [userName, setUserName] = useState<string>(
     () => localStorage.getItem(USER_NAME_KEY) || t('common.defaultUserName'),
   );
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
-  const [isDeferredUiReady, setIsDeferredUiReady] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const lastBackPress = useRef(0);
   const isFirstRoute = useRef(true);
@@ -198,15 +211,9 @@ export default function App() {
   const hasStartedExperience = useRef(false);
   const hasStartedDeferredServices = useRef(false);
   const hasScheduledNotificationPrompt = useRef(false);
-  const lastOrientationLockRef = useRef('unlocked');
+  const lastOrientationLockRef = useRef<string>('unlocked');
 
   pathnameRef.current = location.pathname;
-
-  useEffect(() => {
-    return scheduleAfterFirstPaint(() => {
-      setIsDeferredUiReady(true);
-    }, 800);
-  }, []);
 
   const maybePromptNotifications = () => {
     if (
@@ -247,10 +254,10 @@ export default function App() {
         .then(async ({ initAdMob, warmAdCaches }) => {
           await initAdMob(isChild);
           window.setTimeout(() => {
-            warmAdCaches().catch((err) => console.error('Ad cache warmup failed:', err));
+            warmAdCaches().catch((err: unknown) => console.error('Ad cache warmup failed:', err));
           }, 45000);
         })
-        .catch((err) => console.error('AdMob init failed:', err));
+        .catch((err: unknown) => console.error('AdMob init failed:', err));
     }, 20000);
   };
 
@@ -348,6 +355,16 @@ export default function App() {
         setIsSettingsOpen(false);
         return;
       }
+
+      const activeModal = document.querySelector(
+        '.modal-overlay, .wd-modal-overlay, .video-modal-overlay',
+      );
+      if (activeModal) {
+        window.dispatchEvent(
+          new KeyboardEvent('keydown', { key: 'Escape', code: 'Escape', bubbles: true }),
+        );
+        return;
+      }
       const [{ stopSpeech, stopAllTones }, { pauseMusic }] = await Promise.all([
         loadSoundUtils(),
         loadBgMusicManager(),
@@ -425,9 +442,10 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const handleVolumeChange = (e) => {
+    const handleVolumeChange = (e: Event) => {
+      const customEvent = e as CustomEvent<{ volume: number }>;
       loadBgMusicManager().then(({ setMusicVolume }) => {
-        setMusicVolume(e.detail.volume);
+        setMusicVolume(customEvent.detail.volume);
       });
     };
     window.addEventListener('volumechange', handleVolumeChange);
@@ -461,7 +479,7 @@ export default function App() {
     };
   }, []);
 
-  const handleNameSubmit = useCallback((name) => {
+  const handleNameSubmit = useCallback((name: string) => {
     localStorage.setItem(USER_NAME_KEY, name);
     setUserName(name);
   }, []);

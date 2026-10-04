@@ -1,14 +1,15 @@
-let audio = null;
-const MUSIC_SRC = '/background-music.mp3';
 import { getGameVolume } from './soundUtils';
 
-export function setMusicVolume(volume) {
+let audio: HTMLAudioElement | null = null;
+const MUSIC_SRC = '/background-music.mp3';
+
+export function setMusicVolume(volume: number): void {
   if (audio) {
     audio.volume = volume;
   }
 }
 
-export function playMusic() {
+export function playMusic(): void {
   if (!audio) {
     audio = new Audio(MUSIC_SRC);
     audio.loop = true;
@@ -22,7 +23,7 @@ export function playMusic() {
   }
 }
 
-export function pauseMusic() {
+export function pauseMusic(): void {
   if (audio) {
     audio.pause();
   }

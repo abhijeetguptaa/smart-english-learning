@@ -57,7 +57,7 @@ const Alphabets = () => {
       acc[word] = getRandomColor();
       return acc;
     }, {} as Record<string, string>);
-  }, [currentLetterIndex, currentLetter]);
+  }, [currentLetter]);
 
   // Randomly select font color for modal-spelling whenever modal is opened
   useEffect(() => {
@@ -96,32 +96,28 @@ const Alphabets = () => {
   }, []);
 
   const handleLetterClick = () => {
-    if (isOnline) {
-      const shortId =
-        LETTER_FALLBACK_SHORTS[currentLetter.letter] ||
-        getShortForWord(currentLetter.words[0], currentLetter.letter);
-      handlePlayShort(
-        shortId,
-        `${currentLetter.letter} for ${t(`words.${currentLetter.words[0]}`)}`,
-      );
-    } else {
-      speak(`${currentLetter.letter}`);
-    }
+    speak(`${currentLetter.letter}`);
+  };
+
+  const handlePlayLetterReel = () => {
+    const shortId =
+      LETTER_FALLBACK_SHORTS[currentLetter.letter] ||
+      getShortForWord(currentLetter.words[0], currentLetter.letter);
+    handlePlayShort(
+      shortId,
+      `${currentLetter.letter} for ${t(`words.${currentLetter.words[0]}`)}`,
+    );
   };
 
   const handleWordClick = (word: string) => {
-    if (isOnline) {
-      const shortId = getShortForWord(word, currentLetter.letter);
-      handlePlayShort(shortId, t(`words.${word}`));
-    } else {
-      setModalWord(word);
-      speak(
-        t('alphabet.isFor', {
-          letter: currentLetter.letter,
-          word: t(`words.${word}`),
-        }),
-      );
-    }
+    setModalWord(word);
+    setModalColor(wordColors[word] || '');
+    speak(
+      t('alphabet.isFor', {
+        letter: currentLetter.letter,
+        word: t(`words.${word}`),
+      }),
+    );
   };
 
   const onLetterKeyPress = (e: KeyboardEvent) => {
@@ -131,7 +127,7 @@ const Alphabets = () => {
   };
 
   useEffect(() => {
-    const onEsc = (e: KeyboardEvent) => {
+    const onEsc = (e: globalThis.KeyboardEvent) => {
       if (e.key === 'Escape') {
         if (activeShortId) {
           handleCloseShort();
@@ -140,8 +136,8 @@ const Alphabets = () => {
         }
       }
     };
-    window.addEventListener('keydown', onEsc as any);
-    return () => window.removeEventListener('keydown', onEsc as any);
+    window.addEventListener('keydown', onEsc);
+    return () => window.removeEventListener('keydown', onEsc);
   }, [activeShortId, modalWord, handleCloseShort]);
 
   // Clean up on component unmount
@@ -202,6 +198,17 @@ const Alphabets = () => {
             <div className="word-spelling modal-spelling" style={{ color: modalColor }}>
               {t(`words.${modalWord}`)}
             </div>
+            {isOnline && (
+              <button
+                className="modal-reel-btn"
+                onClick={() => {
+                  const shortId = getShortForWord(modalWord, currentLetter.letter);
+                  handlePlayShort(shortId, t(`words.${modalWord}`));
+                }}
+              >
+                🎬 Watch Video Reel
+              </button>
+            )}
           </div>
         </div>
       )}
@@ -217,6 +224,16 @@ const Alphabets = () => {
             <span className="letter-capital">{currentLetter.letter}</span>
             <span className="letter-small">{currentLetter.smallLetter}</span>
           </div>
+          {isOnline && (
+            <button
+              className="letter-reel-btn"
+              onClick={handlePlayLetterReel}
+              title={`Watch ${currentLetter.letter} Video`}
+              aria-label={`Watch ${currentLetter.letter} Video`}
+            >
+              🎬 Reel
+            </button>
+          )}
         </div>
 
         <div className="words-list">
@@ -234,6 +251,20 @@ const Alphabets = () => {
               <div className="word-spelling" style={{ color: wordColors[word] }}>
                 {t(`words.${word}`)}
               </div>
+              {isOnline && (
+                <button
+                  className="word-reel-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const shortId = getShortForWord(word, currentLetter.letter);
+                    handlePlayShort(shortId, t(`words.${word}`));
+                  }}
+                  title="Watch Video Reel"
+                  aria-label={`Watch video reel for ${t(`words.${word}`)}`}
+                >
+                  🎬
+                </button>
+              )}
             </div>
           ))}
         </div>

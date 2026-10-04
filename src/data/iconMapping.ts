@@ -1,14 +1,18 @@
 // This file contains the mapping of words to icons for the English alphabet learning feature.
 import * as React from 'react';
 
-export const createCustomIcon = (emoji: string) => {
-  const Component = ({ size = 24, color }: { size?: number; color?: string }) =>
+export interface CustomIconComponent extends React.FC<{ size?: number; color?: string }> {
+  emoji?: string;
+}
+
+export const createCustomIcon = (emoji: string): CustomIconComponent => {
+  const Component: CustomIconComponent = ({ size = 24, color }) =>
     React.createElement(
       'span',
       { style: { fontSize: size, display: 'inline-block', color: color || 'inherit' } },
       emoji,
     );
-  (Component as any).emoji = emoji;
+  Component.emoji = emoji;
   return Component;
 };
 

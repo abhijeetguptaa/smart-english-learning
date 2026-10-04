@@ -24,7 +24,7 @@ const useStarStore = create<StarState>()(
       stars: 50, // Default initial value
       unlockedFeatures: [],
 
-      setMigrationData: (data: any) =>
+      setMigrationData: (data: { stars?: number }) =>
         set((state) => ({
           stars: data.stars !== undefined ? data.stars : state.stars,
         })),

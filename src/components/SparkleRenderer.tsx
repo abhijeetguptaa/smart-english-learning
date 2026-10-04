@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, memo } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { playSparklePop } from '../utils/soundUtils';
 
 export interface Sparkle {
@@ -11,16 +11,31 @@ export interface Sparkle {
   char: string;
 }
 
+export interface SparkleBurstOptions {
+  count: number;
+  range: number;
+  color?: string;
+  silent?: boolean;
+}
+
+export interface SparkleDetail {
+  x: number;
+  y: number;
+  options: SparkleBurstOptions;
+}
+
+export const SPARKLE_EVENT = 'skl_trigger_sparkle';
 const SPARKLE_CHARS = ['✦', '✭', '✨', '⚡', '🎉'];
-const SPARKLE_EVENT = 'skl_trigger_sparkle';
 let sparkleIdCounter = 0;
 
 export const SparkleRenderer = memo(() => {
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
 
   useEffect(() => {
-    const handleTrigger = (e: any) => {
-      const { x, y, options } = e.detail;
+    const handleTrigger = (e: Event) => {
+      const customEvent = e as CustomEvent<SparkleDetail>;
+      if (!customEvent.detail?.options) return;
+      const { x, y, options } = customEvent.detail;
       if (!options.silent) {
         playSparklePop();
       }
@@ -69,14 +84,4 @@ export const SparkleRenderer = memo(() => {
   );
 });
 
-export function useSparkleBurst() {
-  const triggerSparkleBurst = useCallback(
-    (x: number, y: number, options: { count: number; range: number; color?: string; silent?: boolean } = { count: 12, range: 150 }) => {
-      const event = new CustomEvent(SPARKLE_EVENT, { detail: { x, y, options } });
-      window.dispatchEvent(event);
-    },
-    [],
-  );
-
-  return { triggerSparkleBurst, SparkleRenderer };
-}
+SparkleRenderer.displayName = 'SparkleRenderer';

@@ -50,6 +50,6 @@ export const WORD_SEARCH_CONSTANTS = {
   },
   // Colors for selection and found-word overlays
   COLOR_PALETTE: ['#FF5733', '#3498DB', '#27AE60', '#8E44AD', '#F39C12'],
-};
+} as const;
 
 export default WORD_SEARCH_CONSTANTS;

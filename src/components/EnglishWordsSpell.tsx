@@ -1,10 +1,25 @@
 import { useState, useEffect, cloneElement } from 'react';
 import '../styles/EnglishWordsSpell.scss';
-import { speakText } from '../utils/soundUtils';
+import { speakText, stopSpeech, stopAllTones } from '../utils/soundUtils';
 import { countingIconData } from '../data/iconMapping';
 import { useTranslation } from 'react-i18next';
 import SuccessModal from './SuccessModal';
 import { getRandomVisibleColor } from '../utils/utils';
+
+export interface ShuffledLetter {
+  letter: string;
+  selected: boolean;
+  color: string;
+}
+
+interface IconElementProps {
+  className?: string;
+  onClick?: () => void;
+  role?: string;
+  tabIndex?: number;
+  color?: string;
+  size?: number;
+}
 
 const EnglishWordsSpell = () => {
   const { t } = useTranslation();
@@ -16,10 +31,14 @@ const EnglishWordsSpell = () => {
     const randomIndex = Math.floor(Math.random() * countingIconData.length);
     setCurrentWordIndex(randomIndex);
     setUsedIndices([randomIndex]);
+    return () => {
+      stopSpeech();
+      stopAllTones();
+    };
   }, []);
 
   const [droppedLetters, setDroppedLetters] = useState<string[]>([]);
-  const [shuffledLetters, setShuffledLetters] = useState<any[]>([]);
+  const [shuffledLetters, setShuffledLetters] = useState<ShuffledLetter[]>([]);
   const [isCorrect, setIsCorrect] = useState<boolean>(false);
   const [showHint, setShowHint] = useState(false);
   const [showError, setShowError] = useState(false);
@@ -45,7 +64,7 @@ const EnglishWordsSpell = () => {
       }));
     setShuffledLetters(shuffled);
     setIconColor(getRandomVisibleColor());
-  }, [currentWordIndex]);
+  }, [currentWordIndex, currentWord.letters]);
 
   // Check if word is complete and correct
   useEffect(() => {
@@ -56,9 +75,10 @@ const EnglishWordsSpell = () => {
         const isWordCorrect = filledLetters.join('') === currentWord.word;
         setShowError(!isWordCorrect);
         if (isWordCorrect) {
-          setTimeout(() => {
+          const timerId = setTimeout(() => {
             setIsCorrect(true);
           }, 500);
+          return () => clearTimeout(timerId);
         }
       } else {
         setShowError(false);
@@ -66,9 +86,9 @@ const EnglishWordsSpell = () => {
     } else {
       setShowError(false);
     }
-  }, [droppedLetters, currentWord, t]);
+  }, [currentWordIndex, droppedLetters, currentWord.letters.length, currentWord.word]);
 
-  const handleLetterSelect = (letter: string, index: number, color: string) => {
+  const handleLetterSelect = (letter: string, index: number) => {
     setShowHint(false);
     const emptyIndex = droppedLetters.findIndex((l) => !l || l === '');
     if (emptyIndex === -1) return;
@@ -171,7 +191,7 @@ const EnglishWordsSpell = () => {
       <main className="spell-main" role="main">
         {/* Image Display */}
         <div className="image-container">
-          {cloneElement(Icon as React.ReactElement, {
+          {cloneElement(Icon as React.ReactElement<IconElementProps>, {
             className: 'word-image',
             onClick: handleImageClick,
             role: 'button',
@@ -212,7 +232,7 @@ const EnglishWordsSpell = () => {
                   style={{ backgroundColor: letterObj.selected ? '#ccc' : letterObj.color }}
                   onClick={() =>
                     !letterObj.selected &&
-                    handleLetterSelect(letterObj.letter, index, letterObj.color)
+                    handleLetterSelect(letterObj.letter, index)
                   }
                   role="button"
                   tabIndex={letterObj.selected ? -1 : 0}

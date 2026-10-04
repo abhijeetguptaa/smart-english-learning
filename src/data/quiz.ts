@@ -1,4 +1,10 @@
-export const quizData: any = {
+export interface QuizQuestionItem {
+  q: string;
+  o: string[];
+  a: string;
+}
+
+export const quizData: Record<string, QuizQuestionItem[]> = {
   "easy": [
     {
       "q": "Which animal is known as the King of the Jungle?",

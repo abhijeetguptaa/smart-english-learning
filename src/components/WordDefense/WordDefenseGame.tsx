@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   generateQuestion,
   QuestionChallenge,
-  MonsterAnswer,
 } from '../../data/wordDefenseQuestions';
-import { useWordDefenseStore, SelectedCosmetics } from '../../store/useWordDefenseStore';
+import { useWordDefenseStore } from '../../store/useWordDefenseStore';
 import useStarStore from '../../store/useStarStore';
 import {
   playCorrectSound,
@@ -14,58 +13,19 @@ import {
   playSparklePop,
   playApplauseSound,
   speakText,
+  stopSpeech,
+  stopAllTones,
   playClickSound,
 } from '../../utils/soundUtils';
-
-interface ActiveMonster {
-  id: string; // unique instance id
-  answer: MonsterAnswer;
-  x: number; // percentage 10% - 90%
-  y: number; // percentage 0% (top) to 85% (castle line)
-  speed: number; // percentage per frame
-  skin: string;
-  wobbleOffset: number;
-}
-
-interface ActivePowerUp {
-  id: string;
-  type: 'freeze' | 'slow' | 'bomb';
-  icon: string;
-  label: string;
-  x: number;
-  y: number;
-  speed: number;
-}
-
-interface Particle {
-  id: string;
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  color: string;
-  size: number;
-  life: number;
-  maxLife: number;
-  text?: string;
-}
-
-interface CannonShot {
-  id: string;
-  startX: number;
-  startY: number;
-  targetX: number;
-  targetY: number;
-  currentX: number;
-  currentY: number;
-  progress: number;
-}
-
-interface WordDefenseGameProps {
-  onBackToMenu: () => void;
-  onOpenView?: (view: 'shop' | 'missions' | 'achievements' | 'stats') => void;
-  selectedCosmetics: SelectedCosmetics;
-}
+import {
+  ActiveMonster,
+  ActivePowerUp,
+  Particle,
+  CannonShot,
+  WordDefenseGameProps,
+} from './types';
+import { WordDefenseHUD } from './WordDefenseHUD';
+import { WordDefensePauseModal, WordDefenseGameOverModal } from './WordDefenseModals';
 
 export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
   onBackToMenu,
@@ -89,7 +49,6 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
   const [powerUps, setPowerUps] = useState<ActivePowerUp[]>([]);
   const [particles, setParticles] = useState<Particle[]>([]);
   const [cannonShots, setCannonShots] = useState<CannonShot[]>([]);
-  const [cannonAngle, setCannonAngle] = useState(0);
 
   // Power-up active effects
   const [isFrozen, setIsFrozen] = useState(false);
@@ -109,20 +68,32 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
 
   // Timers & refs
   const gameTimeRef = useRef(0);
-  const lastSpawnTimeRef = useRef(0);
   const animationFrameRef = useRef<number | null>(null);
   const startTimeRef = useRef<number>(Date.now());
   const questionRef = useRef<QuestionChallenge | null>(null);
   questionRef.current = question;
 
-  // Speak current question prompt
-  const announceQuestion = useCallback((q: QuestionChallenge) => {
-    speakText(q.speechPrompt);
+  const isMountedRef = useRef(true);
+  const hasInitializedRef = useRef(false);
+  const isGameOverRef = useRef(isGameOver);
+  isGameOverRef.current = isGameOver;
+
+  const selectedCosmeticsRef = useRef(selectedCosmetics);
+  useEffect(() => {
+    selectedCosmeticsRef.current = selectedCosmetics;
+  }, [selectedCosmetics]);
+
+  // Speak current question prompt with cancellation of any previous speech
+  const announceQuestion = useCallback(async (q: QuestionChallenge) => {
+    await stopSpeech();
+    speakText(q.speechPrompt, { interrupt: true });
   }, []);
 
   // Spawn new question & monsters
   const loadNextQuestion = useCallback(
     (diffLevel: number) => {
+      if (!isMountedRef.current || isGameOverRef.current) return;
+
       const nextQ = generateQuestion(diffLevel);
       setQuestion(nextQ);
       announceQuestion(nextQ);
@@ -137,7 +108,7 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
         x: shuffledX[idx],
         y: -10 - idx * 8, // staggered initial y
         speed: 0.08 + Math.min(0.12, diffLevel * 0.015),
-        skin: selectedCosmetics.skin,
+        skin: selectedCosmeticsRef.current.skin,
         wobbleOffset: Math.random() * Math.PI * 2,
       }));
 
@@ -186,14 +157,34 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
         setPowerUps((prev) => [...prev.slice(-2), newPowerUp]);
       }
     },
-    [announceQuestion, selectedCosmetics.skin],
+    [announceQuestion],
   );
 
-  // Initial game setup
+  // Initial game setup - guarded to run strictly once on initial mount
   useEffect(() => {
+    if (hasInitializedRef.current) return;
+    hasInitializedRef.current = true;
     loadNextQuestion(1);
     startTimeRef.current = Date.now();
   }, [loadNextQuestion]);
+
+  // Clean up speech and sound effects on unmount
+  useEffect(() => {
+    isMountedRef.current = true;
+    return () => {
+      isMountedRef.current = false;
+      stopSpeech();
+      stopAllTones();
+    };
+  }, []);
+
+  // Stop speech & tones when game is paused or over
+  useEffect(() => {
+    if (isPaused || isGameOver) {
+      stopSpeech();
+      stopAllTones();
+    }
+  }, [isPaused, isGameOver]);
 
   // Main game loop
   useEffect(() => {
@@ -243,13 +234,18 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
               const nextHp = hp - 1;
               if (nextHp <= 0) {
                 setIsGameOver(true);
+                isGameOverRef.current = true;
               }
               return Math.max(0, nextHp);
             });
           }
 
-          // Spawn fresh question
-          setTimeout(() => loadNextQuestion(currentDifficulty), 300);
+          // Spawn fresh question if not game over
+          setTimeout(() => {
+            if (!isGameOverRef.current) {
+              loadNextQuestion(currentDifficulty);
+            }
+          }, 300);
           return [];
         }
 
@@ -364,12 +360,6 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
     const startX = 50;
     const startY = 82;
 
-    const deltaX = targetX - startX;
-    const deltaY = targetY - startY;
-    const angleRad = Math.atan2(deltaY, deltaX);
-    const angleDeg = (angleRad * 180) / Math.PI + 90;
-    setCannonAngle(angleDeg);
-
     const newShot: CannonShot = {
       id: `shot_${Date.now()}`,
       startX,
@@ -398,8 +388,13 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
       setCombo(newCombo);
       setMaxCombo((m) => Math.max(m, newCombo));
 
-      // Award strictly 1 global star on each right answer
-      useStarStore.getState().addStar();
+      const scoreGain = 10 * (doubleScoreTimer > Date.now() ? 2 : 1);
+      setScore((s) => s + scoreGain);
+      const coinsGain = 1 * (doubleCoinsTimer > Date.now() ? 2 : 1);
+      setCoins((c) => c + coinsGain);
+      for (let i = 0; i < coinsGain; i++) {
+        useStarStore.getState().addStar();
+      }
       setCorrectAnswersCount((c) => c + 1);
 
       if (question) {
@@ -417,7 +412,7 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
         setTimeout(() => setComboBanner(null), 1800);
       }
 
-      spawnExplosion(monster.x, monster.y, '#22c55e', '+1 ⭐');
+      spawnExplosion(monster.x, monster.y, '#22c55e', `+${coinsGain} ⭐`);
 
       // Clear monsters and load next question
       const currentDifficulty = 1 + Math.floor(gameTimeRef.current / 25);
@@ -460,6 +455,23 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
         setMonsters([]);
         setTimeout(() => loadNextQuestion(1 + Math.floor(gameTimeRef.current / 25)), 400);
         break;
+
+      case 'shield':
+        setHasShield(true);
+        setTimeout(() => setHasShield(false), 12000);
+        break;
+
+      case 'double_coins':
+        setDoubleCoinsTimer(Date.now() + 12000);
+        break;
+
+      case 'double_score':
+        setDoubleScoreTimer(Date.now() + 12000);
+        break;
+
+      case 'health':
+        setCastleHealth((prev) => Math.min(5, prev + 1));
+        break;
     }
   };
 
@@ -477,21 +489,23 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
       className={`wd-game-viewport ${damageFlash ? 'damage-shake' : ''}`}
       style={{ background: bgStyles[selectedCosmetics.background] || bgStyles.green_meadow }}
     >
-      {/* Top Center Lives HUD */}
-      <div className="wd-top-lives-hud">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className={`wd-top-heart ${i < castleHealth ? 'full' : 'empty'}`}>
-            {i < castleHealth ? '❤️' : '🖤'}
-          </span>
-        ))}
-      </div>
-
-      {/* Question Prompt Header */}
-      {question && (
-        <div className="wd-question-banner">
-          <div className="wd-question-text">{question.prompt}</div>
-        </div>
-      )}
+      {/* Top HUD & Question Banner */}
+      <WordDefenseHUD
+        castleHealth={castleHealth}
+        hasShield={hasShield}
+        question={question}
+        onBackToMenu={() => {
+          playClickSound();
+          onBackToMenu();
+        }}
+        onPause={() => {
+          playClickSound();
+          stopSpeech();
+          stopAllTones();
+          setIsPaused(true);
+        }}
+        onAnnounceQuestion={announceQuestion}
+      />
 
       {/* Combo Milestone & Powerup Collected Popups */}
       {comboBanner && <div className="wd-combo-milestone-popup">{comboBanner}</div>}
@@ -574,148 +588,50 @@ export const WordDefenseGame: React.FC<WordDefenseGameProps> = ({
 
       {/* Pause Modal */}
       {isPaused && (
-        <div className="wd-modal-overlay">
-          <div className="wd-modal-card">
-            <h2>⏸️ Game Paused</h2>
-            <div className="wd-modal-actions">
-              <button
-                className="wd-primary-btn"
-                onClick={() => {
-                  playClickSound();
-                  setIsPaused(false);
-                }}
-              >
-                ▶️ Resume Game
-              </button>
-              {onOpenView && (
-                <div className="wd-subview-nav-grid">
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('shop');
-                    }}
-                  >
-                    🛍️ Armory
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('missions');
-                    }}
-                  >
-                    🎯 Quests
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('achievements');
-                    }}
-                  >
-                    🏆 Trophies
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('stats');
-                    }}
-                  >
-                    📊 Stats
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+        <WordDefensePauseModal
+          onResume={() => {
+            playClickSound();
+            setIsPaused(false);
+          }}
+          onBackToMenu={() => {
+            playClickSound();
+            setIsPaused(false);
+            onBackToMenu();
+          }}
+          onOpenView={onOpenView}
+        />
       )}
 
       {/* Game Over Modal */}
       {isGameOver && (
-        <div className="wd-modal-overlay">
-          <div className="wd-modal-card victory animate-pop">
-            <div className="wd-modal-banner">🏰 Game Over!</div>
-            <p className="wd-modal-subtitle">Great defense effort!</p>
-
-            <div className="wd-results-summary">
-              <div className="wd-res-box">
-                <span className="res-val">{score}</span>
-                <span className="res-lbl">Final Score</span>
-              </div>
-              <div className="wd-res-box">
-                <span className="res-val">🔥 {maxCombo}x</span>
-                <span className="res-lbl">Max Combo</span>
-              </div>
-              <div className="wd-res-box">
-                <span className="res-val">⭐ +{coins}</span>
-                <span className="res-lbl">Coins Earned</span>
-              </div>
-              <div className="wd-res-box">
-                <span className="res-val">
-                  {totalQuestionsAnswered > 0
-                    ? `${Math.round((correctAnswersCount / totalQuestionsAnswered) * 100)}%`
-                    : '0%'}
-                </span>
-                <span className="res-lbl">Accuracy</span>
-              </div>
-            </div>
-
-            <div className="wd-modal-actions">
-              <button
-                className="wd-primary-btn"
-                onClick={() => {
-                  playClickSound();
-                  setScore(0);
-                  setCombo(0);
-                  setMaxCombo(0);
-                  setCoins(0);
-                  setCastleHealth(5);
-                  setCorrectAnswersCount(0);
-                  setTotalQuestionsAnswered(0);
-                  setWordsLearnedInSession(new Set());
-                  setIsGameOver(false);
-                  loadNextQuestion(1);
-                }}
-              >
-                🔄 Play Again
-              </button>
-              {onOpenView && (
-                <div className="wd-subview-nav-grid">
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('shop');
-                    }}
-                  >
-                    🛍️ Armory
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('missions');
-                    }}
-                  >
-                    🎯 Quests
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('achievements');
-                    }}
-                  >
-                    🏆 Trophies
-                  </button>
-                  <button
-                    onClick={() => {
-                      playClickSound();
-                      onOpenView('stats');
-                    }}
-                  >
-                    📊 Stats
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+        <WordDefenseGameOverModal
+          score={score}
+          maxCombo={maxCombo}
+          coins={coins}
+          correctAnswersCount={correctAnswersCount}
+          totalQuestionsAnswered={totalQuestionsAnswered}
+          onPlayAgain={() => {
+            playClickSound();
+            stopSpeech();
+            stopAllTones();
+            isGameOverRef.current = false;
+            setScore(0);
+            setCombo(0);
+            setMaxCombo(0);
+            setCoins(0);
+            setCastleHealth(5);
+            setCorrectAnswersCount(0);
+            setTotalQuestionsAnswered(0);
+            setWordsLearnedInSession(new Set());
+            setIsGameOver(false);
+            loadNextQuestion(1);
+          }}
+          onBackToMenu={() => {
+            playClickSound();
+            onBackToMenu();
+          }}
+          onOpenView={onOpenView}
+        />
       )}
     </div>
   );

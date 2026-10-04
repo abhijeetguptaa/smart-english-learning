@@ -1,4 +1,3 @@
-import React from 'react';
 import DifficultySelection from './DifficultySelection';
 import { useTranslation } from 'react-i18next';
 

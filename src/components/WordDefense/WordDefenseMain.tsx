@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { WordDefenseGame } from './WordDefenseGame';
 import { WordDefenseShop } from './WordDefenseShop';
 import { WordDefenseMissions } from './WordDefenseMissions';
@@ -6,30 +7,36 @@ import { WordDefenseAchievements } from './WordDefenseAchievements';
 import { WordDefenseStats } from './WordDefenseStats';
 import { useWordDefenseStore } from '../../store/useWordDefenseStore';
 import useStarStore from '../../store/useStarStore';
-import { playClickSound } from '../../utils/soundUtils';
+import { playClickSound, stopSpeech, stopAllTones } from '../../utils/soundUtils';
 import './WordDefense.scss';
 
-type ActiveView = 'menu' | 'playing' | 'shop' | 'missions' | 'achievements' | 'stats';
+type SubView = 'shop' | 'missions' | 'achievements' | 'stats';
+type ActiveView = 'playing' | SubView;
 
 export const WordDefenseMain: React.FC = () => {
+  const navigate = useNavigate();
   const [currentView, setCurrentView] = useState<ActiveView>('playing');
-  const { selectedCosmetics, stats } = useWordDefenseStore();
+  const { selectedCosmetics } = useWordDefenseStore();
   const { stars } = useStarStore();
-
-  const handleStartGame = () => {
-    playClickSound();
-    setCurrentView('playing');
-  };
 
   const handleNavClick = (view: ActiveView) => {
     playClickSound();
+    stopSpeech();
+    stopAllTones();
     setCurrentView(view);
+  };
+
+  const handleBackToHome = () => {
+    playClickSound();
+    stopSpeech();
+    stopAllTones();
+    navigate('/');
   };
 
   if (currentView === 'playing') {
     return (
       <WordDefenseGame
-        onBackToMenu={() => setCurrentView('playing')}
+        onBackToMenu={handleBackToHome}
         onOpenView={(v) => setCurrentView(v)}
         selectedCosmetics={selectedCosmetics}
       />
@@ -40,6 +47,14 @@ export const WordDefenseMain: React.FC = () => {
     <div className="wd-main-container">
       {/* Top Header Navbar */}
       <header className="wd-main-header">
+        <button
+          className="wd-header-back-btn"
+          onClick={handleBackToHome}
+          aria-label="Back to Home"
+        >
+          ⇦
+        </button>
+
         <div className="wd-title-badge">
           <span className="wd-title-icon">🏰</span>
           <h1>Word Defense</h1>
@@ -61,7 +76,7 @@ export const WordDefenseMain: React.FC = () => {
       {/* Bottom Navigation Bar */}
       <nav className="wd-bottom-nav">
         <button
-          className={`wd-nav-tab ${currentView === 'playing' ? 'active' : ''}`}
+          className="wd-nav-tab"
           onClick={() => handleNavClick('playing')}
         >
           <span className="icon">🎮</span>

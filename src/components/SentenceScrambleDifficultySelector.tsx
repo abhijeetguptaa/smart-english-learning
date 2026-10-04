@@ -1,11 +1,11 @@
 import React from 'react';
-import DifficultySelection from './DifficultySelection';
+import DifficultySelection, { DifficultyOption } from './DifficultySelection';
 import { useTranslation } from 'react-i18next';
 
-const SentenceScrambleDifficultySelector = () => {
+const SentenceScrambleDifficultySelector: React.FC = () => {
   const { t } = useTranslation();
 
-  const difficulties = [
+  const difficulties: DifficultyOption[] = [
     {
       key: 'easy',
       label: t('common.levels.easy'),
@@ -36,7 +36,7 @@ const SentenceScrambleDifficultySelector = () => {
     <DifficultySelection
       difficulties={difficulties}
       baseRoute="/sentence-scramble"
-      extraClass="wordsearch-selection" // Re-using a playful selection class
+      extraClass="wordsearch-selection"
     />
   );
 };
