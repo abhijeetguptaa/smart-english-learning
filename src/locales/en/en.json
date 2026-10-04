@@ -336,7 +336,8 @@
     "categories": {
       "quiz": "Quiz",
       "tap-learn": "Interactive Lessons",
-      "wordDefense": "Word Defense"
+      "wordDefense": "Word Defense",
+      "wordMatch": "Word Match"
     },
     "subjects": {
       "alphabets": {
@@ -804,5 +805,10 @@
     "Zoom": "Zoom",
     "Zip": "Zip",
     "Apple": "Apple"
+  },
+  "wordMatch": {
+    "title": "Word Match",
+    "subtitle": "Flip and find matching pairs!",
+    "successMsg": "Awesome Memory Master! You matched all pairs!"
   }
 }

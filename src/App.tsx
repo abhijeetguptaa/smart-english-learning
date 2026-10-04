@@ -27,6 +27,10 @@ const Settings = lazy(() => import('./components/Settings'));
 const TapLearnRoute = lazy(() => import('./components/TapLearnRoute'));
 const TapLearnSelection = lazy(() => import('./components/TapLearnSelection'));
 const WordDefenseMain = lazy(() => import('./components/WordDefense/WordDefenseMain'));
+const WordMatchDifficultySelector = lazy(
+  () => import('./components/WordMatch/WordMatchDifficultySelector'),
+);
+const WordMatchGame = lazy(() => import('./components/WordMatch/WordMatchGame'));
 const Stars = lazy(() => import('./components/Stars'));
 
 const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
@@ -153,6 +157,12 @@ function Home(): React.JSX.Element {
       path: '/word-defense',
       icon: '/quiz.webp',
       label: t('home.categories.wordDefense', 'Word Defense'),
+    },
+    {
+      id: 'word-match',
+      path: '/word-match',
+      icon: '/english.webp',
+      label: t('home.categories.wordMatch', 'Word Match'),
     },
   ];
 
@@ -510,6 +520,8 @@ export default function App(): React.JSX.Element {
           <Route path="/tap-learn" element={<TapLearnSelection />} />
           <Route path="/tap-learn/:gameType" element={<TapLearnRoute />} />
           <Route path="/word-defense" element={<WordDefenseMain />} />
+          <Route path="/word-match" element={<WordMatchDifficultySelector />} />
+          <Route path="/word-match/:difficulty" element={<WordMatchGame />} />
         </Routes>
       </Suspense>
 
