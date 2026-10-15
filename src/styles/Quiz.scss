@@ -445,6 +445,26 @@
         border: 2px solid $color-white;
         font-weight: bold;
       }
+
+      &.fifty-fifty-refill-btn {
+        background: linear-gradient(180deg, #ffd700 0%, #ff9800 100%);
+        color: #4a3500;
+        box-shadow:
+          0 4px 0 #b26a00,
+          0 6px 10px $shadow-md;
+
+        &:hover:not(:disabled) {
+          box-shadow:
+            0 6px 0 #b26a00,
+            0 8px 15px $shadow-md;
+        }
+
+        &:active:not(:disabled) {
+          box-shadow:
+            0 2px 0 #b26a00,
+            0 4px 6px $shadow-md;
+        }
+      }
     }
   }
 

@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom';
 import { speakText, stopSpeech } from '../utils/soundUtils';
 import { QUIZ_ROUNDS } from '../utils/utils';
 import SuccessModal from './SuccessModal';
-import { showSafeRewarded } from '../utils/admob';
 import { useSparkleBurst } from '@/hooks/useSparkleBurst';
+import useStarStore from '../store/useStarStore';
 
 const Quiz = () => {
   const { t } = useTranslation();
@@ -35,7 +35,7 @@ const Quiz = () => {
   const [fiftyFiftyCount, setFiftyFiftyCount] = useState(3);
   const [isFiftyFiftyUsed, setIsFiftyFiftyUsed] = useState(false);
   const [hiddenOptions, setHiddenOptions] = useState<number[]>([]);
-  const [isAdLoadingFifty, setIsAdLoadingFifty] = useState(false);
+  const { stars, addStars } = useStarStore();
   const pendingPostEmojiActionRef = useRef<(() => void) | null>(null);
   const { triggerSparkleBurst, SparkleRenderer } = useSparkleBurst();
 
@@ -113,21 +113,9 @@ const Quiz = () => {
       setHiddenOptions([shuffled[0], shuffled[1]]);
       setFiftyFiftyCount((prev) => prev - 1);
       setIsFiftyFiftyUsed(true);
-    } else if (fiftyFiftyCount <= 0) {
-      handleFiftyFiftyReward();
-    }
-  };
-
-  const handleFiftyFiftyReward = async () => {
-    if (isAdLoadingFifty) return;
-    setIsAdLoadingFifty(true);
-    try {
-      await showSafeRewarded();
+    } else if (stars >= 10) {
+      addStars(-10);
       setFiftyFiftyCount(3);
-    } catch (err) {
-      console.error('Failed to show rewarded ad for 50-50:', err);
-    } finally {
-      setIsAdLoadingFifty(false);
     }
   };
 
@@ -236,22 +224,26 @@ const Quiz = () => {
 
             {/* Lifeline 50-50 */}
             <div className="fifty-fifty-container">
-              <button
-                className="fifty-fifty-btn"
-                onClick={handleFiftyFifty}
-                disabled={answered || isFiftyFiftyUsed || isAdLoadingFifty}
-              >
-                {isAdLoadingFifty ? (
-                  '...'
-                ) : (
-                  <>
-                    {fiftyFiftyCount > 0
-                      ? t('quiz.lifeline_50_50', '🌓 50-50')
-                      : t('quiz.lifeline_50_50_ad', '🎬 50-50')}
-                    <span className="count-badge">{fiftyFiftyCount}</span>
-                  </>
-                )}
-              </button>
+              {fiftyFiftyCount > 0 ? (
+                <button
+                  className="fifty-fifty-btn"
+                  onClick={handleFiftyFifty}
+                  disabled={answered || isFiftyFiftyUsed}
+                >
+                  <span>{t('quiz.lifeline_50_50', '🌓 50-50')}</span>
+                  <span className="count-badge">{fiftyFiftyCount}</span>
+                </button>
+              ) : (
+                <button
+                  className="fifty-fifty-btn fifty-fifty-refill-btn"
+                  onClick={handleFiftyFifty}
+                  disabled={answered || isFiftyFiftyUsed || stars < 10}
+                  title={stars < 10 ? 'Need 10 ⭐ to refill' : 'Refill 3 lifelines with 10 ⭐'}
+                >
+                  <span>{stars >= 10 ? '⭐ Refill (10 ⭐)' : '🌓 50-50'}</span>
+                  <span className="count-badge">0</span>
+                </button>
+              )}
             </div>
           </div>
         ) : (

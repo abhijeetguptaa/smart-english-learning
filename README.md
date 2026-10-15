@@ -8,6 +8,8 @@ This is an interactive English learning application, built with React, Vite, and
 - **WordFun**: Word search puzzles.
 - **Sentence Fun**: Rearrange words to form correct sentences.
 - **Tap Learn**: Identify objects across various categories (Animals, Colors, Food, etc.).
+- **Word Match**: Match vocabulary words with their meanings and pictures.
+- **Word Defense**: Defend the base by spelling out words!
 
 ## Setup
 
@@ -37,7 +39,3 @@ This is an interactive English learning application, built with React, Vite, and
    ```bash
    npx cap open android
    ```
-
-## Environment Variables
-
-- `VITE_ADMOB_TEST_MODE`: Set to `true` to use test ads.

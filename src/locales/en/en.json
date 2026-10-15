@@ -53,8 +53,6 @@
       "reset": "Reset",
       "refresh": "Refresh",
       "skip": "Skip",
-      "skipWithAd": "Skip Level with Video",
-      "watchAdReward": "Watch Ads for more opportunity",
       "undo": "Undo",
       "redo": "Redo",
       "hint": "Hint"
@@ -463,7 +461,7 @@
     "completed": "Quiz Completed!",
     "question": "Question",
     "lifeline_50_50": "🌓 50-50",
-    "lifeline_50_50_ad": "🎬 50-50"
+    "lifeline_get_more": "Get 50-50"
   },
   "settings": {
     "title": "Settings",

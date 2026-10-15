@@ -16,10 +16,6 @@
 -optimizationpasses 5
 -allowaccessmodification
 
-# AdMob / Google Play Services
--keep class com.google.android.gms.ads.** { *; }
--dontwarn com.google.android.gms.**
-
 # Handle Kotlin
 -dontwarn kotlin.**
 -dontwarn org.jetbrains.annotations.**

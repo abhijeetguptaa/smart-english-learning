@@ -21,8 +21,6 @@ export const FB_EVENTS = {
   LEVEL_ACHIEVED: 'fb_mobile_level_achieved',
   ACHIEVEMENT_UNLOCKED: 'fb_mobile_achievement_unlocked',
   SPENT_CREDITS: 'fb_mobile_spent_credits',
-  AD_CLICK: 'AdClick',
-  AD_IMPRESSION: 'AdImpression',
 } as const;
 
 // Custom App Events
@@ -32,7 +30,6 @@ export const APP_EVENTS = {
   STAR_EARNED: 'StarEarned',
   FEATURE_UNLOCK_ATTEMPT: 'FeatureUnlockAttempt',
   FEATURE_UNLOCKED: 'FeatureUnlocked',
-  AD_IMPRESSION: 'AdImpression',
 } as const;
 
 /**
@@ -51,7 +48,7 @@ export const initAnalytics = (): void => {
  */
 export const logEvent = (eventName: string, params: Record<string, unknown> = {}): void => {
   try {
-    if (import.meta.env.DEV || import.meta.env.VITE_ADMOB_TEST_MODE === 'true') {
+    if (import.meta.env.DEV) {
       console.log(`[Analytics Event]: ${eventName}`, params);
     }
 
@@ -118,15 +115,5 @@ export const trackFeatureUnlocked = (featureName: string, cost: number): void =>
   logEvent(FB_EVENTS.SPENT_CREDITS, {
     fb_content_id: featureName,
     fb_value_to_sum: cost,
-  });
-};
-
-/**
- * Helper: Track Ad Impression
- */
-export const trackAdImpression = (adType: string, adPlacement: string): void => {
-  logEvent(FB_EVENTS.AD_IMPRESSION, {
-    ad_type: adType,
-    placement: adPlacement,
   });
 };

@@ -1,8 +1,7 @@
 // Application-wide Constants
 // All static values and configuration for the entire application
 
-export const IS_TEST_MODE =
-  import.meta.env.VITE_ADMOB_TEST_MODE === 'true' || import.meta.env.MODE === 'test';
+export const IS_TEST_MODE = import.meta.env.MODE === 'test';
 
 export const DIFFICULTY_LEVELS = {
   EASY: 'easy',

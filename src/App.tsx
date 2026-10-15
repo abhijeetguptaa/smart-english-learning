@@ -36,12 +36,10 @@ const Stars = lazy(() => import('./components/Stars'));
 const USER_NAME_KEY = STORAGE_KEYS.USER_NAME;
 let soundUtilsPromise: Promise<typeof import('./utils/soundUtils')> | undefined;
 let bgMusicManagerPromise: Promise<typeof import('./utils/bgMusicManager')> | undefined;
-let admobPromise: Promise<typeof import('./utils/admob')> | undefined;
 let notificationsPromise: Promise<typeof import('./utils/notifications')> | undefined;
 
 const loadSoundUtils = () => (soundUtilsPromise ??= import('./utils/soundUtils'));
 const loadBgMusicManager = () => (bgMusicManagerPromise ??= import('./utils/bgMusicManager'));
-const loadAdMob = () => (admobPromise ??= import('./utils/admob'));
 const loadNotifications = () => (notificationsPromise ??= import('./utils/notifications'));
 
 const NOTIFICATION_PROMPT_KEY = 'notifications_prompted_v2';
@@ -254,21 +252,7 @@ export default function App(): React.JSX.Element {
     if (hasStartedDeferredServices.current) {
       return;
     }
-
-    const userAge = localStorage.getItem(STORAGE_KEYS.USER_AGE);
-    const isChild = userAge ? parseInt(userAge, 10) < 13 : true;
     hasStartedDeferredServices.current = true;
-
-    scheduleAfterFirstPaint(() => {
-      loadAdMob()
-        .then(async ({ initAdMob, warmAdCaches }) => {
-          await initAdMob(isChild);
-          window.setTimeout(() => {
-            warmAdCaches().catch((err: unknown) => console.error('Ad cache warmup failed:', err));
-          }, 45000);
-        })
-        .catch((err: unknown) => console.error('AdMob init failed:', err));
-    }, 20000);
   };
 
   const handlePlay = async () => {

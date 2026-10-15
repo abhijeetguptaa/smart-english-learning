@@ -5,7 +5,6 @@ import { playApplauseSound, playIncorrectSound, speakText } from '../utils/sound
 import { CATEGORY_COLORS, getCategoryColor } from '../constants/colors';
 import { GameType, TapLearnOption } from '../data/tapLearnData';
 import SuccessModal from './SuccessModal';
-import { showSafeInterstitial } from '../utils/admob';
 import './TapLearnGame.scss';
 import { FcUndo } from 'react-icons/fc';
 import { useSparkleBurst } from '@/hooks/useSparkleBurst';
@@ -119,13 +118,7 @@ const TapLearnGame: React.FC<TapLearnGameProps> = ({ gameType, data }) => {
       setFeedback('correct');
       playApplauseSound();
       pendingPostEmojiActionRef.current = () => {
-        // Show ad every 6th correct answer, unless it's the last question (modal handles that)
-        const showAds = (currentIndex + 1) % 6 === 0;
         const isLast = currentIndex === data.length - 1;
-
-        if (showAds && !isLast) {
-          showSafeInterstitial();
-        }
 
         if (isLast) {
           setShowSuccessModal(true);

@@ -9,7 +9,6 @@ import { getRandomItem } from '../utils/utils';
 import { IS_TEST_MODE, STORAGE_KEYS } from '../constants/appConstants';
 import FlyingStars from './FlyingStars';
 import SuccessModalPetals from './SuccessModalPetals';
-import { showSafeInterstitial } from '../utils/admob';
 import ParentalGate from './ParentalGate';
 
 export interface IncorrectQuestion {
@@ -28,7 +27,6 @@ export interface SuccessModalProps {
   onNewGame?: () => void;
   bestTime?: number | null;
   isNewBestTime?: boolean;
-  disableAds?: boolean;
 }
 
 const SuccessModal: React.FC<SuccessModalProps> = ({
@@ -41,7 +39,6 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
   onNewGame,
   bestTime = null,
   isNewBestTime = false,
-  disableAds = false,
 }) => {
   const { t } = useTranslation();
   const { addStar } = useStarStore();
@@ -56,8 +53,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
     return age ? parseInt(age, 10) < 13 : true;
   }, []);
 
-  // TRIGGER INTERSTITIAL AD (Safe Moment: Success Modal Dismissal)
-  // & APPLAUSE SOUND (Safe Moment: Success Modal Display)
+  // APPLAUSE SOUND (Safe Moment: Success Modal Display)
   useEffect(() => {
     playApplauseSound();
   }, []);
@@ -168,15 +164,11 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
     action();
   };
 
-  const startExitFlow = (action: () => void, { showAd = false } = {}) => {
+  const startExitFlow = (action: () => void) => {
     if (isClosing || animationData) return;
     if (timerRef.current) cancelAnimationFrame(timerRef.current);
 
     pendingActionRef.current = action;
-
-    if (showAd && !disableAds) {
-      showSafeInterstitial();
-    }
 
     if (starsWon > 0 && !skipStarAward) {
       setAnimationData({
@@ -191,7 +183,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
   };
 
   const handleCloseClick = () => {
-    startExitFlow(handleClose, { showAd: true });
+    startExitFlow(handleClose);
   };
   handleCloseClickRef.current = handleCloseClick;
 

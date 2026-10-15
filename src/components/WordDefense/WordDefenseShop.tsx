@@ -83,7 +83,12 @@ export const WordDefenseShop: React.FC = () => {
   return (
     <div className="wd-shop-container">
       <div className="wd-shop-header">
-        <h2>🛍️ Armory & Cosmetics</h2>
+        <div>
+          <h2>🛍️ Armory & Cosmetics</h2>
+          <p className="wd-shop-subtitle" style={{ fontSize: '0.85rem', color: '#94a3b8', margin: '4px 0 0 0' }}>
+            Earn Stars ⭐ by playing to unlock items!
+          </p>
+        </div>
         <div className="wd-coins-badge">
           <span>⭐ {stars}</span>
         </div>
@@ -121,7 +126,7 @@ export const WordDefenseShop: React.FC = () => {
               <p className="wd-shop-item-desc">{item.description}</p>
 
               <button
-                className={`wd-shop-action-btn ${isSelected ? 'equipped' : isUnlocked ? 'equip' : 'buy'}`}
+                className={`wd-shop-action-btn ${isSelected ? 'equipped' : isUnlocked ? 'equip' : 'unlock'}`}
                 onClick={() => handleItemAction(item)}
               >
                 {isSelected ? (

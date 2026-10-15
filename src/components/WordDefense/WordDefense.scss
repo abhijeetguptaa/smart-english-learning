@@ -815,7 +815,8 @@
       background: rgba(255, 255, 255, 0.1);
       color: #94a3b8;
     }
-    &.buy {
+    &.buy,
+    &.unlock {
       background: linear-gradient(135deg, #facc15, #eab308);
       color: #0f172a;
       display: flex;
